@@ -1138,7 +1138,7 @@ body {
 	}
 }
 
-@media only screen and (max-width: 1936px) {
+@media only screen and (max-width: 767px) {
 	#ac-globalnav .ac-gn-item-menu .ac-gn-link {
 		background-position: left center;
 		display: block;
@@ -1161,7 +1161,7 @@ body {
 	background-image: url("globalnav_apple_image__cxwwnrj0urau_large.png")
 }
 
-@media only screen and (max-width: 1936px) {
+@media only screen and (max-width: 767px) {
 	#ac-globalnav .ac-gn-link-apple {
 		background-size: 48px 48px;
 		background-repeat: no-repeat;
@@ -1172,7 +1172,7 @@ body {
 	}
 }
 
-@media only screen and (max-width: 1936px) {
+@media only screen and (max-width: 767px) {
 	#ac-globalnav .ac-gn-link-apple {
 		width: 48px
 	}
