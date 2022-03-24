@@ -554,7 +554,7 @@ hr {
 }
 @font-face {
     font-family: 'IBM'; 
-    src: url('https://track44.moe/fonts/ibm.ttf'); 
+    src: url('fonts/ibm.ttf'); 
 }
 /* ---- MOBILE CSS ---- */
 @media screen and (max-width: 1080px) {
