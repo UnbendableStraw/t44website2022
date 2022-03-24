@@ -19,7 +19,7 @@ a {
 }
 h1, h2, h4 {
     margin: 0;
-    font-family: 'OCR A Std', monospace;
+    font-family: 'IBM', monospace;
 }
 h1 {
     font-family: 'Source Sans Pro', sans-serif;
@@ -552,7 +552,10 @@ hr {
     }
 
 }
-
+@font-face {
+    font-family: 'IBM'; 
+    src: url('https://track44.moe/fonts/ibm.ttf'); 
+}
 /* ---- MOBILE CSS ---- */
 @media screen and (max-width: 1080px) {
     h2 {
