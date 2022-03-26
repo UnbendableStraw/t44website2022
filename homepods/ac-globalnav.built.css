@@ -1185,7 +1185,7 @@ body {
 #ac-globalnav .ac-gn-link-mac {
 	background-size: 26px 44px;
 	background-repeat: no-repeat;
-	background-image: url("globalnav_links_mac_image__fv4ktb435mum_large.svg");
+	background-image: url("globalnav_links_mac_image__fv4ktb435mum_large.png");
 	background-position: center center;
 	background-origin: content-box;
 	background-size: cover;
@@ -1201,7 +1201,7 @@ body {
 	#ac-globalnav .ac-gn-link-mac {
 		background-size: 34px 43px;
 		background-repeat: no-repeat;
-		background-image: url("globalnav_links_mac_image__fv4ktb435mum_small.svg")
+		background-image: url("globalnav_links_mac_image__fv4ktb435mum_small.png")
 	}
 	#ac-globalnav.no-svg .ac-gn-link-mac {
 		background-image: url("globalnav_links_mac_image__fv4ktb435mum_small.png")
