@@ -63,7 +63,7 @@ h4:hover {
 }
 .hover_img a { position:relative; }
 .hover_img a span { position:absolute; display:none; z-index:99; }
-.hover_img a:hover span { display:block; }
+.hover_img a:hover span { display:inline; border: 3px solid #35b88f;}
 p {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1em;
