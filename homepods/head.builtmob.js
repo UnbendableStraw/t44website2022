@@ -1,7 +1,3 @@
-if (navigator.userAgent.indexOf("Android") != -1)
-{
-       location.href = './mob.html';
-}    
 var _____WB$wombat$assign$function_____ = function(name) {
     return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name];
 };
@@ -1105,7 +1101,7 @@ if (!self.__WB_pmw) {
                                 "sticky-speaker": !c && s && !(l.browser.ie || l.browser.android || l.browser.edge) && !f,
                                 "hardware-reveal": !c && !f,
                                 "room-video": u,
-                                "css-sticky": s,
+                                "no": s,
                                 tablet: n,
                                 "text-gradient": !l.browser.ie,
                                 ie: l.browser.ie,
