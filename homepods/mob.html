@@ -292,13 +292,13 @@ body {
 				<div class="card-wrapper">
 					<figure class="fallback speaker-component homepod-speaker-component-1"></figure>
 					<div class="design-card" data-fade-offset="							-0.15">
-						<h3 class="typography-callout">Thump<br/></h3>
-						<p>Missing bass volume, crackling or loud thumping sounds, and "death farts" may be caused by a faulty subwoofer speaker, amplifier IC, or out-of-control DC offset. </p>
+						<h3 class="typography-callout" id="gotbass">Got Bass?<br/></h3>
+						<p class="hover_img">Missing Bass may be caused by a <a href="https://youtu.be/OvHope_C_lc?t=565">faulty amp IC</a>, loose subwoofer connection, or bad subwoofer. Sometimes, <a href="#gotbass">plastic components in the top can break off<span><img src="brokenplastic.jpg" alt="image" height="380" /></span></a> and cause a rattling sound.</p>
 					</div>
 					<figure class="fallback speaker-component homepod-speaker-component-2"></figure>
 					<div class="design-card" data-fade-offset="							0">
-						<h3 class="typography-callout">"Hey Siri!"<br/>*pop*</h3>
-						<p>A subtle popping sound whenever the HomePod goes in or out of standby is also indicative of a DC offset problem. I'm still investigating a potential <a href="https://www.reddit.com/r/HomePod/comments/tixoix/may_have_found_fix_for_dc_offset_pops_hint_it/">hardware fix for this.</a></p>
+						<h3 class="typography-callout" id="badcaps">"Hey Siri!"<br/>*pop*</h3>
+						<p class="hover_img">A subtle popping sound whenever the HomePod goes in or out of standby is a sign of DC voltage present in the subwoofer's signal. This was <a href"https://www.youtube.com/watch?v=lptLswqx-Sc">originally believed</a> to be coming from the amp IC, however I found that the DC measured on the woofer drastically rises above 2-5v when applying heat to <a href="#badcaps">these four capacitors<span><img src="badcaps.jpg" alt="image" height="380" /></span></a> after the DAC on the amplifier board, and even causes the homepod to "death fart" on demand. I'm still investigating a potential <a href="https://www.reddit.com/r/HomePod/comments/tixoix/may_have_found_fix_for_dc_offset_pops_hint_it/">hardware fix for this. </a></p>
 					</div>
 					<figure class="fallback speaker-component homepod-speaker-component-3"></figure>
 					<div class="design-card" data-fade-offset="							0.2">
@@ -308,8 +308,8 @@ body {
 					<figure class="fallback speaker-component homepod-speaker-component-4"></figure>
 					<div class="design-card" data-fade-offset="							0">
 						<figure class="image-icon-a8"></figure>
-						<h3 class="typography-callout">Logic Board Issues<br/></h3>
-						<p>While we CAN fix your HomePod if it does not power on at all, unfortunately at this time, there is no known repair for bricked logic boards, or ones stuck with flashing volume buttons, and I don't have parts available to replace them. Please ask Apple to release schematics and perhaps sell old stock parts for discontinued products.</p>
+						<h3 class="typography-callout">Logic Board and Power Issues<br/></h3>
+						<p>No power and no lights at all are likely <a href="https://www.youtube.com/watch?v=OvHope_C_lc">just a $1 diode away</a> from working again! <br> If your HomePod boots to flashing volume buttons, or just shows the spinning white animation forever, and won't let you factory reset, at this time I am unable to repair these issues or find good logic boards to offer replacements. If you can source another HomePod for parts with a good logic board, I am happy to do the swap for you.</p>
 					</div>
 					<figure class="fallback speaker-component homepod-speaker-component-5"></figure>
 					<div class="design-card" data-fade-offset="							0">
