@@ -905,7 +905,7 @@ body {
 					<br></br>
 					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Popping, Death Farts, & Crackling - Failing Capacitors (DC Offset)</h4>
 					<p>Symptoms can include any of the following; A noticable "pop" sound as the HomePod goes into standby after ~10 minutes of inactivity, or when waking up from standby. Crackling / buzzing sound during music playback at higher volumes. Death farts and unexpected restarts while playing music or not.<br></br>DC offset is when the amplifier has a DC voltage across the speaker output. When quiescent, normally the subwoofer rests in a neutral middle of it's magnetic field, but dc offset will cause it to be displaced forward or backward from that mid-point, impacting amplifier and speaker performance, and resulting in the "pop" sound as the amp is turned on or off as part of standby mode.<br></br>There are four capacitors that are supposed to remove this DC before being amplified and sent to the speaker. They are located on the amplifier board between the DAC and amp IC.
-<br></br>It is normal to hear a quiter pop, and if you experience no other issues you should not be concerned. There are a few ways to tell if your popping needs to be addressed which require some disassembly;<br></br>1) Remove the subwoofer and place it to the side, power on the HomePod and ensure it's not in standby, then carefully disconnect and reconnect the subwoofer a few times. If you hear a pop every time you do so, the capacitors need to be replaced. If you hear no popping, no action needs to be taken.<br>2) With the HomePod powered on, not in standby, and subwoofer connected, measure the DC voltage with a multimeter across the subwoofer speaker terminals. The amp IC is rated for up to +/-18mV DC, which amplifies to around 200mV DC at the subwoofer, any more than this is when you can start having more issues than just popping. Most generally consider no more than +/-50mV DC at the speaker acceptable.</p>
+<br></br>It is normal to hear a quiter pop, and if you experience no other issues you should not be concerned. The only way to tell for certain if your popping needs to be addressed requires some disassembly;<br></br>1) Remove the subwoofer and place it to the side, power on the HomePod and ensure it's not in standby, then carefully disconnect and reconnect the subwoofer a few times. If you hear a pop every time you do so, the capacitors need to be replaced. If you hear no popping, no action needs to be taken.<br>2) With the HomePod powered on, not in standby, and subwoofer connected, measure the DC voltage with a multimeter across the subwoofer speaker terminals. The amp IC is rated for up to +/-18mV DC, which amplifies to around 200mV DC at the subwoofer, any more than this is when you can start having more issues than just popping. Most generally consider no more than +/-50mV DC at the speaker acceptable.<br></br>If DC offset is not repaired by replacing these capacitors, it can eventually grow and damage more components, including the speaker.</p>
 					<p>
 					<div class="column icon-container large-centered large-8 medium-10 small-12">
 					<div class="image-wrapper">
@@ -915,6 +915,16 @@ body {
 						<div class="image-wrapper">
 							<figure class="image-icons transition-1"><img src="badcaps2.jpg" height="200"></figure>
 							<figcaption class="typography-caption transition-2">Capacitors Location On Amp Board</figcaption>
+							<div id="estimates"></div>
+						</div>
+						<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="roastedresistor.png" height="200"></figure>
+							<figcaption class="typography-caption transition-2">Blown Resistor</figcaption>
+							<div id="estimates"></div>
+						</div>
+						<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="roastedwoofer.png" height="200"></figure>
+							<figcaption class="typography-caption transition-2">Burned Subwoofer Voice Coil</figcaption>
 							<div id="estimates"></div>
 						</div>
 					</div>
