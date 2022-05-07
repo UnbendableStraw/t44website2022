@@ -301,12 +301,12 @@ body {
 					<div class="design-card" data-fade-offset="							-0.15">
 					<img src="gotbass.gif" height="84"></figure>
 						<h3 class="typography-callout" id="gotbass">Big Dirty Bass Problems<br/></h3>
-						<p class="hover_img">Does your HomePod rattle, crackle, or pop? Missing that sweet subwoofer sound?</p>
+						<p class="hover_img">Does your HomePod rattle, crackle, pop or fart?</p>
 					</div>
 					<figure class="fallback speaker-component homepod-speaker-component-2"></figure>
 					<div class="design-card" data-fade-offset="							0">
 						<h3 class="typography-callout" id="badcaps">"Hey Siri!"<br/>*pop*</h3>
-						<p class="hover_img">A subtle popping sound whenever the HomePod goes in or out of standby is a sign of DC voltage present in the subwoofer's signal. Originally believed to be coming from the amp IC, I discovered that the DC measured on the woofer drastically rises above 2-5v when applying heat to <a href="#badcaps">these four capacitors<span><img src="badcaps.jpg" alt="image" height="380" /></span></a> on the amplifier board, even causing "death farts" on demand. I have demonstrated this issue and how to repair it <a href="https://www.youtube.com/watch?v=-YZUv5ErDFw"> here on YouTube.</a> Check out the<a href="#popping"> popping </a>section for more info.</p>
+						<p class="hover_img">A subtle popping sound whenever the HomePod goes in or out of standby is a sign of DC voltage present in the subwoofer's signal. Originally believed to be coming from the amp IC, I discovered that <a href="https://www.youtube.com/watch?v=tfJc6xMt7ZE">DC measured on the woofer drastically rises above 2-5v when applying heat</a> to <a href="#badcaps">these four capacitors<span><img src="badcaps.jpg" alt="image" height="380" /></span></a> on the amplifier board, even causing "death farts" on demand. I have demonstrated this issue and how to repair it <a href="https://www.youtube.com/watch?v=-YZUv5ErDFw"> here on YouTube.</a> Check out the<a href="#popping"> popping </a>section for more info.</p>
 					</div>
 					<figure class="fallback speaker-component homepod-speaker-component-3"></figure>
 					<div class="design-card" data-fade-offset="							0.2">
@@ -317,12 +317,12 @@ body {
 					<div class="design-card" data-fade-offset="							0">
 						<figure class="image-icon-a8"></figure>
 						<h3 class="typography-callout">Logic Board and Power Issues<br/></h3>
-						<p>No power and no lights at all are likely <a href="https://www.youtube.com/watch?v=OvHope_C_lc">just a $1 diode away</a> from working again! <br></br> If, however, your HomePod boots to flashing volume buttons, or just shows the spinning white animation forever, and won't let you factory reset, at this time I am unable to repair these issues or find good logic boards to offer replacements. If you can source another HomePod for parts with a good logic board, I am happy to do the swap for you.</p>
+						<p>No power and no lights at all are likely <a href="https://www.youtube.com/watch?v=OvHope_C_lc">just a $1 diode away</a> from working again! <br></br> If, however, your HomePod boots to flashing volume buttons, or just shows the spinning white animation forever, and won't let you factory reset, at this time I am unable to repair these issues or find good logic boards to offer replacements. If you can source another HomePod for parts with a good logic board, I am happy to do the swap for you. See the <a href="#blinkblinkklitzer">blinking buttons common issues section</a> for mroe info.</p>
 					</div>
 					<figure class="fallback speaker-component homepod-speaker-component-5"></figure>
 					<div class="design-card" data-fade-offset="							0">
-						<h3 class="typography-callout">Mesh cleaning, replacement,<br/>and customization.</h3>
-						<p>Every mail-in repair comes with complimentary detailing and cleaning to the best of our abilities using 99% isopropyl alcohol. I can also replace your mesh, and customize any parts with different colors at a reasonable cost. </p>
+						<h3 class="typography-callout">Mesh cleaning<br/>and replacement.</h3>
+						<p>Every mail-in repair comes with complimentary detailing and cleaning to the best of our abilities using 99% isopropyl alcohol. You</p>
 					</div>
 				</div>
 			</div>
@@ -859,7 +859,32 @@ body {
 					<h2 class="typography-headline-super transition-1 large-10 large-centered medium-11 small-12">Common Issues</h2>
 					<p>The following are all of the issues encountered or reported, and any known ways to diagnose and repair.</p>
 					<br></br>
-
+					<div id="blinkblinkklitzer"></div>
+					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Flashing Volume Lights - Dying A8 SoC? (WON'T FIX)</h4>
+					<p>HomePod will power on, but usually ends up with flashing / blinking volume lights, and probably won't factory reset.<br></br>Some users report this issue temporarily goes away if you power cycle or manage to factory reset it. Some are even able to successfully update to the latest OS. Unfortunately all of them will shortly after stop working and again become stuck on flashing volume lights.<br></br>Apple has not publicly confirmed what the root cause of this is, and no one outside knows for certain yet, however, I am betting this is a failing A8 SoC, either the RAM or CPU itself. I cannot find replacement A8 SoC chips specifically for the HomePod, though they share a similar A8 with the iPhone 6(s) a swap has not yet been attempted and it's unknown if this will work. Even if you succeeded in doing this, there is also the question of whether the existing software installed on the NAND will need to be reinstalled to match any unique hardware IDs of your replacement A8 SoC.<br></br>Apple has not released any restorable firmware / software for original Apple HomePods, so whether this is ultimately a software or hardware issue, there is no known way to repair this! Very frustrating considering there is USB access to connect a HomePod to a computer, and various software detects and recognizes a HomePod is connected, but again there are no available restorable IPSWs to even attempt this. I made a <a href="https://www.reddit.com/r/HomePod/comments/s3gmkp/i_got_usb_working_on_an_og_homepod_finder_even/"> reddit post</a> showing my attempt following a <a href="https://github.com/el1ng/homepwn">github guide</a> to connect to HomePod via USB and demonstrate this.<br></br> Myself and others have tried baking / reflowing every chip on the logic board multiple times with no success. I have replaced the PMIC on the logic board with one from an iPhone 6 and found, while this part is compatible, this did not resolve the issue. A user by the name of "mlogicrepair" in the discord server (Track44) is currently attempting to replace the A8 SoC, keep an eye out in there for the latest.</p>
+					<p>
+					<div class="column icon-container large-centered large-8 medium-10 small-12">
+					<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="debugport.jpg" height="200"></figure>
+							<figcaption class="typography-caption transition-2">Debug Port Under Rubber Foot of HomePod</figcaption>
+						</div>
+						|
+						<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="usb.jpg" height="200"></figure>
+							<figcaption class="typography-caption transition-2">Finder Unable to Restore</figcaption>
+							<div id="estimates"></div>
+						</div>
+						<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="pmicreplaced.jpg" height="200"></figure>
+							<figcaption class="typography-caption transition-2">Used PMIC from iPhone 6 Works but Same Issue</figcaption>
+						</div>
+						|
+						<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="socnandoff.jpg" height="200"></figure>
+							<figcaption class="typography-caption transition-2">"mlogicrepair" with old A8 SoC and Storage NAND off</figcaption>
+						</div>
+					</div>
+					<br></br>
 					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power - Shorted S.B. Diode</h4>
 					<p>No power, no lights, and no response. Power draw at the outlet will be around 1-10 Watts. If left plugged in for some time, the side of the HomePod gets slightly warmer.<br></br>Diode is located on the amplifier board. Use a multimeter in continuity test mode to test if diode is shorted by placing one probe onto the larger pin of the diode, and the other probe on one of the two smaller pins of the diode. If meter shows it's shorted, move probe from first small pin to other small pin. If you still see a short, remove the diode and test with the diode off the board. If just the diode shows shorted and not the board, replace the diode. Part number "PDS560-13" is a suitable replacement.<br></br>Unknown why it fails, perhaps a bad batch. These types of diodes can also fail short when subject to overvoltage, or if overheated. Only diodes with date code 174X and newer have been failing. Multiple confirmations that diodes with older date codes are still functional.</p>
 					<p>
@@ -903,29 +928,27 @@ body {
 						</div>
 						</div>
 					<br></br>
-					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Popping, Death Farts, & Crackling - Failing Capacitors (DC Offset)</h4>
-					<p>Symptoms can include any of the following; A noticable "pop" sound as the HomePod goes into standby after ~10 minutes of inactivity, or when waking up from standby. Crackling / buzzing sound during music playback at higher volumes. Death farts and unexpected restarts while playing music or not.<br></br>DC offset is when the amplifier has a DC voltage across the speaker output. When quiescent, normally the subwoofer rests in a neutral middle of it's magnetic field, but dc offset will cause it to be displaced forward or backward from that mid-point, impacting amplifier and speaker performance, and resulting in the "pop" sound as the amp is turned on or off as part of standby mode.<br></br>There are four capacitors that are supposed to remove this DC before being amplified and sent to the speaker. They are located on the amplifier board between the DAC and amp IC. You can replace them with 10uF, size 1206, X7R, 5-10%, rated for 16v or better.
-<br></br>It is normal to hear a quiter pop, and if you experience no other issues you should not be concerned. The only way to tell for certain if your popping needs to be addressed requires some disassembly;<br></br>1) Remove the subwoofer and place it to the side, power on the HomePod and ensure it's not in standby, then carefully disconnect and reconnect the subwoofer a few times. If you hear a pop every time you do so, the capacitors need to be replaced. If you hear no popping, no action needs to be taken.<br>2) With the HomePod powered on, not in standby, and subwoofer connected, measure the DC voltage with a multimeter across the subwoofer speaker terminals. The amp IC is rated for up to +/-18mV DC, which amplifies to around 200mV DC at the subwoofer, any more than this is when you can start having more issues than just popping. Most generally consider no more than +/-50mV DC at the speaker acceptable.<br></br>If DC offset is not repaired by replacing these capacitors, it can eventually grow and damage more components, including the speaker.</p>
+					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Popping, Clicking, Death Farts, & Crackling - Failing Capacitors (DC Offset)</h4>
+					<p>Symptoms can include any of the following; A noticable "pop" sound as the HomePod goes into standby after ~10 minutes of inactivity, or when waking up from standby. Crackling / buzzing sound during music playback at higher volumes. Death farts and unexpected restarts while playing music or not.<br></br>DC offset is when the amplifier has a DC voltage across the speaker output. When quiescent, normally the subwoofer rests in a neutral middle of it's magnetic field, but dc offset will cause it to be displaced forward or backward from that mid-point, impacting amplifier and speaker performance making them work harder, and resulting in the "pop" sound as the amp is turned on or off as part of standby mode.<br></br>There are four capacitors that are supposed to remove this DC before being amplified and sent to the speaker. They are located on the amplifier board between the DAC and amp IC. You can replace them with 10uF, size 1206, X7R, 5-10%, rated for 16v or better. With my repairs, I use something slightly overbuilt like part number C1206C106J3RACAUTO.
+<br></br>Sometimes this DC offset gets bad enough to blow out a resistor on the amplifier board, right next to the subwoofer connector. This is a 10Ohm, 1Watt, 1% Tolerance, 200V rated, 1218 size resistor (I use part number RCL121810R0FKEK.)<br></br>It is normal to hear a quiter pop, and if you experience no other issues you should not be concerned. The only way to tell for certain if your popping needs to be addressed requires some disassembly;<br></br>1) Remove the subwoofer and place it to the side, power on the HomePod and ensure it's not in standby, then carefully disconnect and reconnect the subwoofer a few times. If you hear a pop every time you do so, the capacitors need to be replaced. If you hear no popping, no action needs to be taken.<br>2) With the HomePod powered on, not in standby, and subwoofer connected, measure the DC voltage with a multimeter across the subwoofer speaker terminals, there is a place to probe on the woofer right under where the speaker wires connect, polarity does not matter. The amp IC is rated for up to +/-18mV DC, which amplifies to around +/-200mV DC at the subwoofer, any more than this is when you can start having more issues than just popping. Most generally consider no more than +/-50mV DC at the speaker acceptable.<br></br>If DC offset is not repaired by replacing these capacitors, it can eventually grow and damage more components.</p>
 					<p>
 					<div class="column icon-container large-centered large-8 medium-10 small-12">
 					<div class="image-wrapper">
 							<figure class="image-icons transition-1"><img src="woofertest.jpg" height="200"></figure>
-							<figcaption class="typography-caption transition-2">Subwoofer Test</figcaption>
+							<figcaption class="typography-caption transition-2">Subwoofer Probe Points</figcaption>
+						</div>
+						<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="roastedwoofer.png" height="200"></figure>
+							<figcaption class="typography-caption transition-2">Burned Voice Coil Seen Via Inspection Port</figcaption>
+							<div id="estimates"></div>
 						</div>
 						<div class="image-wrapper">
 							<figure class="image-icons transition-1"><img src="badcaps2.jpg" height="200"></figure>
 							<figcaption class="typography-caption transition-2">Capacitors Location On Amp Board</figcaption>
-							<div id="estimates"></div>
 						</div>
 						<div class="image-wrapper">
 							<figure class="image-icons transition-1"><img src="roastedresistor.png" height="200"></figure>
-							<figcaption class="typography-caption transition-2">Blown Resistor</figcaption>
-							<div id="estimates"></div>
-						</div>
-						<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="roastedwoofer.png" height="200"></figure>
-							<figcaption class="typography-caption transition-2">Burned Subwoofer Voice Coil</figcaption>
-							<div id="estimates"></div>
+							<figcaption class="typography-caption transition-2">Blown Resistor on Amp Board</figcaption>
 						</div>
 					</div>
 					<!--fuckapple	<a href="https://track44.moe/" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">Learn more about Apple Music</span><span class="icon icon-after more"></span></a></p> -->
@@ -938,21 +961,27 @@ body {
 					<br></br>
 					<div class="column large-centered large-12" data-component-list="CopyEngagement CopyParallax">
 								<blockquote class="transition-1" role="text">
-									<p>No-Power: $40</p>
+									<p>No-Power: $50</p>
 								</blockquote>
 								<p class="typography-intro-elevated transition-2">The most common issue HomePods come in for. Typically involves disassembly / reassembly, diagnosing and replacing a shorted diode.</p>
 							</div>
 							<div class="column large-centered large-12" data-component-list="CopyEngagement CopyParallax">
 								<blockquote class="transition-1" role="text">
-									<p>Popping, Death Farts, & Crackling: $50</p>
+									<p>Popping, Death Farts, & Crackling: $60</p>
 								</blockquote>
 								<p class="typography-intro-elevated transition-2">Repair for symptoms including; "Death farts", a crackling sound when playing music, and / or a loud "pop" sound whenever it goes in and out of standby. <br></br>You do not need to get your HomePod repaired if the popping sound is almost too quiet to hear, and you experience no other issues. This is normal.<br></br>If you do experience issues, and / or the popping is rather noticable, it is likely a sign of failing capacitors resulting in an increasing DC offset, and should be repaired before any damage occurs.</p>
 							</div>
 							<div class="column large-centered large-12" data-component-list="CopyEngagement CopyParallax">
 								<blockquote class="transition-1" role="text">
-									<p>No Bass: $60</p>
+									<p>No Bass: $70</p>
 								</blockquote>
 								<p class="typography-intro-elevated transition-2">If your HomePod sounds like it's missing the bass / subwoofer entirely, it's likely the amplifier IC that drives it. Typically involves disassembly / reassembly, diagnosing and replacing amplifier IC. Will also check for and repair DC offset if present.</p>
+							</div>
+							<div class="column large-centered large-12" data-component-list="CopyEngagement CopyParallax">
+								<blockquote class="transition-1" role="text">
+									<p>Flashing / Blinking Volume Lights: Won't Fix</p>
+								</blockquote>
+								<p class="typography-intro-elevated transition-2">I am unable to offer logic board repairs for this specific issue, unless you can provide another HomePod for parts with a good logic board to swap for you. More information in the <a href="#blinkblinkklitzer">blinking lights common issue</a> section. I urge you to contact Apple to help us with a solution!<p>
 							</div>
 							<div class="column large-centered large-12" data-component-list="CopyEngagement CopyParallax">
 								<blockquote class="transition-1" role="text">
@@ -971,7 +1000,7 @@ body {
 								<div id="thx"></div>
 									<p>Want to say thanks?</p>
 								</blockquote>
-								<p class="typography-intro-elevated transition-2">Click the speaker below to donate via PayPal! Anything helps towards the cost of tools and parts to continue working on issues that have not yet been solved.</p>
+								<p class="typography-intro-elevated transition-2">Click the speaker below to donate via PayPal! Or, send in your parts to help others, I'll pay for shipping. You can also donate to my CashApp at $NicSplatts. Anything helps towards the cost of tools and parts to continue working on issues that have not yet been solved or buying broken HomePods to continue discoering new repairs.</p>
 <div id="donate-button-container">
 <div id="donate-button"></div>
 <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
