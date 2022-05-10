@@ -884,8 +884,9 @@ body {
 						</div>
 					</div>
 					<br></br>
+					<div id="nopower"></div>
 					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power - Shorted S.B. Diode</h4>
-					<p>No power, no lights, and no response. Power draw at the outlet will be around 1-10 Watts. If left plugged in for some time, the side of the HomePod gets slightly warmer.<br></br>Diode is located on the amplifier board. Use a multimeter in continuity test mode to test if diode is shorted by placing one probe onto the larger pin of the diode, and the other probe on one of the two smaller pins of the diode. If meter shows it's shorted, move probe from first small pin to other small pin. If you still see a short, remove the diode and test with the diode off the board. If just the diode shows shorted and not the board, replace the diode. Part number "PDS560-13" is a suitable replacement.<br></br>Unknown why it fails, perhaps a bad batch. These types of diodes can also fail short when subject to overvoltage, or if overheated. Only diodes with date code 174X and newer have been failing. Multiple confirmations that diodes with older date codes are still functional.</p>
+					<p>No power, no lights, and no response. Power draw at the outlet will be around 1-10 Watts. If left plugged in for some time, the side of the HomePod gets slightly warmer.<br></br>Diode is located on the amplifier board. Use a multimeter in continuity test mode to test if diode is shorted by placing one probe onto the larger pin of the diode, and the other probe on one of the two smaller pins of the diode. If meter shows it's shorted, move probe from first small pin to other small pin. If you still see a short, remove the diode and test with the diode off the board. If just the diode shows shorted and not the board, replace the diode. Part number "PDS560-13" is a suitable replacement.<br></br>Unknown why it fails, seems like a bad batch. These types of diodes can also fail short when subject to overvoltage, or if overheated. Suspected that diodes with date code "1748K" are a bad batch and should be replaced if seen regardless of condition. Many confirmations that diodes with older and newer date codes are still functional.</p>
 					<p>
 					<div class="column icon-container large-centered large-8 medium-10 small-12">
 						<div class="image-wrapper">
@@ -919,11 +920,6 @@ body {
 							<figcaption class="typography-caption transition-2">Subwoofer Probe Points</figcaption>
 						</div>
 						<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="roastedwoofer.png" height="200"></figure>
-							<figcaption class="typography-caption transition-2">Burned Voice Coil Seen Via Inspection Port</figcaption>
-							
-						</div>
-						<div class="image-wrapper">
 							<figure class="image-icons transition-1"><img src="badcaps2.jpg" height="200"></figure>
 							<figcaption class="typography-caption transition-2">Capacitors Location On Amp Board</figcaption>
 						</div>
@@ -933,8 +929,26 @@ body {
 						</div>
 					</div>
 					<br></br>
-					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Bass or No Power - Dead Amplifier IC</h4>
-					<p>Can present in one of two ways: 1) HomePod powers on, but there is no bass when playing music. 2) HomePod doesn't power on, power draw at the outlet will be 1-10 Watts. It's rare for the amp IC to be the source of any problems, unless it is obviously damaged, you should first diagnose for the issues described above in the popping section.<br></br>Amp IC is located on the bottom side of the amp board. The amp IC may or may not have obvious visual damage and there is no great way to diagnose without replacing it. HomePods will power on with the amp IC removed. Do not be fooled by the PIN1 identifier mark in the bottom left corner of the chip.<br></br>The OEM amp IC (part number 98-0431) is available on Aliexpress for a limited time. Part number IR4312M is available from multiple component sellers and is also a suitable alternative, but is being discontinued.<br></br>The amp IC can fail on it's own, or if it's subject to too much DC voltage as a result of failing capacitors (see popping below).</p>
+					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Bass - Damaged or Dead Subwoofer Speaker</h4>
+					<p>It's rare for the amp IC to be the source of any problems, unless it is obviously damaged, you should first diagnose for other issues described above in the popping section and test your subwoofer speaker.<br></br>Amp IC is located on the bottom side of the amp board. The amp IC may or may not have obvious visual damage and there is no great way to diagnose without replacing it. HomePods will power on with the amp IC removed. Do not be fooled by the PIN1 identifier mark in the bottom left corner of the chip.<br></br>The OEM amp IC (part number 98-0431) is available on Aliexpress for a limited time. Part number IR4312M is available from multiple component sellers and is also a suitable alternative, but is being discontinued.<br></br>The amp IC can fail on it's own, or if it's subject to too much DC voltage as a result of failing capacitors (see popping section above).</p>
+					<p>
+					<div class="column icon-container large-centered large-8 medium-10 small-12">
+						<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="goodwoofer.jpg" height="200"></figure>
+							<figcaption class="typography-caption transition-2">Good Voice Coil</figcaption>
+						</div>
+						<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="roastedwoofer.jpg" height="200"></figure>
+							<figcaption class="typography-caption transition-2">Burned Voice Coil</figcaption>
+						</div>
+						<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="wooferinspection.jpg" height="200"></figure>
+							<figcaption class="typography-caption transition-2">Voice Coil Inspection Port on Woofer</figcaption>
+						</div>
+						</div>
+						<br></br>
+					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Bass - Dead Amplifier IC</h4>
+					<p>It's rare for the amp IC to be the source of any problems, unless it is obviously damaged, you should first diagnose for other issues described above in the popping section and test your subwoofer speaker.<br></br>Amp IC is located on the bottom side of the amp board. The amp IC may or may not have obvious visual damage and there is no great way to diagnose without replacing it. HomePods will power on with the amp IC removed. Do not be fooled by the PIN1 identifier mark in the bottom left corner of the chip.<br></br>The OEM amp IC (part number 98-0431) is available on Aliexpress for a limited time. Part number IR4312M is available from multiple component sellers and is also a suitable alternative, but is being discontinued.<br></br>The amp IC can fail on it's own, or if it's subject to too much DC voltage as a result of failing capacitors (see popping section above).</p>
 					<p>
 					<div class="column icon-container large-centered large-8 medium-10 small-12">
 					<div class="image-wrapper">
@@ -969,19 +983,19 @@ body {
 								<blockquote class="transition-1" role="text">
 									<p>No-Power: $50</p>
 								</blockquote>
-								<p class="typography-intro-elevated transition-2">The most common issue HomePods come in for. Typically involves disassembly / reassembly, diagnosing and replacing a shorted diode.</p>
+								<p class="typography-intro-elevated transition-2">The most common issue HomePods come in for. Typically involves disassembly / reassembly, diagnosing and replacing a shorted s.b. diode. More info in the <a href="#nopower">no power</a> section!</p>
 							</div>
 							<div class="column large-centered large-12" data-component-list="CopyEngagement CopyParallax">
 								<blockquote class="transition-1" role="text">
-									<p>Popping, Death Farts, & Crackling: $60</p>
+									<p>Popping, Fart of Death, Crackling: $60</p>
 								</blockquote>
-								<p class="typography-intro-elevated transition-2">Repair for symptoms including; "Death farts", a crackling sound when playing music, and / or a loud "pop" sound whenever it goes in and out of standby. <br></br>You do not need to get your HomePod repaired if the popping sound is almost too quiet to hear, and you experience no other issues. This is normal.<br></br>If you do experience issues, and / or the popping is rather noticable, it is likely a sign of failing capacitors resulting in an increasing DC offset, and should be repaired before any damage occurs.</p>
+								<p class="typography-intro-elevated transition-2">Repair for symptoms including; "Death farts", crackling sound when playing music, loud "pop" sound whenever it goes in and out of standby, and other bass issues. Will also check and replace s.b. diode if date code is within range of suspected bad batch to prevent future no-power issues.<br></br>You do not need to get your HomePod repaired if you just have the popping sound and it's almost too quiet to hear, and you experience no other issues. This is normal.<br></br>If you do experience issues, and / or the popping is rather noticable, it is likely a sign of failing capacitors resulting in an increasing DC offset, and should be repaired before any damage occurs. More info in the <a href="#popping">popping</a> section!</p>
 							</div>
 							<div class="column large-centered large-12" data-component-list="CopyEngagement CopyParallax">
 								<blockquote class="transition-1" role="text">
-									<p>No Bass: $70</p>
+									<p>No Bass: $70-$80</p>
 								</blockquote>
-								<p class="typography-intro-elevated transition-2">If your HomePod sounds like it's missing the bass / subwoofer entirely, it's likely the amplifier IC that drives it. Typically involves disassembly / reassembly, diagnosing and replacing amplifier IC. Will also check for and repair DC offset if present.</p>
+								<p class="typography-intro-elevated transition-2">If your HomePod sounds like it's missing the bass / subwoofer entirely, it may be the subwoofer speaker ($80), or amplifier IC ($70). Will also diagnose and repair for any DC Offset issues that may have caused it, and check and replace s.b. diode if date code is within range of suspected bad batch to prevent future no-power issues.</p>
 							</div>
 							<div class="column large-centered large-12" data-component-list="CopyEngagement CopyParallax">
 								<blockquote class="transition-1" role="text">
