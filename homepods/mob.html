@@ -858,7 +858,7 @@ body {
 						</div>
 					</div>
 					<h2 class="typography-headline-super transition-1 large-10 large-centered medium-11 small-12">Common Issues</h2>
-					<p>The following are all of the issues encountered or reported, and any known ways to diagnose and repair.</p>
+					<p>The following are all of the issues encountered or reported, and any known ways to diagnose and repair. You can right-click and open the images in a new tab for a larger view.</p>
 					<br></br>
 					<div id="blinkblink"></div>
 					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Flashing Volume Lights - Dying A8 SoC? (NO KNOWN FIX YET)</h4>
@@ -883,7 +883,7 @@ body {
 						</div>
 					</div>
 					<br></br>
-					<div id="nopower"></div>
+					<div id="nopowerdiode"></div>
 					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power - Shorted S.B. Diode</h4>
 					<p>No power, no lights, and no response. Power draw at the outlet will be around 1-10 Watts. If left plugged in for some time, the side of the HomePod gets slightly warmer.<br></br>Diode is located on the amplifier board. Use a multimeter in continuity test mode to test if diode is shorted by placing one probe onto the larger pin of the diode, and the other probe on one of the two smaller pins of the diode. If meter shows it's shorted, move probe from first small pin to other small pin. If you still see a short, remove the diode and test with the diode off the board. If just the diode shows shorted and not the board, replace the diode. Part number "PDS560-13" is a suitable replacement.<br></br>Unknown why it fails, seems like a bad batch. These types of diodes can also fail short when subject to overvoltage, or if overheated. Suspected that diodes with date code "1748K" are a bad batch and should be replaced if seen regardless of condition. Many confirmations that diodes with older and newer date codes are still functional.</p>
 					<p>
@@ -898,6 +898,7 @@ body {
 						</div>
 					</div>
 					<br></br>
+					<div id="nopowerfuse"></div>
 					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power - Blown Power Supply Fuse</h4>
 					<p>No power, no lights, and no response. Power draw at the outlet will be 0 Watts.<br></br>Fuse is located on the underside of the power supply board. Use multimeter in continuity mode to test if fuse was blown open. If open, replace with another 15Amp 250V fuse.<br></br>The fuse will blow if there is a power surge from the AC power source, or can break open if the HomePod is dropped.</p>
 					<p>
@@ -905,6 +906,21 @@ body {
 						<div class="image-wrapper">
 							<figure class="image-icons transition-1"><img src="badfuse.jpg" height="270"></figure>
 							<figcaption class="typography-caption transition-2">Fuse Location On Power Supply</figcaption>
+						</div>
+					</div>
+					<br></br>
+					<div id="nopowerlogicshort"></div>
+					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power - Short on Logic Board</h4>
+					<p>No power, no lights, and no response. Power draw at the outlet may be a few Watts.<br></br>On one Pod I worked on, this ended up being caused by a shorted capacitor on the logic board.<br></br>When I was first repairing this HomePod, I thought it was like most others, a diode or fuse, but after those were both found to be good, I moved on to the logic board and felt it was getting hot. After applying flux around the board, I identified which component, a small capacitor, was shorting out, as evidence by the flux vaporizing only on that component from the heat of the short. After replacing this capacitor with one from a donor board, it operated normally again!<br></br>I am unsure what the exact replacement for this capacitor is, but my multimeter measured one from a donor board at ~8uF, and it appears to be size 0402 smd.</p>
+					<p>
+					<div class="column icon-container large-centered large-8 medium-10 small-12">
+							<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="badcaponlogicboard.jpg" height="265"></figure>
+							<figcaption class="typography-caption transition-2">Bad Cap Location on Logic Board</figcaption>
+						</div>
+						<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="findshortwithflux.webp" height="270"></figure>
+							<figcaption class="typography-caption transition-2">Flux Smokes When Applied to Shorted Cap</figcaption>
 						</div>
 					</div>
 					<br></br>
@@ -928,7 +944,8 @@ body {
 						</div>
 					</div>
 					<br></br>
-					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Bass - Damaged or Dead Subwoofer Speaker</h4>
+					<div id="nobassbadwoofer"></div>
+					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Bass or Clicking - Damaged or Dead Subwoofer Speaker</h4>
 					<p>Symptoms may include low, missing, or dirty sounding bass, clicking, or ticking sounds. Symptoms for a bad subwoofer can be hard to differentiate from the DC Offset issue above without some disassembly.<br></br>Two easy tests to tell if your subwoofer speaker is bad;<br></br>1: Gently push the speaker straight in, not too much, and release a few times; This should feel perfectly smooth, and make no sound, otherwise your speaker is almost certainly dead.<br></br>2: Inspect the condition of the voice coil through a hole in the side of the subwoofer speaker basket; A vibrant, uniform copper color is a sign of a healthy voice coil.</p>
 					<p>
 					<div class="column icon-container large-centered large-8 medium-10 small-12">
@@ -950,6 +967,7 @@ body {
 						</div>
 						</div>
 						<br></br>
+						<div id="nobassbadampic"></div>
 					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Bass - Dead Amplifier IC</h4>
 					<p>It's rare for the amp IC to be the source of any problems, unless it is obviously damaged, you should first diagnose for other issues described above in the popping section and test your subwoofer speaker.<br></br>Amp IC is located on the bottom side of the amp board. The amp IC may or may not have obvious visual damage and there is no great way to diagnose without replacing it. HomePods will power on with the amp IC removed. Do not be fooled by the PIN1 identifier mark in the bottom left corner of the chip.<br></br>The OEM amp IC (part number 98-0431) is available on Aliexpress for a limited time. Part number IR4312M is available from multiple component sellers and is also a suitable alternative, but is being discontinued.<br></br>The amp IC can fail on it's own, or if it's subject to too much DC voltage as a result of failing capacitors (see popping section above).</p>
 					<p>
@@ -968,6 +986,7 @@ body {
 						</div>
 						</div>
 						<br></br>
+						<div id="physicaldamage1"></div>
 					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Rattling Sound - Broken Plastic</h4>
 					<p>I've had a couple of these where everything worked fine, but it sounded like there was plastic rattling around inside. You could even hear it if you picked up the HomePod and shook it! Usually the culprit is some of the plastic frame that holds the logic board has broken off and is now bouncing around your woofer.<br></br> Pull your logic board out and check for broken loose plastic. You can try to glue and plastic weld the broken parts back together or ride without it.</p>
 					<p>
@@ -978,6 +997,7 @@ body {
 						</div>
 						</div>
 						<br></br>
+					<div id="goofball"></div>
 					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Help! I took my own HomePod apart and now there's No Sound or Power!</h4>
 					<p>Often times the main ribbon cable that connects the logic board to the amplifier board has been damaged or improperly reinstalled.<br></br>Damage: Thoroughly inspect the entire ribbon cable for any tears, cracks, or other damage. This cable is commonly damaged from rough handling when disconnecting the logic board, where the end of the cable connecting to the logic board will crack / tear. Another common mistake is accidentally damaging the cable while trying to pry the top basket off.<br></br>Installation: The most common mistake made when reassembling your HomePod is an incorrect installation of the main ribbon cable. On the amplifier board connector, the locked position will actually look open, and unlocked actually looks closed! Verify you have properly locked the cable in by pressing the locking clip down, and that the white line on the cable is level with the top of the connector! Improper installation may lead to permanent damage resulting in no sound or power. I've even done this once myself and lost both the amp and logic board's sound, and have yet to figure out how to repair it.</p>
 					<p>
