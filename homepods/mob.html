@@ -301,8 +301,8 @@ body {
 					</div>
 					<figure class="fallback speaker-component homepod-speaker-component-5"></figure>
 					<div class="design-card" data-fade-offset="							0">
-						<h3 class="typography-callout">Mesh cleaning<br/>and replacement.</h3>
-						<p>Every mail-in repair comes with complimentary detailing and cleaning to the best of our abilities using 99% isopropyl alcohol and very tiny tweezers.</p>
+						<h3 class="typography-callout">Mesh cleaning<br/></h3>
+						<p>Every mail-in repair gets a little detailing and cleaning to the best of our abilities using 99% isopropyl alcohol and very tiny tweezers.</p>
 					</div>
 				</div>
 			</div>
@@ -408,7 +408,7 @@ body {
 			<div class="section-content">
 				<div class="section-heading music-intro" data-component-list="CopyEngagement CopyParallax">
 					<h2 class="typography-headline-super transition-1 large-7 large-centered medium-8 small-12">100% Satisfaction, 100% Guaranteed.</h2>
-					<p class="typography-intro-elevated transition-2 large-8 large-centered medium-10 small-12">All parts and labor are guaranteed for up to 6 months.<sup><a href="#footnote-1" class="footnote">1</a></sup> If I can't fix it, you don't pay!</p>
+					<p class="typography-intro-elevated transition-2 large-8 large-centered medium-10 small-12">All parts and labor are guaranteed for 6+ months.<sup><a href="#footnote-1" class="footnote">1</a></sup> If I can't fix it, you don't pay!</p>
 				</div>
 			</div>
 			<div class="artwork-hardware-container">
@@ -857,8 +857,8 @@ body {
 					<p>The following are all of the issues encountered or reported, and any known ways to diagnose and repair. You can right-click and open the images in a new tab for a larger view.</p>
 					<br></br>
 					<div id="blinkblink"></div>
-					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Flashing Volume Lights - NO KNOWN FIX YET</h4>
-					<p><b>Symptoms:</b> HomePod will power on, but ends up with flashing / blinking volume lights, and won't factory reset.<br></br><b>Arbitrarily Irrepairable...</b><br>Apple has not publicly confirmed what the root cause of this is, and no one outside of Apple knows for certain yet, but, based on multiple reports with different behaviors, I think there are a few reasons why your HomePod would end up with this; The most likely cause is an interupted. Less likely, a failing A8 SoC or it's BGA. I cannot find replacement A8 SoC chips for the HomePod, and the A8 SoC is married to the NAND, so even with new chips there is no known way to restore their software yet.<br></br><b>Software Repair Attempts:</b> Apple has not released any restorable firmware / software for original HomePods, the OTA's from ipsw.me are unsuitable for restore, and the firmware for the Mini is incompatible...so whether this is a software, or hardware issue, there is no publicly known way to repair this! <b>It is physically possible,</b> there is USB and UART access via the pins on the bottom of the HomePod, and when connected to a Mac or PC, various software detects and recognizes a HomePod is connected, but there are no restorable IPSWs publicly available to restore from when you get this far!<br></br>I made a <a href="https://www.reddit.com/r/HomePod/comments/s3gmkp/i_got_usb_working_on_an_og_homepod_finder_even/" target="_blank"> reddit post</a> showing my attempt following a <a href="https://github.com/el1ng/homepwn" target="_blank">github guide</a> to connect to HomePod via USB. I've been unsuccessful dumping the firmware from working HomePods, tools like <a href="https://github.com/axi0mX/ipwndfu" target="_blank">iPwnDFU</a> seem to not work.<br></br>Since HomePod uses the A8 SoC, it should be permanently vulnerable to checkm8 exploits. Feel free to contact me if you are interested in giving it a try, I can give you remote access to a Mac, Windows, or Linux device connected to a good and bricked HomePod via USB.<br></br><b>Hardware Repair Attempts:</b> Myself and others have tried baking / reflowing every chip on bricked logic boards multiple times with no success. I have replaced the PMIC on the logic board with one from an iPhone 6 and found, while this part is compatible (lol) this did not resolve the actual issue. User "mlogicrepair" shared in our discord their progress attempting to replace the A8 SoC. /u/dzsenos had their A8 SoC and NAND professionally reballed and it did not resolve the issue.<br></br><b>Why can't Apple just let us restore them?</b><br></br></p>
+					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Flashing Volume Lights and BootLoops- NO KNOWN FIX YET</h4>
+					<p><b>Symptoms:</b> HomePod will power on, but ends up with flashing / blinking volume lights, or constant spinning white light, and won't factory reset.<br></br><b>Arbitrarily Irrepairable...</b><br>Apple has not publicly confirmed what the root cause of this is, and no one outside of Apple knows for certain yet, but, based on multiple reports with different behaviors, I think there are a few reasons why your HomePod would end up with this; The most likely cause is an interupted. Less likely, a failing A8 SoC or it's BGA. I cannot find replacement A8 SoC chips for the HomePod, and the A8 SoC is married to the NAND, so even with new chips there is no known way to restore their software yet.<br></br><b>Software Repair Attempts:</b> Apple has not released any restorable firmware / software for original HomePods, the OTA's from ipsw.me are unsuitable for restore, and the firmware for the Mini is incompatible...so whether this is a software, or hardware issue, there is no publicly known way to repair this! <b>It is physically possible,</b> there is USB and UART access via the pins on the bottom of the HomePod, and when connected to a Mac or PC, various software detects and recognizes a HomePod is connected, but there are no restorable IPSWs publicly available to restore from when you get this far!<br></br>I made a <a href="https://www.reddit.com/r/HomePod/comments/s3gmkp/i_got_usb_working_on_an_og_homepod_finder_even/" target="_blank"> reddit post</a> showing my attempt following a <a href="https://github.com/el1ng/homepwn" target="_blank">github guide</a> to connect to HomePod via USB. I've been unsuccessful dumping the firmware from working HomePods, tools like <a href="https://github.com/axi0mX/ipwndfu" target="_blank">iPwnDFU</a> seem to not work.<br></br>Since HomePod uses the A8 SoC, it should be permanently vulnerable to checkm8 exploits. Feel free to contact me if you are interested in giving it a try, I can give you remote access to a Mac, Windows, or Linux device connected to a good and bricked HomePod via USB.<br></br><b>Hardware Repair Attempts:</b> Myself and others have tried baking / reflowing every chip on bricked logic boards multiple times with no success. I have replaced the PMIC on the logic board with one from an iPhone 6 and found, while this part is compatible (lol) this did not resolve the actual issue. User "mlogicrepair" shared in our discord their progress attempting to replace the A8 SoC. /u/dzsenos had their A8 SoC and NAND professionally reballed and it did not resolve the issue.<br></br><b>Why can't Apple just let us restore them?</b><br></br></p>
 					<p>
 					<div class="column icon-container large-centered large-8 medium-10 small-12">
 					<div class="image-wrapper">
@@ -950,7 +950,7 @@ body {
 					</div>
 					<div id="nobassbadwoofer"></div>
 					<br></br>
-					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Bass or Clicking - Damaged or Dead Subwoofer Speaker</h4>
+					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Bass and/or Fast Clicking - Damaged or Dead Subwoofer Speaker</h4>
 					<p><b>Symptoms:</b> May include low, missing, or dirty sounding bass, clicking, or ticking sounds. Symptoms for a bad subwoofer can be hard to differentiate from the DC Offset issue above without some disassembly.<br></br><b>Diagnosis:</b> Two easy tests to tell if your subwoofer speaker is bad;<br></br>1: Gently push the speaker straight in, not too much, and release a few times; This should feel perfectly smooth, and make no sound, otherwise your speaker is almost certainly dead.<br></br>2: Inspect the condition of the voice coil through the hole in the side of the subwoofer speaker basket; A vibrant, uniform copper color is a sign of a healthy voice coil!<br></br>If your subwoofer is damaged, it is likely from <a href="#popping">DC Offset,</a> which should also be diagnosed per the Common Issue above.<br></br><b>Repair:</b> I'm not aware of any off the shelf replacement speakers, you will likely need to source one from another broken homepod. Be sure you diagnose and repair any <a href="#popping">DC Offset</a> before replacing your subwoofer.<br></br><b>Root Cause:</b> Most often a result of too much <a href="#popping">DC Offset!</a> Sometimes they can also just fail on their own eventually, but it is rare.</p>
 					<p>
 					<div class="column icon-container large-centered large-8 medium-10 small-12">
@@ -974,7 +974,7 @@ body {
 						<div id="nobassshort"></div>
 						<br></br>
 					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Bass - Short Near Amp IC</h4>
-					<p><b>Symptoms:</b> No Bass whatsoever.<br></br><b>Diagnosis:</b>On a few no bass amp repairs, I've found the same component shorted out, see photo below.<br></br><b>Repair:</b>  Check if you have the same short, and if so, replace it. I think this is a 27uF capacitor, but I am unsure. Hit me up if you know!.<br></br><b>Root Cause:</b> Unknown.</p>
+					<p><b>Symptoms:</b> No Bass whatsoever.<br></br><b>Diagnosis:</b>On a few no bass amp repairs, I've found the same component shorted out, see photo below.<br></br><b>Repair:</b>  Check if you have the same short, and if so, replace it. I think this is a 27uF capacitor smd size 2012, but I am unsure. Hit me up if you know!<br></br><b>Root Cause:</b> Unknown.</p>
 					<p>
 					<div class="column icon-container large-centered large-8 medium-10 small-12">
 					<div class="image-wrapper">
@@ -999,6 +999,17 @@ body {
 						<div class="image-wrapper">
 							<figure class="image-icons transition-1"><img src="ampicpin1.jpg" height="270"></figure>
 							<figcaption class="typography-caption transition-2">Amp IC Pin 1 Identifier</figcaption>
+						</div>
+						</div>
+						<div id="nosound"></div>
+						<br></br>
+					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Sound - Dead STM32L Controller IC</h4>
+					<p><b>Symptoms:</b> Powers on, but there's absolutely no sound from any of the speakers. <br></br><b>Diagnosis:</b> I haven't found great ways to diagnose this part for certain yet, and I've only had one in so far. The letters on the "STM32L051C8T7" chip were unevenly worn, making me think it had ran hot.<br></br><b>Repair:</b> "STM32L051C8T7" is available from AliExpress <a href="https://www.aliexpress.com/i/3256802635297773.html?gatewayAdapt=4itemAdapt">here.</a> Currently on backorder from mouser and digikey.<br></br><b>Root Cause:</b> Due to the rare nature of this failure I'm guessing it simply dies on it's own.</p>
+					<p>
+					<div class="column icon-container large-centered large-8 medium-10 small-12">
+					<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="stmlocation.png" height="270"></figure>
+							<figcaption class="typography-caption transition-2">Controller Location on Amp Board</figcaption>
 						</div>
 						</div>
 						<div id="physicaldamage1"></div>
@@ -1047,6 +1058,17 @@ body {
 							<figcaption class="typography-caption transition-2">Do This!</figcaption>
 						</div>
 						</div>
+						<div id="goofball2"></div>
+						<br></br>
+					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">I did my own repairs and lost ___ part! What is it?</h4>
+					<p>If you attempted your own repairs and lost a part in the process, let me know and I can help you identify what it is to the best of my ability.</p>
+					<p>
+					<div class="column icon-container large-centered large-8 medium-10 small-12">
+					<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="diodecap.png" height="265"></figure>
+							<figcaption class="typography-caption transition-2">0.1uF Size 0402 Capacitor</figcaption>
+						</div>
+						</div>
 					<div id="estimates"></div>
 					<!--fuckapple	<a href="https://track44.moe/" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">Learn more about Apple Music</span><span class="icon icon-after more"></span></a></p> -->
 				</div>
@@ -1082,9 +1104,9 @@ body {
 							</div>
 							<div class="column large-centered large-12" data-component-list="CopyEngagement CopyParallax">
 								<blockquote class="transition-1" role="text">
-									<p>Flashing / Blinking Volume Lights: No Known Fix Yet</p>
+									<p>Flashing / Blinking Volume Lights and Boot Loops: No Known Fix Yet</p>
 								</blockquote>
-								<p class="typography-intro-elevated transition-2">No known fix for blinking / flashing volume buttons, I am unable to offer repairs for this unless you can provide another HomePod for parts with a good logic board to swap for you. More information in the <a href="#blinkblink">blinking lights common issue</a> section. I urge you to contact Apple to help us with a solution!<p>
+								<p class="typography-intro-elevated transition-2">No known fix for blinking / flashing volume buttons and boot loops, I am unable to offer repairs for this unless you can provide another HomePod for parts with a good logic board to swap for you. More information in the <a href="#blinkblink">blinking lights common issue</a> section. I urge you to contact Apple to help us with a solution!<p>
 							</div>
 							<div class="column large-centered large-12" data-component-list="CopyEngagement CopyParallax">
 								<blockquote class="transition-1" role="text">
