@@ -4016,7 +4016,7 @@ html.no-text-gradient .page-overview .hey-siri blockquote p {
 	height: 655px;
 	background-size: 655px 655px;
 	background-repeat: no-repeat;
-	background-image: url("homepod_top_fallback__eebvw7nh66mq_large.png")
+	background-image: url("media/homepod_top_fallback__eebvw7nh66mq_large.png")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -4024,7 +4024,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .hey-siri .top-down-hardware {
-		background-image: url("homepod_top_fallback__eebvw7nh66mq_large_2x.png")
+		background-image: url("media/homepod_top_fallback__eebvw7nh66mq_large_2x.png")
 	}
 }
 
@@ -4033,13 +4033,13 @@ html.css-mask .page-overview .hey-siri .top-down-hardware {
 	height: 655px;
 	background-size: 655px 655px;
 	background-repeat: no-repeat;
-	background-image: url("homepod_top__2cv39xmsuiau_large.jpg");
+	background-image: url("media/homepod_top__2cv39xmsuiau_large.jpg");
 	-webkit-mask-size: 655px 655px;
 	mask-size: 655px 655px;
 	-webkit-mask-repeat: no-repeat;
 	mask-repeat: no-repeat;
-	-webkit-mask-image: url("homepod_top_mask__bc48y93vom76_large.svg");
-	mask-image: url("homepod_top_mask__bc48y93vom76_large.svg")
+	-webkit-mask-image: url("media/svg/homepod_top_mask__bc48y93vom76_large.svg");
+	mask-image: url("media/svg/homepod_top_mask__bc48y93vom76_large.svg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -4047,7 +4047,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	html.css-mask .page-overview .hey-siri .top-down-hardware {
-		background-image: url("homepod_top__2cv39xmsuiau_large_2x.jpg")
+		background-image: url("media/homepod_top__2cv39xmsuiau_large_2x.jpg")
 	}
 }
 
@@ -4057,7 +4057,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 465px;
 		background-size: 465px 465px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_top_fallback__eebvw7nh66mq_medium.png")
+		background-image: url("media/homepod_top_fallback__eebvw7nh66mq_medium.png")
 	}
 }
 
@@ -4065,7 +4065,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .hey-siri .top-down-hardware {
-		background-image: url("homepod_top_fallback__eebvw7nh66mq_medium_2x.png")
+		background-image: url("media/homepod_top_fallback__eebvw7nh66mq_medium_2x.png")
 	}
 }
 
@@ -4075,13 +4075,13 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 		height: 465px;
 		background-size: 465px 465px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_top__2cv39xmsuiau_medium.jpg");
+		background-image: url("media/homepod_top__2cv39xmsuiau_medium.jpg");
 		-webkit-mask-size: 465px 465px;
 		mask-size: 465px 465px;
 		-webkit-mask-repeat: no-repeat;
 		mask-repeat: no-repeat;
-		-webkit-mask-image: url("homepod_top_mask__bc48y93vom76_medium.svg");
-		mask-image: url("homepod_top_mask__bc48y93vom76_medium.svg")
+		-webkit-mask-image: url("media/svg/homepod_top_mask__bc48y93vom76_medium.svg");
+		mask-image: url("media/svg/homepod_top_mask__bc48y93vom76_medium.svg")
 	}
 }
 
@@ -4089,7 +4089,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	html.css-mask .page-overview .hey-siri .top-down-hardware {
-		background-image: url("homepod_top__2cv39xmsuiau_medium_2x.jpg")
+		background-image: url("media/homepod_top__2cv39xmsuiau_medium_2x.jpg")
 	}
 }
 
@@ -4099,7 +4099,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 		height: 287px;
 		background-size: 287px 287px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_top_fallback__eebvw7nh66mq_small.png")
+		background-image: url("media/homepod_top_fallback__eebvw7nh66mq_small.png")
 	}
 }
 
@@ -4107,7 +4107,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	.page-overview .hey-siri .top-down-hardware {
-		background-image: url("homepod_top_fallback__eebvw7nh66mq_small_2x.png")
+		background-image: url("media/homepod_top_fallback__eebvw7nh66mq_small_2x.png")
 	}
 }
 
@@ -4117,13 +4117,13 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 		height: 287px;
 		background-size: 287px 287px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_top__2cv39xmsuiau_small.jpg");
+		background-image: url("media/homepod_top__2cv39xmsuiau_small.jpg");
 		-webkit-mask-size: 287px 287px;
 		mask-size: 287px 287px;
 		-webkit-mask-repeat: no-repeat;
 		mask-repeat: no-repeat;
-		-webkit-mask-image: url("homepod_top_mask__bc48y93vom76_small.svg");
-		mask-image: url("homepod_top_mask__bc48y93vom76_small.svg")
+		-webkit-mask-image: url("media/svg/homepod_top_mask__bc48y93vom76_small.svg");
+		mask-image: url("media/svg/homepod_top_mask__bc48y93vom76_small.svg")
 	}
 }
 
@@ -4131,7 +4131,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	html.css-mask .page-overview .hey-siri .top-down-hardware {
-		background-image: url("homepod_top__2cv39xmsuiau_small_2x.jpg")
+		background-image: url("media/homepod_top__2cv39xmsuiau_small_2x.jpg")
 	}
 }
 
@@ -4140,7 +4140,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	height: 655px;
 	background-size: 655px 655px;
 	background-repeat: no-repeat;
-	background-image: url("homepod_top_touch_fallback__ex3kqnlwuwsy_large.png")
+	background-image: url("media/homepod_top_touch_fallback__ex3kqnlwuwsy_large.png")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -4148,7 +4148,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .hey-siri .top-down-hardware-touch {
-		background-image: url("homepod_top_touch_fallback__ex3kqnlwuwsy_large_2x.png")
+		background-image: url("media/homepod_top_touch_fallback__ex3kqnlwuwsy_large_2x.png")
 	}
 }
 
@@ -4157,13 +4157,13 @@ html.css-mask .page-overview .hey-siri .top-down-hardware-touch {
 	height: 655px;
 	background-size: 655px 655px;
 	background-repeat: no-repeat;
-	background-image: url("homepod_top_touch__drm28w35doae_large.jpg");
+	background-image: url("media/homepod_top_touch__drm28w35doae_large.jpg");
 	-webkit-mask-size: 655px 655px;
 	mask-size: 655px 655px;
 	-webkit-mask-repeat: no-repeat;
 	mask-repeat: no-repeat;
-	-webkit-mask-image: url("homepod_top_touch_mask__cg3vi3t63efm_large.svg");
-	mask-image: url("homepod_top_touch_mask__cg3vi3t63efm_large.svg")
+	-webkit-mask-image: url("media/svg/homepod_top_touch_mask__cg3vi3t63efm_large.svg");
+	mask-image: url("media/svg/homepod_top_touch_mask__cg3vi3t63efm_large.svg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -4171,7 +4171,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	html.css-mask .page-overview .hey-siri .top-down-hardware-touch {
-		background-image: url("homepod_top_touch__drm28w35doae_large_2x.jpg")
+		background-image: url("media/homepod_top_touch__drm28w35doae_large_2x.jpg")
 	}
 }
 
@@ -4181,7 +4181,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 465px;
 		background-size: 465px 465px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_top_touch_fallback__ex3kqnlwuwsy_medium.png")
+		background-image: url("media/homepod_top_touch_fallback__ex3kqnlwuwsy_medium.png")
 	}
 }
 
@@ -4189,7 +4189,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .hey-siri .top-down-hardware-touch {
-		background-image: url("homepod_top_touch_fallback__ex3kqnlwuwsy_medium_2x.png")
+		background-image: url("media/homepod_top_touch_fallback__ex3kqnlwuwsy_medium_2x.png")
 	}
 }
 
@@ -4199,13 +4199,13 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 		height: 465px;
 		background-size: 465px 465px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_top_touch__drm28w35doae_medium.jpg");
+		background-image: url("media/homepod_top_touch__drm28w35doae_medium.jpg");
 		-webkit-mask-size: 465px 465px;
 		mask-size: 465px 465px;
 		-webkit-mask-repeat: no-repeat;
 		mask-repeat: no-repeat;
-		-webkit-mask-image: url("homepod_top_touch_mask__cg3vi3t63efm_medium.svg");
-		mask-image: url("homepod_top_touch_mask__cg3vi3t63efm_medium.svg")
+		-webkit-mask-image: url("media/svg/homepod_top_touch_mask__cg3vi3t63efm_medium.svg");
+		mask-image: url("media/svg/homepod_top_touch_mask__cg3vi3t63efm_medium.svg")
 	}
 }
 
@@ -4213,7 +4213,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	html.css-mask .page-overview .hey-siri .top-down-hardware-touch {
-		background-image: url("homepod_top_touch__drm28w35doae_medium_2x.jpg")
+		background-image: url("media/homepod_top_touch__drm28w35doae_medium_2x.jpg")
 	}
 }
 
@@ -4223,7 +4223,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 		height: 287px;
 		background-size: 287px 287px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_top_touch_fallback__ex3kqnlwuwsy_small.png")
+		background-image: url("media/homepod_top_touch_fallback__ex3kqnlwuwsy_small.png")
 	}
 }
 
@@ -4231,7 +4231,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	.page-overview .hey-siri .top-down-hardware-touch {
-		background-image: url("homepod_top_touch_fallback__ex3kqnlwuwsy_small_2x.png")
+		background-image: url("media/homepod_top_touch_fallback__ex3kqnlwuwsy_small_2x.png")
 	}
 }
 
@@ -4241,13 +4241,13 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 		height: 287px;
 		background-size: 287px 287px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_top_touch__drm28w35doae_small.jpg");
+		background-image: url("media/homepod_top_touch__drm28w35doae_small.jpg");
 		-webkit-mask-size: 287px 287px;
 		mask-size: 287px 287px;
 		-webkit-mask-repeat: no-repeat;
 		mask-repeat: no-repeat;
-		-webkit-mask-image: url("homepod_top_touch_mask__cg3vi3t63efm_small.svg");
-		mask-image: url("homepod_top_touch_mask__cg3vi3t63efm_small.svg")
+		-webkit-mask-image: url("media/svg/homepod_top_touch_mask__cg3vi3t63efm_small.svg");
+		mask-image: url("media/svg/homepod_top_touch_mask__cg3vi3t63efm_small.svg")
 	}
 }
 
@@ -4255,7 +4255,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	html.css-mask .page-overview .hey-siri .top-down-hardware-touch {
-		background-image: url("homepod_top_touch__drm28w35doae_small_2x.jpg")
+		background-image: url("media/homepod_top_touch__drm28w35doae_small_2x.jpg")
 	}
 }
 
@@ -4271,7 +4271,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	height: 709px;
 	background-size: 697px 709px;
 	background-repeat: no-repeat;
-	background-image: url("homepod_top_shadow__dzlk0mlchx2e_large.png")
+	background-image: url("media/homepod_top_shadow__dzlk0mlchx2e_large.png")
 }
 
 @media only screen and (max-width: 1068px) {
@@ -4292,7 +4292,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 		height: 504px;
 		background-size: 495px 504px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_top_shadow__dzlk0mlchx2e_medium.png")
+		background-image: url("media/homepod_top_shadow__dzlk0mlchx2e_medium.png")
 	}
 }
 
@@ -4302,7 +4302,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 		height: 311px;
 		background-size: 306px 311px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_top_shadow__dzlk0mlchx2e_small.png")
+		background-image: url("media/homepod_top_shadow__dzlk0mlchx2e_small.png")
 	}
 }
 
@@ -4332,16 +4332,16 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 html.css-mask .page-overview .hey-siri .siri {
 	-webkit-mask-repeat: no-repeat;
 	mask-repeat: no-repeat;
-	-webkit-mask-image: url("siri_animation_mask__b55vqoszd8r6_large.svg");
-	mask-image: url("siri_animation_mask__b55vqoszd8r6_large.svg")
+	-webkit-mask-image: url("media/svg/siri_animation_mask__b55vqoszd8r6_large.svg");
+	mask-image: url("media/svg/siri_animation_mask__b55vqoszd8r6_large.svg")
 }
 
 @media only screen and (max-width: 1068px) {
 	html.css-mask .page-overview .hey-siri .siri {
 		-webkit-mask-repeat: no-repeat;
 		mask-repeat: no-repeat;
-		-webkit-mask-image: url("siri_animation_mask__b55vqoszd8r6_medium.svg");
-		mask-image: url("siri_animation_mask__b55vqoszd8r6_medium.svg")
+		-webkit-mask-image: url("media/svg/siri_animation_mask__b55vqoszd8r6_medium.svg");
+		mask-image: url("media/svg/siri_animation_mask__b55vqoszd8r6_medium.svg")
 	}
 }
 
@@ -4349,8 +4349,8 @@ html.css-mask .page-overview .hey-siri .siri {
 	html.css-mask .page-overview .hey-siri .siri {
 		-webkit-mask-repeat: no-repeat;
 		mask-repeat: no-repeat;
-		-webkit-mask-image: url("siri_animation_mask__b55vqoszd8r6_small.svg");
-		mask-image: url("siri_animation_mask__b55vqoszd8r6_small.svg")
+		-webkit-mask-image: url("media/svg/siri_animation_mask__b55vqoszd8r6_small.svg");
+		mask-image: url("media/svg/siri_animation_mask__b55vqoszd8r6_small.svg")
 	}
 }
 
@@ -4398,7 +4398,7 @@ html.css-mask .page-overview .hey-siri .siri {
 	height: 183px;
 	background-size: 183px 183px;
 	background-repeat: no-repeat;
-	background-image: url("siri_fallback__b8jghuar74dy_large.png");
+	background-image: url("media/siri_fallback__b8jghuar74dy_large.png");
 	z-index: 1;
 	position: absolute;
 	top: 50%;
@@ -4415,7 +4415,7 @@ html.css-mask .page-overview .hey-siri .siri {
 		height: 130px;
 		background-size: 130px 130px;
 		background-repeat: no-repeat;
-		background-image: url("siri_fallback__b8jghuar74dy_medium.png")
+		background-image: url("media/siri_fallback__b8jghuar74dy_medium.png")
 	}
 }
 
@@ -4425,7 +4425,7 @@ html.css-mask .page-overview .hey-siri .siri {
 		height: 80px;
 		background-size: 80px 80px;
 		background-repeat: no-repeat;
-		background-image: url("siri_fallback__b8jghuar74dy_small.png")
+		background-image: url("media/siri_fallback__b8jghuar74dy_small.png")
 	}
 }
 
@@ -4748,7 +4748,7 @@ html.hero-animated .page-overview .section-hero .hero-hardware-fallback {
 
 .page-overview .section-hero .hero-hardware-startframe {
 	background-repeat: no-repeat;
-	background-image: url("hero_hardware_startframe__3psekf2aqki2_large.jpg");
+	background-image: url("media/hero_hardware_startframe__3psekf2aqki2_large.jpg");
 	background-size: 770px 960px;
 	display: block
 }
@@ -4756,14 +4756,14 @@ html.hero-animated .page-overview .section-hero .hero-hardware-fallback {
 @media only screen and (max-width: 1068px) {
 	.page-overview .section-hero .hero-hardware-startframe {
 		background-repeat: no-repeat;
-		background-image: url("hero_hardware_startframe__3psekf2aqki2_medium.jpg")
+		background-image: url("media/hero_hardware_startframe__3psekf2aqki2_medium.jpg")
 	}
 }
 
 @media only screen and (max-width: 735px) {
 	.page-overview .section-hero .hero-hardware-startframe {
 		background-repeat: no-repeat;
-		background-image: url("hero_hardware_startframe__3psekf2aqki2_small.jpg")
+		background-image: url("media/hero_hardware_startframe__3psekf2aqki2_small.jpg")
 	}
 }
 
@@ -4790,7 +4790,7 @@ html.hero-animated .page-overview .section-hero .hero-hardware-startframe {
 
 .page-overview .section-hero .hero-hardware.fallback-alt .hero-hardware-fallback {
 	background-repeat: no-repeat;
-	background-image: url("hero_fallback__24kqehg8gea2_large.jpg");
+	background-image: url("media/hero_fallback__24kqehg8gea2_large.jpg");
 	background-size: 770px 960px;
 	display: block
 }
@@ -4800,14 +4800,14 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .section-hero .hero-hardware.fallback-alt .hero-hardware-fallback {
-		background-image: url("hero_fallback__24kqehg8gea2_large_2x.jpg")
+		background-image: url("media/hero_fallback__24kqehg8gea2_large_2x.jpg")
 	}
 }
 
 @media only screen and (max-width: 1068px) {
 	.page-overview .section-hero .hero-hardware.fallback-alt .hero-hardware-fallback {
 		background-repeat: no-repeat;
-		background-image: url("hero_fallback__24kqehg8gea2_medium.jpg")
+		background-image: url("media/hero_fallback__24kqehg8gea2_medium.jpg")
 	}
 }
 
@@ -4815,14 +4815,14 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .section-hero .hero-hardware.fallback-alt .hero-hardware-fallback {
-		background-image: url("hero_fallback__24kqehg8gea2_medium_2x.jpg")
+		background-image: url("media/hero_fallback__24kqehg8gea2_medium_2x.jpg")
 	}
 }
 
 @media only screen and (max-width: 735px) {
 	.page-overview .section-hero .hero-hardware.fallback-alt .hero-hardware-fallback {
 		background-repeat: no-repeat;
-		background-image: url("hero_fallback__24kqehg8gea2_small.jpg")
+		background-image: url("media/hero_fallback__24kqehg8gea2_small.jpg")
 	}
 }
 
@@ -4830,7 +4830,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	.page-overview .section-hero .hero-hardware.fallback-alt .hero-hardware-fallback {
-		background-image: url("hero_fallback__24kqehg8gea2_small_2x.jpg")
+		background-image: url("media/hero_fallback__24kqehg8gea2_small_2x.jpg")
 	}
 }
 
@@ -4885,16 +4885,16 @@ html.hero-animated .page-overview .section-hero .hero-hardware.fallback-alt .her
 html.css-mask .page-overview .section-hero .hero-siri {
 	-webkit-mask-repeat: no-repeat;
 	mask-repeat: no-repeat;
-	-webkit-mask-image: url("siri_animation_mask__b55vqoszd8r6_large.svg");
-	mask-image: url("siri_animation_mask__b55vqoszd8r6_large.svg")
+	-webkit-mask-image: url("media/svg/siri_animation_mask__b55vqoszd8r6_large.svg");
+	mask-image: url("media/svg/siri_animation_mask__b55vqoszd8r6_large.svg")
 }
 
 @media only screen and (max-width: 1068px) {
 	html.css-mask .page-overview .section-hero .hero-siri {
 		-webkit-mask-repeat: no-repeat;
 		mask-repeat: no-repeat;
-		-webkit-mask-image: url("siri_animation_mask__b55vqoszd8r6_medium.svg");
-		mask-image: url("siri_animation_mask__b55vqoszd8r6_medium.svg")
+		-webkit-mask-image: url("media/svg/siri_animation_mask__b55vqoszd8r6_medium.svg");
+		mask-image: url("media/svg/siri_animation_mask__b55vqoszd8r6_medium.svg")
 	}
 }
 
@@ -4902,8 +4902,8 @@ html.css-mask .page-overview .section-hero .hero-siri {
 	html.css-mask .page-overview .section-hero .hero-siri {
 		-webkit-mask-repeat: no-repeat;
 		mask-repeat: no-repeat;
-		-webkit-mask-image: url("siri_animation_mask__b55vqoszd8r6_small.svg");
-		mask-image: url("siri_animation_mask__b55vqoszd8r6_small.svg")
+		-webkit-mask-image: url("media/svg/siri_animation_mask__b55vqoszd8r6_small.svg");
+		mask-image: url("media//svg/siri_animation_mask__b55vqoszd8r6_small.svg")
 	}
 }
 
@@ -5191,7 +5191,7 @@ html.no-sticky-speaker .page-overview .section-design .speaker-component.homepod
 	height: 825px;
 	background-size: 654px 825px;
 	background-repeat: no-repeat;
-	background-image: url("guts_1__czrsgofraocy_large.jpg")
+	background-image: url("media/guts_1__czrsgofraocy_large.jpg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -5199,7 +5199,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .section-design .homepod-speaker-component-1 {
-		background-image: url("guts_1__czrsgofraocy_large_2x.jpg")
+		background-image: url("media/guts_1__czrsgofraocy_large_2x.jpg")
 	}
 }
 
@@ -5209,7 +5209,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 583px;
 		background-size: 462px 583px;
 		background-repeat: no-repeat;
-		background-image: url("guts_1__czrsgofraocy_medium.jpg")
+		background-image: url("media/guts_1__czrsgofraocy_medium.jpg")
 	}
 }
 
@@ -5217,7 +5217,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .section-design .homepod-speaker-component-1 {
-		background-image: url("guts_1__czrsgofraocy_medium_2x.jpg")
+		background-image: url("media/guts_1__czrsgofraocy_medium_2x.jpg")
 	}
 }
 
@@ -5227,7 +5227,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 		height: 363px;
 		background-size: 288px 363px;
 		background-repeat: no-repeat;
-		background-image: url("guts_1__czrsgofraocy_small.jpg")
+		background-image: url("media/guts_1__czrsgofraocy_small.jpg")
 	}
 }
 
@@ -5235,7 +5235,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	.page-overview .section-design .homepod-speaker-component-1 {
-		background-image: url("guts_1__czrsgofraocy_small_2x.jpg")
+		background-image: url("media/guts_1__czrsgofraocy_small_2x.jpg")
 	}
 }
 
@@ -5244,7 +5244,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	height: 825px;
 	background-size: 654px 825px;
 	background-repeat: no-repeat;
-	background-image: url("guts_2__b5vx4igyuknm_large.jpg")
+	background-image: url("media/guts_2__b5vx4igyuknm_large.jpg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -5252,7 +5252,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .section-design .homepod-speaker-component-2 {
-		background-image: url("guts_2__b5vx4igyuknm_large_2x.jpg")
+		background-image: url("media/guts_2__b5vx4igyuknm_large_2x.jpg")
 	}
 }
 
@@ -5262,7 +5262,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 583px;
 		background-size: 462px 583px;
 		background-repeat: no-repeat;
-		background-image: url("guts_2__b5vx4igyuknm_medium.jpg")
+		background-image: url("media/guts_2__b5vx4igyuknm_medium.jpg")
 	}
 }
 
@@ -5270,7 +5270,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .section-design .homepod-speaker-component-2 {
-		background-image: url("guts_2__b5vx4igyuknm_medium_2x.jpg")
+		background-image: url("media/guts_2__b5vx4igyuknm_medium_2x.jpg")
 	}
 }
 
@@ -5280,7 +5280,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 		height: 363px;
 		background-size: 288px 363px;
 		background-repeat: no-repeat;
-		background-image: url("guts_2__b5vx4igyuknm_small.jpg")
+		background-image: url("media/guts_2__b5vx4igyuknm_small.jpg")
 	}
 }
 
@@ -5288,7 +5288,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	.page-overview .section-design .homepod-speaker-component-2 {
-		background-image: url("guts_2__b5vx4igyuknm_small_2x.jpg")
+		background-image: url("media/guts_2__b5vx4igyuknm_small_2x.jpg")
 	}
 }
 
@@ -5297,7 +5297,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	height: 825px;
 	background-size: 654px 825px;
 	background-repeat: no-repeat;
-	background-image: url("guts_3__3gosyadeqhea_large.jpg")
+	background-image: url("media/guts_3__3gosyadeqhea_large.jpg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -5305,7 +5305,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .section-design .homepod-speaker-component-3 {
-		background-image: url("guts_3__3gosyadeqhea_large_2x.jpg")
+		background-image: url("media/guts_3__3gosyadeqhea_large_2x.jpg")
 	}
 }
 
@@ -5315,7 +5315,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 583px;
 		background-size: 462px 583px;
 		background-repeat: no-repeat;
-		background-image: url("guts_3__3gosyadeqhea_medium.jpg")
+		background-image: url("media/guts_3__3gosyadeqhea_medium.jpg")
 	}
 }
 
@@ -5323,7 +5323,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .section-design .homepod-speaker-component-3 {
-		background-image: url("guts_3__3gosyadeqhea_medium_2x.jpg")
+		background-image: url("media/guts_3__3gosyadeqhea_medium_2x.jpg")
 	}
 }
 
@@ -5333,7 +5333,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 		height: 363px;
 		background-size: 288px 363px;
 		background-repeat: no-repeat;
-		background-image: url("guts_3__3gosyadeqhea_small.jpg")
+		background-image: url("media/guts_3__3gosyadeqhea_small.jpg")
 	}
 }
 
@@ -5341,7 +5341,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	.page-overview .section-design .homepod-speaker-component-3 {
-		background-image: url("guts_3__3gosyadeqhea_small_2x.jpg")
+		background-image: url("media/guts_3__3gosyadeqhea_small_2x.jpg")
 	}
 }
 
@@ -5350,7 +5350,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	height: 825px;
 	background-size: 654px 825px;
 	background-repeat: no-repeat;
-	background-image: url("guts_9__f7o70czth3ee_large.jpg")
+	background-image: url("media/guts_9__f7o70czth3ee_large.jpg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -5358,7 +5358,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .section-design .homepod-speaker-component-4 {
-		background-image: url("guts_9__f7o70czth3ee_large_2x.jpg")
+		background-image: url("media/guts_9__f7o70czth3ee_large_2x.jpg")
 	}
 }
 
@@ -5368,7 +5368,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 583px;
 		background-size: 462px 583px;
 		background-repeat: no-repeat;
-		background-image: url("guts_9__f7o70czth3ee_medium.jpg")
+		background-image: url("media/guts_9__f7o70czth3ee_medium.jpg")
 	}
 }
 
@@ -5376,7 +5376,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .section-design .homepod-speaker-component-4 {
-		background-image: url("guts_9__f7o70czth3ee_medium_2x.jpg")
+		background-image: url("media/guts_9__f7o70czth3ee_medium_2x.jpg")
 	}
 }
 
@@ -5386,7 +5386,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 		height: 363px;
 		background-size: 288px 363px;
 		background-repeat: no-repeat;
-		background-image: url("guts_9__f7o70czth3ee_small.jpg")
+		background-image: url("media/guts_9__f7o70czth3ee_small.jpg")
 	}
 }
 
@@ -5394,7 +5394,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	.page-overview .section-design .homepod-speaker-component-4 {
-		background-image: url("guts_9__f7o70czth3ee_small_2x.jpg")
+		background-image: url("media/guts_9__f7o70czth3ee_small_2x.jpg")
 	}
 }
 
@@ -5403,7 +5403,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	height: 825px;
 	background-size: 654px 825px;
 	background-repeat: no-repeat;
-	background-image: url("guts_4__f7o70czth3ee_large.jpg")
+	background-image: url("media/guts_4__f7o70czth3ee_large.jpg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -5411,7 +5411,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .section-design .homepod-speaker-guts {
-		background-image: url("guts_4__f7o70czth3ee_large_2x.jpg")
+		background-image: url("media/guts_4__f7o70czth3ee_large_2x.jpg")
 	}
 }
 
@@ -5421,7 +5421,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 583px;
 		background-size: 462px 583px;
 		background-repeat: no-repeat;
-		background-image: url("guts_4__f7o70czth3ee_medium.jpg")
+		background-image: url("media/guts_4__f7o70czth3ee_medium.jpg")
 	}
 }
 
@@ -5429,7 +5429,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .section-design .homepod-speaker-guts {
-		background-image: url("guts_4__f7o70czth3ee_medium_2x.jpg")
+		background-image: url("media/guts_4__f7o70czth3ee_medium_2x.jpg")
 	}
 }
 
@@ -5439,7 +5439,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 		height: 363px;
 		background-size: 288px 363px;
 		background-repeat: no-repeat;
-		background-image: url("guts_4__f7o70czth3ee_small.jpg")
+		background-image: url("media/guts_4__f7o70czth3ee_small.jpg")
 	}
 }
 
@@ -5447,7 +5447,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	.page-overview .section-design .homepod-speaker-guts {
-		background-image: url("guts_4__f7o70czth3ee_small_2x.jpg")
+		background-image: url("media/guts_4__f7o70czth3ee_small_2x.jpg")
 	}
 }
 
@@ -5457,7 +5457,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	height: 825px;
 	background-size: 654px 825px;
 	background-repeat: no-repeat;
-	background-image: url("homepod_side__dzgduaect3cm_large.gif")
+	background-image: url("media/homepod_side__dzgduaect3cm_large.gif")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -5466,7 +5466,7 @@ only screen and (min-resolution: 1.5dppx),
 (min-resolution: 144dpi) {
 	.page-overview .section-design .homepod-speaker-component-5,
 	.page-overview .section-design .homepod-speaker-side {
-		background-image: url("homepod_side__dzgduaect3cm_large_2x.gif")
+		background-image: url("media/homepod_side__dzgduaect3cm_large_2x.gif")
 	}
 }
 
@@ -5477,7 +5477,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 583px;
 		background-size: 462px 583px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_side__dzgduaect3cm_medium.gif")
+		background-image: url("media/homepod_side__dzgduaect3cm_medium.gif")
 	}
 }
 
@@ -5486,7 +5486,7 @@ only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .section-design .homepod-speaker-component-5,
 	.page-overview .section-design .homepod-speaker-side {
-		background-image: url("homepod_side__dzgduaect3cm_medium_2x.gif")
+		background-image: url("media/homepod_side__dzgduaect3cm_medium_2x.gif")
 	}
 }
 
@@ -5497,7 +5497,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 		height: 363px;
 		background-size: 288px 363px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_side__dzgduaect3cm_small.gif")
+		background-image: url("media/homepod_side__dzgduaect3cm_small.gif")
 	}
 }
 
@@ -5506,7 +5506,7 @@ only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	.page-overview .section-design .homepod-speaker-component-5,
 	.page-overview .section-design .homepod-speaker-side {
-		background-image: url("homepod_side__dzgduaect3cm_small_2x.gif")
+		background-image: url("media/homepod_side__dzgduaect3cm_small_2x.gif")
 	}
 }
 
@@ -5606,7 +5606,7 @@ html.no-sticky-speaker .page-overview .section-design .design-card p {
 	height: 76px;
 	background-size: 76px 76px;
 	background-repeat: no-repeat;
-	background-image: url("chip__bubk1b6739ua_large.png");
+	background-image: url("media/chip__bubk1b6739ua_large.png");
 	margin: 0 auto 33px
 }
 
@@ -5615,7 +5615,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .section-design .image-icon-a8 {
-		background-image: url("chip__bubk1b6739ua_large_2x.png")
+		background-image: url("media/chip__bubk1b6739ua_large_2x.png")
 	}
 }
 
@@ -5625,7 +5625,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 56px;
 		background-size: 56px 56px;
 		background-repeat: no-repeat;
-		background-image: url("chip__bubk1b6739ua_small.png")
+		background-image: url("media/chip__bubk1b6739ua_small.png")
 	}
 }
 
@@ -5633,7 +5633,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	.page-overview .section-design .image-icon-a8 {
-		background-image: url("chip__bubk1b6739ua_small_2x.png")
+		background-image: url("media/chip__bubk1b6739ua_small_2x.png")
 	}
 }
 
@@ -5654,7 +5654,7 @@ html.no-sticky-speaker .page-overview .section-design .image-icon-a8 {
 	height: 76px;
 	background-size: 76px 76px;
 	background-repeat: no-repeat;
-	background-image: url("chip_fallback__edbh6pjmqxea_large.png")
+	background-image: url("media/chip_fallback__edbh6pjmqxea_large.png")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -5662,7 +5662,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	html.no-sticky-speaker .page-overview .section-design .image-icon-a8 {
-		background-image: url("chip_fallback__edbh6pjmqxea_large_2x.png")
+		background-image: url("media/chip_fallback__edbh6pjmqxea_large_2x.png")
 	}
 }
 
@@ -5672,7 +5672,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 56px;
 		background-size: 56px 56px;
 		background-repeat: no-repeat;
-		background-image: url("chip_fallback__edbh6pjmqxea_small.png")
+		background-image: url("media/chip_fallback__edbh6pjmqxea_small.png")
 	}
 }
 
@@ -5680,7 +5680,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	html.no-sticky-speaker .page-overview .section-design .image-icon-a8 {
-		background-image: url("chip_fallback__edbh6pjmqxea_small_2x.png")
+		background-image: url("media/chip_fallback__edbh6pjmqxea_small_2x.png")
 	}
 }
 
@@ -5740,16 +5740,16 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 html.css-mask .page-overview .hardware-reveal .hardware {
 	-webkit-mask-repeat: no-repeat;
 	mask-repeat: no-repeat;
-	-webkit-mask-image: url("homepod_side_mask__d837whr6wbwy_large.svg");
-	mask-image: url("homepod_side_mask__d837whr6wbwy_large.svg")
+	-webkit-mask-image: url("media/svg/homepod_side_mask__d837whr6wbwy_large.svg");
+	mask-image: url("media/svg/homepod_side_mask__d837whr6wbwy_large.svg")
 }
 
 @media only screen and (max-width: 1068px) {
 	html.css-mask .page-overview .hardware-reveal .hardware {
 		-webkit-mask-repeat: no-repeat;
 		mask-repeat: no-repeat;
-		-webkit-mask-image: url("homepod_side_mask__d837whr6wbwy_medium.svg");
-		mask-image: url("homepod_side_mask__d837whr6wbwy_medium.svg")
+		-webkit-mask-image: url("media/svg/homepod_side_mask__d837whr6wbwy_medium.svg");
+		mask-image: url("media/svg/homepod_side_mask__d837whr6wbwy_medium.svg")
 	}
 }
 
@@ -5757,8 +5757,8 @@ html.css-mask .page-overview .hardware-reveal .hardware {
 	html.css-mask .page-overview .hardware-reveal .hardware {
 		-webkit-mask-repeat: no-repeat;
 		mask-repeat: no-repeat;
-		-webkit-mask-image: url("homepod_side_mask__d837whr6wbwy_small.svg");
-		mask-image: url("homepod_side_mask__d837whr6wbwy_small.svg")
+		-webkit-mask-image: url("media/svg/homepod_side_mask__d837whr6wbwy_small.svg");
+		mask-image: url("media/svg/homepod_side_mask__d837whr6wbwy_small.svg")
 	}
 }
 
@@ -5808,8 +5808,8 @@ html.css-mask .page-overview .hardware-reveal .hardware {
 html.css-mask .page-overview .hardware-reveal .hardware-gradient {
 	-webkit-mask-repeat: no-repeat;
 	mask-repeat: no-repeat;
-	-webkit-mask-image: url("homepod_side_gradient_mask__bphsqbqrgcya_large.svg");
-	mask-image: url("homepod_side_gradient_mask__bphsqbqrgcya_large.svg")
+	-webkit-mask-image: url("media/svg/homepod_side_gradient_mask__bphsqbqrgcya_large.svg");
+	mask-image: url("media/svg/homepod_side_gradient_mask__bphsqbqrgcya_large.svg")
 }
 
 @media only screen and (max-width: 1068px) {
@@ -5829,7 +5829,7 @@ html.css-mask .page-overview .hardware-reveal .hardware-gradient {
 	height: 798px;
 	background-size: 654px 798px;
 	background-repeat: no-repeat;
-	background-image: url("homepod_side_fallback__9tfsjvti78iu_large.png")
+	background-image: url("media/homepod_side_fallback__9tfsjvti78iu_large.png")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -5837,7 +5837,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .hardware-reveal .hardware-mesh {
-		background-image: url("homepod_side_fallback__9tfsjvti78iu_large_2x.png")
+		background-image: url("media/homepod_side_fallback__9tfsjvti78iu_large_2x.png")
 	}
 }
 
@@ -5846,13 +5846,13 @@ html.css-mask .page-overview .hardware-reveal .hardware-mesh {
 	height: 825px;
 	background-size: 654px 825px;
 	background-repeat: no-repeat;
-	background-image: url("homepod_side__dzgduaect3cm_large.gif");
+	background-image: url("media/homepod_side__dzgduaect3cm_large.gif");
 	-webkit-mask-size: 654px 825px;
 	mask-size: 654px 825px;
 	-webkit-mask-repeat: no-repeat;
 	mask-repeat: no-repeat;
-	-webkit-mask-image: url("homepod_side_mask__d837whr6wbwy_large.svg");
-	mask-image: url("homepod_side_mask__d837whr6wbwy_large.svg")
+	-webkit-mask-image: url("media/svg/homepod_side_mask__d837whr6wbwy_large.svg");
+	mask-image: url("media/svg/homepod_side_mask__d837whr6wbwy_large.svg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -5860,7 +5860,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	html.css-mask .page-overview .hardware-reveal .hardware-mesh {
-		background-image: url("homepod_side__dzgduaect3cm_large_2x.gif")
+		background-image: url("media/homepod_side__dzgduaect3cm_large_2x.gif")
 	}
 }
 
@@ -5870,7 +5870,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 564px;
 		background-size: 462px 564px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_side_fallback__9tfsjvti78iu_medium.png")
+		background-image: url("media/homepod_side_fallback__9tfsjvti78iu_medium.png")
 	}
 }
 
@@ -5878,7 +5878,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .hardware-reveal .hardware-mesh {
-		background-image: url("homepod_side_fallback__9tfsjvti78iu_medium_2x.png")
+		background-image: url("media/homepod_side_fallback__9tfsjvti78iu_medium_2x.png")
 	}
 }
 
@@ -5888,13 +5888,13 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 		height: 583px;
 		background-size: 462px 583px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_side__dzgduaect3cm_medium.gif");
+		background-image: url("media/homepod_side__dzgduaect3cm_medium.gif");
 		-webkit-mask-size: 462px 583px;
 		mask-size: 462px 583px;
 		-webkit-mask-repeat: no-repeat;
 		mask-repeat: no-repeat;
-		-webkit-mask-image: url("homepod_side_mask__d837whr6wbwy_medium.svg");
-		mask-image: url("homepod_side_mask__d837whr6wbwy_medium.svg")
+		-webkit-mask-image: url("media/svg/homepod_side_mask__d837whr6wbwy_medium.svg");
+		mask-image: url("media/svg/homepod_side_mask__d837whr6wbwy_medium.svg")
 	}
 }
 
@@ -5902,7 +5902,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	html.css-mask .page-overview .hardware-reveal .hardware-mesh {
-		background-image: url("homepod_side__dzgduaect3cm_medium_2x.gif")
+		background-image: url("media/homepod_side__dzgduaect3cm_medium_2x.gif")
 	}
 }
 
@@ -5912,7 +5912,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 		height: 352px;
 		background-size: 288px 352px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_side_fallback__9tfsjvti78iu_small.png")
+		background-image: url("media/homepod_side_fallback__9tfsjvti78iu_small.png")
 	}
 }
 
@@ -5920,7 +5920,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	.page-overview .hardware-reveal .hardware-mesh {
-		background-image: url("homepod_side_fallback__9tfsjvti78iu_small_2x.png")
+		background-image: url("media/homepod_side_fallback__9tfsjvti78iu_small_2x.png")
 	}
 }
 
@@ -5930,13 +5930,13 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 		height: 363px;
 		background-size: 288px 363px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_side__dzgduaect3cm_small.gif");
+		background-image: url("media/homepod_side__dzgduaect3cm_small.gif");
 		-webkit-mask-size: 288px 363px;
 		mask-size: 288px 363px;
 		-webkit-mask-repeat: no-repeat;
 		mask-repeat: no-repeat;
-		-webkit-mask-image: url("homepod_side_mask__d837whr6wbwy_small.svg");
-		mask-image: url("homepod_side_mask__d837whr6wbwy_small.svg")
+		-webkit-mask-image: url("media/svg/homepod_side_mask__d837whr6wbwy_small.svg");
+		mask-image: url("media/svg/homepod_side_mask__d837whr6wbwy_small.svg")
 	}
 }
 
@@ -5944,7 +5944,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	html.css-mask .page-overview .hardware-reveal .hardware-mesh {
-		background-image: url("homepod_side__dzgduaect3cm_small_2x.gif")
+		background-image: url("media/homepod_side__dzgduaect3cm_small_2x.gif")
 	}
 }
 
@@ -5953,7 +5953,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	height: 798px;
 	background-size: 654px 798px;
 	background-repeat: no-repeat;
-	background-image: url("homepod_side_components_fallback__sjgnc2lk4ree_large.png");
+	background-image: url("media/homepod_side_components_fallback__sjgnc2lk4ree_large.png");
 	z-index: 1
 }
 
@@ -5962,7 +5962,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .hardware-reveal .hardware-components {
-		background-image: url("homepod_side_components_fallback__sjgnc2lk4ree_large_2x.png")
+		background-image: url("media/homepod_side_components_fallback__sjgnc2lk4ree_large_2x.png")
 	}
 }
 
@@ -5972,7 +5972,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 564px;
 		background-size: 462px 564px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_side_components_fallback__sjgnc2lk4ree_medium.png")
+		background-image: url("media/homepod_side_components_fallback__sjgnc2lk4ree_medium.png")
 	}
 }
 
@@ -5980,7 +5980,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .hardware-reveal .hardware-components {
-		background-image: url("homepod_side_components_fallback__sjgnc2lk4ree_medium_2x.png")
+		background-image: url("media/homepod_side_components_fallback__sjgnc2lk4ree_medium_2x.png")
 	}
 }
 
@@ -5990,7 +5990,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 		height: 352px;
 		background-size: 288px 352px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_side_components_fallback__sjgnc2lk4ree_small.png")
+		background-image: url("media/homepod_side_components_fallback__sjgnc2lk4ree_small.png")
 	}
 }
 
@@ -5998,14 +5998,14 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	.page-overview .hardware-reveal .hardware-components {
-		background-image: url("homepod_side_components_fallback__sjgnc2lk4ree_small_2x.png")
+		background-image: url("media/homepod_side_components_fallback__sjgnc2lk4ree_small_2x.png")
 	}
 }
 
 html.css-mask .page-overview .hardware-reveal .hardware-components {
 	background-size: 654px 798px;
 	background-repeat: no-repeat;
-	background-image: url("homepod_side_components__gif23qce5he2_large.jpg")
+	background-image: url("media/svg/homepod_side_components__gif23qce5he2_large.jpg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -6013,7 +6013,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	html.css-mask .page-overview .hardware-reveal .hardware-components {
-		background-image: url("homepod_side_components__gif23qce5he2_large_2x.jpg")
+		background-image: url("media/homepod_side_components__gif23qce5he2_large_2x.jpg")
 	}
 }
 
@@ -6021,7 +6021,7 @@ only screen and (min-resolution: 1.5dppx),
 	html.css-mask .page-overview .hardware-reveal .hardware-components {
 		background-size: 462px 564px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_side_components__gif23qce5he2_medium.jpg")
+		background-image: url("media/homepod_side_components__gif23qce5he2_medium.jpg")
 	}
 }
 
@@ -6029,7 +6029,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	html.css-mask .page-overview .hardware-reveal .hardware-components {
-		background-image: url("homepod_side_components__gif23qce5he2_medium_2x.jpg")
+		background-image: url("media/homepod_side_components__gif23qce5he2_medium_2x.jpg")
 	}
 }
 
@@ -6037,7 +6037,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	html.css-mask .page-overview .hardware-reveal .hardware-components {
 		background-size: 288px 352px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_side_components__gif23qce5he2_small.jpg")
+		background-image: url("media/homepod_side_components__gif23qce5he2_small.jpg")
 	}
 }
 
@@ -6045,7 +6045,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	html.css-mask .page-overview .hardware-reveal .hardware-components {
-		background-image: url("homepod_side_components__gif23qce5he2_small_2x.jpg")
+		background-image: url("media/homepod_side_components__gif23qce5he2_small_2x.jpg")
 	}
 }
 
@@ -6054,7 +6054,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	height: 246px;
 	background-size: 654px 246px;
 	background-repeat: no-repeat;
-	background-image: url("homepod_side_specs_shadow__c2a26q4h1aaa_large.png");
+	background-image: url("media/homepod_side_specs_shadow__c2a26q4h1aaa_large.png");
 	bottom: -101px;
 	position: absolute;
 	left: 50%;
@@ -6071,7 +6071,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 		height: 174px;
 		background-size: 462px 174px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_side_specs_shadow__c2a26q4h1aaa_medium.png")
+		background-image: url("media/homepod_side_specs_shadow__c2a26q4h1aaa_medium.png")
 	}
 }
 
@@ -6081,7 +6081,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 		height: 109px;
 		background-size: 288px 109px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_side_specs_shadow__c2a26q4h1aaa_small.png")
+		background-image: url("media/homepod_side_specs_shadow__c2a26q4h1aaa_small.png")
 	}
 }
 
@@ -6881,7 +6881,7 @@ html.no-hero-animated .page-overview .section-room .section-heading {
 
 .page-overview .section-room .image-container {
 	background-repeat: no-repeat;
-	background-image: url("room_videos_startframe__9scnyewuwtuq_large.jpg");
+	background-image: url("media/room_videos_startframe__9scnyewuwtuq_large.jpg");
 	background-size: cover;
 	z-index: 1;
 	position: absolute;
@@ -6894,14 +6894,14 @@ html.no-hero-animated .page-overview .section-room .section-heading {
 @media only screen and (max-width: 1068px) {
 	.page-overview .section-room .image-container {
 		background-repeat: no-repeat;
-		background-image: url("room_videos_startframe__9scnyewuwtuq_medium.jpg")
+		background-image: url("media/room_videos_startframe__9scnyewuwtuq_medium.jpg")
 	}
 }
 
 @media only screen and (max-width: 735px) {
 	.page-overview .section-room .image-container {
 		background-repeat: no-repeat;
-		background-image: url("room_videos_startframe__9scnyewuwtuq_small.jpg")
+		background-image: url("media/room_videos_startframe__9scnyewuwtuq_small.jpg")
 	}
 }
 
@@ -6915,7 +6915,7 @@ html.no-js .page-overview .section-room .image-container.room-sensing-image,
 html.aow .page-overview .section-room .image-container.room-sensing-image,
 html.no-room-video .page-overview .section-room .image-container.room-sensing-image {
 	background-repeat: no-repeat;
-	background-image: url("room_sensing_fallback__fpbxy8tampme_large.jpg")
+	background-image: url("media/room_sensing_fallback__fpbxy8tampme_large.jpg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -6931,7 +6931,7 @@ only screen and (min-resolution: 1.5dppx),
 	html.no-js .page-overview .section-room .image-container.room-sensing-image,
 	html.aow .page-overview .section-room .image-container.room-sensing-image,
 	html.no-room-video .page-overview .section-room .image-container.room-sensing-image {
-		background-image: url("room_sensing_fallback__fpbxy8tampme_large_2x.jpg")
+		background-image: url("media/room_sensing_fallback__fpbxy8tampme_large_2x.jpg")
 	}
 }
 
@@ -6946,7 +6946,7 @@ only screen and (min-resolution: 1.5dppx),
 	html.aow .page-overview .section-room .image-container.room-sensing-image,
 	html.no-room-video .page-overview .section-room .image-container.room-sensing-image {
 		background-repeat: no-repeat;
-		background-image: url("room_sensing_fallback__fpbxy8tampme_medium.jpg")
+		background-image: url("media/room_sensing_fallback__fpbxy8tampme_medium.jpg")
 	}
 }
 
@@ -6962,7 +6962,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	html.no-js .page-overview .section-room .image-container.room-sensing-image,
 	html.aow .page-overview .section-room .image-container.room-sensing-image,
 	html.no-room-video .page-overview .section-room .image-container.room-sensing-image {
-		background-image: url("room_sensing_fallback__fpbxy8tampme_medium_2x.jpg")
+		background-image: url("media/room_sensing_fallback__fpbxy8tampme_medium_2x.jpg")
 	}
 }
 
@@ -6977,7 +6977,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	html.aow .page-overview .section-room .image-container.room-sensing-image,
 	html.no-room-video .page-overview .section-room .image-container.room-sensing-image {
 		background-repeat: no-repeat;
-		background-image: url("room_sensing_fallback__fpbxy8tampme_small.jpg")
+		background-image: url("media/room_sensing_fallback__fpbxy8tampme_small.jpg")
 	}
 }
 
@@ -6993,7 +6993,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	html.no-js .page-overview .section-room .image-container.room-sensing-image,
 	html.aow .page-overview .section-room .image-container.room-sensing-image,
 	html.no-room-video .page-overview .section-room .image-container.room-sensing-image {
-		background-image: url("room_sensing_fallback__fpbxy8tampme_small_2x.jpg")
+		background-image: url("media/room_sensing_fallback__fpbxy8tampme_small_2x.jpg")
 	}
 }
 
@@ -7098,7 +7098,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 .page-overview .section-room .play-pause-button .pause-icon {
 	background-size: auto auto;
 	background-repeat: no-repeat;
-	background-image: url("pause_button__dhkxvu9tmr8m_large.svg");
+	background-image: url("media/svg/pause_button__dhkxvu9tmr8m_large.svg");
 	position: absolute;
 	z-index: 1;
 	bottom: 0px;
@@ -7115,7 +7115,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	.page-overview .section-room .play-pause-button .pause-icon {
 		background-size: auto auto;
 		background-repeat: no-repeat;
-		background-image: url("pause_button__dhkxvu9tmr8m_small.svg")
+		background-image: url("media/svg/pause_button__dhkxvu9tmr8m_small.svg")
 	}
 }
 
@@ -7132,7 +7132,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 .page-overview .section-room .play-pause-button .play-icon {
 	background-size: auto auto;
 	background-repeat: no-repeat;
-	background-image: url("play_button__vy51xr7z0b2q_large.svg");
+	background-image: url("media/svg/play_button__vy51xr7z0b2q_large.svg");
 	position: absolute;
 	z-index: 1;
 	bottom: 0px;
@@ -7149,7 +7149,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	.page-overview .section-room .play-pause-button .play-icon {
 		background-size: auto auto;
 		background-repeat: no-repeat;
-		background-image: url("play_button__vy51xr7z0b2q_small.svg")
+		background-image: url("media/svg/play_button__vy51xr7z0b2q_small.svg")
 	}
 }
 
@@ -7170,7 +7170,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 .page-overview .section-room .play-pause-button .play-pause-icon.play {
 	background-size: auto auto;
 	background-repeat: no-repeat;
-	background-image: url("play_button__vy51xr7z0b2q_large.svg");
+	background-image: url("media/svg/play_button__vy51xr7z0b2q_large.svg");
 	position: absolute;
 	z-index: 1;
 	bottom: 0px;
@@ -7186,7 +7186,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	.page-overview .section-room .play-pause-button .play-pause-icon.play {
 		background-size: auto auto;
 		background-repeat: no-repeat;
-		background-image: url("play_button__vy51xr7z0b2q_small.svg")
+		background-image: url("media/svg/play_button__vy51xr7z0b2q_small.svg")
 	}
 }
 
@@ -7203,7 +7203,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 .page-overview .section-room .play-pause-button .play-pause-icon.pause {
 	background-size: auto auto;
 	background-repeat: no-repeat;
-	background-image: url("pause_button__dhkxvu9tmr8m_large.svg");
+	background-image: url("media/svg/pause_button__dhkxvu9tmr8m_large.svg");
 	position: absolute;
 	z-index: 1;
 	bottom: 0px;
@@ -7219,7 +7219,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	.page-overview .section-room .play-pause-button .play-pause-icon.pause {
 		background-size: auto auto;
 		background-repeat: no-repeat;
-		background-image: url("pause_button__dhkxvu9tmr8m_small.svg")
+		background-image: url("media/svg/pause_button__dhkxvu9tmr8m_small.svg")
 	}
 }
 
@@ -7245,7 +7245,7 @@ html.no-room-video .page-overview .section-room .play-pause-button {
 	height: 43px;
 	background-size: 42px 43px;
 	background-repeat: no-repeat;
-	background-image: url("icon_airplay2__e055no2p69qq_large.jpg")
+	background-image: url("media/icon_airplay2__e055no2p69qq_large.jpg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -7253,7 +7253,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .section-room .image-airplay2 {
-		background-image: url("icon_airplay2__e055no2p69qq_large_2x.jpg")
+		background-image: url("media/icon_airplay2__e055no2p69qq_large_2x.jpg")
 	}
 }
 
@@ -7296,7 +7296,7 @@ only screen and (min-resolution: 1.5dppx),
 	height: 716px;
 	background-size: 697px 716px;
 	background-repeat: no-repeat;
-	background-image: url("handoff_homepod__bpyr5usb33le_large.png");
+	background-image: url("media/handoff_homepod__bpyr5usb33le_large.png");
 	position: relative;
 	left: 50%;
 	margin-left: -348.5px;
@@ -7309,7 +7309,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .section-room .homepod-container .image-homepod-bg {
-		background-image: url("handoff_homepod__bpyr5usb33le_large_2x.png")
+		background-image: url("media/handoff_homepod__bpyr5usb33le_large_2x.png")
 	}
 }
 
@@ -7319,7 +7319,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 505px;
 		background-size: 491px 505px;
 		background-repeat: no-repeat;
-		background-image: url("handoff_homepod__bpyr5usb33le_medium.png")
+		background-image: url("media/handoff_homepod__bpyr5usb33le_medium.png")
 	}
 }
 
@@ -7327,7 +7327,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .section-room .homepod-container .image-homepod-bg {
-		background-image: url("handoff_homepod__bpyr5usb33le_medium_2x.png")
+		background-image: url("media/handoff_homepod__bpyr5usb33le_medium_2x.png")
 	}
 }
 
@@ -7337,7 +7337,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 		height: 314px;
 		background-size: 306px 314px;
 		background-repeat: no-repeat;
-		background-image: url("handoff_homepod__bpyr5usb33le_small.png")
+		background-image: url("media/handoff_homepod__bpyr5usb33le_small.png")
 	}
 }
 
@@ -7345,7 +7345,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	.page-overview .section-room .homepod-container .image-homepod-bg {
-		background-image: url("handoff_homepod__bpyr5usb33le_small_2x.png")
+		background-image: url("media/handoff_homepod__bpyr5usb33le_small_2x.png")
 	}
 }
 
@@ -7382,7 +7382,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	height: 720px;
 	background-size: 546px 720px;
 	background-repeat: no-repeat;
-	background-image: url("handoff_iphone__gjjh0782li62_large.png");
+	background-image: url("media/handoff_iphone__gjjh0782li62_large.png");
 	position: relative;
 	left: 50%;
 	margin-left: -170px;
@@ -7394,7 +7394,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .section-room .homepod-container .image-iphone-hand {
-		background-image: url("handoff_iphone__gjjh0782li62_large_2x.png")
+		background-image: url("media/handoff_iphone__gjjh0782li62_large_2x.png")
 	}
 }
 
@@ -7404,7 +7404,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 504px;
 		background-size: 385px 504px;
 		background-repeat: no-repeat;
-		background-image: url("handoff_iphone__gjjh0782li62_medium.png")
+		background-image: url("media/handoff_iphone__gjjh0782li62_medium.png")
 	}
 }
 
@@ -7412,7 +7412,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .section-room .homepod-container .image-iphone-hand {
-		background-image: url("handoff_iphone__gjjh0782li62_medium_2x.png")
+		background-image: url("media/handoff_iphone__gjjh0782li62_medium_2x.png")
 	}
 }
 
@@ -7422,7 +7422,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 		height: 316px;
 		background-size: 239px 316px;
 		background-repeat: no-repeat;
-		background-image: url("handoff_iphone__gjjh0782li62_small.png")
+		background-image: url("media/handoff_iphone__gjjh0782li62_small.png")
 	}
 }
 
@@ -7430,7 +7430,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	.page-overview .section-room .homepod-container .image-iphone-hand {
-		background-image: url("handoff_iphone__gjjh0782li62_small_2x.png")
+		background-image: url("media/handoff_iphone__gjjh0782li62_small_2x.png")
 	}
 }
 
@@ -7624,7 +7624,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	height: 100%;
 	background-size: 1470px 1224px;
 	background-repeat: no-repeat;
-	background-image: url("music_sprite__gfpgovb799me_large.jpg")
+	background-image: url("media/music_sprite__gfpgovb799me_large.jpg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -7633,7 +7633,7 @@ only screen and (min-resolution: 1.5dppx),
 (min-resolution: 144dpi) {
 	.page-overview .section-music .albums .artwork-image,
 	.page-overview .section-music .albums .artwork-image-alt {
-		background-image: url("music_sprite__gfpgovb799me_large_2x.jpg")
+		background-image: url("media/music_sprite__gfpgovb799me_large_2x.jpg")
 	}
 }
 
@@ -7642,7 +7642,7 @@ only screen and (min-resolution: 1.5dppx),
 	.page-overview .section-music .albums .artwork-image-alt {
 		background-size: 986px 821px;
 		background-repeat: no-repeat;
-		background-image: url("music_sprite__gfpgovb799me_medium.jpg")
+		background-image: url("media/music_sprite__gfpgovb799me_medium.jpg")
 	}
 }
 
@@ -7651,7 +7651,7 @@ only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .section-music .albums .artwork-image,
 	.page-overview .section-music .albums .artwork-image-alt {
-		background-image: url("music_sprite__gfpgovb799me_medium_2x.jpg")
+		background-image: url("media/music_sprite__gfpgovb799me_medium_2x.jpg")
 	}
 }
 
@@ -17234,12 +17234,12 @@ html.reduced-motion .page-overview .section-music .albums .artwork {
 	height: 793px;
 	background-size: 655px 793px;
 	background-repeat: no-repeat;
-	background-image: url("homepod_side_dark__b7bk73jn5swi_large.jpg");
+	background-image: url("media/homepod_side_dark__b7bk73jn5swi_large.jpg");
 	width: 654px;
 	height: 798px;
 	background-size: 654px 798px;
 	background-repeat: no-repeat;
-	background-image: url("homepod_side_dark_fallback__bo5osgiymyj6_large.png")
+	background-image: url("media/homepod_side_dark_fallback__bo5osgiymyj6_large.png")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -17247,7 +17247,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .section-music .hardware-image {
-		background-image: url("homepod_side_dark__b7bk73jn5swi_large_2x.jpg")
+		background-image: url("media/homepod_side_dark__b7bk73jn5swi_large_2x.jpg")
 	}
 }
 
@@ -17257,7 +17257,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 563px;
 		background-size: 465px 563px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_side_dark__b7bk73jn5swi_medium.jpg")
+		background-image: url("media/homepod_side_dark__b7bk73jn5swi_medium.jpg")
 	}
 }
 
@@ -17265,7 +17265,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .section-music .hardware-image {
-		background-image: url("homepod_side_dark__b7bk73jn5swi_medium_2x.jpg")
+		background-image: url("media/homepod_side_dark__b7bk73jn5swi_medium_2x.jpg")
 	}
 }
 
@@ -17275,7 +17275,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 		height: 349px;
 		background-size: 288px 349px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_side_dark__b7bk73jn5swi_small.jpg")
+		background-image: url("media/homepod_side_dark__b7bk73jn5swi_small.jpg")
 	}
 }
 
@@ -17283,7 +17283,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	.page-overview .section-music .hardware-image {
-		background-image: url("homepod_side_dark__b7bk73jn5swi_small_2x.jpg")
+		background-image: url("media/homepod_side_dark__b7bk73jn5swi_small_2x.jpg")
 	}
 }
 
@@ -17292,7 +17292,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .section-music .hardware-image {
-		background-image: url("homepod_side_dark_fallback__bo5osgiymyj6_large_2x.png")
+		background-image: url("media/homepod_side_dark_fallback__bo5osgiymyj6_large_2x.png")
 	}
 }
 
@@ -17301,13 +17301,13 @@ html.css-mask .page-overview .section-music .hardware-image {
 	height: 793px;
 	background-size: 655px 793px;
 	background-repeat: no-repeat;
-	background-image: url("homepod_side_dark__b7bk73jn5swi_large.jpg");
+	background-image: url("media/homepod_side_dark__b7bk73jn5swi_large.jpg");
 	-webkit-mask-size: 655px 793px;
 	mask-size: 655px 793px;
 	-webkit-mask-repeat: no-repeat;
 	mask-repeat: no-repeat;
-	-webkit-mask-image: url("homepod_side_dark_mask__giegg6giaieu_large.svg");
-	mask-image: url("homepod_side_dark_mask__giegg6giaieu_large.svg")
+	-webkit-mask-image: url("media/svg/homepod_side_dark_mask__giegg6giaieu_large.svg");
+	mask-image: url("media/svg/homepod_side_dark_mask__giegg6giaieu_large.svg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -17315,7 +17315,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	html.css-mask .page-overview .section-music .hardware-image {
-		background-image: url("homepod_side_dark__b7bk73jn5swi_large_2x.jpg")
+		background-image: url("media/homepod_side_dark__b7bk73jn5swi_large_2x.jpg")
 	}
 }
 
@@ -17325,7 +17325,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 564px;
 		background-size: 462px 564px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_side_dark_fallback__bo5osgiymyj6_medium.png")
+		background-image: url("media/homepod_side_dark_fallback__bo5osgiymyj6_medium.png")
 	}
 }
 
@@ -17333,7 +17333,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .section-music .hardware-image {
-		background-image: url("homepod_side_dark_fallback__bo5osgiymyj6_medium_2x.png")
+		background-image: url("media/homepod_side_dark_fallback__bo5osgiymyj6_medium_2x.png")
 	}
 }
 
@@ -17343,13 +17343,13 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 		height: 563px;
 		background-size: 465px 563px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_side_dark__b7bk73jn5swi_medium.jpg");
+		background-image: url("media/homepod_side_dark__b7bk73jn5swi_medium.jpg");
 		-webkit-mask-size: 465px 563px;
 		mask-size: 465px 563px;
 		-webkit-mask-repeat: no-repeat;
 		mask-repeat: no-repeat;
-		-webkit-mask-image: url("homepod_side_dark_mask__giegg6giaieu_medium.svg");
-		mask-image: url("homepod_side_dark_mask__giegg6giaieu_medium.svg")
+		-webkit-mask-image: url("media/svg/homepod_side_dark_mask__giegg6giaieu_medium.svg");
+		mask-image: url("media/svg/homepod_side_dark_mask__giegg6giaieu_medium.svg")
 	}
 }
 
@@ -17357,7 +17357,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	html.css-mask .page-overview .section-music .hardware-image {
-		background-image: url("homepod_side_dark__b7bk73jn5swi_medium_2x.jpg")
+		background-image: url("media/homepod_side_dark__b7bk73jn5swi_medium_2x.jpg")
 	}
 }
 
@@ -17367,7 +17367,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 		height: 349px;
 		background-size: 288px 349px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_side_dark_fallback__bo5osgiymyj6_small.png")
+		background-image: url("media/homepod_side_dark_fallback__bo5osgiymyj6_small.png")
 	}
 }
 
@@ -17375,7 +17375,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	.page-overview .section-music .hardware-image {
-		background-image: url("homepod_side_dark_fallback__bo5osgiymyj6_small_2x.png")
+		background-image: url("media/homepod_side_dark_fallback__bo5osgiymyj6_small_2x.png")
 	}
 }
 
@@ -17385,13 +17385,13 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 		height: 349px;
 		background-size: 288px 349px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_side_dark__b7bk73jn5swi_small.jpg");
+		background-image: url("media/homepod_side_dark__b7bk73jn5swi_small.jpg");
 		-webkit-mask-size: 288px 349px;
 		mask-size: 288px 349px;
 		-webkit-mask-repeat: no-repeat;
 		mask-repeat: no-repeat;
-		-webkit-mask-image: url("homepod_side_dark_mask__giegg6giaieu_small.svg");
-		mask-image: url("homepod_side_dark_mask__giegg6giaieu_small.svg")
+		-webkit-mask-image: url("media/svg/homepod_side_dark_mask__giegg6giaieu_small.svg");
+		mask-image: url("media/svg/homepod_side_dark_mask__giegg6giaieu_small.svg")
 	}
 }
 
@@ -17399,7 +17399,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	html.css-mask .page-overview .section-music .hardware-image {
-		background-image: url("homepod_side_dark__b7bk73jn5swi_small_2x.jpg")
+		background-image: url("media/homepod_side_dark__b7bk73jn5swi_small_2x.jpg")
 	}
 }
 
@@ -17408,7 +17408,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	height: 246px;
 	background-size: 1672px 246px;
 	background-repeat: no-repeat;
-	background-image: url("homepod_side_shadow_dark__fnt5kj90t4q6_large.png");
+	background-image: url("media/homepod_side_shadow_dark__fnt5kj90t4q6_large.png");
 	position: relative;
 	left: 50%;
 	margin-left: -836px;
@@ -17421,7 +17421,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 		height: 175px;
 		background-size: 1185px 175px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_side_shadow_dark__fnt5kj90t4q6_medium.png")
+		background-image: url("media/homepod_side_shadow_dark__fnt5kj90t4q6_medium.png")
 	}
 }
 
@@ -17431,7 +17431,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 		height: 108px;
 		background-size: 736px 108px;
 		background-repeat: no-repeat;
-		background-image: url("homepod_side_shadow_dark__fnt5kj90t4q6_small.png")
+		background-image: url("media/homepod_side_shadow_dark__fnt5kj90t4q6_small.png")
 	}
 }
 
@@ -17518,7 +17518,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	height: 76px;
 	background-size: 76px 76px;
 	background-repeat: no-repeat;
-	background-image: url("music_icon__fwucqs5wumuu_large.jpg")
+	background-image: url("media/music_icon__fwucqs5wumuu_large.jpg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -17526,7 +17526,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .section-music .image-quantity {
-		background-image: url("music_icon__fwucqs5wumuu_large_2x.jpg")
+		background-image: url("media/music_icon__fwucqs5wumuu_large_2x.jpg")
 	}
 }
 
@@ -17536,7 +17536,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 65px;
 		background-size: 65px 65px;
 		background-repeat: no-repeat;
-		background-image: url("music_icon__fwucqs5wumuu_medium.jpg")
+		background-image: url("media/music_icon__fwucqs5wumuu_medium.jpg")
 	}
 }
 
@@ -17544,7 +17544,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .section-music .image-quantity {
-		background-image: url("music_icon__fwucqs5wumuu_medium_2x.jpg")
+		background-image: url("media/music_icon__fwucqs5wumuu_medium_2x.jpg")
 	}
 }
 
@@ -17553,7 +17553,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	height: 76px;
 	background-size: 76px 76px;
 	background-repeat: no-repeat;
-	background-image: url("ibooks_icon__gfqk4u491ueu_large.jpg")
+	background-image: url("media/ibooks_icon__gfqk4u491ueu_large.jpg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -17561,7 +17561,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .section-music .image-books {
-		background-image: url("ibooks_icon__gfqk4u491ueu_large_2x.jpg")
+		background-image: url("media/ibooks_icon__gfqk4u491ueu_large_2x.jpg")
 	}
 }
 
@@ -17571,7 +17571,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 65px;
 		background-size: 65px 65px;
 		background-repeat: no-repeat;
-		background-image: url("ibooks_icon__gfqk4u491ueu_medium.jpg")
+		background-image: url("media/ibooks_icon__gfqk4u491ueu_medium.jpg")
 	}
 }
 
@@ -17579,7 +17579,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .section-music .image-books {
-		background-image: url("ibooks_icon__gfqk4u491ueu_medium_2x.jpg")
+		background-image: url("media/ibooks_icon__gfqk4u491ueu_medium_2x.jpg")
 	}
 }
 
@@ -17588,7 +17588,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	height: 76px;
 	background-size: 76px 76px;
 	background-repeat: no-repeat;
-	background-image: url("MLB_icon__cx1if02uvck2_large.jpg")
+	background-image: url("media/MLB_icon__cx1if02uvck2_large.jpg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -17596,7 +17596,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .section-music .image-mlb {
-		background-image: url("MLB_icon__cx1if02uvck2_large_2x.jpg")
+		background-image: url("media/MLB_icon__cx1if02uvck2_large_2x.jpg")
 	}
 }
 
@@ -17606,7 +17606,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 65px;
 		background-size: 65px 65px;
 		background-repeat: no-repeat;
-		background-image: url("MLB_icon__cx1if02uvck2_medium.jpg")
+		background-image: url("media/MLB_icon__cx1if02uvck2_medium.jpg")
 	}
 }
 
@@ -17614,7 +17614,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .section-music .image-mlb {
-		background-image: url("MLB_icon__cx1if02uvck2_medium_2x.jpg")
+		background-image: url("media/MLB_icon__cx1if02uvck2_medium_2x.jpg")
 	}
 }
 
@@ -17623,7 +17623,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	height: 76px;
 	background-size: 76px 76px;
 	background-repeat: no-repeat;
-	background-image: url("spotify_icon__b932qrry3bsi_large.jpg")
+	background-image: url("media/spotify_icon__b932qrry3bsi_large.jpg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -17631,7 +17631,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .section-music .image-spotify {
-		background-image: url("spotify_icon__b932qrry3bsi_large_2x.jpg")
+		background-image: url("media/spotify_icon__b932qrry3bsi_large_2x.jpg")
 	}
 }
 
@@ -17641,7 +17641,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 65px;
 		background-size: 65px 65px;
 		background-repeat: no-repeat;
-		background-image: url("spotify_icon__b932qrry3bsi_medium.jpg")
+		background-image: url("media/spotify_icon__b932qrry3bsi_medium.jpg")
 	}
 }
 
@@ -17649,7 +17649,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .section-music .image-spotify {
-		background-image: url("spotify_icon__b932qrry3bsi_medium_2x.jpg")
+		background-image: url("media/spotify_icon__b932qrry3bsi_medium_2x.jpg")
 	}
 }
 
@@ -17658,7 +17658,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	height: 76px;
 	background-size: 76px 76px;
 	background-repeat: no-repeat;
-	background-image: url("podcasts_icon__diw3ret577ue_large.jpg")
+	background-image: url("media/podcasts_icon__diw3ret577ue_large.jpg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -17666,7 +17666,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .section-music .image-podcasts {
-		background-image: url("podcasts_icon__diw3ret577ue_large_2x.jpg")
+		background-image: url("media/podcasts_icon__diw3ret577ue_large_2x.jpg")
 	}
 }
 
@@ -17676,7 +17676,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 65px;
 		background-size: 65px 65px;
 		background-repeat: no-repeat;
-		background-image: url("podcasts_icon__diw3ret577ue_medium.jpg")
+		background-image: url("media/podcasts_icon__diw3ret577ue_medium.jpg")
 	}
 }
 
@@ -17684,7 +17684,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .section-music .image-podcasts {
-		background-image: url("podcasts_icon__diw3ret577ue_medium_2x.jpg")
+		background-image: url("media/podcasts_icon__diw3ret577ue_medium_2x.jpg")
 	}
 }
 
@@ -17693,7 +17693,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	height: 76px;
 	background-size: 76px 76px;
 	background-repeat: no-repeat;
-	background-image: url("live_radio_icon_01__dh05gvkwb3au_large.jpg")
+	background-image: url("media/live_radio_icon_01__dh05gvkwb3au_large.jpg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -17701,7 +17701,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .section-music .image-radio-icon-1 {
-		background-image: url("live_radio_icon_01__dh05gvkwb3au_large_2x.jpg")
+		background-image: url("media/live_radio_icon_01__dh05gvkwb3au_large_2x.jpg")
 	}
 }
 
@@ -17711,7 +17711,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 65px;
 		background-size: 65px 65px;
 		background-repeat: no-repeat;
-		background-image: url("live_radio_icon_01__dh05gvkwb3au_medium.jpg")
+		background-image: url("media/live_radio_icon_01__dh05gvkwb3au_medium.jpg")
 	}
 }
 
@@ -17719,7 +17719,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .section-music .image-radio-icon-1 {
-		background-image: url("live_radio_icon_01__dh05gvkwb3au_medium_2x.jpg")
+		background-image: url("media/live_radio_icon_01__dh05gvkwb3au_medium_2x.jpg")
 	}
 }
 
@@ -17728,7 +17728,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	height: 76px;
 	background-size: 76px 76px;
 	background-repeat: no-repeat;
-	background-image: url("live_radio_icon_02__bjz8jxbbcm2q_large.jpg")
+	background-image: url("media/live_radio_icon_02__bjz8jxbbcm2q_large.jpg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -17736,7 +17736,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .section-music .image-radio-icon-2 {
-		background-image: url("live_radio_icon_02__bjz8jxbbcm2q_large_2x.jpg")
+		background-image: url("media/live_radio_icon_02__bjz8jxbbcm2q_large_2x.jpg")
 	}
 }
 
@@ -17746,7 +17746,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 65px;
 		background-size: 65px 65px;
 		background-repeat: no-repeat;
-		background-image: url("live_radio_icon_02__bjz8jxbbcm2q_medium.jpg")
+		background-image: url("media/live_radio_icon_02__bjz8jxbbcm2q_medium.jpg")
 	}
 }
 
@@ -17754,7 +17754,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .section-music .image-radio-icon-2 {
-		background-image: url("live_radio_icon_02__bjz8jxbbcm2q_medium_2x.jpg")
+		background-image: url("media/live_radio_icon_02__bjz8jxbbcm2q_medium_2x.jpg")
 	}
 }
 
@@ -17763,7 +17763,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	height: 76px;
 	background-size: 76px 76px;
 	background-repeat: no-repeat;
-	background-image: url("live_radio_icon_03__bgsrb7bls16q_large.jpg")
+	background-image: url("media/live_radio_icon_03__bgsrb7bls16q_large.jpg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -17771,7 +17771,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .section-music .image-radio-icon-3 {
-		background-image: url("live_radio_icon_03__bgsrb7bls16q_large_2x.jpg")
+		background-image: url("media/live_radio_icon_03__bgsrb7bls16q_large_2x.jpg")
 	}
 }
 
@@ -17781,7 +17781,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 65px;
 		background-size: 65px 65px;
 		background-repeat: no-repeat;
-		background-image: url("live_radio_icon_03__bgsrb7bls16q_medium.jpg")
+		background-image: url("media/live_radio_icon_03__bgsrb7bls16q_medium.jpg")
 	}
 }
 
@@ -17789,7 +17789,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .section-music .image-radio-icon-3 {
-		background-image: url("live_radio_icon_03__bgsrb7bls16q_medium_2x.jpg")
+		background-image: url("media/live_radio_icon_03__bgsrb7bls16q_medium_2x.jpg")
 	}
 }
 
@@ -17895,7 +17895,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	height: 2184px;
 	background-size: 2560px 2184px;
 	background-repeat: no-repeat;
-	background-image: url("home__cmxsp7gnk402_large.jpg");
+	background-image: url("media/home__cmxsp7gnk402_large.jpg");
 	margin-top: -735px;
 	margin-bottom: -565px;
 	margin-left: -1280px
@@ -17906,7 +17906,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .section-home .image-window-hardware {
-		background-image: url("home__cmxsp7gnk402_large_2x.jpg")
+		background-image: url("media/home__cmxsp7gnk402_large_2x.jpg")
 	}
 }
 
@@ -17916,7 +17916,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 1440px;
 		background-size: 1068px 1440px;
 		background-repeat: no-repeat;
-		background-image: url("home__cmxsp7gnk402_medium.jpg")
+		background-image: url("media/home__cmxsp7gnk402_medium.jpg")
 	}
 }
 
@@ -17924,7 +17924,7 @@ only screen and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .section-home .image-window-hardware {
-		background-image: url("home__cmxsp7gnk402_medium_2x.jpg")
+		background-image: url("media/home__cmxsp7gnk402_medium_2x.jpg")
 	}
 }
 
@@ -17934,7 +17934,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 		height: 1187px;
 		background-size: 736px 1187px;
 		background-repeat: no-repeat;
-		background-image: url("home__cmxsp7gnk402_small.jpg")
+		background-image: url("media/home__cmxsp7gnk402_small.jpg")
 	}
 }
 
@@ -17942,7 +17942,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	.page-overview .section-home .image-window-hardware {
-		background-image: url("home__cmxsp7gnk402_small_2x.jpg")
+		background-image: url("media/home__cmxsp7gnk402_small_2x.jpg")
 	}
 }
 

@@ -15212,7 +15212,7 @@ return
                                     ;
 
                                     aj._mediaObject=null; aj._asset= {
-                                        uriPattern:"/105/media/{{locale}}/homepod/2017/dc73c1ef_eae9_4146_b080_5fbb3684b99e/overview/{{name}}/video/", filenamePattern:"{{viewport}}{{retina}}", viewport:ah, retina:g.retina, srcObj: {
+                                        uriPattern:"homepods/media/video/overview/{{name}}/video/", filenamePattern:"{{viewport}}{{retina}}", viewport:ah, retina:g.retina, srcObj: {
                                             basePath:null, filename:null, fileFormat:"mp4"
                                         }
                                     }
@@ -17051,7 +17051,7 @@ return
                             var c=i("@marcom/ac-cname").cname; var t=i("@marcom/ac-object/clone"); var k=i("@marcom/ac-event-emitter-micro").EventEmitterMicro;
                             var b=i("@marcom/ac-media-object"); var h=i("@marcom/ac-viewport-emitter"); var f=i("./helpers/clampViewport");
                             var u=i("./helpers/template"); var m=i("./helpers/parseViewportSizes"); var r="us";
-                            var s="homepod/2017/dc73c1ef_eae9_4146_b080_5fbb3684b99e"; var a=u(l, "locale", "directory", "name");
+                            var s="homepod/media/video"; var a=u(l, "locale", "directory", "name");
 
                             var o=function(H) {
                                 n(A, H); function A(J) {

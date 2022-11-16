@@ -8653,7 +8653,7 @@ if (!self.__WB_pmw) {
                         return i && e(t.prototype, i), n && e(t, n), t
                     }
                 }(),
-                c = s(["/105/media/", "/", "/", ""], ["/105/media/", "/", "/", ""]),
+                c = s(["/homepods/media/", "/", "/", ""], ["/media/", "/", "/", ""]),
                 l = e("@marcom/ac-object/clone"),
                 u = e("@marcom/ac-event-emitter-micro").EventEmitterMicro,
                 h = e("@marcom/ac-media-object"),
@@ -8662,7 +8662,7 @@ if (!self.__WB_pmw) {
                 p = e("./helpers/template"),
                 f = e("./helpers/parseViewportSizes"),
                 _ = "us",
-                g = "homepod/2018/dc73c1ef_eae9_4146_b080_5fbb3684b99e",
+                g = "video",
                 v = p(c, "locale", "directory", "name"),
                 y = function(e) {
                     function t(e) {

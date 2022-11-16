@@ -2,108 +2,108 @@
 	font-family: 'Apple Legacy Chevron';
 	font-style: normal;
 	font-weight: 100;
-	src: local(""), url("appleicons_ultralight.woff") format("woff"), url("appleicons_ultralight.ttf") format("truetype")
+	src: local(""), url("fonts/appleicons_ultralight.woff") format("woff"), url("fonts/appleicons_ultralight.ttf") format("truetype")
 }
 
 @font-face {
 	font-family: "Apple Icons 100";
-	src: url("appleicons_ultralight.eot")
+	src: url("fonts/appleicons_ultralight.eot")
 }
 
 @font-face {
 	font-family: 'Apple Legacy Chevron';
 	font-style: normal;
 	font-weight: 200;
-	src: local(""), url("appleicons_thin.woff") format("woff"), url("appleicons_thin.ttf") format("truetype")
+	src: local(""), url("fonts/appleicons_thin.woff") format("woff"), url("fonts/appleicons_thin.ttf") format("truetype")
 }
 
 @font-face {
 	font-family: "Apple Icons 200";
-	src: url("appleicons_thin.eot")
+	src: url("fonts/appleicons_thin.eot")
 }
 
 @font-face {
 	font-family: 'Apple Legacy Chevron';
 	font-style: normal;
 	font-weight: 300;
-	src: local(""), url("appleicons_thin.woff") format("woff"), url("appleicons_thin.ttf") format("truetype")
+	src: local(""), url("fonts/appleicons_thin.woff") format("woff"), url("fonts/appleicons_thin.ttf") format("truetype")
 }
 
 @font-face {
 	font-family: "Apple Icons 300";
-	src: url("appleicons_thin.eot")
+	src: url("fonts/appleicons_thin.eot")
 }
 
 @font-face {
 	font-family: 'Apple Legacy Chevron';
 	font-style: normal;
 	font-weight: 400;
-	src: local(""), url("appleicons_text.woff") format("woff"), url("appleicons_text.ttf") format("truetype")
+	src: local(""), url("fonts/appleicons_text.woff") format("woff"), url("fonts/appleicons_text.ttf") format("truetype")
 }
 
 @font-face {
 	font-family: "Apple Icons 400";
-	src: url("appleicons_text.eot")
+	src: url("fonts/appleicons_text.eot")
 }
 
 @font-face {
 	font-family: 'Apple Legacy Chevron';
 	font-style: normal;
 	font-weight: 500;
-	src: local(""), url("appleicons_text.woff") format("woff"), url("appleicons_text.ttf") format("truetype")
+	src: local(""), url("fonts/appleicons_text.woff") format("woff"), url("fonts/appleicons_text.ttf") format("truetype")
 }
 
 @font-face {
 	font-family: "Apple Icons 500";
-	src: url("appleicons_text.eot")
+	src: url("fonts/appleicons_text.eot")
 }
 
 @font-face {
 	font-family: 'Apple Legacy Chevron';
 	font-style: normal;
 	font-weight: 600;
-	src: local(""), url("appleicons_text.woff") format("woff"), url("appleicons_text.ttf") format("truetype")
+	src: local(""), url("fonts/appleicons_text.woff") format("woff"), url("fonts/appleicons_text.ttf") format("truetype")
 }
 
 @font-face {
 	font-family: "Apple Icons 600";
-	src: url("appleicons_text.eot")
+	src: url("fonts/appleicons_text.eot")
 }
 
 @font-face {
 	font-family: 'Apple Legacy Chevron';
 	font-style: normal;
 	font-weight: 700;
-	src: local(""), url("appleicons_text.woff") format("woff"), url("appleicons_text.ttf") format("truetype")
+	src: local(""), url("fonts/appleicons_text.woff") format("woff"), url("fonts/appleicons_text.ttf") format("truetype")
 }
 
 @font-face {
 	font-family: "Apple Icons 700";
-	src: url("appleicons_text.eot")
+	src: url("fonts/appleicons_text.eot")
 }
 
 @font-face {
 	font-family: 'Apple Legacy Chevron';
 	font-style: normal;
 	font-weight: 800;
-	src: local(""), url("appleicons_text.woff") format("woff"), url("appleicons_text.ttf") format("truetype")
+	src: local(""), url("fonts/appleicons_text.woff") format("woff"), url("fonts/appleicons_text.ttf") format("truetype")
 }
 
 @font-face {
 	font-family: "Apple Icons 800";
-	src: url("appleicons_text.eot")
+	src: url("fonts/appleicons_text.eot")
 }
 
 @font-face {
 	font-family: 'Apple Legacy Chevron';
 	font-style: normal;
 	font-weight: 900;
-	src: local(""), url("appleicons_text.woff") format("woff"), url("appleicons_text.ttf") format("truetype")
+	src: local(""), url("fonts/appleicons_text.woff") format("woff"), url("fonts/appleicons_text.ttf") format("truetype")
 }
 
 @font-face {
 	font-family: "Apple Icons 900";
-	src: url("appleicons_text.eot")
+	src: url("fonts/appleicons_text.eot")
 }
 
 #ac-globalfooter {
@@ -820,7 +820,7 @@ h3 #ac-globalfooter sup {
 	height: 56px;
 	background-size: 100% 56px;
 	background-repeat: no-repeat;
-	background-image: url("icon_large.svg")
+	background-image: url("media/svg/icon_large.svg")
 }
 
 .ac-theme-dark #ac-globalfooter .ac-gf-buystrip-info-icon-asa,
@@ -829,7 +829,7 @@ h3 #ac-globalfooter sup {
 	height: 56px;
 	background-size: 100% 56px;
 	background-repeat: no-repeat;
-	background-image: url("icon_dark_large.svg")
+	background-image: url("media/svg/icon_dark_large.svg")
 }
 
 #ac-globalfooter .ac-gf-buystrip-info-icon-bag {
@@ -837,7 +837,7 @@ h3 #ac-globalfooter sup {
 	height: 56px;
 	background-size: 100% 56px;
 	background-repeat: no-repeat;
-	background-image: url("icon_large.svg")
+	background-image: url("media/svg/icon_large.svg")
 }
 
 .ac-theme-dark #ac-globalfooter .ac-gf-buystrip-info-icon-bag,
@@ -846,7 +846,7 @@ h3 #ac-globalfooter sup {
 	height: 56px;
 	background-size: 100% 56px;
 	background-repeat: no-repeat;
-	background-image: url("icon_dark_large.svg")
+	background-image: url("media/svg/icon_dark_large.svg")
 }
 
 #ac-globalfooter .ac-gf-buystrip-info-icon-call {
@@ -854,7 +854,7 @@ h3 #ac-globalfooter sup {
 	height: 56px;
 	background-size: 100% 56px;
 	background-repeat: no-repeat;
-	background-image: url("icon_large.svg")
+	background-image: url("media/svg/icon_large.svg")
 }
 
 .ac-theme-dark #ac-globalfooter .ac-gf-buystrip-info-icon-call,
@@ -863,7 +863,7 @@ h3 #ac-globalfooter sup {
 	height: 56px;
 	background-size: 100% 56px;
 	background-repeat: no-repeat;
-	background-image: url("icon_dark_large.svg")
+	background-image: url("media/svg/icon_dark_large.svg")
 }
 
 #ac-globalfooter .ac-gf-buystrip-info-icon-engraving {
@@ -871,7 +871,7 @@ h3 #ac-globalfooter sup {
 	height: 56px;
 	background-size: 100% 56px;
 	background-repeat: no-repeat;
-	background-image: url("icon_large.svg")
+	background-image: url("media/svg/icon_large.svg")
 }
 
 .ac-theme-dark #ac-globalfooter .ac-gf-buystrip-info-icon-engraving,
@@ -880,7 +880,7 @@ h3 #ac-globalfooter sup {
 	height: 56px;
 	background-size: 100% 56px;
 	background-repeat: no-repeat;
-	background-image: url("icon_dark_large.svg")
+	background-image: url("media/svg/icon_dark_large.svg")
 }
 
 #ac-globalfooter .ac-gf-buystrip-info-icon-financing {
@@ -888,7 +888,7 @@ h3 #ac-globalfooter sup {
 	height: 56px;
 	background-size: 100% 56px;
 	background-repeat: no-repeat;
-	background-image: url("icon_large.svg")
+	background-image: url("media/svg/icon_large.svg")
 }
 
 .ac-theme-dark #ac-globalfooter .ac-gf-buystrip-info-icon-financing,
@@ -897,7 +897,7 @@ h3 #ac-globalfooter sup {
 	height: 56px;
 	background-size: 100% 56px;
 	background-repeat: no-repeat;
-	background-image: url("icon_dark_large.svg")
+	background-image: url("media/svg/icon_dark_large.svg")
 }
 
 #ac-globalfooter .ac-gf-buystrip-info-icon-giftwrap {
@@ -905,7 +905,7 @@ h3 #ac-globalfooter sup {
 	height: 56px;
 	background-size: 100% 56px;
 	background-repeat: no-repeat;
-	background-image: url("icon_large.svg")
+	background-image: url("media/svg/icon_large.svg")
 }
 
 .ac-theme-dark #ac-globalfooter .ac-gf-buystrip-info-icon-giftwrap,
@@ -914,7 +914,7 @@ h3 #ac-globalfooter sup {
 	height: 56px;
 	background-size: 100% 56px;
 	background-repeat: no-repeat;
-	background-image: url("icon_dark_large.svg")
+	background-image: url("media/svg/icon_dark_large.svg")
 }
 
 #ac-globalfooter .ac-gf-buystrip-info-icon-help {
@@ -922,7 +922,7 @@ h3 #ac-globalfooter sup {
 	height: 56px;
 	background-size: 100% 56px;
 	background-repeat: no-repeat;
-	background-image: url("icon_large.svg")
+	background-image: url("media/svg/icon_large.svg")
 }
 
 .ac-theme-dark #ac-globalfooter .ac-gf-buystrip-info-icon-help,
@@ -931,7 +931,7 @@ h3 #ac-globalfooter sup {
 	height: 56px;
 	background-size: 100% 56px;
 	background-repeat: no-repeat;
-	background-image: url("icon_dark_large.svg")
+	background-image: url("media/svg/icon_dark_large.svg")
 }
 
 #ac-globalfooter .ac-gf-buystrip-info-icon-personal_setup {
@@ -939,7 +939,7 @@ h3 #ac-globalfooter sup {
 	height: 56px;
 	background-size: 100% 56px;
 	background-repeat: no-repeat;
-	background-image: url("icon_large.svg")
+	background-image: url("media/svg/icon_large.svg")
 }
 
 .ac-theme-dark #ac-globalfooter .ac-gf-buystrip-info-icon-personal_setup,
@@ -948,7 +948,7 @@ h3 #ac-globalfooter sup {
 	height: 56px;
 	background-size: 100% 56px;
 	background-repeat: no-repeat;
-	background-image: url("icon_dark_large.svg")
+	background-image: url("media/svg/icon_dark_large.svg")
 }
 
 #ac-globalfooter .ac-gf-buystrip-info-icon-retail {
@@ -956,7 +956,7 @@ h3 #ac-globalfooter sup {
 	height: 56px;
 	background-size: 100% 56px;
 	background-repeat: no-repeat;
-	background-image: url("icon_large.svg")
+	background-image: url("media/svg/icon_large.svg")
 }
 
 .ac-theme-dark #ac-globalfooter .ac-gf-buystrip-info-icon-retail,
@@ -965,7 +965,7 @@ h3 #ac-globalfooter sup {
 	height: 56px;
 	background-size: 100% 56px;
 	background-repeat: no-repeat;
-	background-image: url("icon_dark_large.svg")
+	background-image: url("media/svg/icon_dark_large.svg")
 }
 
 #ac-globalfooter .ac-gf-buystrip-info-icon-shipping {
@@ -973,7 +973,7 @@ h3 #ac-globalfooter sup {
 	height: 56px;
 	background-size: 100% 56px;
 	background-repeat: no-repeat;
-	background-image: url("icon_large.svg")
+	background-image: url("media/svg/icon_large.svg")
 }
 
 .ac-theme-dark #ac-globalfooter .ac-gf-buystrip-info-icon-shipping,
@@ -982,7 +982,7 @@ h3 #ac-globalfooter sup {
 	height: 56px;
 	background-size: 100% 56px;
 	background-repeat: no-repeat;
-	background-image: url("icon_dark_large.svg")
+	background-image: url("media/svg/icon_dark_large.svg")
 }
 
 #ac-globalfooter .ac-gf-buystrip-info-icon-thirdparty_retail {
@@ -990,7 +990,7 @@ h3 #ac-globalfooter sup {
 	height: 56px;
 	background-size: 100% 56px;
 	background-repeat: no-repeat;
-	background-image: url("icon_large.svg")
+	background-image: url("media/svg/icon_large.svg")
 }
 
 .ac-theme-dark #ac-globalfooter .ac-gf-buystrip-info-icon-thirdparty_retail,
@@ -999,7 +999,7 @@ h3 #ac-globalfooter sup {
 	height: 56px;
 	background-size: 100% 56px;
 	background-repeat: no-repeat;
-	background-image: url("icon_dark_large.svg")
+	background-image: url("media/svg/icon_dark_large.svg")
 }
 
 #ac-globalfooter .ac-gf-buystrip-info-title,
@@ -1396,7 +1396,7 @@ h3 #ac-globalfooter sup {
 	height: 72px;
 	background-size: 14px 72px;
 	background-repeat: no-repeat;
-	background-image: url("icon_large.svg");
+	background-image: url("media/svg/icon_large.svg");
 	height: 18px;
 	display: block;
 	position: relative;
@@ -1408,7 +1408,7 @@ h3 #ac-globalfooter sup {
 .ac-theme-dark #ac-globalfooter .ac-gf-breadcrumbs-home-icon,
 #ac-globalfooter.ac-globalfooter-dark .ac-gf-breadcrumbs-home-icon {
 	background-repeat: no-repeat;
-	background-image: url("icon_dark_large.svg")
+	background-image: url("media/svg/icon_dark_large.svg")
 }
 
 #ac-globalfooter .ac-gf-breadcrumbs-home:hover {
@@ -1473,7 +1473,7 @@ h3 #ac-globalfooter sup {
 	height: 36px;
 	background-size: 8px 36px;
 	background-repeat: no-repeat;
-	background-image: url("icon_large.svg");
+	background-image: url("media/svg/icon_large.svg");
 	margin-right: 11px;
 	content: '';
 	display: inline-block;
@@ -1486,7 +1486,7 @@ h3 #ac-globalfooter sup {
 .ac-theme-dark #ac-globalfooter .ac-gf-breadcrumbs-item:before,
 #ac-globalfooter.ac-globalfooter-dark .ac-gf-breadcrumbs-item:before {
 	background-repeat: no-repeat;
-	background-image: url("icon_dark_large.svg")
+	background-image: url("media/svg/icon_dark_large.svg")
 }
 
 #ac-globalfooter .ac-gf-directory {
@@ -1849,7 +1849,7 @@ h3 #ac-globalfooter sup {
 	display: inline-block;
 	width: 16px;
 	height: 16px;
-	background-image: url("16.png");
+	background-image: url("media/16.png");
 	padding-right: 5px;
 	background-position: left center;
 	cursor: pointer;
@@ -1862,7 +1862,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	#ac-globalfooter .ac-gf-footer-locale-flag {
-		background-image: url("32.png")
+		background-image: url("media/32.png")
 	}
 }
 
