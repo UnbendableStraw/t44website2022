@@ -871,11 +871,10 @@ body {
 						</div>
 					</div>
 					<h2 class="typography-headline-super transition-1 large-10 large-centered medium-11 small-12">Common Issues</h2>
-					<p>The following are all of the issues encountered or reported, and any known ways to diagnose and repair. One issue can have different root causes, so read and check thoroughly before reaching out with questions! You can right-click and open each image in a new tab for a larger view.</p>
+					<p>The following are all of the issues encountered or reported, and any known ways to diagnose and repair. You can right-click and open each image in a new tab for a larger view.</p>
 					<p>If you've found a new issue or fix and it's not listed here, please contact me and I'll add it with credit to you!
-					<p><b>Jump To:</b> <a href="#blinkblink">Flashing Volume & Boot Loops</a> | <a href="#nopower">No Power</a> | <a href="#popping">Death Farts & Popping</a> | <a href="#nobass">No Bass</a> | <a href="#nosound">No Sound</a> | <a href="#physicaldamage">Physical Damage</a> | <a href="#mesh">Mesh</a>
 					<div id="blinkblink"></div>
-					<br></br><br></br>
+					<br></br>
 					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Flashing Volume Lights & Bootloops - NO KNOWN FIX YET</h4>
 					<p><b>ACTIVE BOUNTY:</b> I am offering a free A1639 Apple HomePod to whoever can find a reproducable repair for this issue! Contact me if you think you got it...
 					<p><b>Symptoms:</b> HomePod will power on, but ends up with flashing / blinking volume lights or boot loops. Won't factory reset.<br></br><b>Root Cause:</b> Apple has not publicly confirmed what the root cause of this is, and no one outside of Apple knows for certain yet, but, based on multiple reports with different behaviors, I think there are a few reasons why your HomePod would end up with this. The most likely cause is failed software or a failed update. Less likely, a failing A8 SoC, NAND, or it's BGA. I cannot find replacement A8 SoC chips for the HomePod, and the A8 SoC is married to the NAND, so even with new chips there is no known way to restore their software yet.<br></br><b>Software Repair Attempts:</b> Apple has not released any restorable firmware / software for original HomePods. The OTA's from ipsw.me are unsuitable for restore, and the firmware for the Mini is incompatible. <a href="https://github.com/el1ng/homepwn" target="_blank">There is USB </a>and UART access via the pins on the bottom of the HomePod, and when connected to a Mac or PC, various software detects and recognizes a HomePod is connected (in Recovery mode!) but there are no restorable IPSWs publicly available to restore from when you get this far.<br></br>I made a <a href="https://www.reddit.com/r/HomePod/comments/s3gmkp/i_got_usb_working_on_an_og_homepod_finder_even/" target="_blank"> reddit post</a> showing my attempt following a <a href="https://github.com/el1ng/homepwn" target="_blank">github guide</a> to connect to HomePod via USB. I've been unsuccessful dumping the firmware from working HomePods, tools like <a href="https://github.com/axi0mX/ipwndfu" target="_blank">iPwnDFU</a> seem to not work.<br></br>Since HomePod uses the A8 SoC, it should be permanently vulnerable to checkm8 exploits. Feel free to contact me if you are interested in giving it a try, I can give you remote access to a Mac, Windows, or Linux device connected to a good and bricked HomePod via USB.<br></br><b>Hardware Repair Attempts:</b> Myself and others have tried baking / reflowing every chip on bricked logic boards multiple times with no success. I have replaced the PMIC on the logic board with one from an iPhone 6 and found, while this part is compatible (lol) this did not resolve the actual issue. User "mlogicrepair" shared in our discord their progress attempting to replace the A8 SoC. /u/dzsenos had their A8 SoC and NAND professionally reballed and it did not resolve the issue.<br></br><b>Why can't Apple just let us restore them?</b><br></br></p>
@@ -898,9 +897,23 @@ body {
 							<figcaption class="typography-caption transition-2">"mlogicrepair" with old A8 SoC and Storage NAND off</figcaption>
 						</div>
 					</div>
-					<div id="physicaldamage"></div>
-					<div id="nopowermicboard"></div>
-					<br></br><br></br><br></br>
+					<div id="nopowerdisplay"></div>
+					<br></br>
+					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power, Boot Loops, or Blinking / Flickering Volume Buttons - Damaged Display</h4>
+					<p><b>Symptoms:</b> I've seen damaged displays cause differing symptoms ranging from no power at all, to flickering or boot loops, to flickering volume buttons.<br></br><b>Diagnosis:</b> Thoroughly inspect the display for any damage, especially around the LED PCB on the backside. It's common when a HomePod is dropped for the display to get smashed in and start separating as pictured below. <br></br><b>Repair:</b>  Damage like this usually warrants replacing the whole display.</a><br></br><b>Root Cause:</b> Usually from being dropped. They don't just break like this by themselves</p></b>
+					<p>
+					<div class="column icon-container large-centered large-8 medium-10 small-12">
+						<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="media/crackeddisplay1.jpg" height="270"></figure>
+							<figcaption class="typography-caption transition-2">PCB for LEDs coming off</figcaption>
+						</div>
+						<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="media/crackeddisplay2.jpg" height="270"></figure>
+							<figcaption class="typography-caption transition-2">...</figcaption>
+						</div>
+					</div>
+					<div id="nopowerdisplay"></div>
+					<br></br>
 					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Boot Loops or Blinking / Flickering Volume Buttons - Damaged Mic Board</h4>
 					<p><b>Symptoms:</b> Similar to the symptoms from a damaged display. A damaged mic board can also obviously cause issues with voice commands not working.<br></br><b>Diagnosis:</b> Thoroughly inspect the mic board for any damage, especially around the chip pictured below. <br></br><b>Repair:</b> Replace mic board. Unsure what part # the chip pictured below is...</a><br></br><b>Root Cause:</b> Usually damage from not being careful with your tools while working on your pod.</p></b>
 					<p>
@@ -917,82 +930,10 @@ body {
 							<figure class="image-icons transition-1"><img src="media/micchipupclose.jpg" height="270"></figure>
 							<figcaption class="typography-caption transition-2">Unidentified Chip</figcaption>
 						</div>
-					</div
-					<div id="physicaldamage1"></div>
-					<br></br>
-				<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Rattling / Dirty Bass, Touch / Display Issues, and More - Physical Damage</h4>
-				<p><b>Symptoms:</b> HomePod may or may not be working fine. You may hear rattling when you shake it, or have touch / display issues, even making it appear that the HomePod isn't powering on or only briefly powers on and bootloops. <br></br><b>Diagnosis:</b> For rattling / dirty sounding bass, check that your subwoofer is not bent and properly sealed. Pull your logic board out and check for broken loose plastic. You can try to glue or plastic weld the broken parts back together, or replace the top basket entirely. Thoroughly inspect logic cable, display cable, and connectors for any damage.<br></br><b>Repair:</b> Not recommended to ignore this otherwise the logic board can shift enough to push the display cable into the frame and cut into it, causing weird power / display / touch issues.<br></br><b>Root Cause:</b> Usually this is from some of the frame holding the logic board breaking off as a result of drop damage. Ensure you <a href="#shiptips">pack your Pod properly</a> whenever shipping it!</p>
-				<p>
-				<div class="column icon-container large-centered large-8 medium-10 small-12">
-				<div class="image-wrapper">
-						<figure class="image-icons transition-1"><img src="media/brokenplastic.jpg" height="270"></figure>
-						<figcaption class="typography-caption transition-2">Broken Plastic From logic Board Frame</figcaption>
-					</div>
-				<div class="image-wrapper">
-						<figure class="image-icons transition-1"><img src="media/damageddisplaycable.png" height="270"></figure>
-						<figcaption class="typography-caption transition-2">Display Cable Cut From Board Shift</figcaption>
-					</div>
-					</div>
-					<div id="goofball"></div>
-					<br></br>
-				<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Help! I tried my own repairs and now there's a new problem!!</h4>
-				<p>Often times the main ribbon cable that connects the logic board to the amplifier board, or another component, has been damaged or improperly reinstalled.<br></br><b>Damage:</b> Thoroughly inspect the entire ribbon cable for any tears, cracks, or other damage. This cable is commonly damaged from rough handling when disconnecting the logic board, where the end of the cable connecting to the logic board will crack / tear. Another common mistake is accidentally damaging the ribbon cable while trying to pry the top basket off. Finally, check that your Microphone board is not damaged, this can cause unexpected behavior, lack of sound, and boot loops.<br></br><b>Improper Installation:</b> The most common mistake made when reassembling your HomePod is an incorrect installation of the main ribbon cable. On the amplifier board connector, the locked position will actually look open, and unlocked actually looks closed! Verify you have properly locked the cable in by pressing the locking clip down, and that the white line on the cable is level with the top of the connector! Improper installation may lead to permanent damage resulting in no sound or power. I've even done this once myself and lost both the amp and logic board's sound, and have yet to figure out how to repair it.<br></br></p>
-				<p>
-				<div class="column icon-container large-centered large-8 medium-10 small-12">
-				<div class="image-wrapper">
-						<figure class="image-icons transition-1"><img src="media/torncable.jpg" height="265"></figure>
-						<figcaption class="typography-caption transition-2">Torn Cable From Pulling on Logic Board</figcaption>
-					</div>
-					<div class="image-wrapper">
-						<figure class="image-icons transition-1"><img src="media/stabbedcable.jpg" height="265"></figure>
-						<figcaption class="typography-caption transition-2">Damaged Cable from Prying Top Basket</figcaption>
-					</div>
-					<div class="image-wrapper">
-						<figure class="image-icons transition-1"><img src="media/incorrect1.jpg" height="265"></figure>
-						<figcaption class="typography-caption transition-2">Unlocked, Crooked Cable</figcaption>
-					</div>
-											<div class="image-wrapper">
-						<figure class="image-icons transition-1"><img src="media/correct1.jpg" height="265"></figure>
-						<figcaption class="typography-caption transition-2">Locked, Level Cable</figcaption>
-					</div>
-											<div class="image-wrapper">
-						<figure class="image-icons transition-1"><img src="media/incorrect2.jpg" height="265"></figure>
-						<figcaption class="typography-caption transition-2">Don't Do This!</figcaption>
-					</div>
-											<div class="image-wrapper">
-						<figure class="image-icons transition-1"><img src="media/correct2.jpg" height="265"></figure>
-						<figcaption class="typography-caption transition-2">Do This!</figcaption>
-					</div>
-					</div>
-					<div id="goofball2"></div>
-					<br></br>
-				<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">I did my own repairs and lost ___ part! What is it?</h4>
-				<p>If you attempted your own repairs and lost a part in the process, let me know and I can help you identify what it is to the best of my ability.</p>
-				<p>
-				<div class="column icon-container large-centered large-8 medium-10 small-12">
-				<div class="image-wrapper">
-						<figure class="image-icons transition-1"><img src="media/diodecap.png" height="265"></figure>
-						<figcaption class="typography-caption transition-2">0.1uF Size 0402 Capacitor</figcaption>
-					</div>
-					</div>
-					<div id="nopowerdisplay"></div>
-					<br></br>
-					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power, Boot Loops, or Blinking / Flickering Volume Buttons - Damaged Display</h4>
-					<p><b>Symptoms:</b> I've seen damaged displays cause differing symptoms ranging from no power at all, to flickering or boot loops, to flickering volume buttons.<br></br><b>Diagnosis:</b> Thoroughly inspect the display for any damage, especially around the LED PCB on the backside. It's common when a HomePod is dropped for the display to get smashed in and start separating as pictured below. <br></br><b>Repair:</b>  Damage like this usually warrants replacing the whole display.</a><br></br><b>Root Cause:</b> Usually from being dropped. They don't just break like this by themselves</p></b>
-					<p>
-					<div class="column icon-container large-centered large-8 medium-10 small-12">
-						<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/crackeddisplay1.jpg" height="270"></figure>
-							<figcaption class="typography-caption transition-2">PCB for LEDs coming off</figcaption>
-						</div>
-						<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/crackeddisplay2.jpg" height="270"></figure>
-							<figcaption class="typography-caption transition-2">...</figcaption>
-						</div>
 					</div>
 					<div id="nopower"></div>
 					<div id="nopowerdiode"></div>
-					<br></br><br></br><br></br>
+					<br></br>
 					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power - Shorted S.B. Diode</h4>
 					<p><b>Symptoms:</b> No power, no lights, and no response. Power draw at the outlet will be around 2-10 Watts. If left plugged in for some time, the side of the HomePod gets slightly warmer.<br></br><b>Diagnosis:</b> Diode is located on the amplifier board. Use a multimeter in continuity test mode to test if diode is shorted by placing one probe onto the larger pin of the diode, and the other probe on one of the two smaller pins of the diode. If meter shows it's shorted, move probe from first small pin to other small pin. If you still see a short, remove the diode and test with the diode off the board. If just the diode shows shorted and not the board, replace the diode.<br></br><b>Repair:</b> Replace shorted diode with part number PDS560-13, PDS560-13Q, PDS760-13, or any other 60v 5a schottky barrier diode of similar specs. Video guide available on <a href="https://www.youtube.com/watch?v=FfGiuh_QH3M" target="_blank">YouTube.</a><br></br><b>Root Cause:</b> Why this diode fails in HomePods is unknown. These diodes' failure mode is to short when overvolted or overheated. It's possible the diode is not suited for the task or there was a bad batch of diodes. Comparing HomePods that come in for repair for unrelated issues, if their s.b. diode is still working, it usually is much newer or older than diodes that have already failed. I've only seen diodes with date codes "1746K" and "1748K" fail, though correlation isn't always causation, so it's recommended to replace this diode regardless of condition.</p></b>
 					<p>
@@ -1041,7 +982,7 @@ body {
 						</div>
 					</div>
 					<div id="popping"></div>
-					<br></br><br></br><br></br>
+					<br></br>
 <h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Loud Popping, Clicking, Death Farts - DC Offset (Failing Capacitors)</h4>
 <p><b>Symptoms:</b> "Death Farts" or a loud buzzing sound followed by a restart as a result of too much DC offset. Usually accompanied with loud popping while going in our out of standby every ~10 minutes. Popping alone is not a cause for concern, but when there are "death farts", it means the DC offset has grown out of spec due to failing filtering capacitors and they need replaced.<br></br><b>Diagnosis:</b> 1: Remove the subwoofer and place it to the side, carefully reconnect everything and power on the HomePod.<br></br>2: With the HomePod powered on, not in standby, and subwoofer connected, measure the DC voltage with a multimeter from the subwoofer speaker terminals. There is a place to probe on the woofer, where the speaker wire is soldered on. Polarity does not matter. <br></br>The amp IC's input is rated for up to <a href="https://www.mouser.com/datasheet/2/196/ir4302-1227997.pdf" target="_blank">+/-18mV DC,</a> which amplifies to the woofer at around +/-200mV DC. More than this can cause damage to components and should warrant replacing the filtering capacitors.<br></br><b>Repair:</b> There are four capacitors that filter this DC in the audio signal before it's amplified and sent to the speaker. They are located on the amplifier board, between the DAC and AMP chips. If you measured a significant amount of DC, you need to replace them with new capacitors of 10uF, size 1206, X7R, 5-10%, rated for 16v or better. I have been using EMK316AB7106KL-T with great success, consistently resulting in <5mV of DC offset. I have a repair video replacing these capacitors on <a href="https://www.youtube.com/watch?v=-YZUv5ErDFw" target="_blank">YouTube.</a><br></br>There is a big black resistor on the amp next to the subwoofer connector you should also inspect...on occasion I have found these to be damaged. It is a 10Ohm, 1Watt, 1% Tolerance, 200V rated, 1218 size resistor, and can be replaced with part number RCL121810R0FKEK. It's resistance can be measured while still installed on the board to confirm.<br></br>You will also want to inspect your <a href="#nobassbadwoofer">subwoofer speaker for damage</a> to the voice coil from too much DC, see the next Common Issue below for more detail on that.<br></br><b>Root Cause:</b> DC offset is when the amplifier has a DC voltage across the speaker output, and is simply how far from 0V DC you are. The farhter from 0V you are, the worse it is. When quiescent, normally the subwoofer rests in a neutral middle of it's magnetic field, but dc offset will cause it to be displaced forward or backward from that mid-point, heating up the voice coil, impacting amplifier and speaker performance, making them work harder, and resulting in the "pop" sound as the amp is turned on or off as part of standby mode. If DC offset is not repaired by replacing these capacitors, it can eventually grow and damage more components. I have a livestream of a repair where it needed all new capacitors, resistor, and subwoofer <a href="https://www.youtube.com/watch?v=19qIfCcoq58" target="_blank">here.</a></p>
 					<p>
@@ -1078,9 +1019,8 @@ body {
 							<figcaption class="typography-caption transition-2">MISSING</figcaption>
 						</div>
 					</div>
-					<div id="nobass"></div>
 					<div id="nobassbadwoofer"></div>
-					<br></br><br></br><br></br>
+					<br></br>
 					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Bass and/or Fast Clicking - Damaged or Dead Subwoofer Speaker</h4>
 					<p><b>Symptoms:</b> May include low, missing, or dirty sounding bass, clicking, or ticking sounds.<br></br><b>Diagnosis:</b> Two easy tests to tell if your subwoofer speaker is bad;<br></br>1: Gently push the speaker straight in, not too much, and release a few times; This should feel perfectly smooth, and make no sound, otherwise your speaker is almost certainly dead.<br></br>2: Inspect the condition of the voice coil through the hole in the side of the subwoofer speaker basket; A vibrant, uniform copper color is a sign of a healthy voice coil!<br></br>If your subwoofer is damaged, it is likely from <a href="#popping">DC Offset,</a> which should also be diagnosed per the Common Issue above.<br></br><b>Repair:</b> I'm not aware of any off the shelf replacement speakers, you will likely need to source one from another broken homepod. Be sure you diagnose and repair any <a href="#popping">DC Offset</a> before replacing your subwoofer.<br></br><b>Root Cause:</b> Most often a result of too much <a href="#popping">DC Offset!</a> Sometimes they can also just fail on their own eventually, but it is rare.</p>
 					<p>
@@ -1133,7 +1073,7 @@ body {
 						</div>
 						</div>
 						<div id="nosound"></div>
-						<br></br><br></br><br></br>
+						<br></br>
 					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Sound - Dead STM32L Controller IC</h4>
 					<p><b>Symptoms:</b> Powers on, but there's no sound from any of the speakers. <br></br><b>Diagnosis:</b> I haven't found great ways to diagnose this part for certain yet, and I've only had one in so far. The letters on the "STM32L051C8T7" chip were unevenly worn, making me think it had overheated.<br></br><b>Repair:</b> "STM32L051C8T7" is available from AliExpress, currently unsure of whether it needs reprogrammed! <a href="https://www.aliexpress.com/i/3256802635297773.html?gatewayAdapt=4itemAdapt">here.</a> Currently on backorder from mouser and digikey.<br></br><b>Root Cause:</b> Due to the rarity of this failure I'm guessing it simply dies on it's own.</p>
 					<p>
@@ -1144,9 +1084,9 @@ body {
 						</div>
 						</div>
 						<div id="mesh"></div>
-						<br></br><br></br><br></br>
+						<br></br>
 					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Replacing and Customizing the Mesh</h4>
-					<p>Want to replace your mesh? Perhaps give it a little color!<br></br><b>How to Replace Mesh:</b> I have a video guide on removing and reinstalling the mesh <a href="https://www.youtube.com/watch?v=VfhKEgZtTIg" target="_blank">here!</a><br></br><b>Customization:</b> Rit's DyeMore for Synthetics gives great resutls with deep, rich colors on the white mesh, top plastic cover, and power cable. The rubber base does not take color well. The All-Purpose Dye also does not work well and results in a muted, washed-out look!<br></br>1: Remove your top cover, mesh, and power cable from the homepod.<br></br>2: Find something to slip the mesh on, ideally another empty homepod shell. Put weights in it to keep it from floating in the dye bath. Find something to sit it on in a pot so it's not directly in contact with the pot, but still able to fully submerge.<br></br>3: Bring pot of water to ~200f, mix in dye, then put mesh into dye bath. Stir for 15-30 minutes, then pull out mesh, rinse, and allow to dry before reinstallation.<br></br>4: For the top cover, wash it with clean water and soap, then dry, then put some tape on the adhesive side to dunk it into your dye bath a few times. Rinse off with water and repeat until desired shade is achieved.<br></br>5: For the power cable, you can dunk the length of the cable into the dye bath excluding the plugs on each end. Rinse and repeat until desired shade is achieved. Allow a few days to dry before use!</p>
+					<p><b>Want to replace your mesh? Perhaps give it a little color!</b><br></br><b>How to Replace Mesh:</b> I have a video guide on removing and reinstalling the mesh <a href="https://www.youtube.com/watch?v=VfhKEgZtTIg" target="_blank">here!</a><br></br><b>Customization:</b> Rit's DyeMore for Synthetics gives great resutls with deep, rich colors on the white mesh, top plastic cover, and power cable. The rubber base does not take color well. The All-Purpose Dye also does not work well and results in a muted, washed-out look!<br></br>1: Remove your top cover, mesh, and power cable from the homepod.<br></br>2: Find something to slip the mesh on, ideally another empty homepod shell. Put weights in it to keep it from floating in the dye bath. Find something to sit it on in a pot so it's not directly in contact with the pot, but still able to fully submerge.<br></br>3: Bring pot of water to ~200f, mix in dye, then put mesh into dye bath. Stir for 15-30 minutes, then pull out mesh, rinse, and allow to dry before reinstallation.<br></br>4: For the top cover, wash it with clean water and soap, then dry, then put some tape on the adhesive side to dunk it into your dye bath a few times. Rinse off with water and repeat until desired shade is achieved.<br></br>5: For the power cable, you can dunk the length of the cable into the dye bath excluding the plugs on each end. Rinse and repeat until desired shade is achieved. Allow a few days to dry before use!</p>
 					<p>
 					<div class="column icon-container large-centered large-8 medium-10 small-12">
 											<div class="image-wrapper">
@@ -1160,6 +1100,63 @@ body {
 											<div class="image-wrapper">
 							<figure class="image-icons transition-1"><img src="media/redvsblue.jpg" height="270"></figure>
 							<figcaption class="typography-caption transition-2">"You ever wonder why we're here?"</figcaption>
+						</div>
+						</div>
+						<div id="physicaldamage1"></div>
+						<br></br>
+					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Rattling / Dirty Bass, Touch / Display Issues, and More - Physical Damage</h4>
+					<p><b>Symptoms:</b> HomePod may or may not be working fine. You may hear rattling when you shake it, or have touch / display issues, even making it appear that the HomePod isn't powering on or only briefly powers on and bootloops. <br></br><b>Diagnosis:</b> For rattling / dirty sounding bass, check that your subwoofer is not bent and properly sealed. Pull your logic board out and check for broken loose plastic. You can try to glue or plastic weld the broken parts back together, or replace the top basket entirely. Thoroughly inspect logic cable, display cable, and connectors for any damage.<br></br><b>Repair:</b> Not recommended to ignore this otherwise the logic board can shift enough to push the display cable into the frame and cut into it, causing weird power / display / touch issues.<br></br><b>Root Cause:</b> Usually this is from some of the frame holding the logic board breaking off as a result of drop damage. Ensure you <a href="#shiptips">pack your Pod properly</a> whenever shipping it!</p>
+					<p>
+					<div class="column icon-container large-centered large-8 medium-10 small-12">
+					<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="media/brokenplastic.jpg" height="270"></figure>
+							<figcaption class="typography-caption transition-2">Broken Plastic From logic Board Frame</figcaption>
+						</div>
+					<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="media/damageddisplaycable.png" height="270"></figure>
+							<figcaption class="typography-caption transition-2">Display Cable Cut From Board Shift</figcaption>
+						</div>
+						</div>
+						<div id="goofball"></div>
+						<br></br>
+					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Help! I tried my own repairs and now there's a new problem!!</h4>
+					<p>Often times the main ribbon cable that connects the logic board to the amplifier board, or another component, has been damaged or improperly reinstalled.<br></br><b>Damage:</b> Thoroughly inspect the entire ribbon cable for any tears, cracks, or other damage. This cable is commonly damaged from rough handling when disconnecting the logic board, where the end of the cable connecting to the logic board will crack / tear. Another common mistake is accidentally damaging the ribbon cable while trying to pry the top basket off. Finally, check that your Microphone board is not damaged, this can cause unexpected behavior, lack of sound, and boot loops.<br></br><b>Improper Installation:</b> The most common mistake made when reassembling your HomePod is an incorrect installation of the main ribbon cable. On the amplifier board connector, the locked position will actually look open, and unlocked actually looks closed! Verify you have properly locked the cable in by pressing the locking clip down, and that the white line on the cable is level with the top of the connector! Improper installation may lead to permanent damage resulting in no sound or power. I've even done this once myself and lost both the amp and logic board's sound, and have yet to figure out how to repair it.<br></br></p>
+					<p>
+					<div class="column icon-container large-centered large-8 medium-10 small-12">
+					<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="media/torncable.jpg" height="265"></figure>
+							<figcaption class="typography-caption transition-2">Torn Cable From Pulling on Logic Board</figcaption>
+						</div>
+						<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="media/stabbedcable.jpg" height="265"></figure>
+							<figcaption class="typography-caption transition-2">Damaged Cable from Prying Top Basket</figcaption>
+						</div>
+						<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="media/incorrect1.jpg" height="265"></figure>
+							<figcaption class="typography-caption transition-2">Unlocked, Crooked Cable</figcaption>
+						</div>
+												<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="media/correct1.jpg" height="265"></figure>
+							<figcaption class="typography-caption transition-2">Locked, Level Cable</figcaption>
+						</div>
+												<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="media/incorrect2.jpg" height="265"></figure>
+							<figcaption class="typography-caption transition-2">Don't Do This!</figcaption>
+						</div>
+												<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="media/correct2.jpg" height="265"></figure>
+							<figcaption class="typography-caption transition-2">Do This!</figcaption>
+						</div>
+						</div>
+						<div id="goofball2"></div>
+						<br></br>
+					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">I did my own repairs and lost ___ part! What is it?</h4>
+					<p>If you attempted your own repairs and lost a part in the process, let me know and I can help you identify what it is to the best of my ability.</p>
+					<p>
+					<div class="column icon-container large-centered large-8 medium-10 small-12">
+					<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="media/diodecap.png" height="265"></figure>
+							<figcaption class="typography-caption transition-2">0.1uF Size 0402 Capacitor</figcaption>
 						</div>
 						</div>
 					<div id="estimates"></div>
