@@ -319,65 +319,7 @@ body {
 				</div>
 			</div>
 			<div class="video-outer" id="repairvideo">
-				<div class="video-container room-sensing-video" data-component-list="RoomStackedLayout" data-media-name="overview/room-sensing">
-					<figure class="image-container room-sensing-image" data-progressive-image></figure>
-					<div class="stacked-video" aria-hidden="true" data-room-sensing-video data-video-locale="us"></div>
-					<div class="loader"><svg class="circle-loader" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0,0 200,200" aria-hidden="true">
-	<defs>
-		<clippath id="ring">
-			<path d="M 200, 100
-			A 100, 100, 0, 1, 1, 197.81, 79.21
-			L 188.03, 81.29
-			A 90, 90, 0, 1, 0, 190, 100 z"></path>
-		</clippath>
-		<filter id="blur" x="0" y="0">
-			<fegaussianblur in="SourceGraphic" stddeviation="3"></fegaussianblur>
-		</filter>
-		<path id="p" d="M 250, 100
-		A 150, 150, 0, 0, 1, 246.72, 131.19
-		L 100, 100
-		A 0, 0, 0, 0, 0, 100, 100 z" fill="white"></path>
-	</defs>
-	<g clip-path="url(#ring)">
-		<g filter="url(#blur)" transform="rotate(-6 100 100)">
-			<use xlink:href="#p" fill-opacity="0" transform="rotate(  0 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.03" transform="rotate( 12 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.07" transform="rotate( 24 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.1" transform="rotate( 36 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.14" transform="rotate( 48 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.17" transform="rotate( 60 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.2" transform="rotate( 72 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.24" transform="rotate( 84 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.28" transform="rotate( 96 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.31" transform="rotate(108 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.34" transform="rotate(120 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.38" transform="rotate(132 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.41" transform="rotate(144 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.45" transform="rotate(156 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.48" transform="rotate(168 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.52" transform="rotate(180 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.55" transform="rotate(192 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.59" transform="rotate(204 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.62" transform="rotate(216 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.66" transform="rotate(228 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.69" transform="rotate(240 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.7" transform="rotate(252 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.72" transform="rotate(264 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.76" transform="rotate(276 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.79" transform="rotate(288 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.83" transform="rotate(300 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.86" transform="rotate(312 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.93" transform="rotate(324 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="0.97" transform="rotate(336 100 100)"></use>
-			<use xlink:href="#p" fill-opacity="1" transform="rotate(348 100 100)"></use>
-		</g>
-	</g>
-</svg>
-					</div>
-					<button class="play-pause-button" data-analytics-click="prop3:room-sensing-video" data-analytics-title="room-sensing-video" data-play-label="Play" data-pause-label="Pause">
-					<span class="play-pause-icon"></span>
-				</button>
-				</div>
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/videoseries?list=PLEJiSXyX6lzdqkp6KkiKL0p2dV5fmDlTg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 			</div>
 			<div class="section-content" data-component-list="CopyEngagement CopyParallax">
 				<div class="row row-room-sensing">
@@ -878,7 +820,7 @@ body {
 					<br></br><br></br>
 					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Flashing Volume Lights & Bootloops - NO KNOWN FIX YET</h4>
 					<p><b>ACTIVE BOUNTY:</b> I am offering a free A1639 Apple HomePod to whoever can find a reproducable repair for this issue! Contact me if you think you got it...
-					<p><b>Symptoms:</b> HomePod will power on, but ends up with flashing / blinking volume lights or boot loops. Won't factory reset.<br></br><b>Root Cause:</b> Apple has not publicly confirmed what the root cause of this is, and no one outside of Apple knows for certain yet, but, based on multiple reports with different behaviors, I think there are a few reasons why your HomePod would end up with this. The most likely cause is failed software or a failed update. Less likely, a failing A8 SoC, NAND, or it's BGA. I cannot find replacement A8 SoC chips for the HomePod, and the A8 SoC is married to the NAND, so even with new chips there is no known way to restore their software yet.<br></br><b>Software Repair Attempts:</b> Apple has not released any restorable firmware / software for original HomePods. The OTA's from ipsw.me are unsuitable for restore, and the firmware for the Mini is incompatible. <a href="https://github.com/el1ng/homepwn" target="_blank">There is USB </a>and UART access via the pins on the bottom of the HomePod, and when connected to a Mac or PC, various software detects and recognizes a HomePod is connected (in Recovery mode!) but there are no restorable IPSWs publicly available to restore from when you get this far.<br></br>I made a <a href="https://www.reddit.com/r/HomePod/comments/s3gmkp/i_got_usb_working_on_an_og_homepod_finder_even/" target="_blank"> reddit post</a> showing my attempt following a <a href="https://github.com/el1ng/homepwn" target="_blank">github guide</a> to connect to HomePod via USB. I've been unsuccessful dumping the firmware from working HomePods, tools like <a href="https://github.com/axi0mX/ipwndfu" target="_blank">iPwnDFU</a> seem to not work.<br></br>Since HomePod uses the A8 SoC, it should be permanently vulnerable to checkm8 exploits. Feel free to contact me if you are interested in giving it a try, I can give you remote access to a Mac, Windows, or Linux device connected to a good and bricked HomePod via USB.<br></br><b>Hardware Repair Attempts:</b> Myself and others have tried baking / reflowing every chip on bricked logic boards multiple times with no success. I have replaced the PMIC on the logic board with one from an iPhone 6 and found, while this part is compatible (lol) this did not resolve the actual issue. User "mlogicrepair" shared in our discord their progress attempting to replace the A8 SoC. /u/dzsenos had their A8 SoC and NAND professionally reballed and it did not resolve the issue.<br></br>I have a 24/7 livestream going with a bunch of homepods on an automatic random on/off switch in an attempt to debrick some by chance: <a href="https://www.youtube.com/@nicsbricks">Watch Here!</a><br></br><b>Why can't Apple just let us restore them?</b><br></br></p>
+					<p><b>Symptoms:</b> HomePod will power on, but ends up with flashing / blinking volume lights or boot loops. Won't factory reset.<br></br><b>Root Cause:</b> Apple has not publicly confirmed what the root cause of this is, and no one outside of Apple knows for certain yet, but, based on multiple reports with different behaviors, I think there are a few reasons why your HomePod would end up with this. The most likely cause is failed software or a failed update. Less likely, a failing A8 SoC, NAND, or it's BGA. I cannot find replacement A8 SoC chips for the HomePod, and the A8 SoC is married to the NAND, so even with new chips there is no known way to restore their software yet.<br></br><b>Software Repair Attempts:</b> Apple has not released any restorable firmware / software for original HomePods. The OTA's from ipsw.me are unsuitable for restore, and the firmware for the Mini is incompatible. <a href="https://github.com/el1ng/homepwn" target="_blank">There is USB </a>and UART access via the pins on the bottom of the HomePod, and when connected to a Mac or PC, various software detects and recognizes a HomePod is connected (in Recovery mode!) but there are no restorable IPSWs publicly available to restore from when you get this far.<br></br>I made a <a href="https://www.reddit.com/r/HomePod/comments/s3gmkp/i_got_usb_working_on_an_og_homepod_finder_even/" target="_blank"> reddit post</a> showing my attempt following a <a href="https://github.com/el1ng/homepwn" target="_blank">github guide</a> to connect to HomePod via USB. I've been unsuccessful dumping the firmware from working HomePods, tools like <a href="https://github.com/axi0mX/ipwndfu" target="_blank">iPwnDFU</a> seem to not work.<br></br>Since HomePod uses the A8 SoC, it should be permanently vulnerable to checkm8 exploits. Feel free to contact me if you are interested in giving it a try, I can give you remote access to a Mac, Windows, or Linux device connected to a good and bricked HomePod via USB.<br></br><b>Hardware Repair Attempts:</b> Myself and others have tried baking / reflowing every chip on bricked logic boards multiple times with no success. I have replaced the PMIC on the logic board with one from an iPhone 6 and found, while this part is compatible (lol) this did not resolve the actual issue. User "mlogicrepair" shared in our discord their progress attempting to replace the A8 SoC. /u/dzsenos had their A8 SoC and NAND professionally reballed and it did not resolve the issue.<br></br>I have a 24/7 livestream going with a bunch of homepods on an automatic random on/off switch in an attempt to debrick some by chance: <a href="https://www.youtube.com/@nicsbricks">Watch Here!</a><br></br><b>Why can't Apple just let us restore them?</b><br></br><iframe width="426" height="240" src="https://www.youtube.com/embed/pjJE-Zs5Uao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></br></p>
 					<p>
 					<div class="column icon-container large-centered large-8 medium-10 small-12">
 					<div class="image-wrapper">
