@@ -1,7 +1,7 @@
-if (navigator.userAgent.indexOf("Android") != -1)
-{
-       location.href = './mob.html';
-}    
+//if (navigator.userAgent.indexOf("Android") != -1)
+//{
+//       location.href = './mob.html';
+//}    
 var _____WB$wombat$assign$function_____ = function(name) {
     return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name];
 };
