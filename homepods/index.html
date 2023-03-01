@@ -408,6 +408,7 @@ body {
 										<b>Australia:</b><br>Nathan B.<br><a href="TBA">TBA</a><br><a href="mailto:nathanb90@gmail.com" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">nathanb90@gmail.com</span><span class="icon icon-after more"></span></a></p><br>
 										<b>Germany:</b><br>Moon Repair<br><a href="http://www.moonrepair.de/">http://www.moonrepair.de//</a><br><a href="mailto:info@moonrepair.de" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">info@moonrepair.de</span><span class="icon icon-after more"></span></a></p><br>
 										<b>Spain:</b><br>Fernando P.<br><a href="mailto:fpascualsoriano5@gmail.com" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">fpascualsoriano5@gmail.com</span><span class="icon icon-after more"></span></a></p><br>
+										<b>Czech Republic:</b><br>Martin @ AWC<br><a href="https://awc.cz/">https://awc.cz/</a><br><a href="mailto:elbl@awc.cz" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">elbl@awc.cz</span><span class="icon icon-after more"></span></a></p><br>
 </p>
 				</div>
 			</div>
@@ -870,12 +871,12 @@ body {
 					</div>
 					<h2 class="typography-headline-super transition-1 large-10 large-centered medium-11 small-12">Common Issues</h2>
 					<p>The following are all of the issues encountered or reported, and any known ways to diagnose and repair. You can right-click and open each image in a new tab for a larger view.</p>
-					<p>If you've found a new cause for an issue and it's not listed here, please contact me and I'll add it with credit to you!
+					<p>If you've found a new issue or fix and it's not listed here, please contact me and I'll add it with credit to you!
 					<div id="blinkblink"></div>
 					<br></br>
-					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Flashing Volume Lights and Boot Loops- NO KNOWN FIX YET</h4>
+					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Flashing Volume Lights & Bootloops - NO KNOWN FIX YET</h4>
 					<p><b>ACTIVE BOUNTY:</b> I am offering a free A1639 Apple HomePod to whoever can find a reproducable repair for this issue! Contact me if you think you got it...
-					<p><b>Symptoms:</b> HomePod will power on, but ends up with either boot loops, or flashing / blinking volume lights. Won't factory reset.<br></br><b>Arbitrarily Irrepairable...</b><br>Apple has not publicly confirmed what the root cause of this is, and no one outside of Apple knows for certain yet, but, based on multiple reports with different behaviors, I think there are a few reasons why your HomePod would end up with this; The most likely cause is an interrupted or awry software update. Less likely, a failing A8 SoC or it's BGA. I cannot find replacement A8 SoC chips for the HomePod, and the A8 SoC is married to the NAND, so even with new chips there is no known way to restore their software yet.<br></br><b>Software Repair Attempts:</b> Apple has not released any restorable firmware / software for original HomePods, the OTA's from ipsw.me are unsuitable for restore, and the firmware for the Mini is incompatible...so whether this is a software, or hardware issue, there is no publicly known way to repair this! <b>It is physically possible,</b> there is USB and UART access via the pins on the bottom of the HomePod, and when connected to a Mac or PC, various software detects and recognizes a HomePod is connected, but there are no restorable IPSWs publicly available to restore from when you get this far!<br></br>I made a <a href="https://www.reddit.com/r/HomePod/comments/s3gmkp/i_got_usb_working_on_an_og_homepod_finder_even/" target="_blank"> reddit post</a> showing my attempt following a <a href="https://github.com/el1ng/homepwn" target="_blank">github guide</a> to connect to HomePod via USB. I've been unsuccessful dumping the firmware from working HomePods, tools like <a href="https://github.com/axi0mX/ipwndfu" target="_blank">iPwnDFU</a> seem to not work.<br></br>Since HomePod uses the A8 SoC, it should be permanently vulnerable to checkm8 exploits. Feel free to contact me if you are interested in giving it a try, I can give you remote access to a Mac, Windows, or Linux device connected to a good and bricked HomePod via USB.<br></br><b>Hardware Repair Attempts:</b> Myself and others have tried baking / reflowing every chip on bricked logic boards multiple times with no success. I have replaced the PMIC on the logic board with one from an iPhone 6 and found, while this part is compatible (lol) this did not resolve the actual issue. User "mlogicrepair" shared in our discord their progress attempting to replace the A8 SoC. /u/dzsenos had their A8 SoC and NAND professionally reballed and it did not resolve the issue.<br></br><b>Why can't Apple just let us restore them?</b><br></br></p>
+					<p><b>Symptoms:</b> HomePod will power on, but ends up with flashing / blinking volume lights or boot loops. Won't factory reset.<br></br><b>Root Cause:</b> Apple has not publicly confirmed what the root cause of this is, and no one outside of Apple knows for certain yet, but, based on multiple reports with different behaviors, I think there are a few reasons why your HomePod would end up with this. The most likely cause is failed software or a failed update. Less likely, a failing A8 SoC, NAND, or it's BGA. I cannot find replacement A8 SoC chips for the HomePod, and the A8 SoC is married to the NAND, so even with new chips there is no known way to restore their software yet.<br></br><b>Software Repair Attempts:</b> Apple has not released any restorable firmware / software for original HomePods. The OTA's from ipsw.me are unsuitable for restore, and the firmware for the Mini is incompatible. <a href="https://github.com/el1ng/homepwn" target="_blank">There is USB </a>and UART access via the pins on the bottom of the HomePod, and when connected to a Mac or PC, various software detects and recognizes a HomePod is connected (in Recovery mode!) but there are no restorable IPSWs publicly available to restore from when you get this far.<br></br>I made a <a href="https://www.reddit.com/r/HomePod/comments/s3gmkp/i_got_usb_working_on_an_og_homepod_finder_even/" target="_blank"> reddit post</a> showing my attempt following a <a href="https://github.com/el1ng/homepwn" target="_blank">github guide</a> to connect to HomePod via USB. I've been unsuccessful dumping the firmware from working HomePods, tools like <a href="https://github.com/axi0mX/ipwndfu" target="_blank">iPwnDFU</a> seem to not work.<br></br>Since HomePod uses the A8 SoC, it should be permanently vulnerable to checkm8 exploits. Feel free to contact me if you are interested in giving it a try, I can give you remote access to a Mac, Windows, or Linux device connected to a good and bricked HomePod via USB.<br></br><b>Hardware Repair Attempts:</b> Myself and others have tried baking / reflowing every chip on bricked logic boards multiple times with no success. I have replaced the PMIC on the logic board with one from an iPhone 6 and found, while this part is compatible (lol) this did not resolve the actual issue. User "mlogicrepair" shared in our discord their progress attempting to replace the A8 SoC. /u/dzsenos had their A8 SoC and NAND professionally reballed and it did not resolve the issue.<br></br><b>Why can't Apple just let us restore them?</b><br></br></p>
 					<p>
 					<div class="column icon-container large-centered large-8 medium-10 small-12">
 					<div class="image-wrapper">
@@ -884,18 +885,51 @@ body {
 						</div>
 						<div class="image-wrapper">
 							<figure class="image-icons transition-1"><img src="media/usb.jpg" height="270"></figure>
-							<figcaption class="typography-caption transition-2">Finder Unable to Restore</figcaption>
+							<figcaption class="typography-caption transition-2">Unable to Restore USB HomePod</figcaption>
 						</div>
 						<div class="image-wrapper">
 							<figure class="image-icons transition-1"><img src="media/pmicreplaced.jpg" height="270"></figure>
-							<figcaption class="typography-caption transition-2">Used PMIC from iPhone 6 Works but Same Issue</figcaption>
+							<figcaption class="typography-caption transition-2">Used PMIC from iPhone 6, Same Issue</figcaption>
 						</div>
 						<div class="image-wrapper">
 							<figure class="image-icons transition-1"><img src="media/socnandoff.jpg" height="270"></figure>
 							<figcaption class="typography-caption transition-2">"mlogicrepair" with old A8 SoC and Storage NAND off</figcaption>
 						</div>
 					</div>
-
+					<div id="nopowerdisplay"></div>
+					<br></br>
+					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power, Boot Loops, or Blinking / Flickering Volume Buttons - Damaged Display</h4>
+					<p><b>Symptoms:</b> I've seen damaged displays cause differing symptoms ranging from no power at all, to flickering or boot loops, to flickering volume buttons.<br></br><b>Diagnosis:</b> Thoroughly inspect the display for any damage, especially around the LED PCB on the backside. It's common when a HomePod is dropped for the display to get smashed in and start separating as pictured below. <br></br><b>Repair:</b>  Damage like this usually warrants replacing the whole display.</a><br></br><b>Root Cause:</b> Usually from being dropped. They don't just break like this by themselves</p></b>
+					<p>
+					<div class="column icon-container large-centered large-8 medium-10 small-12">
+						<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="media/crackeddisplay1.jpg" height="270"></figure>
+							<figcaption class="typography-caption transition-2">PCB for LEDs coming off</figcaption>
+						</div>
+						<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="media/crackeddisplay2.jpg" height="270"></figure>
+							<figcaption class="typography-caption transition-2">...</figcaption>
+						</div>
+					</div>
+					<div id="nopowerdisplay"></div>
+					<br></br>
+					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Boot Loops or Blinking / Flickering Volume Buttons - Damaged Mic Board</h4>
+					<p><b>Symptoms:</b> Similar to the symptoms from a damaged display. A damaged mic board can also obviously cause issues with voice commands not working.<br></br><b>Diagnosis:</b> Thoroughly inspect the mic board for any damage, especially around the chip pictured below. <br></br><b>Repair:</b> Replace mic board. Unsure what part # the chip pictured below is...</a><br></br><b>Root Cause:</b> Usually damage from not being careful with your tools while working on your pod.</p></b>
+					<p>
+					<div class="column icon-container large-centered large-8 medium-10 small-12">
+						<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="media/goodmicboard.jpg" height="270"></figure>
+							<figcaption class="typography-caption transition-2">What the mic board should look like</figcaption>
+						</div>
+						<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="media/badmicboard.jpg" height="270"></figure>
+							<figcaption class="typography-caption transition-2">That one .gif of michael scott yelling "NO"</figcaption>
+						</div>
+						<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="media/micchipupclose.jpg" height="270"></figure>
+							<figcaption class="typography-caption transition-2">Unidentified Chip</figcaption>
+						</div>
+					</div>
 					<div id="nopower"></div>
 					<div id="nopowerdiode"></div>
 					<br></br>
@@ -1212,13 +1246,13 @@ title:'PayPal - The safer, easier way to pay online!',
 				<h2 class="typography-headline-super transition-1 large-10 large-centered medium-11 small-12">FAQ</h2>
 				<p>For the questions asked more than once...</p>
 				<br></br>
-				<p><b>Q: </b>"Can you fix my HomePod?"<br><b>A: </b>My Sister in Satan, I am not telepathic. Please tell me what the issue is and I'll let you know.</p><br>
-				<p><b>Q: </b>"My tracking number says it was delivered! Did you get my homepod?"<br><b>A: </b>My UPS mailbox only tells me when I have packages, not who's packages. Please wait until I have a chance to pick up packages for the day before asking if I have yours!</p><br>
-				<p><b>Q: </b>"Do you sell parts?"<br><b>A: </b>Not at this time. Please pillage parts from your own pods.</p><br>
-				<p><b>Q: </b>"Do you sell Pods?"<br><b>A: </b>Not at this time.</p><br>
+				<p><b>Q: </b>"Can you fix my HomePod?"<br><b>A: </b>Please tell me what the issue is and I'll let you know, or check the Repair Estimates section.</p><br>
+				<p><b>Q: </b>"Can you fix my HomePod MINI?"<br><b>A: </b>No. I don't know how to fix most of their issues yet nor do I have the time.</p><br>
+				<p><b>Q: </b>"I sent you my homepod, the tracking number says it was delivered! Did you get my homepod?"<br><b>A: </b>My UPS mailbox only tells me when I have packages, not who's packages. Please wait until I have a chance to pick up the day's packages before asking if I have yours.</p><br>
+				<p><b>Q: </b>"Do you sell pods or parts?"<br><b>A: </b>Not at this time. Online store coming soon.</p><br>
 				<p><b>Q: </b>"Can I buy a broken HomePod online and have it shipped directly to you for repairs?"<br><b>A: </b>Absolutely. If you're purchasing on eBay, be sure to enter my shipping address during checkout to retain your buyer protection! Do not message eBay sellers asking them to change the shipping address after you checked out, this is against eBay policy and voids buyer / seller protection!</p><br>
-				<p><b>Q: </b>"Is this your job / living?"<br><b>A: </b>That's the dream. For now I do this in my "free" time.</p><br>
-				<p><b>Q: </b>"How did you make tihs website?"<br><b>A: </b>Used WayBack Machine (Internet Archive) to browse older versions of Apple's original HomePod website, then I merged what I liked from each version into what you see here, plus a lot of edits, bug fixes, and cleanup.</p><br>
+				<p><b>Q: </b>"Is this your job?"<br><b>A: </b>No. That would be pretty cool but I currently do this in my "free" time.</p><br>
+				<p><b>Q: </b>"How did you make this website?"<br><b>A: </b>Used WayBack Machine (Internet Archive) to browse older versions of Apple's original HomePod website, then I merged what I liked from each version into what you see here, plus a lot of edits, bug fixes, and cleanup.</p><br>
 		</section>
 	</main>
 
