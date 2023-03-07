@@ -5457,7 +5457,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	height: 825px;
 	background-size: 654px 825px;
 	background-repeat: no-repeat;
-	background-image: url("media/homepod_side__dzgduaect3cm_large.gif")
+	background-image: url("media/homepod_side__dzgduaect3cm_large.jpg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -5466,7 +5466,7 @@ only screen and (min-resolution: 1.5dppx),
 (min-resolution: 144dpi) {
 	.page-overview .section-design .homepod-speaker-component-5,
 	.page-overview .section-design .homepod-speaker-side {
-		background-image: url("media/homepod_side__dzgduaect3cm_large_2x.gif")
+		background-image: url("media/homepod_side__dzgduaect3cm_large_2x.jpg")
 	}
 }
 
@@ -5477,7 +5477,7 @@ only screen and (min-resolution: 1.5dppx),
 		height: 583px;
 		background-size: 462px 583px;
 		background-repeat: no-repeat;
-		background-image: url("media/homepod_side__dzgduaect3cm_medium.gif")
+		background-image: url("media/homepod_side__dzgduaect3cm_medium.jpg")
 	}
 }
 
@@ -5486,7 +5486,7 @@ only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	.page-overview .section-design .homepod-speaker-component-5,
 	.page-overview .section-design .homepod-speaker-side {
-		background-image: url("media/homepod_side__dzgduaect3cm_medium_2x.gif")
+		background-image: url("media/homepod_side__dzgduaect3cm_medium_2x.jpg")
 	}
 }
 
@@ -5497,7 +5497,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 		height: 363px;
 		background-size: 288px 363px;
 		background-repeat: no-repeat;
-		background-image: url("media/homepod_side__dzgduaect3cm_small.gif")
+		background-image: url("media/homepod_side__dzgduaect3cm_small.jpg")
 	}
 }
 
@@ -5506,7 +5506,7 @@ only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	.page-overview .section-design .homepod-speaker-component-5,
 	.page-overview .section-design .homepod-speaker-side {
-		background-image: url("media/homepod_side__dzgduaect3cm_small_2x.gif")
+		background-image: url("media/homepod_side__dzgduaect3cm_small_2x.jpg")
 	}
 }
 
@@ -5846,7 +5846,7 @@ html.css-mask .page-overview .hardware-reveal .hardware-mesh {
 	height: 825px;
 	background-size: 654px 825px;
 	background-repeat: no-repeat;
-	background-image: url("media/homepod_side__dzgduaect3cm_large.gif");
+	background-image: url("media/homepod_side__dzgduaect3cm_large.jpg");
 	-webkit-mask-size: 654px 825px;
 	mask-size: 654px 825px;
 	-webkit-mask-repeat: no-repeat;
@@ -5860,7 +5860,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	html.css-mask .page-overview .hardware-reveal .hardware-mesh {
-		background-image: url("media/homepod_side__dzgduaect3cm_large_2x.gif")
+		background-image: url("media/homepod_side__dzgduaect3cm_large_2x.jpg")
 	}
 }
 
@@ -5888,7 +5888,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 		height: 583px;
 		background-size: 462px 583px;
 		background-repeat: no-repeat;
-		background-image: url("media/homepod_side__dzgduaect3cm_medium.gif");
+		background-image: url("media/homepod_side__dzgduaect3cm_medium.jpg");
 		-webkit-mask-size: 462px 583px;
 		mask-size: 462px 583px;
 		-webkit-mask-repeat: no-repeat;
@@ -5902,7 +5902,7 @@ only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
 	html.css-mask .page-overview .hardware-reveal .hardware-mesh {
-		background-image: url("media/homepod_side__dzgduaect3cm_medium_2x.gif")
+		background-image: url("media/homepod_side__dzgduaect3cm_medium_2x.jpg")
 	}
 }
 
@@ -5930,7 +5930,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 		height: 363px;
 		background-size: 288px 363px;
 		background-repeat: no-repeat;
-		background-image: url("media/homepod_side__dzgduaect3cm_small.gif");
+		background-image: url("media/homepod_side__dzgduaect3cm_small.jpg");
 		-webkit-mask-size: 288px 363px;
 		mask-size: 288px 363px;
 		-webkit-mask-repeat: no-repeat;
@@ -5944,7 +5944,7 @@ only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 only screen and (max-width: 735px) and (min-resolution: 1.5dppx),
 only screen and (max-width: 735px) and (min-resolution: 144dpi) {
 	html.css-mask .page-overview .hardware-reveal .hardware-mesh {
-		background-image: url("media/homepod_side__dzgduaect3cm_small_2x.gif")
+		background-image: url("media/homepod_side__dzgduaect3cm_small_2x.jpg")
 	}
 }
 
@@ -17292,7 +17292,7 @@ only screen and (min-resolution: 1.5dppx),
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
 	.page-overview .section-music .hardware-image {
-		background-image: url("media/homepod_side_dark_fallback__bo5osgiymyj6_large_2x.png")
+		background-image: url("media/homepod_side_dark_fallback__bo5osgiymyj6_large_2x.jpg")
 	}
 }
 
