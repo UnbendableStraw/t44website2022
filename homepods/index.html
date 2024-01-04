@@ -764,15 +764,15 @@
 				<div class="section-content" data-component-list="CopyEngagement CopyParallax">
 				<div class="row row-quantity">
 					<h2 class="typography-headline-super transition-1 large-10 large-centered medium-11 small-12">Common Issues</h2>
-					<p>The following are various issues seen and known ways I (or others if credited) have found to diagnose and repair them. You can right-click and open each image in a new tab for a larger view.</p>
+					<p>The following are the most common issues seen and known ways I (or others if credited) have found to diagnose and repair them. You can right-click and open each image in a new tab for a larger view.</p>
 					<p>If you aren't able to confirm diagnosis of an issue, you should thoroughly inspect for any physical damage.</p>
-					<p>If you've found a new fix for an issue and it's not listed here, please contact me so it can be added with your name on it!
-					<p><b>Jump To:</b> <a href="#blinkblink">Flashing Volume & Boot Loops</a> | <a href="#physicaldamage">Physical Damage</a> | <a href="#nopower">No Power</a> | <a href="#popping">Death Farts & Popping</a> | <a href="#nobass">No Bass</a> | <a href="#nosound">No Sound</a> | <a href="#haveyouseenthispart">Missing Parts</a> | <a href="#mesh">Mesh</a>
+					<p>If you've found a new fix for an issue and it's not listed here, please contact me so it can be added with your name on it!</p>
+					<p><b>Jump To:</b> <a href="#blinkblink">Flashing Volume & Boot Loops</a> | <a href="#physicaldamage">Physical Damage</a> | <a href="#nopower">No Power</a> | <a href="#popping">Death Farts & Popping</a> | <a href="#nobass">No Bass</a> | <a href="#haveyouseenthispart">Missing Parts</a> | <a href="#mesh">Coloring / Replacing the Mesh</a> | <a href="#lesscommon">More Issues</a>
 					<div id="blinkblink"></div>
 					<br><br><br><br>
 					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Flashing Volume Lights & Bootloops - NO KNOWN FIX YET</h4>
 					<p><b>ACTIVE BOUNTY:</b> I am offering a free A1639 Apple HomePod to whoever can find a reproducable repair for this issue! Contact me if you think you got it...
-					<p><b>Symptoms:</b> HomePod will power on, but ends up with flashing / blinking volume lights or boot loops. Won't factory reset.<br><br><b>Root Cause:</b> Apple has not publicly confirmed what the root cause of this is, and no one outside of Apple knows for certain yet, but I think there are a few reasons why your HomePod would end up with this. The most likely cause is failed software or a failed update. Less likely, a failing A8 SoC, NAND, or it's BGA. I cannot find replacement A8 SoC chips for the HomePod, and the A8 SoC is married to the NAND, so even with new chips there is no known way to restore their software yet.<br><br><b>Software Repair Attempts:</b> Apple has not released any restorable firmware / software for original HomePods. The OTA's from ipsw.me are unsuitable for restore, and the firmware for the Mini is incompatible. <a href="https://github.com/el1ng/homepwn" target="_blank">There is USB </a>and UART access via the pins on the bottom of the HomePod, and when connected to a Mac or PC, various software detects and recognizes a HomePod is connected (in Recovery mode!) but there are no restorable IPSWs publicly available to restore from when you get this far.<br><br>I made a <a href="https://www.reddit.com/r/HomePod/comments/s3gmkp/i_got_usb_working_on_an_og_homepod_finder_even/" target="_blank"> reddit post</a> showing my attempt following a <a href="https://github.com/el1ng/homepwn" target="_blank">github guide</a> to connect to HomePod via USB. I've been unsuccessful dumping the firmware from working HomePods, tools like <a href="https://github.com/axi0mX/ipwndfu" target="_blank">iPwnDFU</a> seem to not work.<br><br>Since HomePod uses the A8 SoC, it should be permanently vulnerable to checkm8 exploits. Feel free to contact me if you are interested in giving it a try, I can give you remote access to a Mac, Windows, or Linux device connected to a good and bricked HomePod via USB.<br><br><b>Hardware Repair Attempts:</b> Myself and others have tried baking / reflowing every chip on bricked logic boards multiple times with no success. I have replaced the PMIC on the logic board with one from an iPhone 6 and found, while this part is compatible (lol) this did not resolve the actual issue. User "mlogicrepair" shared in our discord their progress attempting to replace the A8 SoC. /u/dzsenos had their A8 SoC and NAND professionally reballed and it did not resolve the issue.<br><br>I have a 24/7 livestream going with a bunch of homepods on an automatic random on/off switch in an attempt to debrick some by chance: <a href="https://www.youtube.com/@nicsbricks">Watch Here!</a><br><br><b>Why can't Apple just let us restore them?</b><br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLiC9wAu2E8jd7AMB4doilridAZONYER_-" title="24/7 Debrick Livestream" allow="autoplay; picture-in-picture" allowfullscreen></iframe><br></p>
+					<p><b>Symptoms:</b> HomePod will power on, but ends up with flashing / blinking volume lights or boot loops. Won't factory reset.<br><br><b>Root Cause:</b> In rare cases it is caused by <a href="#nopowerdisplay">physical damage to the display.</a> However, for the vast majority, it seems the most likely cause is failed software or a failed update, resulting in Recovery Mode. It's oddly similar behavior to how bricked AppleTVs only blink their LED, too. Apple has not publicly confirmed what the root cause of this is, and no one outside of Apple knows for certain yet. It seems unlikely most are a failing A8 SoC, NAND, or it's BGA. I cannot find replacement A8 SoC chips for the HomePod, and the A8 SoC is married to the NAND, so even if you could replace these chips AND remarry them, there is still no known way to restore the software.<br><br><b>Software Repair Attempts:</b> Apple has not released any restorable firmware / software for original HomePods. The OTA's from ipsw.me are unsuitable for restore, and the firmware for the Mini is incompatible. <a href="https://github.com/el1ng/homepwn" target="_blank">There is USB </a>and UART access via the pins on the bottom of the HomePod, and when connected to a Mac or PC, various software detects and recognizes a HomePod is connected (in Recovery mode!) but there are no restorable IPSWs publicly available to restore from when you get this far.<br><br>I made a <a href="https://www.reddit.com/r/HomePod/comments/s3gmkp/i_got_usb_working_on_an_og_homepod_finder_even/" target="_blank"> reddit post</a> showing my attempt following a <a href="https://github.com/el1ng/homepwn" target="_blank">github guide</a> to connect to HomePod via USB. I've been unsuccessful dumping the firmware from working HomePods, tools like <a href="https://github.com/axi0mX/ipwndfu" target="_blank">iPwnDFU</a> seem to not work.<br><br>Since HomePod uses the A8 SoC, it should be permanently vulnerable to checkm8 exploits. Feel free to contact me if you are interested in giving it a try, I can give you remote access to a Mac, Windows, or Linux device connected to a good and bricked HomePod via USB.<br><br><b>Hardware Repair Attempts:</b> Myself and others have tried baking / reflowing every chip on bricked logic boards multiple times with no success. I have replaced the PMIC on the logic board with one from an iPhone 6 and found, while this part is compatible (lol) this did not resolve the actual issue. User "mlogicrepair" shared in our discord their progress attempting to replace the A8 SoC. /u/dzsenos had their A8 SoC and NAND professionally reballed and it did not resolve the issue.</p>
 					<p>
 					<div class="column icon-container large-centered large-8 medium-10 small-12">
 					<div class="image-wrapper">
@@ -792,91 +792,11 @@
 							<p>"mlogicrepair" with old A8 SoC and Storage NAND off</p>
 						</div>
 					</div>
-				<div id="physicaldamage"></div>
-					<br><br>
-				<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Rattling / Dirty Bass, Touch / Display Issues, and More - Physical Damage</h4>
-				<p><b>Symptoms:</b> HomePod may or may not be working fine. You may hear rattling when you shake it, or have touch / display issues, even making it appear that the HomePod isn't powering on or only briefly powers on and bootloops. <br><br><b>Diagnosis:</b> For rattling / dirty sounding bass, check that your subwoofer is not bent and properly sealed. Pull your logic board out and check for broken loose plastic. You can try to glue or plastic weld the broken parts back together, or replace the top basket entirely. Thoroughly inspect logic cable, display cable, and connectors for any damage.<br><br><b>Repair:</b> Not recommended to ignore this otherwise the logic board can shift enough to push the display cable into the frame and cut into it, causing weird power / display / touch issues.<br><br><b>Root Cause:</b> Usually this is from some of the frame holding the logic board breaking off as a result of drop damage. Ensure you <a href="#shiptips">pack your Pod properly</a> whenever shipping it!</p>
-				<p>
-				<div class="column icon-container large-centered large-8 medium-10 small-12">
-				<div class="image-wrapper">
-						<figure class="image-icons transition-1"><img src="media/brokenplastic.jpg" height="270" alt="broken plastic"></figure>
-						<p>Broken Plastic From logic Board Frame</p>
-					</div>
-				<div class="image-wrapper">
-						<figure class="image-icons transition-1"><img src="media/damageddisplaycable.png" height="270" alt="damaged display ribbon cable"></figure>
-						<p>Display Cable Cut From Board Shift</p>
-					</div>
-					</div>
-					<div id="nopowerdisplay"></div>
-					<br><br>
-					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power, Boot Loops, or Blinking / Flickering Volume Buttons - Damaged Display</h4>
-					<p><b>Symptoms:</b> I've seen damaged displays cause differing symptoms ranging from no power at all, to flickering or boot loops, to flickering volume buttons.<br><br><b>Diagnosis:</b> Thoroughly inspect the display for any damage, especially around the LED PCB on the backside. It's common when a HomePod is dropped for the display to get smashed in and start separating as pictured below. <br><br><b>Repair:</b>  Damage like this usually warrants replacing the whole display.<br><br><b>Root Cause:</b> Usually from being dropped. They don't just break like this by themselves</p>
-					<p>
-					<div class="column icon-container large-centered large-8 medium-10 small-12">
-						<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/crackeddisplay1.jpg" height="270" alt="display damaged"></figure>
-							<p>PCB for LEDs coming off</p>
-						</div>
-						<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/crackeddisplay2.jpg" height="270" alt="display pcb separating"></figure>
-							<p>...</p>
-						</div>
-					</div>
-					<div id="nopowermicboard"></div>
-					<br><br>
-					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Boot Loops or Blinking / Flickering Volume Buttons - Damaged Mic Board</h4>
-					<p><b>Symptoms:</b> Similar to the symptoms from a damaged display. A damaged mic board can also obviously cause issues with voice commands not working.<br><br><b>Diagnosis:</b> Thoroughly inspect the mic board for any damage, especially around the chip pictured below. <br><br><b>Repair:</b> Replace mic board. Unsure what part # the chip pictured below is...<br><br><b>Root Cause:</b> Usually damage from not being careful with your tools while working on your pod.</p>
-					<p>
-					<div class="column icon-container large-centered large-8 medium-10 small-12">
-						<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/goodmicboard.jpg" height="270" alt="good mic board"></figure>
-							<p>What the mic board should look like</p>
-						</div>
-						<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/badmicboard.jpg" height="270" alt="damaged mic board missing chip"></figure>
-							<p>That one .gif of michael scott yelling "NO"</p>
-						</div>
-						<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/micchipupclose.jpg" height="270" alt="chip up close"></figure>
-							<p>Unidentified Chip</p>
-						</div>
-					</div>
-					<div id="goofball"></div>
-					<br><br>
-				<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Improper Ribbon Installation After Repairs</h4>
-				<p>Damaged or improperly reinstalled ribbon cables can cause no sound, no power, boot loops, and more.<br><br><b>Damage:</b> Thoroughly inspect the entire ribbon cable for any tears, cracks, or other damage. This cable is commonly damaged from rough handling when disconnecting the logic board, where the end of the cable connecting to the logic board will crack / tear. Another common mistake is accidentally damaging the ribbon cable while trying to pry the top basket off. <br><br><b>Improper Installation:</b> The most common mistake made when reassembling your HomePod is an incorrect installation of the main ribbon cable. On the amplifier board connector, the locked position will actually look open, and unlocked actually looks closed! Verify you have properly locked the cable in by pressing the locking clip down, and that the white line on the cable is level with the top of the connector! Improper installation may lead to permanent damage resulting in no sound or power. I've even done this once myself and lost both the amp and logic board's sound, and have yet to figure out how to repair it.<br><br></p>
-				<p>
-				<div class="column icon-container large-centered large-8 medium-10 small-12">
-				<div class="image-wrapper">
-						<figure class="image-icons transition-1"><img src="media/torncable.jpg" height="265" alt="torn ribbon cable"></figure>
-						<p>Torn Cable From Pulling on Logic Board</p>
-					</div>
-					<div class="image-wrapper">
-						<figure class="image-icons transition-1"><img src="media/stabbedcable.jpg" height="265" alt="damaged ribbon cable"></figure>
-						<p>Damaged Cable from Prying Top Basket</p>
-					</div>
-					<div class="image-wrapper">
-						<figure class="image-icons transition-1"><img src="media/incorrect1.jpg" height="265" alt="crooked ribbon cable"></figure>
-						<p>Unlocked, Crooked Cable</p>
-					</div>
-											<div class="image-wrapper">
-						<figure class="image-icons transition-1"><img src="media/correct1.jpg" height="265" alt="correctly installed cable"></figure>
-						<p>Locked, Level Cable</p>
-					</div>
-											<div class="image-wrapper">
-						<figure class="image-icons transition-1"><img src="media/incorrect2.jpg" height="265" alt="incorrect cable install"></figure>
-						<p>Don't Do This!</p>
-					</div>
-											<div class="image-wrapper">
-						<figure class="image-icons transition-1"><img src="media/correct2.jpg" height="265" alt="correct cable install"></figure>
-						<p>Do This!</p>
-					</div>
-					</div>
 					<div id="nopower"></div>
 					<div id="nopowerdiode"></div>
 					<br><br><br><br><br><br>
 					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power - Shorted S.B. Diode</h4>
-					<p><b>Symptoms:</b> No power, no lights, and no response. Power draw at the outlet will be around 2-10 Watts. If left plugged in for some time, the side of the HomePod gets slightly warmer.<br><br><b>Diagnosis:</b> Diode is located on the amplifier board. Use a multimeter in continuity test mode to test if diode is shorted by placing one probe onto the larger pin of the diode, and the other probe on one of the two smaller pins of the diode. If meter shows it's shorted, move probe from first small pin to other small pin. If you still see a short, remove the diode and test with the diode off the board. If just the diode shows shorted and not the board, replace the diode.<br><br><b>Repair:</b> Replace shorted diode with part number PDS560-13, PDS560-13Q, PDS760-13, or any other 60v 5a schottky barrier diode of similar specs. Video guide available on <a href="https://www.youtube.com/watch?v=FfGiuh_QH3M" target="_blank">YouTube.</a><br><br><b>Root Cause:</b> Why this diode fails in HomePods is unknown. These diodes' failure mode is to short when overvolted or overheated. It's possible the diode is not suited for the task or there was a bad batch of diodes. Comparing HomePods that come in for repair for unrelated issues, if their s.b. diode is still working, it usually is much newer or older than diodes that have already failed. I've only seen diodes with date codes "1746K" and "1748K" fail.
+					<p><b>Symptoms:</b> No power, no lights, and no response. Power draw at the outlet will be around 2-10 Watts. If left plugged in for some time, the side of the HomePod may feel slightly warmer.<br><br><b>Diagnosis:</b> Diode is located on the amplifier board. Use a multimeter in continuity test mode to test if diode is shorted by placing one probe onto the larger pin of the diode, and the other probe on one of the two smaller pins of the diode. If meter shows it's shorted, move probe from first small pin to other small pin. If you still see a short, remove the diode and test with the diode off the board. If just the diode shows shorted and not the board, replace the diode.<br><br>If your diode tests OK, check for <a href="#lesscommon">less-common</a> no power issues.<br><br><b>Repair:</b> Replace shorted diode or any diode with date code 1746k-1748k with a newer date and part number PDS560-13, PDS560-13Q, PDS760-13, or any other 60v 5a schottky barrier diode of similar specs to permanently repair Video guide available on <a href="https://www.youtube.com/watch?v=FfGiuh_QH3M" target="_blank">YouTube.</a><br><br><b>Root Cause:</b> Diodes manufactured between week 46 and week 48 of 2017 (date code 1746k-1748k) have known QA issues and have incredibly high failure rates. No other date codes have been found to fail. Apple used a large date range of diodes during manufacturing and there is no correlation to a diode's date code and a HomePod's serial number, so there is no way of telling what diode your homepod has without disassembly.<br><br>All first-generation HomePods, whether factory-new, factory "refurbished", or out of warranty replacements, will have the same chance of having this diode. Second generation HomePods do not.
 					<p>
 					<div class="column icon-container large-centered large-8 medium-10 small-12">
 						<div class="image-wrapper">
@@ -892,37 +812,39 @@
 							<p>Diode Date Code</p>
 						</div>
 					</div>
-					<div id="nopowerfuse"></div>
-					<br><br>
-					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power - Blown Power Supply Fuse</h4>
-					<p><b>Symptoms:</b> No power, no lights, and no response. Power draw at the outlet will be 0 Watts.<br><br><b>Diagnosis:</b> Fuse is located on the underside of the power supply board. Use multimeter in continuity mode to test if fuse was blown open.<br><br><b>Repair:</b> If fuse is blown you should replace it with another "T3.15AH250V" fuse.<br><br><b>Root Cause:</b> The fuse will blow as a result of a surge from the AC power source. A quality surge protector should help prevent this. Power strips alone provide no protection.</p>
-					<p>
-					<div class="column icon-container large-centered large-8 medium-10 small-12">
-						<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/badfuse.jpg" height="270" alt="fuse location on power supply"></figure>
-							<p>Fuse Location On Power Supply</p>
-						</div>
-						<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/probefuse.jpg" height="270" alt="where to probe fuse"></figure>
-							<p>Probe Points While Installed</p>
-						</div>
-					</div>
-					<div id="nopowerlogicshort"></div>
-					<br><br>
-					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power - Short on Logic Board</h4>
-					<p><b>Symptoms:</b> No power, no lights, and no response. Power draw at the outlet may be a few Watts. You may hear a quiet ticking / squealing sound from the logic board. Logic board may start to warm up.<br><br><b>Diagnosis:</b> I have only seen two HomePods with No Power caused by this...in both cases, there was a shorted capacitor on the logic board. Both logic boards shorts were in different locations. You should be able to locate them with traditional short-finding methods like a thermal camera or applying flux or alcohol to the board and looking for smoke or bubbles.<br><br><b>Repair:</b> Replace any shorted components! Since there are no schematics, the exact replacement components are unknown. You can harvest them from a bricked logic board, or ask me to check with a parts board! I have a brief repair video showing diagnosis and repair for one on <a href="https://youtu.be/FWu9QsRj-rg" target="_blank">YouTube.</a><br><br><b>Root Cause:</b> Given that I've only seen this issue twice, both times from different shorts on the logic board, I'm guessing this is simply a case of capacitors just going bad. It happens.</p>
-					<p>
-					<div class="column icon-container large-centered large-8 medium-10 small-12">
-							<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/badcaponlogicboard.jpg" height="265" alt="location of bad cap"></figure>
-							<p>Bad Cap Location on One Logic Board</p>
-						</div>
-						<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/findshortwithflux.webp" height="270" alt="smoking flux when applied to short"></figure>
-							<p>Flux Smokes When Applied to Shorted Cap</p>
-						</div>
-					</div>
 					<div id="popping"></div>
+				<br><br>
+<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Death Farts - DC Offset (Failing DC Filter Capacitors)</h4>
+<p><b>Symptoms:</b> Very loud popping, lack of bass, and / or a loud buzzing sound followed by a restart, AKA "Death Farts". See below for sound samples to compare. Not to be confused with software / wifi issues where music crackles and becomes delayed.
+<br><br><b>Diagnosis:</b> 1: Remove the subwoofer and place it to the side, carefully reconnect everything and power on the HomePod.
+<br><br>2: With the HomePod powered on, not in standby but not playing anything, and subwoofer connected, measure the DC voltage with a multimeter from the subwoofer speaker terminals. You can probe with the pads under where the subwoofer cable goes into the subwoofer, see Figure 1 below.
+<br><br>TIP: Polarity does not matter when measuring DC offset, you are simply looking for how far from 0mV you are. The warmer these capacitors get when they have failed, the worse they filter DC voltage, so be sure to measure for at least a few seconds and watch for any significant growth in DC offset beyond tolerance.
+<br><br>The amp IC's <i>input</i> is rated for up to <a href="https://www.mouser.com/datasheet/2/196/ir4302-1227997.pdf" target="_blank">+/-18mV DC,</a> which means up to +/-200mV DC can be seen at the subwoofer. More than this is what triggers the amp to "Death Fart", can cause damage to components, and should warrant replacing the DC filters, so we recommend a more aggressive 50mV maximum tolerance seen at the subwoofer.
+<br><br><b>Repair:</b> There are four capacitors that filter this DC in the audio signal before it's amplified and sent to the speaker. They are located on the amplifier board, between the DAC and AMP chips. If you measured a significant amount of DC, you need to replace them with new capacitors of 10uF, size 1206, X7R, 5-10%, rated for 16v or better. I have been using EMK316AB7106KL-T with great success, consistently resulting in &lt;10mV of DC offset. I have a repair video replacing these capacitors on <a href="https://www.youtube.com/watch?v=-YZUv5ErDFw" target="_blank">YouTube.</a>
+<br><br>There is a big black resistor on the amp next to the subwoofer connector you should also inspect...on occasion I have found these to be damaged when there are Death Farts. It is a 10Ohm, 1Watt, 1% Tolerance, 200V rated, 1218 size resistor, and can be replaced with part number RCL121810R0FKEK. It's resistance can be measured while still installed on the board to confirm.
+<br><br>You will also want to inspect your <a href="#nobassbadwoofer">subwoofer speaker for damage</a> to the voice coil from too much DC, see the next Common Issue below for more detail on that.
+<br><br><b>Root Cause:</b> MLCC capacitors naturally decay over time and lose their effectiveness at filtering DC voltage, and this is exacerbated the warmer they are. High quality capacitors used properly should last many years, but eventually all will still need reconditioned or replaced again. I can only speculate the ones used in HomePods have QA issues and / or the amp doesn't have a great design to account for primary filter failure.
+<br><br>The amplifier inside the HomePod turns itself off after ~10 minutes of inactivity. <i>Any</i> activity or percieved "Hey Siri" trigger will turn the amp back on. During the change in power, there may be a popping sound. This popping sound comes from DC voltage changes being heard in the speaker. It's fine and normal for a small temporary DC spike when the amp turns on or off, resulting in a pop. It's also hard to tell the difference between that and a pop that comes from a dangerous constant DC offset that is growing over time. It's usually OK to ignore any popping issues if that's all it does. Typically HomePods will Death Fart to indicate it's enough of a problem, at which point you can and should pursue repairs.
+<br><br> I have a livestream of a repair where it needed all new capacitors, resistor, and subwoofer <a href="https://www.youtube.com/watch?v=19qIfCcoq58" target="_blank">here.</a></p>
+					<p>
+					<div class="column icon-container large-centered large-8 medium-10 small-12">
+					<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="media/woofertest.jpg" height="270" alt="woofer test"></figure>
+							<p>Subwoofer Probe Points</p>
+						</div>
+						<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="media/howtotestdcoffset.jpg" height="270" alt="multimeter connected to speaker"></figure>
+							<p>Testing for DC Offset</p>
+						</div>
+						<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="media/badcaps.jpg" height="270" alt="location of caps on amp"></figure>
+							<p>Capacitors Location On Amp Board</p>
+						</div>
+						<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="media/roastedresistor.png" height="270" alt="blown resistor on amp"></figure>
+							<p>Blown Resistor on Amp Board</p>
+						</div>
+					</div>
 					<br><br>
 				<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">What's That Sound?</h4>
 				<p>Below are some examples of different issues / sounds HomePods make</p>
@@ -961,57 +883,9 @@
 						<p>Acceptable Popping (Turn Volume Up)</p>
 					</div>
 				</div>
-				<br><br>
-<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Death Farts - DC Offset (Failing DC Filter Capacitors)</h4>
-<p><b>Symptoms:</b> Very loud popping, lack of bass, and / or a loud buzzing sound followed by a restart, AKA "Death Farts". See above for sound example. Not to be confused with software / wifi issues where music crackles and becomes delayed.
-<br><br><b>Diagnosis:</b> 1: Remove the subwoofer and place it to the side, carefully reconnect everything and power on the HomePod.
-<br><br>2: With the HomePod powered on, not in standby but not playing anything, and subwoofer connected, measure the DC voltage with a multimeter from the subwoofer speaker terminals. You can probe with the pads under where the subwoofer cable goes into the subwoofer, see Figure 1 below.
-<br><br>TIP: Polarity does not matter when measuring DC offset, you are simply looking for how far from 0mV you are. The warmer these capacitors get when they have failed, the worse they filter DC voltage, so be sure to measure for at least a few seconds and watch for any significant growth in DC offset beyond tolerance.
-<br><br>The amp IC's <i>input</i> is rated for up to <a href="https://www.mouser.com/datasheet/2/196/ir4302-1227997.pdf" target="_blank">+/-18mV DC,</a> which means up to +/-200mV DC can be seen at the subwoofer. More than this is what triggers the amp to "Death Fart", can cause damage to components, and should warrant replacing the DC filters, so we recommend a more aggressive 50mV maximum tolerance seen at the subwoofer.
-<br><br><b>Repair:</b> There are four capacitors that filter this DC in the audio signal before it's amplified and sent to the speaker. They are located on the amplifier board, between the DAC and AMP chips. If you measured a significant amount of DC, you need to replace them with new capacitors of 10uF, size 1206, X7R, 5-10%, rated for 16v or better. I have been using EMK316AB7106KL-T with great success, consistently resulting in &lt;10mV of DC offset. I have a repair video replacing these capacitors on <a href="https://www.youtube.com/watch?v=-YZUv5ErDFw" target="_blank">YouTube.</a>
-<br><br>There is a big black resistor on the amp next to the subwoofer connector you should also inspect...on occasion I have found these to be damaged when there are Death Farts. It is a 10Ohm, 1Watt, 1% Tolerance, 200V rated, 1218 size resistor, and can be replaced with part number RCL121810R0FKEK. It's resistance can be measured while still installed on the board to confirm.
-<br><br>You will also want to inspect your <a href="#nobassbadwoofer">subwoofer speaker for damage</a> to the voice coil from too much DC, see the next Common Issue below for more detail on that.
-<br><br><b>Root Cause:</b> MLCC capacitors naturally decay over time and lose their effectiveness at filtering DC voltage, and this is exacerbated the warmer they are. High quality capacitors used properly should last many years, but eventually all will still need reconditioned or replaced again. I can only speculate the ones used in HomePods have QA issues and / or the amp doesn't have a great design to account for primary filter failure.
-<br><br>The amplifier inside the HomePod turns itself off after ~10 minutes of inactivity. <i>Any</i> activity or percieved "Hey Siri" trigger will turn the amp back on. During the change in power, there may be a popping sound. This popping sound comes from DC voltage changes being heard in the speaker. It's fine and normal for a small temporary DC spike when the amp turns on or off, resulting in a pop. It's also hard to tell the difference between that and a pop that comes from a dangerous constant DC offset that is growing over time. It's usually OK to ignore any popping issues if that's all it does. Typically HomePods will Death Fart to indicate it's enough of a problem, at which point you can and should pursue repairs.
-<br><br> I have a livestream of a repair where it needed all new capacitors, resistor, and subwoofer <a href="https://www.youtube.com/watch?v=19qIfCcoq58" target="_blank">here.</a></p>
-					<p>
-					<div class="column icon-container large-centered large-8 medium-10 small-12">
-					<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/woofertest.jpg" height="270" alt="woofer test"></figure>
-							<p>Subwoofer Probe Points</p>
-						</div>
-						<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/howtotestdcoffset.jpg" height="270" alt="multimeter connected to speaker"></figure>
-							<p>Testing for DC Offset</p>
-						</div>
-						<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/badcaps.jpg" height="270" alt="location of caps on amp"></figure>
-							<p>Capacitors Location On Amp Board</p>
-						</div>
-						<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/roastedresistor.png" height="270" alt="blown resistor on amp"></figure>
-							<p>Blown Resistor on Amp Board</p>
-						</div>
-					</div>
-					<div id="popping2"></div>
-					<br><br>
-					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Loud Pop & Restart - Blown / Missing Resistor</h4>
-					<p><b>Symptoms:</b> Powers up and briefly stays on fine, but then makes a loud POP and restarts. Not the same as death farts...<br><br><b>Diagnosis:</b> Inspect amp near cooling pad for damaged / missing resistor<br><br><b>Repair:</b> Either resistor can be replaced with a 10k Ohm resistor (thank you Omanyd#1538) size SMD 0201 (thank you myxomatosis
-#1766). <br><br><b>Root Cause:</b> Seems like another QA issue?</p>
-					<p>
-					<div class="column icon-container large-centered large-8 medium-10 small-12">
-							<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/missingresistor1.jpg" height="270" alt="missing resistor"></figure>
-							<p>Where they at</p>
-						</div>
-						<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/missingresistor2.jpg" height="270" alt="missing resistor"></figure>
-							<p>MISSING</p>
-						</div>
-					</div>
 					<div id="nobass"></div>
 					<div id="nobassbadwoofer"></div>
-					<br><br><br><br><br><br>
+					<br><br><br>
 					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Bass and/or Fast Clicking - Damaged or Dead Subwoofer Speaker</h4>
 					<p><b>Symptoms:</b> May include low, missing, or dirty sounding bass, clicking, or ticking sounds.<br><br><b>Diagnosis:</b> Two easy tests to tell if your subwoofer speaker is bad;<br><br>1: Gently push the speaker straight in, not too much, and release a few times; This should feel perfectly smooth, and make no sound, otherwise your speaker is almost certainly dead.<br><br>2: Inspect the condition of the voice coil through the hole in the side of the subwoofer speaker basket; A vibrant, uniform copper color is a sign of a healthy voice coil!<br><br>If your subwoofer is damaged, it is likely from <a href="#popping">DC Offset,</a> which should also be diagnosed per the Common Issue above.<br><br><b>Repair:</b> I'm not aware of any off the shelf replacement speakers, you will likely need to source one from another broken homepod. Be sure you diagnose and repair any <a href="#popping">DC Offset</a> before replacing your subwoofer.<br><br><b>Root Cause:</b> Most often a result of too much <a href="#popping">DC Offset!</a> Sometimes they can also just fail on their own eventually, but it is rare.</p>
 					<p>
@@ -1046,7 +920,7 @@
 						</div>
 						<div id="nobassshort2"></div>
 						<br><br>
-					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Bass - Short Near Amp IC</h4>
+					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Bass - Another Short Near Amp IC</h4>
 					<p><b>Symptoms:</b> No Bass whatsoever.<br><br><b>Diagnosis:</b>On a few no bass amp repairs, I've found a few other components shorted out at the same time, see photo below.<br><br><b>Repair:</b>  Check if you have the same short, and if so, replace them. Replacement part numbers to come soon.<br><br><b>Root Cause:</b> Unknown.</p>
 					<p>
 					<div class="column icon-container large-centered large-8 medium-10 small-12">
@@ -1074,17 +948,53 @@
 							<p>Amp IC Pin 1 Identifier</p>
 						</div>
 						</div>
-						<div id="nosound"></div>
-						<br><br><br><br><br><br>
-					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Sound - Dead STM32L Controller IC</h4>
-					<p><b>Symptoms:</b> Powers on, but there's no sound from any of the speakers.<br><br><b>Diagnosis:</b> If you did your own repairs and suddenly no longer have sound, suspect improper ribbon cable installation, accidental damage, or a short / debris on the amp. On one occasion I found the main amp controller had failed. The letters on the "STM32L051C8T7" chip were unevenly worn, note however this isn't always a reliable way to judge condition.<br><br><b>Repair:</b> "STM32L051C8T7" is available from AliExpress, but we're currently unsure if it needs to be reprogrammed! It's available <a href="https://www.aliexpress.com/i/3256802635297773.html?gatewayAdapt=4itemAdapt">here.</a> Currently on backorder from mouser and digikey.<br><br><b>Root Cause:</b> Unknown. Pretty rare for the controller to die anyways.</p>
+					<div id="physicaldamage"></div>
+						<br><br>
+					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Rattling / Dirty Bass, Touch / Display Issues, and More - Physical Damage</h4>
+					<p><b>Symptoms:</b> HomePod may or may not be working fine. You may hear rattling when you shake it, or have touch / display issues, even making it appear that the HomePod isn't powering on or only briefly powers on and bootloops.<br><br><b>Diagnosis:</b> For rattling / dirty sounding bass, check that your subwoofer is not bent and properly sealed. Pull your logic board out and check for broken loose plastic. You can try to glue or plastic weld the broken parts back together, or replace the top basket entirely. Thoroughly inspect logic cable, display cable, and connectors for any damage.<br><br><b>Repair:</b> Not recommended to ignore this otherwise the logic board can shift enough to push the display cable into the frame and cut into it, causing weird power / display / touch issues.<br><br><b>Root Cause:</b> Usually this is from some of the frame holding the logic board breaking off as a result of drop damage. Ensure you <a href="#shiptips">pack your Pod properly</a> whenever shipping it!</p>
 					<p>
 					<div class="column icon-container large-centered large-8 medium-10 small-12">
 					<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/stmlocation.png" height="270" alt="stm chip on amp"></figure>
-							<p>Controller Location on Amp Board</p>
+							<figure class="image-icons transition-1"><img src="media/brokenplastic.jpg" height="270" alt="broken plastic"></figure>
+							<p>Broken Plastic From logic Board Frame</p>
+						</div>
+					<div class="image-wrapper">
+							<figure class="image-icons transition-1"><img src="media/damageddisplaycable.png" height="270" alt="damaged display ribbon cable"></figure>
+							<p>Display Cable Cut From Board Shift</p>
 						</div>
 						</div>
+					<div id="goofball"></div>
+					<br><br>
+				<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Improper Ribbon Installation After Repairs</h4>
+				<p>Damaged or improperly reinstalled ribbon cables can cause no sound, no power, boot loops, and more.<br><br><b>Damage:</b> Thoroughly inspect the entire ribbon cable for any tears, cracks, or other damage. This cable is commonly damaged from rough handling when disconnecting the logic board, where the end of the cable connecting to the logic board will crack / tear. Another common mistake is accidentally damaging the ribbon cable while trying to pry the top basket off. <br><br><b>Improper Installation:</b> The most common mistake made when reassembling your HomePod is an incorrect installation of the main ribbon cable. On the amplifier board connector, the locked position will actually look open, and unlocked actually looks closed! Verify you have properly locked the cable in by pressing the locking clip down, and that the white line on the cable is level with the top of the connector! Improper installation may lead to permanent damage resulting in no sound or power. I've even done this once myself and lost both the amp and logic board's sound, and have yet to figure out how to repair it.<br><br></p>
+				<p>
+				<div class="column icon-container large-centered large-8 medium-10 small-12">
+				<div class="image-wrapper">
+						<figure class="image-icons transition-1"><img src="media/torncable.jpg" height="265" alt="torn ribbon cable"></figure>
+						<p>Torn Cable From Pulling on Logic Board</p>
+					</div>
+					<div class="image-wrapper">
+						<figure class="image-icons transition-1"><img src="media/stabbedcable.jpg" height="265" alt="damaged ribbon cable"></figure>
+						<p>Damaged Cable from Prying Top Basket</p>
+					</div>
+					<div class="image-wrapper">
+						<figure class="image-icons transition-1"><img src="media/incorrect1.jpg" height="265" alt="crooked ribbon cable"></figure>
+						<p>Unlocked, Crooked Cable</p>
+					</div>
+											<div class="image-wrapper">
+						<figure class="image-icons transition-1"><img src="media/correct1.jpg" height="265" alt="correctly installed cable"></figure>
+						<p>Locked, Level Cable</p>
+					</div>
+											<div class="image-wrapper">
+						<figure class="image-icons transition-1"><img src="media/incorrect2.jpg" height="265" alt="incorrect cable install"></figure>
+						<p>Don't Do This!</p>
+					</div>
+											<div class="image-wrapper">
+						<figure class="image-icons transition-1"><img src="media/correct2.jpg" height="265" alt="correct cable install"></figure>
+						<p>Do This!</p>
+					</div>
+					</div>
+
 						<div id="haveyouseenthispart"></div>
 						<br><br>
 					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">I did my own repairs and lost ___ part! What is it?</h4>
@@ -1135,11 +1045,108 @@
 			<figure class="image-icons transition-1"><img src="media/purple.jpg" height="270" alt="purple mesh"></figure>
 			<p>Purple</p>
 		</div>
+		<div id="lesscommon"></div>
 							<div class="image-wrapper">
 			<figure class="image-icons transition-1"><img src="media/redvsblue.jpg" height="270" alt="red blue mesh"></figure>
 			<p>"You ever wonder why we're here?"</p>
 		</div>
+	</div>
+
+		<h2 class="typography-headline-super transition-1 large-10 large-centered medium-11 small-12">Less-Common Issues</h2>
+		<p>More issues I found or have been reported, just less common.</p>
+			<p><b>Jump To:</b> <a href="#nopowerfuse">No Power</a> | <a href="#nopowerdisplay">Flashing Volume Buttons / Boot Loops</a> | <a href="#nosound">No sound</a> | <a href="#popping2">Loud Pop & Restart</a>
+		<div id="nopowerfuse"></div>
+		<br><br>
+		<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power - Blown Power Supply Fuse</h4>
+		<p><b>Symptoms:</b> No power, no lights, and no response. Power draw at the outlet will be 0 Watts.<br><br><b>Diagnosis:</b> Fuse is located on the underside of the power supply board. EU/UK power plugs also have a fuse in the power cable. Use multimeter in continuity mode to test if fuse was blown open.<br><br><b>Repair:</b> If fuse is blown you should replace it with another "T3.15AH250V" fuse.<br><br><b>Root Cause:</b> The fuse will blow as a result of a surge from the AC power source. A quality surge protector should help prevent this. Power strips alone provide no protection.</p>
+		<p>
+		<div class="column icon-container large-centered large-8 medium-10 small-12">
+			<div class="image-wrapper">
+				<figure class="image-icons transition-1"><img src="media/badfuse.jpg" height="270" alt="fuse location on power supply"></figure>
+				<p>Fuse Location On Power Supply</p>
+			</div>
+			<div class="image-wrapper">
+				<figure class="image-icons transition-1"><img src="media/probefuse.jpg" height="270" alt="where to probe fuse"></figure>
+				<p>Probe Points While Installed</p>
+			</div>
 		</div>
+		<div id="nopowerlogicshort"></div>
+		<br><br>
+		<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power - Short on Logic Board</h4>
+		<p><b>Symptoms:</b> No power, no lights, and no response. Power draw at the outlet may be a few Watts. You may hear a quiet ticking / squealing sound from the logic board. Logic board may start to warm up.<br><br><b>Diagnosis:</b> I have only seen two HomePods with No Power caused by this...in both cases, there was a shorted capacitor on the logic board. Both logic boards shorts were in different locations. You should be able to locate them with traditional short-finding methods like a thermal camera or applying flux or alcohol to the board and looking for smoke or bubbles.<br><br><b>Repair:</b> Replace any shorted components! Since there are no schematics, the exact replacement components are unknown. You can harvest them from a bricked logic board, or ask me to check with a parts board! I have a brief repair video showing diagnosis and repair for one on <a href="https://youtu.be/FWu9QsRj-rg" target="_blank">YouTube.</a><br><br><b>Root Cause:</b> Given that I've only seen this issue twice, both times from different shorts on the logic board, I'm guessing this is simply a case of capacitors just going bad. It happens.</p>
+		<p>
+		<div class="column icon-container large-centered large-8 medium-10 small-12">
+				<div class="image-wrapper">
+				<figure class="image-icons transition-1"><img src="media/badcaponlogicboard.jpg" height="265" alt="location of bad cap"></figure>
+				<p>Bad Cap Location on One Logic Board</p>
+			</div>
+			<div class="image-wrapper">
+				<figure class="image-icons transition-1"><img src="media/findshortwithflux.webp" height="270" alt="smoking flux when applied to short"></figure>
+				<p>Flux Smokes When Applied to Shorted Cap</p>
+			</div>
+		</div>
+		<div id="nopowerdisplay"></div>
+		<br><br>
+		<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power, Boot Loops, or Blinking / Flickering Volume Buttons - Damaged Display</h4>
+		<p><b>Symptoms:</b> I've seen damaged displays cause differing symptoms ranging from no power at all, to flickering or boot loops, to flickering volume buttons.<br><br><b>Diagnosis:</b> Thoroughly inspect the display for any damage, especially around the LED PCB on the backside. It's common when a HomePod is dropped for the display to get smashed in and start separating as pictured below. Sometimes damage is visually undetectable and you will need to sanity check with known good parts.<br><br><b>Repair:</b>  Damage like this usually warrants replacing the whole display.<br><br><b>Root Cause:</b> Usually from being dropped. They don't just break like this by themselves</p>
+		<p>
+		<div class="column icon-container large-centered large-8 medium-10 small-12">
+			<div class="image-wrapper">
+				<figure class="image-icons transition-1"><img src="media/crackeddisplay1.jpg" height="270" alt="display damaged"></figure>
+				<p>PCB for LEDs coming off</p>
+			</div>
+			<div class="image-wrapper">
+				<figure class="image-icons transition-1"><img src="media/crackeddisplay2.jpg" height="270" alt="display pcb separating"></figure>
+				<p>...</p>
+			</div>
+		</div>
+		<div id="nopowermicboard"></div>
+		<br><br>
+		<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Boot Loops or Blinking / Flickering Volume Buttons - Damaged Mic Board</h4>
+		<p><b>Symptoms:</b> Similar to the symptoms from a damaged display. A damaged mic board can also obviously cause issues with voice commands not working.<br><br><b>Diagnosis:</b> Thoroughly inspect the mic board for any damage, especially around the chip pictured below. <br><br><b>Repair:</b> Replace mic board. Unsure what part # the chip pictured below is...<br><br><b>Root Cause:</b> Usually damage from not being careful with your tools while working on your pod.</p>
+		<p>
+		<div class="column icon-container large-centered large-8 medium-10 small-12">
+			<div class="image-wrapper">
+				<figure class="image-icons transition-1"><img src="media/goodmicboard.jpg" height="270" alt="good mic board"></figure>
+				<p>What the mic board should look like</p>
+			</div>
+			<div class="image-wrapper">
+				<figure class="image-icons transition-1"><img src="media/badmicboard.jpg" height="270" alt="damaged mic board missing chip"></figure>
+				<p>That one .gif of michael scott yelling "NO"</p>
+			</div>
+			<div class="image-wrapper">
+				<figure class="image-icons transition-1"><img src="media/micchipupclose.jpg" height="270" alt="chip up close"></figure>
+				<p>Unidentified Chip</p>
+			</div>
+		</div>
+		<div id="nosound"></div>
+		<br><br><br>
+		<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Sound - Dead STM32L Controller IC</h4>
+		<p><b>Symptoms:</b> Powers on, but there's no sound from any of the speakers.<br><br><b>Diagnosis:</b> If you did your own repairs and suddenly no longer have sound, suspect improper ribbon cable installation, accidental damage, or a short / debris on the amp. On one occasion I found the main amp controller had failed. The letters on the "STM32L051C8T7" chip were unevenly worn, note however this isn't always a reliable way to judge condition.<br><br><b>Repair:</b> "STM32L051C8T7" is available from AliExpress, but we're currently unsure if it needs to be reprogrammed! It's available <a href="https://www.aliexpress.com/i/3256802635297773.html?gatewayAdapt=4itemAdapt">here.</a> Currently on backorder from mouser and digikey.<br><br><b>Root Cause:</b> Unknown. Pretty rare for the controller to die anyways.</p>
+		<p>
+		<div class="column icon-container large-centered large-8 medium-10 small-12">
+		<div class="image-wrapper">
+			<figure class="image-icons transition-1"><img src="media/stmlocation.png" height="270" alt="stm chip on amp"></figure>
+			<p>Controller Location on Amp Board</p>
+		</div>
+		</div>
+		<div id="popping2"></div>
+		<br><br>
+		<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Loud Pop & Restart - Blown / Missing Resistor</h4>
+		<p><b>Symptoms:</b> Powers up and briefly stays on fine, but then makes a loud POP and restarts. Not the same as death farts...<br><br><b>Diagnosis:</b> Inspect amp near cooling pad for damaged / missing resistor<br><br><b>Repair:</b> Either resistor can be replaced with a 10k Ohm resistor (thank you Omanyd#1538) size SMD 0201 (thank you myxomatosis
+#1766). <br><br><b>Root Cause:</b> Seems like another QA issue?</p>
+		<p>
+		<div class="column icon-container large-centered large-8 medium-10 small-12">
+				<div class="image-wrapper">
+				<figure class="image-icons transition-1"><img src="media/missingresistor1.jpg" height="270" alt="missing resistor"></figure>
+				<p>Where they at</p>
+			</div>
+			<div class="image-wrapper">
+				<figure class="image-icons transition-1"><img src="media/missingresistor2.jpg" height="270" alt="missing resistor"></figure>
+				<p>MISSING</p>
+			</div>
+		</div>
+
 	<div id="estimates"></div>
 	<!--fuckapple	<a href="https://track44.moe/" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">Learn more about Apple Music</span><span class="icon icon-after more"></span></a></p> -->
 </div>
