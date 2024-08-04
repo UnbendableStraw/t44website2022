@@ -768,33 +768,42 @@
 				<div class="row row-quantity">
 					<h2 class="typography-headline-super transition-1 large-10 large-centered medium-11 small-12">Common Issues</h2>
 					<p>The following are the most common issues seen and known ways I (or others if credited) have found to diagnose and repair them. You can right-click and open each image in a new tab for a larger view.</p>
-					<p>If you aren't able to confirm diagnosis of an issue, you should thoroughly inspect for any physical damage.</p>
+					<p>If you aren't able to confirm diagnosis of an issue, you should thoroughly inspect for any physical damage.<b>I strongly recommend you have a good spare homepod for testing</b> it will save you a lot of guessing nailing down which hardware component has failed.</p>
 					<p>If you've found a new fix for an issue and it's not listed here, please contact me so it can be added with your name on it!</p>
 					<p><b>Jump To:</b> <a href="#blinkblink">Flashing Volume & Boot Loops</a> | <a href="#physicaldamage">Physical Damage</a> | <a href="#nopower">No Power</a> | <a href="#popping">Death Farts & Popping</a> | <a href="#nobass">No Bass</a> | <a href="#haveyouseenthispart">Missing Parts</a> | <a href="#mesh">Coloring / Replacing the Mesh</a> | <a href="#lesscommon">More Issues</a>
 					<div id="blinkblink"></div>
 					<br><br><br><br>
-					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Flashing Volume Lights & Bootloops - NO KNOWN FIX YET</h4>
-					<p><b>ACTIVE BOUNTY:</b> I am offering a free A1639 Apple HomePod to whoever can find a reproducable repair for this issue! Contact me if you think you got it...
-					<p><b>Symptoms:</b> HomePod will power on, but ends up with flashing / blinking volume lights or boot loops. Won't factory reset.<br><br><b>Root Cause:</b> In rare cases it is caused by <a href="#nopowerdisplay">physical damage to the display.</a> However, for the vast majority, it seems the most likely cause is failed software or a failed update, resulting in Recovery Mode. It's oddly similar behavior to how bricked AppleTVs only blink their LED, too. Apple has not publicly confirmed what the root cause of this is, and no one outside of Apple knows for certain yet. It seems unlikely most are a failing A8 SoC, NAND, or it's BGA. I cannot find replacement A8 SoC chips for the HomePod, and the A8 SoC is married to the NAND, so even if you could replace these chips AND remarry them, there is still no known way to restore the software.<br><br><b>Software Repair Attempts:</b> Apple has not released any restorable firmware / software for original HomePods. The OTA's from ipsw.me are unsuitable for restore, and the firmware for the Mini is incompatible. <a href="https://github.com/el1ng/homepwn" target="_blank">There is USB </a>and UART access via the pins on the bottom of the HomePod, and when connected to a Mac or PC, various software detects and recognizes a HomePod is connected (in Recovery mode!) but there are no restorable IPSWs publicly available to restore from when you get this far.<br><br>I made a <a href="https://www.reddit.com/r/HomePod/comments/s3gmkp/i_got_usb_working_on_an_og_homepod_finder_even/" target="_blank"> reddit post</a> showing my attempt following a <a href="https://github.com/el1ng/homepwn" target="_blank">github guide</a> to connect to HomePod via USB. I've been unsuccessful dumping the firmware from working HomePods, tools like <a href="https://github.com/axi0mX/ipwndfu" target="_blank">iPwnDFU</a> seem to not work.<br><br>Since HomePod uses the A8 SoC, it should be permanently vulnerable to checkm8 exploits. Feel free to contact me if you are interested in giving it a try, I can give you remote access to a Mac, Windows, or Linux device connected to a good and bricked HomePod via USB.<br><br><b>Hardware Repair Attempts:</b> Myself and others have tried baking / reflowing every chip on bricked logic boards multiple times with no success. I have replaced the PMIC on the logic board with one from an iPhone 6 and found, while this part is compatible (lol) this did not resolve the actual issue. User "mlogicrepair" shared in our discord their progress attempting to replace the A8 SoC. SOME of these are now confirmed hardware failures due to BGA failure, and reballing them fixes it as seen on Youtube. This is not the case for most of them though, and there is no obvious way to tell, nor a repair I perform at this time. I can currently only replace the logic boards with working ones, and hopefully restore software bricked ones in the future.</p>
+					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Flashing Volume Lights & Bootloops - Multiple Causes</h4>
+					<p><b>Symptoms:</b> HomePod will power on, but ends up with flashing / blinking volume lights or boot loops. Won't factory reset with traditional methods.
+					<br><br><b>Root Cause:</b> Most are caused by failed software, or a failed / interrupted software update. Some are hardware issues, usually on the logic board, but in rare cases it is caused by other faulty hardware, like <a href="#nopowerdisplay">physical damage to the display.</a>
+					<br><br><b>Hardware Symptoms:</b> If your Homepod exhibits any of the following, it is likely a hardware issue. Usually BGA failure for the NAND, or NAND itself, in which case reballing is necessary. <b>Do not try reflowing</b> / baking your logic board, that will probably just cause more damage. UART is necessary to determine exact hardware failure.
+					<br><br>-Always boots into DFU mode when oriented normally
+					<br>-Fails to restore via USB after multiple attempts
+					<br>-Unbricks itself with no repair / restore attempts, or,
+					<br>-Never boots to DFU or Recovery Mode at all (it can take a minute when you power it on, be patient!),<br>
+					<br><br><b>Software Repair:</b> If you HomePod boots into Recovery Mode when oriented normally (NOT DFU Mode,) it is likely a software issue. Note that it can take a minute for it to boot into Recovery Mode. Boot loops and flickering volume buttons may also be restorable software issues.
+					<br><br>Since Apple does not publish full restore .ipsws for these devices, you must make your own, using currently signed AppleTV and HomePod OTA firmwares, then restore over USB with idevicerestore. No special hardware is needed to get USB access and restore a software-bricked homepod. At minimum, you just need to remove the rubber base of the pod, and connect the necessary lines to a normal USB cable to plug in to your PC.
+					<br><br>While you can solder directly to the pins on the pod, it's not recommended, the pads are fragile! You should make your own adapter with pogo pins.  El1ng has already designed such an adapter and listed necessary parts <a href="https://github.com/el1ng/homepwn" target="_blank">here.</a> You only need the passive USB connection to restore, UART is only needed for deeper debugging / troubleshooting.</p>
+					<br><br><b>Additional scripts / tools, and a guide to restore are almost done and will be released soon. Do not ask for them until they are published. The software is completely free (do not pay anyone for it!)</b>
+					<br><br>This would not be possible without tihmstar and David Rysk's work! All I did was provide some hardware and test their solution. Consider donating to them, especially if you've successfully restored your HomePod.
+					<br><a href="https://github.com/tihmstar" target="_blank">tihmstar's github</a> || <a href="https://www.patreon.com/tihmstar" target="_blank">tihmstar's patreon</a>
+					<br><br><a href="https://github.com/tihmstar/homepodstuff" target="_blank">HomePod IPSW script</a>
 					<p>
-					<div class="column icon-container large-centered large-8 medium-10 small-12">
-					<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/debugport.jpg" height="270" alt="debug port"></figure>
-							<p>Debug Port Under Rubber Foot of HomePod</p>
+						<br><br>
+						<div class="column icon-container large-centered large-8 medium-10 small-12">
+							<div class="image-wrapper">
+								<figure class="image-icons transition-1"><img src="media/dfu.jpg" height="200" alt="location of diode in homepod"></figure>
+								<p>DFU only = likely bad hardware</p>
+							</div>
+							<div class="image-wrapper">
+								<figure class="image-icons transition-1"><img src="media/recovery.jpg" height="200" alt="diode location on amp board"></figure>
+								<p>Recovery Mode = likely restorable</p>
+							</div>
+							<div class="image-wrapper">
+								<figure class="image-icons transition-1"><img src="media/debug.jpg" height="270" alt="diode legend"></figure>
+								<p>USB Pinout</p>
+							</div>
 						</div>
-						<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/usb.jpg" height="270" alt="restore error in finder"></figure>
-							<p>Unable to Restore USB HomePod</p>
-						</div>
-						<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/pmicreplaced.jpg" height="270" alt="pmic from iphone 6"></figure>
-							<p>Used PMIC from iPhone 6, Same Issue</p>
-						</div>
-						<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/socnandoff.jpg" height="270" alt="someone removed some chips"></figure>
-							<p>"mlogicrepair" with old A8 SoC and Storage NAND off</p>
-						</div>
-					</div>
 					<div id="nopower"></div>
 					<div id="nopowerdiode"></div>
 					<br><br><br><br><br><br>
@@ -1221,15 +1230,16 @@
 							</div>
 							<div class="column large-centered large-12" data-component-list="CopyEngagement CopyParallax">
 								<blockquote class="transition-1">
-									<p>Color Customization: $40</p>
+									<p>Flashing / Blinking Volume Lights and Boot Loops: $10 SW / $70 - $90 HW </p>
 								</blockquote>
-								<p class="typography-intro-elevated transition-2">Want me to color your white HomePod something else? For an extra $40 you can pick any color from Rit's DyeMore for Synthetics line and I'll get it done for you! Please add an extra day for customization. Note that I do not offer this as a standalone service, only as an add-on for existing repair or maintenance!<br><br>Photos and Do-it-Yourself info in the <a href="#mesh">mesh</a> section!</p>
+								<p class="typography-intro-elevated transition-2">If your issue is software only, you have the option of getting your device restored and operational again with no other repairs / modification, and no warranty, for $10.
+									<br><br>If your issue is caused by hardware that needs to be repaired / replaced, and / or you also want maintenance done to your HomePod with a warranty, this runs $70-$90. Includes replacing diode that causes no power, and dc filters for death farts / bass issues!<br><br>The software to restore homepods is FREE. You can attempt it yourself if you wish. More information in the <a href="#blinkblink">blinking lights common issue</a> section.<p>
 							</div>
 							<div class="column large-centered large-12" data-component-list="CopyEngagement CopyParallax">
 								<blockquote class="transition-1">
-									<p>Flashing / Blinking Volume Lights and Boot Loops: $80 - $100 </p>
+									<p>Color Customization: $40</p>
 								</blockquote>
-								<p class="typography-intro-elevated transition-2">Will repair / replace whatever is causing your bootlooping / blinking issues! I'll also check and replace the diode and filters if necessary (to prevent death farts and no power). <br><br>More information in the <a href="#blinkblink">blinking lights common issue</a> section.<p>
+								<p class="typography-intro-elevated transition-2">Want me to color your white HomePod something else? For an extra $40 you can pick any color from Rit's DyeMore for Synthetics line and I'll get it done for you! Please add an extra day for customization. Note that I do not offer this as a standalone service, only as an add-on for existing repair or maintenance!<br><br>Photos and Do-it-Yourself info in the <a href="#mesh">mesh</a> section!</p>
 							</div>
 							<div class="column large-centered large-12" data-component-list="CopyEngagement CopyParallax">
 								<blockquote class="transition-1">
@@ -1241,13 +1251,13 @@
 								<blockquote class="transition-1">
 									<p>No Fix: No Charge! Trade It In</p>
 								</blockquote>
-								<p class="typography-intro-elevated transition-2">Got an irrepairable pod? Or maybe you sent it in thinking it was repairable and things didn't go as planned:<br><br>-If you sent one in and want it back, I'll reassemble it as-is and you just need to provide return shipping<br><br>-You can also trade in a broken homepod for a free repair on another one</p>
+								<p class="typography-intro-elevated transition-2">Don't want to keep or fix your HomePod? I am proudly a no-fix no-charge operation!<br><br>-If you sent one in and want it back, I'll reassemble it as-is and you just need to provide return shipping<br><br>-You can also trade in a broken homepod for a free repair on another one</p>
 							</div>
 							<div class="column large-centered large-12" data-component-list="CopyEngagement CopyParallax">
 								<blockquote class="transition-1">
 									<p>Got Something That's Not HomePod?</p>
 								</blockquote>
-								<p class="typography-intro-elevated transition-2">While I specialize in HomePod repairs, I've also done other electronics repairs such as a USB-C Port replacement on the Valve Steam Deck, stick-drift repair for the XBox Elite Series 2 controller, battery replacement for the Joov Portable Red Light Therapy device, gpu reflowing for a GMK NUC PC, battery replacement for a Surface Laptop and more! <a href="mailto:nic@nicsfix.com">Contact me</a> with what you have and we'll see if I can fix it. You can find my Youtube playlist of non-HomePod repairs <a href="https://www.youtube.com/playlist?list=PLEJiSXyX6lzdTfFDA1b_QuvrEaT1zIcgZ">here.</a></p>
+								<p class="typography-intro-elevated transition-2">While I specialize in HomePod repairs, I've also done other electronics repairs such as a USB-C Port replacement on the Valve Steam Deck, LG Ultrafine Monitors, stick-drift repair for the XBox Elite Series 2 controller, battery replacement for the Joov Portable Red Light Therapy device, gpu reflowing for a GMK NUC PC, battery replacement for a Surface Laptop and more! <a href="mailto:nic@nicsfix.com">Contact me</a> with what you have and we'll see if I can fix it. You can find my Youtube playlist of non-HomePod repairs <a href="https://www.youtube.com/playlist?list=PLEJiSXyX6lzdTfFDA1b_QuvrEaT1zIcgZ">here.</a></p>
 							</div>
 							</div>
 							<br><br>
