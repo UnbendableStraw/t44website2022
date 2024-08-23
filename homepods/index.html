@@ -828,6 +828,7 @@
 						<div class="image-wrapper">
 							<figure class="image-icons transition-1"><img src="media/diodedatecode.png" height="270" alt="diode legend"></figure>
 							<p>Diode Date Code</p>
+							<p>Diode: PDS560-13. Can also use PDS760Q-13</p>
 						</div>
 					</div>
 					<div id="popping"></div>
@@ -838,7 +839,7 @@
 <br><br>2: With the HomePod powered on, not in standby but not playing anything, and subwoofer connected, measure the DC voltage with a multimeter from the subwoofer speaker terminals. You can probe with the pads under where the subwoofer cable goes into the subwoofer, see Figure 1 below.
 <br><br>TIP: Polarity does not matter when measuring DC offset, you are simply looking for how far from 0mV you are. The warmer these capacitors get when they have failed, the worse they filter DC voltage, so be sure to measure for at least a few seconds and watch for any significant growth in DC offset beyond tolerance.
 <br><br>The amp IC's <i>input</i> is rated for up to <a href="https://www.mouser.com/datasheet/2/196/ir4302-1227997.pdf" target="_blank">+/-18mV DC,</a> which means up to +/-200mV DC can be seen at the subwoofer. More than this is what triggers the amp to "Death Fart", can cause damage to components, and should warrant replacing the DC filters, so we recommend a more aggressive 50mV maximum tolerance seen at the subwoofer.
-<br><br><b>Repair:</b> There are four capacitors that filter this DC in the audio signal before it's amplified and sent to the speaker. They are located on the amplifier board, between the DAC and AMP chips. If you measured a significant amount of DC, you need to replace them with new capacitors of 10uF, size 1206, X7R, 5-10%, rated for 16v or better. I have been using EMK316AB7106KL-T with great success, consistently resulting in &lt;10mV of DC offset. I have a repair video replacing these capacitors on <a href="https://www.youtube.com/watch?v=-YZUv5ErDFw" target="_blank">YouTube.</a>
+<br><br><b>Repair:</b> There are four capacitors that filter this DC in the audio signal before it's amplified and sent to the speaker. They are located on the amplifier board, between the DAC and AMP chips. If you measured a significant amount of DC, you need to replace them with new capacitors of 10uF, size 1206, X7R, 5-10%, rated for 25v or better. I have been using GMK316AB7106KL-TR. I have a repair video replacing these capacitors on <a href="https://www.youtube.com/watch?v=-YZUv5ErDFw" target="_blank">YouTube.</a>
 <br><br>There is a big black resistor on the amp next to the subwoofer connector you should also inspect...on occasion I have found these to be damaged when there are Death Farts. It is a 10Ohm, 1Watt, 1% Tolerance, 200V rated, 1218 size resistor, and can be replaced with part number RCL121810R0FKEK. It's resistance can be measured while still installed on the board to confirm.
 <br><br>You will also want to inspect your <a href="#nobassbadwoofer">subwoofer speaker for damage</a> to the voice coil from too much DC, see the next Common Issue below for more detail on that.
 <br><br><b>Root Cause:</b> MLCC capacitors naturally decay over time and lose their effectiveness at filtering DC voltage, and this is exacerbated the warmer they are. High quality capacitors used properly should last many years, but eventually all will still need reconditioned or replaced again. I can only speculate the ones used in HomePods have QA issues and / or the amp doesn't have a great design to account for primary filter failure.
@@ -857,10 +858,12 @@
 						<div class="image-wrapper">
 							<figure class="image-icons transition-1"><img src="media/badcaps.jpg" height="270" alt="location of caps on amp"></figure>
 							<p>Capacitors Location On Amp Board</p>
+							<p>Capacitors (x4): 10uF, size 1206, X7R, 5-10%, rated for 25v or better
 						</div>
 						<div class="image-wrapper">
 							<figure class="image-icons transition-1"><img src="media/roastedresistor.png" height="270" alt="blown resistor on amp"></figure>
 							<p>Blown Resistor on Amp Board</p>
+							<p>Resistor: 10Ohm, 1Watt, 1% Tolerance, 200V rated, size 1218</p>
 						</div>
 					</div>
 					<div id="soundtest"></div>
@@ -929,23 +932,27 @@
 						<div id="nobassshort"></div>
 						<br><br>
 					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Bass - Short Near Amp IC</h4>
-					<p><b>Symptoms:</b> No Bass whatsoever.<br><br><b>Diagnosis:</b>On a few no bass amp repairs, I've found the same component shorted out, see photo below.<br><br><b>Repair:</b>  Check if you have the same short, and if so, replace it. I think this is a 27uF capacitor smd size 0805, but I am unsure. Hit me up if you know!<br><br><b>Root Cause:</b> Unknown.</p>
+					<p><b>Symptoms:</b> No Bass whatsoever.<br><br><b>Diagnosis:</b>On a few no bass amp repairs, I've found the same component shorted out, see photo below.<br><br><b>Repair:</b>  Check if you have the same shorted capacitor, and if so, replace it with 22uF, 0802, 25v (or greater), 10%, X5R capacitor. <a href="https://www.mouser.com/ProductDetail/810-C2012X5R1V226MAC"> These are what I use.</a><br><br><b>Root Cause:</b> Unknown.</p>
 					<p>
 					<div class="column icon-container large-centered large-8 medium-10 small-12">
 					<div class="image-wrapper">
 							<figure class="image-icons transition-1"><img src="media/nobassshort.jpg" height="270" alt="amp ic on amp board"></figure>
 							<p>WHO WEARS SHORT SHORTS</p>
+							<p>Capacitor: 22uF, size 0802, 25v (or greater), 10%, X5R</p>
 						</div>
 						</div>
 						<div id="nobassshort2"></div>
 						<br><br>
 					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Bass - Another Short Near Amp IC</h4>
-					<p><b>Symptoms:</b> No Bass whatsoever.<br><br><b>Diagnosis:</b>On a few no bass amp repairs, I've found a few other components shorted out at the same time, see photo below.<br><br><b>Repair:</b>  Check if you have the same short, and if so, replace them. Replacement part numbers to come soon.<br><br><b>Root Cause:</b> Unknown.</p>
+					<p><b>Symptoms:</b> No Bass whatsoever.<br><br><b>Diagnosis:</b>On a few no bass amp repairs, I've found a few other components shorted out at the same time, see photo below.<br><br><b>Repair:</b>  Check if you have the same short, and if so, replace shorted 0.1uF size 1206 capacitor, and IC. The circled IC is a mosfet, part number
+DMG1029SVQ-7. See <a href="https://www.mouser.com/datasheet/2/115/DIODS20272_1-2541849.pdf">datasheet</a> for mosfet specs. Replacement part numbers to come soon.<br><br><b>Root Cause:</b> Unknown.</p>
 					<p>
 					<div class="column icon-container large-centered large-8 medium-10 small-12">
 					<div class="image-wrapper">
 							<figure class="image-icons transition-1"><img src="media/nobass2.jpg" height="270" alt="amp ic on amp board"></figure>
 							<p>I WEAR SHORT SHORTS</p>
+							<p>Capacitor: 0.1uF, size 1206</p>
+							<p>Mosfet: DMG1029SVQ-7</p>
 						</div>
 						</div>
 						<div id="nobassbadampic"></div>
@@ -965,6 +972,7 @@
 						<div class="image-wrapper">
 							<figure class="image-icons transition-1"><img src="media/ampicpin1.jpg" height="270" alt="amp chip pin 1 identifier"></figure>
 							<p>Amp IC Pin 1 Identifier</p>
+							<p>OEM Part: 98-0431 (can also replace with IR4312M)</p>
 						</div>
 						</div>
 					<div id="physicaldamage"></div>
@@ -1016,9 +1024,9 @@
 
 						<div id="haveyouseenthispart"></div>
 						<br><br>
-					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">I did my own repairs and lost ___ part! What is it?</h4>
-					<p>If you attempted your own repairs and lost a part in the process, let me know and I can help you identify what it is to the best of my ability.</p>
-					<p>
+					<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">I did my own repairs and lost ___ or found this broken part! What is it?</h4>
+					<p>If you are attempting your own repairs and need help identifying a particular part that is damaged / lost, feel free to ask!</p>
+					<p>The most commonly lost part is pictured below. You NEED it for the HomePod to power on! It is a 0.1uF Size 0402 Capacitor.</p>
 					<div class="column icon-container large-centered large-8 medium-10 small-12">
 					<div class="image-wrapper">
 							<figure class="image-icons transition-1"><img src="media/diodecap.png" height="265" alt="missing capacitor"></figure>
