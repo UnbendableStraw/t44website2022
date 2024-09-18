@@ -3,7 +3,7 @@ const quotes = [
     "I Am HomePod Man",
     "Home of Challenge Fixing",
     "Look Ma, No Recalls!",
-    "Nic Fixes What Apple won't",
+    "Nic Fixes What Apple Won't",
     "Snap, Crackle, Pop, My HomePod!",
     "Wake Up. Fix HomePod. Get Out of Bed.",
     "Busted HomePod?",
