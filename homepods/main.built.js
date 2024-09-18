@@ -1,3 +1,24 @@
+// Array of quotes
+const quotes = [
+    "I Am HomePod Man",
+    "Home of Challenge Fixing",
+    "Look Ma, No Recalls!",
+    "Nic Fixes What Apple won't",
+    "Snap, Crackle, Pop, My HomePod!",
+    "Wake Up. Fix HomePod. Get Out of Bed.",
+    "Busted HomePod?"
+];
+
+// Function to display a random quote
+function displayRandomQuote() {
+    // Get a random index from the quotes array
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    // Display the random quote
+    document.getElementById('quote').textContent = quotes[randomIndex];
+}
+
+// Run the function when the page loads
+window.onload = displayRandomQuote;
 var _____WB$wombat$assign$function_____=function(name){return(self._wb_wombat&&self._wb_wombat.local_init&&self._wb_wombat.local_init(name))||self[name]};if(!self.__WB_pmw){self.__WB_pmw=function(obj){this.__WB_source=obj;return this}}{let window=_____WB$wombat$assign$function_____("window");let self=_____WB$wombat$assign$function_____("self");let document=_____WB$wombat$assign$function_____("document");let location=_____WB$wombat$assign$function_____("location");let top=_____WB$wombat$assign$function_____("top");let parent=_____WB$wombat$assign$function_____("parent");let frames=_____WB$wombat$assign$function_____("frames");let opener=_____WB$wombat$assign$function_____("opener");!function(){function e(t,i,n){function r(s,a){if(!i[s]){if(!t[s]){var c="function"==typeof require&&require;if(!a&&c)return c(s,!0);if(o)return o(s,!0);var l=new Error("Cannot find module '"+s+"'");throw l.code="MODULE_NOT_FOUND",l}
 var u=i[s]={exports:{}};t[s][0].call(u.exports,function(e){var i=t[s][1][e];return r(i?i:e)},u,u.exports,e,t,i,n)}
 return i[s].exports}
