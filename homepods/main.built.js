@@ -6,7 +6,8 @@ const quotes = [
     "Nic Fixes What Apple won't",
     "Snap, Crackle, Pop, My HomePod!",
     "Wake Up. Fix HomePod. Get Out of Bed.",
-    "Busted HomePod?"
+    "Busted HomePod?",
+    "Oh My Pod."
 ];
 
 // Function to display a random quote
