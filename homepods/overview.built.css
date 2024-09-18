@@ -4842,7 +4842,7 @@ html.hero-animated .page-overview .section-hero .hero-hardware-container {
 @media only screen and (max-width:735px) {
 	html.hero-animated .page-overview .section-hero .hero-hardware-container {
 		margin-top: 0;
-		height: 150px;
+		height: 200px;
 		padding-top: 128px
 	}
 }
