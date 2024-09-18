@@ -1,5 +1,3 @@
-
-
 .hover_img a {
 	position: relative
 }
@@ -4782,7 +4780,7 @@ html.hero-animated .page-overview .section-hero .hero-sticky-container {
 
 @media only screen and (max-width:735px) {
 	html.hero-animated .page-overview .section-hero .hero-sticky-container {
-		height: 135vh
+		height: 135px
 	}
 }
 
@@ -4844,7 +4842,7 @@ html.hero-animated .page-overview .section-hero .hero-hardware-container {
 @media only screen and (max-width:735px) {
 	html.hero-animated .page-overview .section-hero .hero-hardware-container {
 		margin-top: 0;
-		height: calc(47vh);
+		height: 150px;
 		padding-top: 128px
 	}
 }
