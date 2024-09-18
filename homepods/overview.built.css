@@ -4780,7 +4780,7 @@ html.hero-animated .page-overview .section-hero .hero-sticky-container {
 
 @media only screen and (max-width:735px) {
 	html.hero-animated .page-overview .section-hero .hero-sticky-container {
-		height: 135px
+		height: 135vh
 	}
 }
 
