@@ -62,12 +62,12 @@
     "https://discord.gg/track44"
   ],
   "openingHours": "Mo-Fr 09:00-18:00",
-  "priceRange": "$0-200",
+  "priceRange": "$0-80",
   "serviceType": "Electronics Repair",
   "services": {
     "@type": "Service",
     "serviceType": "HomePod and Electronics Repair",
-    "description": "We offer professional HomePod and Electronics repair services, covering a wide range of issues from software to hardware faults."
+    "description": "Nic's Fix offers professional HomePod and Electronics repair services, covering a wide range of issues from software to hardware faults and customization."
   }
 }
 </script>
@@ -878,7 +878,7 @@
 
 								</div>
 				<div class="section-content" data-component-list="CopyEngagement CopyParallax">
-				<div class="row row-quantity">
+				<div class="row row-stereo">
 					<h2 class="typography-headline-super transition-1 large-10 large-centered medium-11 small-12">Common Issues</h2>
 					<p>The following are the most common issues seen and known ways I (or others if credited) have found to diagnose and repair them. You can right-click and open each image in a new tab for a larger view.</p>
 					<p>If you aren't able to confirm diagnosis of an issue, you should thoroughly inspect for any physical damage.<b> I strongly recommend you have a good spare homepod for testing</b> it will save you a lot of guessing nailing down which hardware component has failed.</p>
@@ -898,12 +898,12 @@
 					<br>-Never boots to DFU or Recovery Mode at all (it can take a minute when you power it on, be patient!),<br>
 					<br><br><b>Software Repair:</b> If you HomePod boots into Recovery Mode when oriented normally (NOT DFU Mode,) it is likely a software issue, but it doesn't hurt to try a restore anyways. Note that it can take a minute for it to boot into Recovery Mode. Boot loops and flickering volume buttons may also be restorable software issues.
 					<br><br>Since Apple does not publish full restore .ipsws for these devices, you must make your own, using currently signed AppleTV and HomePod OTA firmwares, then restore over USB with idevicerestore. No special hardware is needed to get USB access and restore a software-bricked homepod. At minimum, you just need to remove the rubber base of the pod, and connect the necessary lines to a normal USB cable to plug in to your PC.
-					<br><br>While you can solder directly to the pins on the pod, it's not recommended, the pads are fragile! You should make your own adapter with pogo pins.  Tihmstar has already designed such an adapter <a href="https://github.com/tihmstar/homepwn" target="_blank">here.</a> You only need the passive USB connection to restore, UART is only needed for deeper debugging / troubleshooting.</p>
-					<br><br><b>The scripts / tools to accomplish this are FREE to use and linked below, do not pay anyone for them!</b>
-					<br><br>This would not be possible without tihmstar and David Ryskalczyk's work! All I did was provide some hardware and test their solution. Consider donating to them, especially if you've successfully restored your HomePod.
-					<br><a href="https://github.com/tihmstar" target="_blank">tihmstar's github</a> || <a href="https://www.patreon.com/tihmstar" target="_blank">tihmstar's patreon</a>
-					<br><br><a href="https://github.com/tihmstar/homepodstuff" target="_blank">HomePod IPSW script</a> || <a href="https://nicsfix.com/ipsw/18.0.ipsw" target="_blank">Prebuilt 18.0 IPSW</a> || <a href="https://github.com/UnbendableStraw/homepod-restore/" target="_blank">Restore Guide</a> || <a href="https://www.youtube.com/watch?v=1u6NduLkYe8/" target="_blank"> Live Demo</a> || <a href="https://github.com/tihmstar/homepwn" target="_blank"> tihmstar's 3d printable dongle </a> || <a href="https://nicsfix.com/shop" target="_blank"> Premade USB Dongles Now On Sale! </a>
-					<br>  Check back for updates as old versions become unsigned!
+					<br><br>While you can solder directly to the pins on the pod, it's not recommended, the pads are fragile! You should <a href="https://github.com/UnbendableStraw/homepwn-simple" target="_blank">make your own USB adapter</a> if you have a 3d printer and soldering iron. You only need the passive USB connection to restore, UART is only needed for deeper debugging / troubleshooting.</p>
+					<br><b>The scripts / tools to accomplish this are FREE to use and linked below, do not pay anyone for them!</b>
+					<br><br><a href="https://nicsfix.com/ipsw/18.0.ipsw" target="_blank">Prebuilt 18.0 IPSW</a> || <a href="https://github.com/UnbendableStraw/homepod-restore/" target="_blank">Restore & IPSW Build Guide</a> || <a href="https://www.youtube.com/watch?v=1u6NduLkYe8/" target="_blank"> Live Demo</a> || <a href="https://github.com/UnbendableStraw/homepwn-simple" target="_blank"> Print Your Own Adapter </a> || <a href="https://nicsfix.com/shop" target="_blank"> Buy My USB Adapter </a>
+					<br>Check back for updates as old versions become unsigned!
+					<br><br><br>Credit is due to tihmstar and David Ryskalczyk for making this happen! All I did was provide a bricked pod, test, and document their process. Consider donating to them, especially if you've successfully restored your HomePod.
+					<br><a href="https://github.com/tihmstar" target="_blank">tihmstar's github</a> || <a href="https://www.patreon.com/tihmstar" target="_blank">tihmstar's patreon</a> || <a href="https://github.com/tihmstar/homepwn" target="_blank"> tihmstar's 3d printable adapter</a>
 					<p>
 						<br><br>
 						<div class="column icon-container large-centered large-8 medium-10 small-12">
