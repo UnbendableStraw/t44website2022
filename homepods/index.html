@@ -889,32 +889,19 @@
 					<div class="issue">
 							<button class="collapsible"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Flashing Volume Lights & Bootloops - Multiple Causes</h4></button>
 							<div class="content">
-					<p><b>Symptoms:</b> HomePod will power on, but ends up with flashing / blinking volume lights or boot loops. Won't factory reset with traditional methods.
-					<br><br><b>Root Cause:</b> Many are caused by failed software, or failed / interrupted software update. Some are hardware issues, usually on the logic board, but in rare cases it is caused by other faulty hardware, like <a href="#nopowerdisplay">physical damage to the display.</a> It is typically not possible to tell if yours is h/w or s/w caused without connecting to it via USB.
-					<br><br><b>Hardware Symptoms:</b> If your Homepod exhibits any of the following, it is likely a hardware issue. Usually BGA failure for the NAND, or NAND itself, in which case reballing is necessary. <b>Do not try reflowing</b> / baking your logic board, that will probably just cause more damage. UART is necessary to determine exact hardware failure.
-					<br><br>-Always boots into DFU mode when oriented normally
-					<br>-Fails to restore via USB after multiple attempts
-					<br>-Unbricks itself with no repair / restore attempts, or,
-					<br>-Never boots to DFU or Recovery Mode at all (it can take a minute when you power it on, be patient!),<br>
-					<br><br><b>Software Repair:</b> If you HomePod boots into Recovery Mode when oriented normally (NOT DFU Mode,) it is likely a software issue, but it doesn't hurt to try a restore anyways. Note that it can take a minute for it to boot into Recovery Mode. Boot loops and flickering volume buttons may also be restorable software issues.
-					<br><br>Since Apple does not publish full restore .ipsws for these devices, you must make your own, using currently signed AppleTV and HomePod OTA firmwares, then restore over USB with idevicerestore. No special hardware is needed to get USB access and restore a software-bricked homepod. At minimum, you just need to remove the rubber base of the pod, and connect the necessary lines to a normal USB cable to plug in to your PC.
-					<br><br>While you can solder directly to the pins on the pod, it's not recommended, the pads are fragile! You should <a href="https://github.com/UnbendableStraw/homepwn-simple" target="_blank">make your own USB adapter</a> if you have a 3d printer and soldering iron. You only need the passive USB connection to restore, UART is only needed for deeper debugging / troubleshooting.</p>
-					<br><b>The scripts / tools to accomplish this are FREE to use and linked below, do not pay anyone for them!</b>
-					<br><br><a href="https://nicsfix.com/ipsw/18.0.ipsw" target="_blank">Prebuilt 18.0 IPSW</a> || <a href="https://github.com/UnbendableStraw/homepod-restore/" target="_blank">Restore & IPSW Build Guide</a> || <a href="https://www.youtube.com/watch?v=1u6NduLkYe8/" target="_blank"> Live Demo</a> || <a href="https://github.com/UnbendableStraw/homepwn-simple" target="_blank"> Print Your Own Adapter </a> || <a href="https://nicsfix.com/shop" target="_blank"> Buy My USB Adapter </a>
-					<br>Check back for updates as old versions become unsigned!
-					<br><br><br>Credit is due to tihmstar and David Ryskalczyk for making this happen! All I did was provide a bricked pod, test, and document their process. Consider donating to them, especially if you've successfully restored your HomePod.
+					<p><b>Symptoms:</b> HomePod will power on, but ends up with flashing / blinking volume lights, or boot loops. Won't factory reset with traditional methods.
+					<br><br><b>Root Cause:</b> Many are caused by failed software, or failed / interrupted software update. Some are hardware issues, usually on the logic board, usually the NAND or it's BGA. In rare cases it is caused by other faulty hardware, like <a href="#nopowerdisplay">physical damage to the display.</a> It is typically not possible to tell if yours is h/w or s/w without connecting to it via USB and attempting to restore.
+					<br><br><b>Hardware Repair:</b> The most common hardware-related cause is the NAND's BGA on the logic board. While this is a fairly intensive repair, it can be reballed with an iPhone 6 NAND stencil, since they are identical. No way known currently to reprogram a new NAND chip if your old one dies.
+					<br>Repair video coming soon!
+					<br><br><b>Software Repair:</b> You will need to download the latest .ipsw, fashion USB access to your HomePod, and restore with specific software tools.
+					<br><br><b>The scripts / tools to accomplish this are FREE to use and linked below, do not pay anyone for them!</b>
+					<br><br><a href="https://nicsfix.com/ipsw/18.1.ipsw" target="_blank">18.1 IPSW</a> || <a href="https://github.com/UnbendableStraw/homepod-restore/" target="_blank">Restore Guide</a> || <a href="https://www.youtube.com/watch?v=1u6NduLkYe8/" target="_blank"> Live Demo</a> || <a href="https://github.com/UnbendableStraw/homepwn-simple" target="_blank"> Print Your Own Adapter </a> || <a href="https://nicsfix.com/shop" target="_blank"> Buy My USB Adapter </a>
+					<br>Check back for updates as old versions become unsigned, and thus, unrestorable!
+					<br><br><br>Credit is due to tihmstar and David Ryskalczyk for making this happen! All I did was provide a bricked pod, then test, and document their process. Consider donating to them, especially if you've successfully restored your HomePod.
 					<br><a href="https://github.com/tihmstar" target="_blank">tihmstar's github</a> || <a href="https://www.patreon.com/tihmstar" target="_blank">tihmstar's patreon</a> || <a href="https://github.com/tihmstar/homepwn" target="_blank"> tihmstar's 3d printable adapter</a>
 					<p>
 						<br><br>
 						<div class="column icon-container large-centered large-8 medium-10 small-12">
-							<div class="image-wrapper">
-								<figure class="image-icons transition-1"><img src="media/dfu.jpg" height="200" alt="location of diode in homepod" loading="lazy"></figure>
-								<p>DFU only = likely bad hardware</p>
-							</div>
-							<div class="image-wrapper">
-								<figure class="image-icons transition-1"><img src="media/recovery.jpg" height="200" alt="diode location on amp board" loading="lazy"></figure>
-								<p>Recovery Mode = likely restorable</p>
-							</div>
 							<div class="image-wrapper">
 								<figure class="image-icons transition-1"><img src="media/debug.jpg" height="270" alt="diode legend" loading="lazy"></figure>
 								<p>USB Pinout</p>
