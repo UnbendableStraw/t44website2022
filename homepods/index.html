@@ -1655,7 +1655,7 @@ async function updateCounter() {
         const response = await fetch(url);
         const text = await response.text();
         const json = JSON.parse(text.substring(47, text.length - 2)); // Google Sheets JSON parsing trick
-        const rowCount = json.table.rows.length; // Get the number of rows
+        const rowCount = json.table.rows.length + 3000; // Get the number of rows
 
         document.getElementById("counter").innerText = `More than ${rowCount} HomePods fixed, and counting!`;
     } catch (error) {
