@@ -1647,17 +1647,12 @@ title:'PayPal - The safer, easier way to pay online!',
 
 <script>
 async function updateCounter() {
-    const sheetId = "19R1bEdo9FMOACv6kT4ef-u5khhqfITP4wsliTCUzGyI"; // Replace with your actual sheet ID
-    const sheetName = "Form Responses 1"; // Default name, change if needed
-    const url = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json&sheet=${sheetName}`;
+    const apiUrl = "https://script.google.com/macros/s/AKfycbymGH3Exypq5i4TKusHv9MyFPNx2B2HbtKTvQ-dO7mXR6DqvDKkmUfvCwM_efsdPMBj/exec"; // Replace with your Apps Script URL
 
     try {
-        const response = await fetch(url);
-        const text = await response.text();
-        const json = JSON.parse(text.substring(47, text.length - 2)); // Google Sheets JSON parsing trick
-        const rowCount = json.table.rows.length + 3000; // Get the number of rows
-
-        document.getElementById("counter").innerText = `More than ${rowCount} HomePods fixed, and counting!`;
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+        document.getElementById("counter").innerText = `More than ${data.count} HomePods fixed, and counting!`;
     } catch (error) {
         console.error("Error fetching response count:", error);
     }
@@ -1670,6 +1665,7 @@ setInterval(updateCounter, 30000);
 
 
 
+<br><br>
 Congrats! You Are Visitor #
 <script type="text/javascript" src="//counter.websiteout.com/js/2/0/500000/0"></script>
 <!--Initial count crudely calculated and added Nov 1, 2024-->
