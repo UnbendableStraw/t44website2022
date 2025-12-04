@@ -70,6 +70,12 @@
 	<link rel="stylesheet" href="overview.built.css" type="text/css">
 	<script src="head.built.js"></script>
 	<style>
+	#quote {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+		 min-height: 1.5em; /* prevents vertical movement */
+}
+
 	body {
 	  margin-top:0 !important;
 	  padding-top:0 !important;
@@ -116,16 +122,30 @@
 			"No Such Thing As 'Too Many HomePods'"
 	];
 
-	// Function to display a random quote
+	// Fade and change quote
 	function displayRandomQuote() {
-	    // Get a random index from the quotes array
-	    const randomIndex = Math.floor(Math.random() * quotes.length);
-	    // Display the random quote
-	    document.getElementById('quote').textContent = quotes[randomIndex];
+	    const quoteEl = document.getElementById('quote');
+
+	    // Fade out
+	    quoteEl.style.opacity = 0;
+
+	    setTimeout(() => {
+	        // Change text when faded
+	        const randomIndex = Math.floor(Math.random() * quotes.length);
+	        quoteEl.textContent = quotes[randomIndex];
+
+	        // Fade in
+	        quoteEl.style.opacity = 1;
+	    }, 500); // Match transition duration
 	}
 
-	// Run the function when the page loads
-	window.onload = displayRandomQuote;
+	// Init on page load + auto rotate
+	window.onload = function () {
+	    displayRandomQuote();
+
+	    // Auto change every 5 seconds
+	    setInterval(displayRandomQuote, 5000);
+	};
 	</script>
 </head>
 <body class="page-overview ac-gn-current-music">
@@ -331,8 +351,8 @@
 					<figure class="fallback speaker-component homepod-speaker-component-1"></figure>
 					<div class="design-card" data-fade-offset="							-0.15">
 					<img src="media/gotbass.gif" height="84" alt="Animated image of Dizzie Rascal dancing with some speakers" loading="lazy">
-						<h3 class="typography-callout" id="gotbass">Worry-Free Warranty<br></h3>
-						<p class="hover_img">All repairs include my unbeatable 1+ year warranty, including free U.S. shipping if issues arise within the first year, and discounts on future repairs thereafter.</p>
+						<h3 class="typography-callout" id="gotbass">Worry-free Warranty!<br></h3>
+						<p class="hover_img">All repairs include my unbeatable 1+ year warranty, including free U.S. shipping back and forth if issues arise within the first year, and discounts on future repairs thereafter.</p>
 					</div>
 					<figure class="fallback speaker-component homepod-speaker-component-2"></figure>
 					<div class="design-card" data-fade-offset="							0">
@@ -350,15 +370,16 @@
 					<figure class="fallback speaker-component homepod-speaker-component-4"></figure>
 					<div class="design-card" data-fade-offset="							0">
 						<figure class="image-icon-a8"></figure>
-						<h3 class="typography-callout">My repair guides brings all the shops to my site.<br></h3>
-						<p>And they're like, "Where's HomePod .ipsw?"
+						<h3 class="typography-callout">My repair guides brings everyone to my site.<br></h3>
+						<p>And they're like, "Where's ipsw?"
 							<br><br>I can fix you, but I'll have to charge.
+							<br><br>Don't settle for another shop that doesn't understand what they're fixing or why something needs replaced... Send it to the source of Apple HomePod repair info itself!
 						</p>
 					</div>
 					<figure class="fallback speaker-component homepod-speaker-component-5"></figure>
 					<div class="design-card" data-fade-offset="							0">
-						<h3 class="typography-callout">Mesh cleaning and customization<br></h3>
-						<p>I'll take a minute or so to give your pod a brief wipe down before return. More intense cleaning, or a replacement mesh and/or other cosmetics start at $10 with any repair.<br><br>Custom colors are also available! See the <a href="#mesh">Mesh section</a> for examples.</p>
+						<h3 class="typography-callout">Apple HomePod Cleaning and Customization.<br></h3>
+						<p>All HomePods get a thorough power dusting, and a brief cleaning. More intense deep mesh cleaning, & replacement cosmetics start at $10 with any repair.<br><br>Custom colors are also available! See the <a href="#mesh">Mesh section</a> for examples.</p>
 					</div>
 				</div>
 			</div>
@@ -368,8 +389,10 @@
 			<div class="section-content">
 				<div class="section-heading" data-component-list="CopyEngagement CopyParallax">
 				<br><br>
-	<h2 class="typography-headline-super transition-1 large-10 large-centered medium-11 small-12">I've seen it all...so can you!<br class="small"> </h2>
-					<p class="typography-intro-elevated transition-2 large-10 large-centered medium-12 small-12">Other shops claim to do this, that, and everything else... What sets Nic's Fix apart is simple; Do it live! It's all streamed on <a href="https://www.youtube.com/channel/UCAL0d1SL5YDFcYx-F7zbH8w" target="_blank">my YouTube channel.</a><br><br>Watch my latest repair livestream below...</p>
+	<h2 class="typography-headline-super transition-1 large-10 large-centered medium-11 small-12">I've seen it all...so can you.<br class="small"> </h2>
+					<p class="typography-intro-elevated transition-2 large-10 large-centered medium-12 small-12">Don't worry about not getting what you paid for, or your repair turning into a full-on disaster... like what happened to <a href="https://youtube.com/live/vNewX0H7TPo?feature=share" target="_blank">Anthony.</a>
+						<br>They were sold a "refurbished" HomePod from another shop, with a butchered main logic board, a software version so old that refused to update with conventional methods, and an original foam subwoofer gasket that was supposed to be replaced! 
+						<br><br>What sets Nic's Fix apart is simple; Do it live! It's all streamed on <a href="https://www.youtube.com/channel/UCAL0d1SL5YDFcYx-F7zbH8w" target="_blank">my YouTube channel.</a><br><br>Watch my latest repair livestream below...</p>
 				</div>
 			</div>
 			<div class="video-outer" id="repairvideo">
@@ -453,11 +476,15 @@
 			<div class="section-content">
 				<div class="section-heading music-intro" data-component-list="CopyEngagement CopyParallax">
 					<h2 class="typography-headline-super transition-1 large-7 large-centered medium-8 small-12">Don't Just Fix It, Improve It!</h2>
-					<p class="typography-intro-elevated transition-2 large-8 large-centered medium-10 small-12">All HomePod hardware repairs / maintenance includes replacing obviously worn / tired parts, like:
-						<br><br>DC filters tend to go bad every 5-15 years depending on use, and need routine replacement to prevent onset of bass issues and/or <a href="#commonissues">Death Farts</a>
-						<br><br>SB Diodes dated 1746k-1748k tend to fail and cause <a href="#commonissues">no power,</a> these ones are always replaced to permanently prevent the issue
-						<br><br>The foam subwoofer gasket can break down over time and become prone to failure, or a lazier bass response. These are replaced with a new rubber nitrile gasket. This is a noticable upgrade resulting in a longer lasting, tighter bass response, even if it's replacing a normal working foam gasket
-					</p>
+					<br><br>
+					<h3>All Apple HomePod repairs include my signature maintenance items. As I find more common faults, they will be added.</h3>
+						<p>
+						<br><br>1: DC filters are always replaced. These are the leading cause of bass issues and/or <a href="#commonissues">Death Farts</a>. Even though all cermaic capacitors naturally decay every 5-15 years (depending on use,) I found these failing as early as a year after the HomePod's original production run, and was the catalyst for a dedicated "maintenance" service.
+						<br><br>2: SB Diodes dated 1746k-1748k are replaced. These are the leading cause of <a href="#commonissues">no power,</a> and is permanently fixed / prevented with our high quality, higher rated replacements.
+						<br><br>3: The foam subwoofer gasket can break down over time and become prone to failure, or a lazier bass response. These are replaced with a new rubber nitrile gasket. This results in a tighter, and longer lasting bass response.
+						<br><br>4: The mesh can allow a significant amout of dust to build up around the subwoofer, and main board. Don't worry about breaking out the air compressor, I'll give it a thorough blast to blow the dust away, and briefly wiped down, with options for deeper cleaning and cosmetic fix-ups and customization.
+						</p>
+						<br><br>
 				</div>
 			</div>
 			<div class="artwork-hardware-container">
