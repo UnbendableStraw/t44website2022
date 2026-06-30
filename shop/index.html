@@ -1,483 +1,144 @@
-homepods/media/addtobag<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nic's Fix — Our shop has moved</title>
 
-<html lang="en"><head>
-<meta charset="UTF-8">
+<!-- ============================================================= -->
+<!--  👇  EDIT THIS ONE LINE: set href to your new shop portal URL  -->
+<!--      (it's the "Continue to the shop" link, id="go", below)     -->
+<!-- ============================================================= -->
 
-<link rel="canonical" href="https://track44.moe/homepods/">
+<style>
+  :root{
+    --bg:#f5f5f7; --card:#ffffff; --ink:#1d1d1f; --muted:#6e6e73;
+    --border:#e3e3e8; --brand:#2d52e0; --brand2:#2f6fed;
+    --pod-top:#ffffff; --pod-bot:#d7dae1; --mesh:rgba(0,0,0,.07);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0f1115; --card:#1a1d23; --ink:#f2f3f5; --muted:#9aa0aa;
+      --border:#2a2e36; --brand:#5b82ff; --brand2:#6f93ff;
+      --pod-top:#f4f6fa; --pod-bot:#c4c8d2; --mesh:rgba(0,0,0,.10);
+    }
+  }
+  *{box-sizing:border-box;}
+  html,body{height:100%;}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    display:flex; align-items:center; justify-content:center; padding:24px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{ width:100%; max-width:440px; text-align:center; }
+  .brand{ font-weight:800; font-size:22px; letter-spacing:-.02em; margin-bottom:26px; }
+  .brand .dot{ color:var(--brand); }
+  .card{
+    background:var(--card); border:1px solid var(--border); border-radius:22px;
+    padding:38px 30px 30px; box-shadow:0 14px 50px rgba(0,0,0,.10);
+  }
 
+  /* ---- Spinning HomePod ---- */
+  .stage{ height:190px; display:flex; align-items:center; justify-content:center; margin-bottom:6px; }
+  .pod{ width:150px; height:190px; }
+  .pod .ground{ animation:breathe 2.8s ease-in-out infinite; transform-origin:100px 244px; }
+  .mesh-rect{ animation:meshscroll 1.25s linear infinite; }
+  .glare{ animation:glaresweep 2.6s ease-in-out infinite; }
+  .siri{ animation:siri 3.2s ease-in-out infinite; transform-origin:100px 58px; }
+  @keyframes meshscroll{ from{transform:translateX(0);} to{transform:translateX(-6px);} }
+  @keyframes glaresweep{ 0%{transform:translateX(-70px);opacity:0;} 18%{opacity:.9;} 50%{transform:translateX(150px);opacity:.9;} 60%{opacity:0;} 100%{transform:translateX(150px);opacity:0;} }
+  @keyframes breathe{ 0%,100%{transform:scaleX(1);opacity:.20;} 50%{transform:scaleX(.82);opacity:.12;} }
+  @keyframes siri{ 0%,100%{opacity:.45;} 50%{opacity:.9;} }
+  @media (prefers-reduced-motion: reduce){
+    .mesh-rect,.glare,.siri,.ground{ animation:none !important; }
+  }
 
+  h1{ font-size:22px; line-height:1.25; letter-spacing:-.02em; margin:6px 0 6px; }
+  p.sub{ color:var(--muted); font-size:15px; margin:0 0 20px; }
+  .dots::after{ content:'…'; animation:dots 1.4s steps(4,end) infinite; }
+  @keyframes dots{ 0%{content:'';} 25%{content:'.';} 50%{content:'..';} 75%{content:'...';} }
 
+  .bar{ height:5px; width:100%; background:var(--border); border-radius:999px; overflow:hidden; margin:4px 0 22px; }
+  .bar > i{ display:block; height:100%; width:0; border-radius:999px;
+    background:linear-gradient(90deg,var(--brand),var(--brand2)); animation:fill 4s linear forwards; }
+  @keyframes fill{ from{width:0;} to{width:100%;} }
 
-
-
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-
-
-
-	<link rel="stylesheet" type="text/css" href="ac-globalnav.built.css">
-	<link rel="stylesheet" type="text/css" href="ac-localnav.built.css">
-	<link rel="stylesheet" type="text/css" href="ac-globalfooter.built.css">
-
-
-
-	<title>HomePod Repair Info, Service, and Parts, by Nic's Fix</title>
-	<meta name="Description" content="HomePod Repair Info, Service, and Parts, by Nic's Fix">
-	<meta property="og:image" content="og__fieayq73cfiq.png">
-	<meta property="og:title" content="HomePod">
-	<meta property="og:description" content="HomePod Repair Info, Service, and Parts, by Nic's Fix">
-	<meta property="og:url" content="https://nicsfix.com/shop">
-	<meta property="og:locale" content="en_US">
-	<meta property="og:site_name" content="Nic's Fix HomePod Repair Service and Parts">
-	<meta property="og:type" content="website">
-	<meta property="analytics-track" content="HomePod Repair Info, Service, and Parts, by Nic's Fix">
-	<meta property="analytics-s-channel" content="homepod">
-
-
-
-
-	<link rel="stylesheet" href="fonts.css">
-	<link rel="stylesheet" href="overview.built.css" type="text/css">
-	<script src="head.built.js"></script>
-	<style>
-	body {
-	  margin-top:0 !important;
-	  padding-top:0 !important;
-		min-height: calc(100vh - 72px);
-	  /*min-width:800px !important;*/
-	}
-	</style>
+  .go{ display:inline-block; background:var(--brand); color:#fff; text-decoration:none;
+    font-weight:600; font-size:15px; padding:12px 22px; border-radius:12px; transition:transform .1s ease,filter .15s ease; }
+  .go:hover{ filter:brightness(1.06); }
+  .go:active{ transform:translateY(1px); }
+  .foot{ color:var(--muted); font-size:12.5px; margin-top:16px; }
+</style>
 </head>
-<body class="page-overview ac-gn-current-music">
-<nav id="ac-globalnav" class="no-js" aria-label="Global">
-	<div class="ac-gn-content">
-		<ul class="ac-gn-header">
-			<li class="ac-gn-item ac-gn-menuicon">
-				<a href="#ac-gn-menustate" class="ac-gn-menuanchor ac-gn-menuanchor-open" id="ac-gn-menuanchor-open">
-					<span class="ac-gn-menuanchor-label">Global Nav Open Menu</span>
-				</a>
-				<a href="#" class="ac-gn-menuanchor ac-gn-menuanchor-close" id="ac-gn-menuanchor-close">
-					<span class="ac-gn-menuanchor-label">Global Nav Close Menu</span>
-				</a>
-			</li>
-			<li class="ac-gn-item ac-gn-apple">
-				<a class="ac-gn-link ac-gn-link-apple" href="https://track44.moe" data-analytics-title="apple home" id="ac-gn-firstfocus-small">
-					<span class="ac-gn-link-text">Apple</span>
-				</a>
-			</li>
-			<li class="ac-gn-item ac-gn-bag ac-gn-bag-small" id="ac-gn-bag-small">
-				<div class="ac-gn-bag-wrapper">
-					<span class="ac-gn-bag-badge">
-						<span class="ac-gn-bag-badge-separator"></span>
-					<span class="ac-gn-bag-badge-number"></span>
-					<span class="ac-gn-bag-badge-unit">+</span>
-					</span>
-				</div>
-				<span class="ac-gn-bagview-caret ac-gn-bagview-caret-large"></span>
-			</li>
-		</ul>
-		<div class="ac-gn-search-placeholder-container">
-		</div>
-				<div id="top"</div>
-		<ul class="ac-gn-list">
-			<li class="ac-gn-item ac-gn-apple">
-				<a class="ac-gn-link ac-gn-link-apple" href="https://track44.moe" data-analytics-title="Track44 Home" id="ac-gn-firstfocus">
-						<span class="ac-gn-link-text">Track44 Home</span>
-					</a>
-			</li>
-			<li class="ac-gn-item ac-gn-item-menu ac-gn-mac">
-				<a class="ac-gn-link ac-gn-link-mac" href="https://www.youtube.com/@NicsFix" data-analytics-title="YouTube">
-						<span class="ac-gn-link-text">YouTube</span>
-					</a>
-			</li>
-			<li class="ac-gn-item ac-gn-item-menu ac-gn-ipad">
-				<a class="ac-gn-link ac-gn-link-ipad" href="https://twitter.com/unbendablestraw" data-analytics-title="Twitter">
-						<span class="ac-gn-link-text">Twitter</span>
-					</a>
-			</li>
-			<li class="ac-gn-item ac-gn-item-menu ac-gn-iphone">
-				<a class="ac-gn-link ac-gn-link-iphone" href="https://reddit.com/u/dr_nic_t61" data-analytics-title="Reddit">
-						<span class="ac-gn-link-text">Reddit</span>
-					</a>
-			</li>
-			<li class="ac-gn-item ac-gn-item-menu ac-gn-watch">
-				<a class="ac-gn-link ac-gn-link-watch" href="https://discord.gg/track44" data-analytics-title="Discord">
-						<span class="ac-gn-link-text">Discord</span>
-					</a>
-			</li>
-		</ul>
-	</div>
-</nav>
-<div class="ac-gn-blur"></div>
-<div id="ac-gn-curtain" class="ac-gn-curtain"></div>
-<div id="ac-gn-placeholder" class="ac-nav-placeholder"></div>
-<script src="ac-globalnav.built.js"></script><div id="ac-gn-viewport-emitter"> </div>
+<body>
+  <div class="wrap">
+    <div class="brand">Nic's Fix<span class="dot">.</span></div>
 
-	<input type="checkbox" id="ac-ln-menustate" class="ac-ln-menustate">
-	<div id="ac-ln-sticky-placeholder" class="css-sticky ac-ln-sticking"></div>	<nav id="ac-localnav" class="no-js css-sticky" lang="en-US" dir="ltr" data-sticky data-analytics-region="local nav" aria-label="Local">
-		<div class="ac-ln-wrapper">
-			<div class="ac-ln-background"></div>
-			<div class="ac-ln-content">
-				<div class="ac-ln-title">
-					<a href="https://track44.moe/homepods/" data-analytics-title="product index">
-										Nic's Shop
-									</a>
-				</div>
-				<div class="ac-ln-menu">
-					<a href="#ac-ln-menustate" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-open" id="ac-ln-menustate-open">
-												<span class="ac-ln-menucta-anchor-label">Local Nav Open Menu</span>
-											</a>
-					<a href="#" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-close" id="ac-ln-menustate-close">
-												<span class="ac-ln-menucta-anchor-label">Local Nav Close Menu</span>
-											</a>
-					<div class="ac-ln-menu-tray">
-						<ul class="ac-ln-menu-items">
-							<li class="ac-ln-menu-item"><a href="https://nicsfix.com/" class="ac-ln-menu-link" data-analytics-title="specs">Back to Main</a>
-							</li>
-							<li class="ac-ln-menu-item"><a href="#top" class="ac-ln-menu-link" data-analytics-title="specs">Back to Top</a>
-							</li>
-							<li class="ac-ln-menu-item"><a href="#pods" class="ac-ln-menu-link" data-analytics-title="specs">HomePods</a>
-							</li>
-							<li class="ac-ln-menu-item"><a href="#dongles" class="ac-ln-menu-link" data-analytics-title="specs">USB Adapters</a>
-							</li>
-							<li class="ac-ln-menu-item"><a href="#parts" class="ac-ln-menu-link" data-analytics-title="specs">Parts</a>
-							</li>
-						</ul>
-					</div>
-					<div class="ac-ln-actions">
-						<div class="ac-ln-action ac-ln-action-menucta" aria-hidden="true">
-							<label for="ac-ln-menustate" class="ac-ln-menucta">
-														<span class="ac-ln-menucta-chevron"></span>
-													</label>
-						</div>
-						<div class="ac-ln-action ac-ln-action-button">
-						<!--<li class="ac-ln-menu-item">
-							<!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
-											<input type="hidden" name="cmd" value="_cart">
-											<input type="hidden" name="business" value="JG857WBDUHPXA">
-											<input type="hidden" name="display" value="1">
-											<input type="image" src="https://track44.moe/homepods/media/svg/bag.svg" border="0" name="submit" alt="Bag">
-											-->
+    <div class="card">
+      <div class="stage">
+        <svg class="pod" viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="var(--pod-top)"/>
+              <stop offset="1" stop-color="var(--pod-bot)"/>
+            </linearGradient>
+            <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+              <stop offset=".5" stop-color="#fff" stop-opacity=".75"/>
+              <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+            </linearGradient>
+            <radialGradient id="siriglow" cx=".5" cy=".5" r=".5">
+              <stop offset="0" stop-color="#7aa8ff"/>
+              <stop offset=".55" stop-color="#9b7bff" stop-opacity=".7"/>
+              <stop offset="1" stop-color="#9b7bff" stop-opacity="0"/>
+            </radialGradient>
+            <pattern id="mesh" width="6" height="9" patternUnits="userSpaceOnUse">
+              <line x1="0.5" y1="0" x2="0.5" y2="9" stroke="var(--mesh)" stroke-width="1"/>
+            </pattern>
+            <clipPath id="bodyclip"><rect x="40" y="46" width="120" height="170" rx="36"/></clipPath>
+          </defs>
 
+          <!-- ground shadow (stays put) -->
+          <ellipse class="ground" cx="100" cy="244" rx="62" ry="13" fill="#000"/>
 
-						</div>
-						<div class="ac-ln-action ac-ln-action-button">
-							<a class="ac-ln-button" href="mailto:nic@nicsfix.com" data-analytics-title="buy">Email Me<span class="ac-ln-action-product">Homepod</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</nav>
-	<label id="ac-ln-curtain" for="ac-ln-menustate"></label>
-<script src="ac-localnav.built.js"></script><div id="ac-ln-viewport-emitter" data-viewport-emitter-dispatch="" data-viewport-emitter-state="{&quot;viewport&quot;:&quot;none&quot;,&quot;orientation&quot;:&quot;portrait&quot;,&quot;retina&quot;:false}"></div>
-	<main id="main" class="main" data-page-type="overview">
-		<div id="pods"</div>
-		<br><br>
-	<h1 class="hero-headline typography-headline-super">Pods & Parts</h1>
-	<br>
-	<h2></h2>
-	<br></p><b>SHOP IS TEMPORARILY CLOSED UNTIL I FINISH THE NEW SHOP SITE, ETA JUNE 21. DO NOT EXPECT A FAST REPLY OR FAST SHIPPING / HANDLING UNTIL ANNOUNCED OTHERWISE. Thank you for your patience!
-	<br><br>How to Order: <b>TBA</b></p>
+          <!-- body -->
+          <g clip-path="url(#bodyclip)">
+            <rect x="40" y="46" width="120" height="170" fill="url(#body)"/>
+            <!-- fabric mesh scrolling sideways = the speaker spinning -->
+            <rect class="mesh-rect" x="22" y="46" width="156" height="170" fill="url(#mesh)"/>
+            <!-- soft top + bottom shading for depth -->
+            <ellipse cx="100" cy="58" rx="60" ry="20" fill="#000" opacity="0.05"/>
+            <ellipse cx="100" cy="214" rx="60" ry="20" fill="#000" opacity="0.10"/>
+            <!-- moving specular highlight -->
+            <rect class="glare" x="40" y="46" width="46" height="170" fill="url(#sheen)" opacity="0"/>
+          </g>
 
-	<br>
-	<br>
-	<h3 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Pods!</h3>
-					<br>
-					<p>Every HomePod is refurbished with new dc filters to prevent death farts / bass issues, diode for no power, and a new rubber nitrile subwoofer gasket to replace the old foam. One Year Warranty<sup><a href="#footnote-1" class="footnote">*1</a></sup> and USA Shipping included.
-						<br><br>
-						<div class="column icon-container large-centered large-8 medium-10 small-12">
-<div class="image-wrapper">
-		<img src="media/black.jpg" height="270"></figure> <img src="media/white.jpg" height="270"></figure>
-		<p><b>Black / White A1639 Apple HomePod - OUT OF STOCK!</b>
-		<br><br>Due to high demand and cost of parts, I am currently out of refurbished HomePods!
-	<br><br>In the meantime, I encourage people to source their own broken HomePod to be sent in to me for repair, and return to you.
-<br><br>This can end up being cheaper! Just be sure you use my shipping address during any online checkout,
-<br>as some platforms like eBay don't allow sellers to change shipping address after order/payment.</p>
-					<!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-	<input type="hidden" name="cmd" value="_s-xclick">
-	<input type="hidden" name="hosted_button_id" value="T8GBM6J6CD3RC">
-	<input type="image" src="https://track44.moe/homepods/media/addtobag.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
--->
-	</div>
-		<br><br>
-							<div class="image-wrapper">
-									<figure class="image-icons transition-1"><img src="media/colors.webp" height="270"></figure>
-									<p><b>Custom A1639 Apple HomePod - $220</b></p>
-									<p>Choose any color from Rit's Dyemore lineup, whether you want the top and cable also colored, and how deep you want the color! Common requests are full color, or "make it like the Mini!"</p>
-									Or, send in YOUR HomePod for customization! Starting at $50
-												<!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-								<input type="hidden" name="cmd" value="_s-xclick">
-								<input type="hidden" name="hosted_button_id" value="PDASVE8BLRFSA">
-								<input type="image" src="https://track44.moe/homepods/media/addtobag.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-								<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-							-->
-								</div>
-					</div>
-				<br></br>
-						<div id="dongles">
-						<br></br>
-						<h3 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Dongles and Docks!</h3>
-						<br>
-						<div class="column icon-container large-centered large-8 medium-10 small-12">
+          <!-- top touch surface -->
+          <ellipse cx="100" cy="58" rx="52" ry="15" fill="var(--pod-top)" stroke="#000" stroke-opacity="0.06"/>
+          <ellipse class="siri" cx="100" cy="58" rx="34" ry="9" fill="url(#siriglow)"/>
+        </svg>
+      </div>
 
-							<div class="image-wrapper">
-								<p>USB Dongles and Docks for First-Gen HomePods! Philips screws included. Home-Made to Order and shipped out weekly. No limit on how many you can order.
-									<br><br><b>Add $10 for USPS Priority Shipping within USA. Shipping outside the USA is $16.</b>
-									<br><br>You only need USB to attempt a software restore, or "AirPlay over USB." UART won't help with restores, but can be fun to explore.
-									<br><br>Not all bricked HomePods are just software! More info, guides, and downloads under the <a href="https://nicsfix.com/#commonissues" target="_blank">Common Issue for Blinking Buttons.</a>
-									<br><br>No refunds unless your HomePods is not software restorable, and you would like to donate or sell your HomePod to me.
-									<br><br>Feel free to save some money and<a href="https://github.com/UnbendableStraw/homepwn-simple" target="_blank"> make your own adapter</a> if you have a 3d printer and soldering iron. Based on tihmstar's adapter, a % will go to them
-									<br><br>
-									<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Available Configurations</h4>
-									<br>
-									<div class="image-wrapper">
-											<img src="media/usbc.jpg" height="270"></figure> <img src="media/stand.jpg" height="270">
-											<p><b>v1 Adapter - DISCONTINUED!</b>
-										  <br>Includes Philips screws, USB A to C Adapter, and Stand
-											<br>Great for a temporary USB connection to your HomePod!
-											<br>Add $3 for UART breakout
-											<br>Only for the 1st Generation Apple HomePod (A1639)
+      <h1>Our shop has a new home</h1>
+      <p class="sub">Taking you to the new Nic's Fix shop<span class="dots"></span></p>
+      <div class="bar"><i></i></div>
 
-</p>
-											<!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-																	<input type="hidden" name="cmd" value="_s-xclick">
-																	<input type="hidden" name="hosted_button_id" value="6MHEWJNSM4TPL">
-																	<input type="image" src="https://track44.moe/homepods/media/addtobag.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-																	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-											-->
-										</div>
-											<br><br>
-									<div class="image-wrapper">
-										<img src="media/dock2.jpg" height="270"> <img src="media/dock5.jpg" height="270"> <img src="media/dock4.jpg" height="270"> <img src="media/dock3.jpg" height="270">
-									<p><b>v2 Dock - $20</b>
-									<br>Comes with Philips screws, and USB A to C adapter
-									<br>For an extra $5, add a storage case for your adapter, that doubles as a cap to protect the top of your HomePod from scratches when being placed upside-down
-									<br>Add $3 for UART breakout
-									<br>Only for the 1st Generation Apple HomePod (A1639)
-									<br><br><a href="https://github.com/UnbendableStraw/homepod-restore/" target="_blank">GitHub Restore Guide</a>
-								<br><br><a href="https://github.com/UnbendableStraw/homepod-usbairplay" target="_blank">Limitations of "USB Airplay"</a></p>
-									<!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-															<input type="hidden" name="cmd" value="_s-xclick">
-															<input type="hidden" name="hosted_button_id" value="P44SS3DLXRVP8">
-															<input type="image" src="https://track44.moe/homepods/media/addtobag.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-															<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-									-->
-									<br>Check out my 24/7 live stream of YOUR adapter being made!
-									<br><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?si=uVf2ZrmLBzks0IkT&amp;list=PLEJiSXyX6lzfjZ3S5Dk9UAUbkYqU-WUaN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-								</div>
-											<br><br>
-							<!--				<div id="merch"</div>
-											<br></br>
-											<h3 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Nic's Merch!</h3>
-											<br>
-											<div class="column icon-container large-centered large-8 medium-10 small-12">
+      <!-- 👇 EDIT THE href BELOW to your new shop portal URL -->
+      <a id="go" class="go" href="https://REPLACE-WITH-YOUR-SHOP-URL.example/shop">Continue to the shop →</a>
 
-												<div class="image-wrapper">
-													<p>Own a piece of history! And someone else's HomePod...
-														<br><br><b>Add $ for USPS Priority Shipping within USA. Worldwide shipping is now just $14!</b>
-														<br><br>Blah
-														<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Available Configurations</h4>
-														<br>
-														<div class="image-wrapper">
-																<figure class="image-icons transition-1"><img src="media/usba.jpg" height="270"></figure>
-																<b>Recommended!</b>
-																<p>Pick USB A or C. Ready to Use - $20</p>
-																Includes t6 torx screws
-																<!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-																						<input type="hidden" name="cmd" value="_s-xclick">
-																						<input type="hidden" name="hosted_button_id" value="6MHEWJNSM4TPL">
-																						<input type="image" src="https://track44.moe/homepods/media/addtobag.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-																						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      <div class="foot">You'll be redirected automatically. If nothing happens, tap the button.</div>
+    </div>
+  </div>
 
-															</div> -->
-															<div id="parts">
-															<br><br>
-											<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Parts!</h4>
-<br>
-<p>Every part has been repaired and / or tested and confirmed to be in good working order. One year warranty with US shipping covered within the first 6 months.
-	<br><br><b>Shipping</b> not included, based on size / speed / your location.
-	<div class="column icon-container large-centered large-8 medium-10 small-12">
-	<div class="image-wrapper">
-				<figure class="image-icons transition-1"><img src="media/amp.jpg" height="270"></figure>
-			<p><b>Refurbished Amplifier Board, $60</b><br></p>
-							<!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-			<input type="hidden" name="cmd" value="_s-xclick">
-			<input type="hidden" name="hosted_button_id" value="WF55H3248PMHY">
-			<input type="image" src="https://track44.moe/homepods/media/addtobag.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-		-->
-			</div>
-			<br></br>
-		<div class="column icon-container large-centered large-8 medium-10 small-12">
-		<div class="image-wrapper">
-					<figure class="image-icons transition-1"><img src="media/pmicreplaced.jpg" height="270"></figure>
-				<p><b>Logic Board, OUT OF STOCK</b><br><br>
-				<br>Look for broken HomePods that won't power on, have death farts, or bass issues. These <b>usually</b> have good logic boards!</p>
-								<!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-				<input type="hidden" name="cmd" value="_s-xclick">
-				<input type="hidden" name="hosted_button_id" value="WF55H3248PMHY">
-				<input type="image" src="https://track44.moe/homepods/media/addtobag.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-			-->
-				</div>
-		<br></br>
-		<div class="image-wrapper">
-					<figure class="image-icons transition-1"><img src="media/displayfront.jpg" height="270"></figure>
-				<p><b>Touch / Display Board, $30</b><br>OEM Part Number 820-00965-03<br>Re-usable adhesive</p>
-								<!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-				<input type="hidden" name="cmd" value="_s-xclick">
-				<input type="hidden" name="hosted_button_id" value="WF55H3248PMHY">
-				<input type="image" src="https://track44.moe/homepods/media/addtobag.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-			-->
-				</div>
-				<br><br>
-		<div class="image-wrapper">
-				<figure class="image-icons transition-1"><img src="media/powersupply.jpg" height="270"></figure>
-			<p><b>Power Supply, $30</b><br>2949022004 / Model ADP-60EF S<br>All PSUs are 110-220V</p>
-							<!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-			<input type="hidden" name="cmd" value="_s-xclick">
-			<input type="hidden" name="hosted_button_id" value="2XE76BQB8LWVW">
-			<input type="image" src="https://track44.moe/homepods/media/addtobag.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-		-->
-			</div>
-<br><br>
-			<div class="image-wrapper">
-					<figure class="image-icons transition-1"><img src="media/micboard.jpg" height="270"></figure>
-				<p><b>Microphone Suplicity Board, $15</b><br>OEM Part Number 820-00632-03<br>Re-usable Adhesive</p>
-								<!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-				<input type="hidden" name="cmd" value="_s-xclick">
-				<input type="hidden" name="hosted_button_id" value="53HZNV2SHG4P2">
-				<input type="image" src="https://track44.moe/homepods/media/addtobag.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-			-->
-				</div>
-				<br><br>
-						<div class="image-wrapper">
-								<figure class="image-icons transition-1"><img src="media/displaycable.jpg" height="270"></figure>
-								<p><b>Logic to Display, $10</b><br>OEM Part Number 821-01259-04</p>
-								<!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-														<input type="hidden" name="cmd" value="_s-xclick">
-														<input type="hidden" name="hosted_button_id" value="6MHEWJNSM4TPL">
-														<input type="image" src="https://track44.moe/homepods/media/addtobag.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-														<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-								-->
-							</div>
-							<br><br>
-							<div class="image-wrapper">
-									<figure class="image-icons transition-1"><img src="media/subconnector.jpg" height="270"></figure>
-									<p><b>Subwoofer Connector, $10</b><br>OEM Part Number 43025</p>
-									<!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-															<input type="hidden" name="cmd" value="_s-xclick">
-															<input type="hidden" name="hosted_button_id" value="P44SS3DLXRVP8">
-															<input type="image" src="https://track44.moe/homepods/media/addtobag.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-															<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-									-->
-								</div>
-								<br><br>
-								<div class="image-wrapper">
-										<figure class="image-icons transition-1"><img src="media/internalpowerconn.jpg" height="270"></figure>
-										<p><b>Internal AC Connector, $20</b><br>OEM Part Number 43645
-										<br>Useful for powering a HomePod while disassembled, just plug one end into the PSU and the other into your original HomePod power cord.</p>
-										<!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-																<input type="hidden" name="cmd" value="_s-xclick">
-																<input type="hidden" name="hosted_button_id" value="CQFPLG5YH5ET8">
-																<input type="image" src="https://track44.moe/homepods/media/addtobag.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-																<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-										-->
-									</div>
-									<br><br>
-									<div class="image-wrapper">
-											<figure class="image-icons transition-1"><img src="media/logic.jpg" height="270"></figure>
-										<p><b>Main Logic Cable, $30</b><br>OEM Part Number 821-00548-07<br>Limit one per person!</p>
-											<!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-																	<input type="hidden" name="cmd" value="_s-xclick">
-																	<input type="hidden" name="hosted_button_id" value="GF7QUDJAHZZ3A">
-																	<input type="image" src="https://track44.moe/homepods/media/addtobag.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-																	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-											-->
-										</div>
-						</div>
-						<br></br>
-
-							<div class="image-wrapper">
-								<figure class="image-icons transition-1"><img src="media/microphone.jpg" height="270"></figure>
-							<p><b>Microphones, $15</b><br>OEM Part Number 821-00834-04<br>Will come with mic screens<br>Same part for either side!</p>
-											<!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-							<input type="hidden" name="cmd" value="_s-xclick">
-							<input type="hidden" name="hosted_button_id" value="UEX28EZ4PUYG8">
-							<input type="image" src="https://track44.moe/homepods/media/addtobag.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-						-->
-							</div>
-							<br><br>
-							<div class="image-wrapper">
-
-									<figure class="image-icons transition-1"><img src="media/basketwithrings.jpg" height="270"></figure>
-								<p><b>Top Basket w/ Lower Rings, $20</b><br></p>
-												<!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-								<input type="hidden" name="cmd" value="_s-xclick">
-								<input type="hidden" name="hosted_button_id" value="AEC86ZFG7F7DY">
-								<input type="image" src="https://track44.moe/homepods/media/addtobag.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-								<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-							-->
-								</div>
-								<br><br>
-								<div class="image-wrapper">
-										<figure class="image-icons transition-1"><img src="media/basket.jpg" height="270"></figure>
-									<p><b>Top Basket Only, $15</b><br></p>
-													<!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-									<input type="hidden" name="cmd" value="_s-xclick">
-									<input type="hidden" name="hosted_button_id" value="43AHELDDL7N5A">
-									<input type="image" src="https://track44.moe/homepods/media/addtobag.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-									<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-								-->
-									</div>
-														</div>
-						<br></br>
-						<div class="image-wrapper">
-								<figure class="image-icons transition-1"><img src="media/cosmetics.jpg" height="270"></figure>
-							<p><b>Plastic Tops</b> (add $5 for US shipping)<br>
-									A grade; Little to no signs of use: $30<br>
-									B grade: Some scratches but no cracks: $25<br>
-									C grade: Scratches and small cracks but still in one piece: $20<br>
-									D grade: Scratches and larger cracks, still in one piece: $10<br><br>
-									<b>Fabric Meshes</b> (add $10 for US shipping)<br>
-									A grade; Little to no signs of use, no stains or smudges; $40<br>
-									B grade: Some signs of use / small stains but good condition: $30<br><br>
-									<b>Rubber Bases</b> (add $7 for US shipping)<br>
-									A grade; Little to no signs of use; $20<br>
-									<br><br>
-											<!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-							<input type="hidden" name="cmd" value="_s-xclick">
-							<input type="hidden" name="hosted_button_id" value="AEC86ZFG7F7DY">
-							<input type="image" src="https://track44.moe/homepods/media/addtobag.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-						-->
-							</div>
-							<br><br>
-						<h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Need a specific component picked off a board? Shoot me a message!</h4>
-						<h4>More parts coming soon</h4>
-						<footer id="ac-globalfooter" class="no-js" lang="en-US" dir="ltr" data-analytics-region="global footer" aria-labelledby="ac-gf-label">
-							<div class="ac-gf-content">
-								<h2 class="ac-gf-label" id="ac-gf-label">Apple Footer</h2>
-								<section class="ac-gf-sosumi" aria-label="Footnotes">
-									<ol>
-										<li id="footnote-1">"12 Month Warranty" covers U.S. shipping, and my parts and labor for up to 12 months.<b>WARRANTY DOES NOT COVER: International shipping, software issues, abuse, or intentional or physical damage.</b></li>
-										<li id="footnote-2">Accepted forms of payment: PayPal, Zelle, CashApp, ApplePay (when it works), trades for Apple / PC hardware (any condition), and cash if you're local. </li>
-										<li id="footnote-3">We (I) do not claim to be Apple, Apple Authorized, or in any way sanctioned or approved by Apple. Nic's Fix, and Nic, are an independant third party. </li>
-									</ol>
-
-								</section>
-	<script src="TweenMax.min.js"></script>
-	<script src="TimelineMax.min.js"></script>
-
-<link rel="stylesheet" href="modal.css">
-<script src="ac-films.built.js"></script>
-	<script src="main.built.js"></script>
+<script>
+  // Single source of truth: the "Continue to the shop" link's href (edit it above).
+  (function(){
+    var link = document.getElementById('go');
+    var url = link && link.getAttribute('href');
+    if (!url || url.indexOf('REPLACE-WITH-YOUR-SHOP-URL') !== -1) return; // not configured yet
+    setTimeout(function(){ window.location.replace(url); }, 4000);
+  })();
+</script>
 </body>
 </html>
