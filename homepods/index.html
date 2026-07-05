@@ -16,7 +16,7 @@
 
 	<title>Apple HomePod Repair, DIY, Service & Customization for Apple Speaker | Nic's Fix</title>
 <meta name="description" content="Apple HomePod Repair Service and Knowledgebase. No power, no sound, distorted audio, death farts, failing to setup or configure, blinking volume buttons, boot loops, customization, or just maintenance, it can be done by Nic's Fix!">
-	<meta property="og:image" content="og__fieayq73cfiq.png">
+	<meta property="og:image" content="https://nicsfix.com/og.jpg">
 	<meta property="og:title" content="Nic's Fix for HomePods">
 	<meta property="og:description" content="Apple HomePod Repair, DIY, Service & Customization for Apple Speaker | Nic's Fix">
 	<meta property="og:url" content="https://nicsfix.com">
@@ -29,7 +29,7 @@
 	<meta name="twitter:site" content="@UnbendableStraw">
 	<meta name="twitter:title" content="Nic's Fix for HomePods">
 	<meta name="twitter:description" content="Nic's Twitter">
-	<meta name="twitter:image" content="https://pbs.twimg.com/profile_images/1144375140068651008/KOLxDQlh_400x400.png">
+	<meta name="twitter:image" content="https://nicsfix.com/og.jpg">
 	<script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -91,6 +91,7 @@
     for (var i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", function() {
             this.classList.toggle("active");
+            this.setAttribute("aria-expanded", this.classList.contains("active") ? "true" : "false");
             var content = this.nextElementSibling;
             if (content.style.display === "block") {
                 content.style.display = "none";
@@ -145,8 +146,13 @@
 	window.onload = function () {
 	    displayRandomQuote();
 
+	    var q = document.getElementById('quote');
+	    q.addEventListener('keydown', function (e) {
+	        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); displayRandomQuote(); }
+	    });
+
 	    // Auto change every 5 seconds
-	    setInterval(displayRandomQuote, 500000);
+	    setInterval(displayRandomQuote, 5000);
 	};
 	</script>
 </head>
@@ -316,7 +322,6 @@
 							<figure class="hero-hardware-fallback"></figure>
 							<figure class="hero-hardware-startframe"></figure>
 							<div class="hero-hardware-video" data-video-locale="us"></div>
-							<div class="hero-hardware-video mediaobject-enhanced" data-video-locale="us" style="display: block;"><div class="video-frame-container" style="position: absolute; top: 0px; left: 0px; z-index: -1; display: block;"><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 0; display: block; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 1; display: block; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 2; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 3; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 4; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 5; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 6; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 7; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 8; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 9; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 10; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 11; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 12; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 13; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 14; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 15; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 16; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 17; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 18; display: block; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 19; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 20; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 21; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 22; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 23; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 24; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 25; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 26; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 27; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 28; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 29; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 30; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 31; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 32; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 33; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 34; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 35; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 36; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 37; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 38; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 39; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 40; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 41; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 42; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 43; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 44; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 45; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 46; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 47; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 48; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 49; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 50; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 51; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 52; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 53; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 54; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 55; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 56; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 57; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 58; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 59; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 60; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 61; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 62; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 63; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 64; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 65; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 66; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 67; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 68; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 69; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 70; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 71; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 72; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 73; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 74; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 75; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 76; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 77; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 78; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 79; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 80; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 81; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 82; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 83; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 84; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 85; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 86; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 87; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 88; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 89; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 90; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 91; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 92; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 93; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 94; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 95; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 96; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 97; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 98; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 99; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 100; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 101; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 102; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 103; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 104; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 105; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 106; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 107; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 108; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 109; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 110; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 111; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 112; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 113; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 114; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 115; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 116; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 117; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 118; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 119; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 120; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 121; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 122; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 123; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 124; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 125; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 126; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 127; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 128; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 129; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 130; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 131; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 132; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 133; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 134; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 135; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 136; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 137; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 138; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 139; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 140; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 141; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 142; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 143; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 144; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 145; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 146; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 147; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 148; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 149; display: none; top: 0px; left: 0px;"></canvas><canvas width="770" height="960" style="width: 770px; height: 960px; position: absolute; z-index: 150; display: none; top: 0px; left: 0px;"></canvas></div><video playsinline="" preload="auto" class="mediaobject-ios-inline-video mediaobject-element" muted="" src="media/b3c34f83-1e2b-4d4d-95d9-9ba9946b0a66.mp4" style="visibility: visible; display: none;"></video></div>
 							<div class="hero-siri" data-video-locale="us"></div>
 						</div>
 					</div>
@@ -329,10 +334,10 @@
 							<br>
 
 					<div class="hero-copy typography-hero-intro large-centered large-9 medium-11 small-12" data-component-list="CopyEngagement CopyParallax">
-						<h2 class="typography-headline-super transition-1 large-10 large-centered small-12" id="quote" onclick="displayRandomQuote()"></h2>
+						<h2 class="typography-headline-super transition-1 large-10 large-centered small-12" id="quote" onclick="displayRandomQuote()" role="button" tabindex="0" aria-label="Show another quote"></h2>
 <br>
 						<p class="hero-intro typography-intro-elevated transition-2">Welcome to Nic's Fix!<br><br>When HomePod first released, it seemed <a target="_blank" rel="noopener noreferrer" href="https://www.ifixit.com/Teardown/HomePod+Teardown/103133"> total destruction</a> was required to get inside, and there was no way to repair it.
-							<br><br>Thanks to <a target="_blank" rel="noopener noreferrer" href="https://www.ifixit.com/Guide/HomePod+Disassembly/137502">ouitmenick's guide,</a> a clean, non-destructive way to get in was found! Still, actual issues were unsolved, and no one offerd a repair service. My goal at first was to solve and share as much as I can, but a bigger demand could not be ignored.<br><br>Launched in 2021 as the world's first Live HomePod service, I've personally repaired over 5,000 HomePods mailed in from all over the world, with countless more saved by sharing our work!<br><br></p>
+							<br><br>Thanks to <a target="_blank" rel="noopener noreferrer" href="https://www.ifixit.com/Guide/HomePod+Disassembly/137502">ouitmenick's guide,</a> a clean, non-destructive way to get in was found! Still, actual issues were unsolved, and no one offered a repair service. My goal at first was to solve and share as much as I can, but a bigger demand could not be ignored.<br><br>Launched in 2021 as the world's first Live HomePod service, I've personally repaired over 5,000 HomePods mailed in from all over the world, with countless more saved by sharing our work!<br><br></p>
 					</div>
 				</div>
 			</div>
@@ -357,7 +362,7 @@
 				<div class="card-wrapper">
 					<figure class="fallback speaker-component homepod-speaker-component-1"></figure>
 					<div class="design-card" data-fade-offset="							-0.15">
-					<img src="media/gotbass.gif" height="84" alt="Animated image of Dizzie Rascal dancing with some speakers" loading="lazy">
+					<video autoplay loop muted playsinline height="84" aria-label="Animated image of Dizzie Rascal dancing with some speakers"><source src="media/gotbass.mp4" type="video/mp4"></video>
 						<h3 class="typography-callout" id="gotbass">Worry-free Warranty!<br></h3>
 						<p class="hover_img">All repairs include my unbeatable 1+ year warranty, including free U.S. shipping back and forth if issues arise within the first year, and discounts on future repairs thereafter.</p>
 					</div>
@@ -397,7 +402,7 @@
 				<div class="section-heading" data-component-list="CopyEngagement CopyParallax">
 				<br><br>
 	<h2 class="typography-headline-super transition-1 large-10 large-centered medium-11 small-12">I've seen it all...so can you.<br class="small"> </h2>
-					<p class="typography-intro-elevated transition-2 large-10 large-centered medium-12 small-12"></a>
+					<p class="typography-intro-elevated transition-2 large-10 large-centered medium-12 small-12">
 						<br><br>What sets Nic's Fix apart is simple; Do it live! It's all streamed on <a href="https://www.youtube.com/channel/UCAL0d1SL5YDFcYx-F7zbH8w" target="_blank">my YouTube channel.</a><br><br>Watch my latest repair livestream below...</p>
 				</div>
 			</div>
@@ -437,25 +442,25 @@
 					<h3 class="transition-1 typography-callout large-9 large-centered medium-12 small-12">If you live outside the US:<br class="large"><br class="medium"></h3>
 										<p class="transition-1 large-7 large-centered medium-10 small-12">Repairs from all over the world are accepted, whether you want to send in your whole pod, or just the component that needs repair...though shipping may get expensive.<br><br>Click below to see a list of others who have reached out offering repairs. Feel free to contact me to be added! *I provide no promises or guarantees for others' work, only my own!*<br><br>
 											<div class="issue">
-											<button class="collapsible"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Click for WorldWide HomePod Repair-ers</h4>
+											<button type="button" class="collapsible" aria-expanded="false"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Click for WorldWide HomePod Repair-ers</h4>
 									</button>
 											<div class="content">
 										<b>United Kingdom:</b>
-										<br><br>ElectricalHybrid Ltd<br><a href="mailto:electricalhybrider@gmail.com" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">electricalhybrider@gmail.com</span><span class="icon icon-after more"></span></a><br><a href="https://ebay.us/m/OJ8qLR" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">Ebay</a>
-										<br><br>Howard Conrad Repairs<br><a href="mailto:repair@howard-conrad.com" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">repair@howard-conrad.com</span><span class="icon icon-after more"></span></a><br><a href="https://howard-conrad.com/apple-homepod-repairs/" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">https://howard-conrad.com/apple-homepod-repairs/</a>
+										<br><br>ElectricalHybrid Ltd<br><a href="mailto:electricalhybrider@gmail.com" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">electricalhybrider@gmail.com</span><span class="icon icon-after more"></span></a><br><a href="https://ebay.us/m/OJ8qLR" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">Ebay</span></a>
+										<br><br>Howard Conrad Repairs<br><a href="mailto:repair@howard-conrad.com" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">repair@howard-conrad.com</span><span class="icon icon-after more"></span></a><br><a href="https://howard-conrad.com/apple-homepod-repairs/" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">https://howard-conrad.com/apple-homepod-repairs/</span></a>
 										<br><br>Wills Gledhill<br><a href="mailto:willsgledhill@outlook.com" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">willsgledhill@outlook.com</span><span class="icon icon-after more"></span></a><br><br>
 										<br><b>France:</b><br>Quentin<br><a href="https://www.sauvemonmac.com/">https://www.sauvemonmac.com/</a><br><a href="mailto:quentin@sauvemonmac.com" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">quentin@sauvemonmac.com</span><span class="icon icon-after more"></span></a>
 										<br><br>Céladonie<br><a href="https://fixpod.fr">https://fixpod.fr</a><br><a href="mailto:contact@fixpod.fr" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">contact@fixpod.fr</span><span class="icon icon-after more"></span></a><br><br>
 										<br><b>Denmark:</b><br>DUCKSHOUSE MAC SERVICE<br><a href="https://duckshouse.dk/">https://duckshouse.dk/</a><br><a href="mailto:av@duckshouse.dk" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">av@duckshouse.dk</span><span class="icon icon-after more"></span></a><br><br>
 										<br><b>Netherlands:</b><br>RefurbNoob (Robin)<br><a href="https://refurbnoob.nl/pages/apple-hompod-reparatie">https://refurbnoob.nl/pages/apple-hompod-reparatie</a><br><a href="mailto:Refurbnoob@gmail.com" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">Refurbnoob@gmail.com</span><span class="icon icon-after more"></span></a><br><br>
-										<br><b>Australia:</b><br>Nathan B.<br><a href="TBA">TBA</a><br><a href="mailto:nathanb90@gmail.com" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">nathanb90@gmail.com</span><span class="icon icon-after more"></span></a><br><br>
-										<br><b>Germany:</b><br>Moon Repair<br><a href="https://www.moonrepair.de/">https://www.moonrepair.de//</a><br><a href="mailto:info@moonrepair.de" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">info@moonrepair.de</span><span class="icon icon-after more"></span></a>
+										<br><b>Australia:</b><br>Nathan B.<br><a href="mailto:nathanb90@gmail.com" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">nathanb90@gmail.com</span><span class="icon icon-after more"></span></a><br><br>
+										<br><b>Germany:</b><br>Moon Repair<br><a href="https://www.moonrepair.de/">https://www.moonrepair.de/</a><br><a href="mailto:info@moonrepair.de" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">info@moonrepair.de</span><span class="icon icon-after more"></span></a>
 										<br><br>PMobiles<br><a href="https://pmobiles.de/">https://pmobiles.de/</a><br><a href="mailto:repair@pmobiles.de" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">repair@pmobiles.de</span><span class="icon icon-after more"></span></a><br><br>
 									  <br><b>Spain:</b><br>Fernando P. <br><a href="mailto:fpascualsoriano5@gmail.com" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">fpascualsoriano5@gmail.com</span><span class="icon icon-after more"></span></a><br>
 										<br><b>Czech Republic:</b><br>Martin @ AWC<br><a href="https://awc.cz/">https://awc.cz/</a><br><a href="mailto:elbl@awc.cz" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">elbl@awc.cz</span><span class="icon icon-after more"></span></a><br>
 										<br>Prague:<br>Nazim @ Pajecka.cz<br><a href="https://www.pajecka.cz/">https://www.pajecka.cz/</a><br><a href="https://www.instagram.com/pajecka.cz/" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">https://www.instagram.com/pajecka.cz/</span><span class="icon icon-after more"></span></a><br>
 										<br><b>Slovakia:</b><br>Martin Trojan<br><a href="https://www.facebook.com/people/Apple-HomePod-Repair/100088502120293/">Facebook</a><br><a href="mailto:trojan.martin@me.com" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">trojan.martin@me.com</span><span class="icon icon-after more"></span></a><br>
-										<br><b>South Korea:</b><br>Alex.P ()조민준)<br><a href="https://globalbunjang.com/product/218852257">Bunjang (번개장터)</a><br></a><br>
+										<br><b>South Korea:</b><br>Alex.P ()조민준)<br><a href="https://globalbunjang.com/product/218852257">Bunjang (번개장터)</a><br><br>
 										<br><b>Bosnia / Croatia:</b><br>Stanko - Can3Fix<br><a href="https://www.youtube.com/channel/UC9vdVwlQ9QjLTk1Mms0C_Dw">YouTube</a><br><a href="mailto:can3fix@gmail.com" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">can3fix@gmail.com</span><span class="icon icon-after more"></span></a><br>
 										<br><b>Delhi, India:</b><br>Avneesh - RebuildApple.com<br><a href="https://rebuildapple.com/">Website</a><br><a href="mailto:rebuildapple@gmail.com" data-analytics-region="learn more" class="icon-wrapper"><span class="icon-copy">rebuildapple@gmail.com</span><span class="icon icon-after more"></span></a><br>
 										<br><b>Singapore:</b><br><a href="https://carousell.app.link/GbzjYyZX1Vb">Electron Repair Service</a><br>
@@ -478,10 +483,10 @@
 					<br><br>
 					<h3>All Apple HomePod repairs include my signature maintenance items. As I find more common faults, they will be added.</h3>
 						<p>
-						<br><br>1: DC filters are always replaced. These are the leading cause of bass issues and/or <a href="#commonissues">Death Farts</a>. Even though all cermaic capacitors naturally decay every 5-15 years (depending on use,) I found these failing as early as a year after the HomePod's original production run, and was the catalyst for a dedicated "maintenance" service.
+						<br><br>1: DC filters are always replaced. These are the leading cause of bass issues and/or <a href="#commonissues">Death Farts</a>. Even though all ceramic capacitors naturally decay every 5-15 years (depending on use,) I found these failing as early as a year after the HomePod's original production run, and was the catalyst for a dedicated "maintenance" service.
 						<br><br>2: SB Diodes dated 1746k-1748k are replaced. These are the leading cause of <a href="#commonissues">no power,</a> and is permanently fixed / prevented with our high quality, higher rated replacements.
 						<br><br>3: The foam subwoofer gasket can break down over time and become prone to failure, or a lazier bass response. These are replaced with a new rubber nitrile gasket. This results in a tighter, and longer lasting bass response.
-						<br><br>4: The mesh can allow a significant amout of dust to build up around the subwoofer, and main board. Don't worry about breaking out the air compressor, I'll give it a thorough blast to blow the dust away, and briefly wiped down, with options for deeper cleaning and cosmetic fix-ups and customization.
+						<br><br>4: The mesh can allow a significant amount of dust to build up around the subwoofer, and main board. Don't worry about breaking out the air compressor, I'll give it a thorough blast to blow the dust away, and briefly wiped down, with options for deeper cleaning and cosmetic fix-ups and customization.
 						</p>
 						<br><br>
 				</div>
@@ -868,7 +873,7 @@
 				<div class="row row-stereo">
 					<h2 class="typography-headline-super transition-1 large-10 large-centered medium-11 small-12">Packing and Shipping Pods</h2>
 					<div class="issue">
-							<button class="collapsible"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Click to Expand for Important Packing and Shipping Tips!</h4></button>
+							<button type="button" class="collapsible" aria-expanded="false"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Click to Expand for Important Packing and Shipping Tips!</h4></button>
 							<div class="content">
 					<p><b>Pack your HomePod well enough that it doesn't shake around,</b> to prevent more damage <a href="#physicaldamage">like this.</a> If you care about cosmetics, avoid wrapping the cable around the pod as it can leave imprints, and wrap the AC plug to keep it from scratching things.
 					<br><br>I've found that the original HomePod boxes do not, in fact, protect HomePods well during shipping. It can lead to small cracks in the top glass, and power cables wrap around the mesh leaving indents.</p><br>
@@ -881,11 +886,11 @@
 							<p>Pack it Well, All Around</p>
 						</div>
 						<!--<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/correctpowercableinstallation.jpg" height="270"></figure>
+							<figure class="image-icons transition-1"><img src="media/correctpowercableinstallation.jpg" height="270" alt="Correct power cable installation" loading="lazy"></figure>
 							<p>Correct Reinstallation of Cable</p>
 						</div>-->
 						<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/removeandreconnectpowercable.webp" height="200" alt="Pull the power cable hard to remove, push in hard until click to install" loading="lazy"></figure>
+							<figure class="image-icons transition-1"><video autoplay loop muted playsinline height="200" aria-label="Pull the power cable hard to remove, push in hard until click to install"><source src="media/removeandreconnectpowercable.mp4" type="video/mp4"></video></figure>
 							<p>How to Disconnect & Reconnect Cable</p>
 						</div>
 						<div class="image-wrapper">
@@ -928,7 +933,7 @@
 					<div id="blinkblink"></div>
 					<br>
 					<div class="issue">
-							<button class="collapsible"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Flashing Volume Lights & Bootloops - Multiple Causes</h4></button>
+							<button type="button" class="collapsible" aria-expanded="false"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Flashing Volume Lights & Bootloops - Multiple Causes</h4></button>
 							<div class="content">
 					<p><b>Symptoms:</b> HomePod will power on, but ends up with flashing / blinking volume lights, or boot loops. Won't factory reset with traditional methods.
 					<br><br><b>Root Cause:</b> Many are caused by failed software, or failed / interrupted software update. Some are hardware issues, usually on the logic board, usually the NAND or it's BGA. In rare cases it is caused by other faulty hardware, like <a href="#nopowerdisplay">physical damage to the display.</a> It is typically not possible to tell if yours is h/w or s/w without connecting to it via USB and attempting to restore.
@@ -954,7 +959,7 @@
 					<div id="nopower"></div>
 					<div id="nopowerdiode"></div>
 					<div class="issue">
-							<button class="collapsible"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power - Shorted S.B. Diode</h4></button>
+							<button type="button" class="collapsible" aria-expanded="false"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power - Shorted S.B. Diode</h4></button>
 							<div class="content">
 					<p><b>Symptoms:</b> No power, no lights, and no response. Power draw at the outlet will typically be around 2-10 Watts. If left plugged in for some time, the side of the HomePod may feel slightly warmer.<br><br><b>Diagnosis:</b> Diode is located on the amplifier board. Use a multimeter in continuity test mode to test if diode is shorted by placing one probe onto the larger pin of the diode, and the other probe on one of the two smaller pins of the diode. If meter shows it's shorted, move probe from first small pin to other small pin. If you still see a short, remove the diode and test with the diode off the board. If just the diode shows shorted and not the board, replace the diode.<br><br>If your diode tests OK, check for <a href="#lesscommon">less-common</a> no power issues.<br><br><b>Repair:</b> Replace shorted diode or any diode with date code 1746k-1748k with a newer date and part number PDS560-13, PDS560-13Q, PDS760-13, or any other 60v 5a schottky barrier diode of similar specs to permanently repair Video guide available on <a href="https://www.youtube.com/watch?v=FfGiuh_QH3M" target="_blank">YouTube.</a><br><br><b>Root Cause:</b> Diodes manufactured between week 46 and week 48 of 2017 (date code 1746k-1748k) have apparent QA issues with incredibly high failure rates. No other date codes have been found to fail, despite a wider date range used. Apple used a large date range of diodes during manufacturing and there is no correlation to a diode's date code and a HomePod's serial number, so there is no way of telling what diode your homepod has without disassembly.<br><br>All first-generation HomePods, whether factory-new, factory "refurbished", or out of warranty replacements, will have the same chance of having this diode. Second generation HomePods have a bigger, newer diode and won't have this same failure.
 					<p>
@@ -978,7 +983,7 @@
 					<div id="popping"></div>
 				<br>
 				<div class="issue">
-						<button class="collapsible"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Death Farts - DC Offset (Failing DC Filter Capacitors)</h4>
+						<button type="button" class="collapsible" aria-expanded="false"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Death Farts - DC Offset (Failing DC Filter Capacitors)</h4>
 </button>
 						<div class="content">
 <p><b>Symptoms:</b> Very loud popping, lack of bass, and / or a loud buzzing sound followed by a restart, AKA "Death Farts". See below for sound samples to compare. Not to be confused with software / wifi issues where music crackles and becomes delayed.
@@ -1021,14 +1026,14 @@
 			<br><br>
 			<h3 class="typography-headline transition-2 large-10 large-centered medium-11 small-12">Less-Common Issues</h3>
 			<p>More issues with unopened / untouched HomePods.</p>
-			<button class="collapsible"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Click to Expand the list of Less-Common Issues</h4></button>
+			<button type="button" class="collapsible" aria-expanded="false"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Click to Expand the list of Less-Common Issues</h4></button>
 			<div class="content">
 					<div id="nobass"></div>
 					<div id="nobassbadwoofer"></div>
 					<br>
 
 					<div class="issue">
-							<button class="collapsible"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Bass and/or Fast Clicking - Damaged or Dead Subwoofer Speaker</h4>
+							<button type="button" class="collapsible" aria-expanded="false"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Bass and/or Fast Clicking - Damaged or Dead Subwoofer Speaker</h4>
 </button>
 							<div class="content">
 					<p><b>Symptoms:</b> May include low, missing, or dirty sounding bass, clicking, or ticking sounds.<br><br><b>Diagnosis:</b> Two easy tests to tell if your subwoofer speaker is bad;<br><br>1: Gently push the speaker straight in, not too much, and release a few times; This should feel perfectly smooth, and make no sound, otherwise your speaker is almost certainly dead.<br><br>2: Inspect the condition of the voice coil through the hole in the side of the subwoofer speaker basket; A vibrant, uniform copper color is a sign of a healthy voice coil!<br><br>If your subwoofer is damaged, it is likely from <a href="#popping">DC Offset / Death Farts,</a> which should also be diagnosed per the Common Issue above.<br><br><b>Repair:</b> I'm not aware of any off the shelf replacement speakers, you will likely need to source one from another broken homepod. Be sure you diagnose and repair any <a href="#popping">DC Offset</a> before replacing your subwoofer.<br><br><b>Root Cause:</b> Most often a result of too much <a href="#popping">DC Offset!</a> Sometimes they can also just fail on their own eventually, but it is rare.</p>
@@ -1047,7 +1052,7 @@
 							<p>Voice Coil Inspection Port on Woofer</p>
 						</div>
 						<div class="image-wrapper">
-							<figure class="image-icons transition-1"><img src="media/dooftest.gif" height="270" alt="gently pushing speaker to feel for damage" loading="lazy"></figure>
+							<figure class="image-icons transition-1"><video autoplay loop muted playsinline height="270" aria-label="Gently pushing speaker to feel for damage"><source src="media/dooftest.mp4" type="video/mp4"></video></figure>
 							<p>Do the Doof Test</p>
 						</div>
 						</div>
@@ -1056,7 +1061,7 @@
 						<div id="nobassshort"></div>
 						<br>
 						<div class="issue">
-								<button class="collapsible"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Bass - Short Near Amp IC</h4></button>
+								<button type="button" class="collapsible" aria-expanded="false"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Bass - Short Near Amp IC</h4></button>
 								<div class="content">
 					<p><b>Symptoms:</b> No Bass whatsoever.<br><br><b>Diagnosis:</b>On a few no bass amp repairs, I've found the same component shorted out, see photo below.<br><br><b>Repair:</b>  Check if you have the same shorted capacitor, and if so, replace it with 22uF, 0802, 25v (or greater), 10%, X5R capacitor. <a href="https://www.mouser.com/ProductDetail/810-C2012X5R1V226MAC"> These are what I use.</a><br><br><b>Root Cause:</b> Unknown.</p>
 					<p>
@@ -1072,7 +1077,7 @@
 						<div id="nobassshort2"></div>
 						<br>
 						<div class="issue">
-								<button class="collapsible"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Bass - Another Short Near Amp IC</h4>
+								<button type="button" class="collapsible" aria-expanded="false"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Bass - Another Short Near Amp IC</h4>
 	</button>
 								<div class="content">
 					<p><b>Symptoms:</b> No Bass whatsoever.<br><br><b>Diagnosis:</b>On a few no bass amp repairs, I've found a few other components shorted out at the same time, see photo below.<br><br><b>Repair:</b>  Check if you have the same short, and if so, replace shorted 0.1uF size 1206 capacitor, and IC. The circled IC is a mosfet, part number
@@ -1091,7 +1096,7 @@ DMG1029SVQ-7. See <a href="https://www.mouser.com/datasheet/2/115/DIODS20272_1-2
 						<div id="nobassbadampic"></div>
 						<br>
 						<div class="issue">
-						<button class="collapsible"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Bass - Dead Amplifier IC</h4>
+						<button type="button" class="collapsible" aria-expanded="false"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Bass - Dead Amplifier IC</h4>
 </button>
 						<div class="content">
 
@@ -1117,7 +1122,7 @@ DMG1029SVQ-7. See <a href="https://www.mouser.com/datasheet/2/115/DIODS20272_1-2
 					<div id="physicaldamage"></div>
 						<br>
 						<div class="issue">
-								<button class="collapsible"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Rattling / Dirty Bass, Touch / Display Issues, and More - Physical Damage</h4></button>
+								<button type="button" class="collapsible" aria-expanded="false"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Rattling / Dirty Bass, Touch / Display Issues, and More - Physical Damage</h4></button>
 								<div class="content">
 					<p><b>Symptoms:</b> HomePod may or may not be working fine. You may hear rattling when you shake it, or have touch / display issues, even making it appear that the HomePod isn't powering on or only briefly powers on and bootloops.<br><br><b>Diagnosis:</b> For rattling / dirty sounding bass, check that your subwoofer is not bent and properly sealed. Pull your logic board out and check for broken loose plastic. You can try to glue or plastic weld the broken parts back together, or replace the top basket entirely. Thoroughly inspect logic cable, display cable, and connectors for any damage.<br><br><b>Repair:</b> Not recommended to ignore this otherwise the logic board can shift enough to push the display cable into the frame and cut into it, causing weird power / display / touch issues.<br><br><b>Root Cause:</b> Usually this is from some of the frame holding the logic board breaking off as a result of drop damage. Ensure you <a href="#shiptips">pack your Pod properly</a> whenever shipping it!</p>
 					<p>
@@ -1139,7 +1144,7 @@ DMG1029SVQ-7. See <a href="https://www.mouser.com/datasheet/2/115/DIODS20272_1-2
 		<div id="nopowerfuse"></div>
 		<br>
 		<div class="issue">
-				<button class="collapsible"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power - Blown Power Supply Fuse</h4></button>
+				<button type="button" class="collapsible" aria-expanded="false"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power - Blown Power Supply Fuse</h4></button>
 				<div class="content">
 		<p><b>Symptoms:</b> No power, no lights, and no response. Power draw at the outlet will be 0 Watts.<br><br><b>Diagnosis:</b> Fuse is located on the underside of the power supply board. EU/UK power plugs also have a fuse in the power cable. Use multimeter in continuity mode to test if fuse was blown open.<br><br><b>Repair:</b> If fuse is blown you should replace it with another "T3.15AH250V" fuse.<br><br><b>Root Cause:</b> The fuse will blow as a result of a surge from the AC power source. A quality surge protector should help prevent this. Power strips alone provide no protection.</p>
 		<p>
@@ -1158,7 +1163,7 @@ DMG1029SVQ-7. See <a href="https://www.mouser.com/datasheet/2/115/DIODS20272_1-2
 		<div id="nopowerlogicshort"></div>
 		<br>
 		<div class="issue">
-				<button class="collapsible"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power - Short on Logic Board</h4></button>
+				<button type="button" class="collapsible" aria-expanded="false"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power - Short on Logic Board</h4></button>
 				<div class="content">
 		<p><b>Symptoms:</b> No power, no lights, and no response. Power draw at the outlet may be a few Watts. You may hear a quiet ticking / squealing sound from the logic board. Logic board may start to warm up.<br><br><b>Diagnosis:</b> I have only seen two HomePods with No Power caused by this...in both cases, there was a shorted capacitor on the logic board. Both logic boards shorts were in different locations. You should be able to locate them with traditional short-finding methods like a thermal camera or applying flux or alcohol to the board and looking for smoke or bubbles.<br><br><b>Repair:</b> Replace any shorted components! Since there are no schematics, the exact replacement components are unknown. You can harvest them from a bricked logic board, or ask me to check with a parts board! I have a brief repair video showing diagnosis and repair for one on <a href="https://youtu.be/FWu9QsRj-rg" target="_blank">YouTube.</a><br><br><b>Root Cause:</b> Given that I've only seen this issue twice, both times from different shorts on the logic board, I'm guessing this is simply a case of capacitors just going bad. It happens.</p>
 		<p>
@@ -1168,7 +1173,7 @@ DMG1029SVQ-7. See <a href="https://www.mouser.com/datasheet/2/115/DIODS20272_1-2
 				<p>Bad Cap Location on One Logic Board</p>
 			</div>
 			<div class="image-wrapper">
-				<figure class="image-icons transition-1"><img src="media/findshortwithflux.webp" height="270" alt="smoking flux when applied to short" loading="lazy"></figure>
+				<figure class="image-icons transition-1"><video autoplay loop muted playsinline height="270" aria-label="Smoking flux when applied to short"><source src="media/findshortwithflux.mp4" type="video/mp4"></video></figure>
 				<p>Flux Smokes When Applied to Shorted Cap</p>
 			</div>
 		</div>
@@ -1177,7 +1182,7 @@ DMG1029SVQ-7. See <a href="https://www.mouser.com/datasheet/2/115/DIODS20272_1-2
 		<div id="nopowertpsshort"></div>
 		<br>
 		<div class="issue">
-				<button class="collapsible"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power - Blown TPS and Shorted Component</h4></button>
+				<button type="button" class="collapsible" aria-expanded="false"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power - Blown TPS and Shorted Component</h4></button>
 				<div class="content">
 		<p><b>Symptoms:</b> No power, no lights, and no response. Power draw at the outlet may be a few Watts. <br><br><b>Diagnosis:</b> Check for short to ground on the pin pictured below in red, on the TPS. Confirm short on TPS is gone with component in purple removed. <br><br><b>Repair:</b> Replace shorted mosfet with "DMN2300UFB4-7B".
  Avneesh is credited with helping me find the cause of this one  <a href="https://www.youtube.com/live/Je3FnzLNufg" target="_blank">during a Youtube Livestream,.</a> and "nighthawk_94191" for finding the part number.<br><br><b>Root Cause:</b> Unknown.</p>
@@ -1193,7 +1198,7 @@ DMG1029SVQ-7. See <a href="https://www.mouser.com/datasheet/2/115/DIODS20272_1-2
 		<div id="nopowerdisplay"></div>
 		<br>
 		<div class="issue">
-				<button class="collapsible"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power, Boot Loops, or Blinking / Flickering Volume Buttons - Damaged Display</h4></button>
+				<button type="button" class="collapsible" aria-expanded="false"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Power, Boot Loops, or Blinking / Flickering Volume Buttons - Damaged Display</h4></button>
 				<div class="content">
 		<p><b>Symptoms:</b> I've seen damaged displays cause differing symptoms ranging from no power at all, to flickering or boot loops, to flickering volume buttons.<br><br><b>Diagnosis:</b> Thoroughly inspect the display for any damage, especially around the LED PCB on the backside. It's common when a HomePod is dropped for the display to get smashed in and start separating as pictured below. Sometimes damage is visually undetectable and you will need to sanity check with known good parts.<br><br><b>Repair:</b>  Damage like this usually warrants replacing the whole display.<br><br><b>Root Cause:</b> Usually from being dropped. They don't just break like this by themselves</p>
 		<p>
@@ -1212,7 +1217,7 @@ DMG1029SVQ-7. See <a href="https://www.mouser.com/datasheet/2/115/DIODS20272_1-2
 		<div id="nosound"></div>
 		<br>
 		<div class="issue">
-		<button class="collapsible"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Sound - Dead STM32L Controller IC</h4></button>
+		<button type="button" class="collapsible" aria-expanded="false"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">No Sound - Dead STM32L Controller IC</h4></button>
 		<div class="content">
 		<p><b>Symptoms:</b> Powers on, but there's no sound from any of the speakers.<br><br><b>Diagnosis:</b> If you did your own repairs and suddenly no longer have sound, suspect improper ribbon cable installation, accidental damage, or a short / debris on the amp. On rare occasions, I found the main amp controller had failed. The letters on the "STM32L051C8T7" chip were unevenly worn, note however this isn't always a reliable way to judge condition. I'll add a better way to diagnose this soon. <br><br><b>Repair:</b> "STM32L051C8T7" is available from AliExpress, but we're currently unsure if it needs to be reprogrammed! It's available <a href="https://www.aliexpress.com/i/3256802635297773.html?gatewayAdapt=4itemAdapt">here.</a> Currently on backorder from mouser and digikey.<br><br><b>Root Cause:</b> Unknown. Pretty rare for the controller to die anyways.</p>
 		<p>
@@ -1227,7 +1232,7 @@ DMG1029SVQ-7. See <a href="https://www.mouser.com/datasheet/2/115/DIODS20272_1-2
 		<div id="popping2"></div>
 		<br>
 		<div class="issue">
-		<button class="collapsible"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Loud Pop & Restart - Blown / Missing Resistor</h4>
+		<button type="button" class="collapsible" aria-expanded="false"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Loud Pop & Restart - Blown / Missing Resistor</h4>
 </button>
 		<div class="content">
 		<p><b>Symptoms:</b> Powers up and briefly stays on fine, but then makes a loud POP and restarts. Not the same as death farts...<br><br><b>Diagnosis:</b> Inspect amp near cooling pad for damaged / missing resistor<br><br><b>Repair:</b> Either resistor can be replaced with a 10k Ohm resistor (thank you Omanyd#1538) size SMD 0201 (thank you myxomatosis
@@ -1250,12 +1255,12 @@ DMG1029SVQ-7. See <a href="https://www.mouser.com/datasheet/2/115/DIODS20272_1-2
 <br><br>
 <h3 class="typography-headline transition-2 large-10 large-centered medium-11 small-12">Common Mistakes</h3>
 <p>Stuff to look for if you are having issues after attempting your own repairs.</p>
-<button class="collapsible"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Click to Expand the list of Common Mistakes</h4></button>
+<button type="button" class="collapsible" aria-expanded="false"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Click to Expand the list of Common Mistakes</h4></button>
 <div class="content">
 <div id="goofball"></div>
 <br>
 <div class="issue">
-		<button class="collapsible"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Improper Ribbon Install / Damage After Repairs</h4></button>
+		<button type="button" class="collapsible" aria-expanded="false"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Improper Ribbon Install / Damage After Repairs</h4></button>
 		<div class="content">
 <p>Damaged or improperly reinstalled ribbon cables can cause no sound, no power, boot loops, and more.<br><br><b>Damage:</b> Thoroughly inspect the entire ribbon cable for any tears, cracks, or other damage. This cable is commonly damaged from rough handling when disconnecting the logic board, where the end of the cable connecting to the logic board will crack / tear. Another common mistake is accidentally damaging the ribbon cable while trying to pry the top basket off. <br><br><b>Improper Installation:</b> The most common mistake made when reassembling your HomePod is an incorrect installation of the main ribbon cable. On the amplifier board connector, the locked position will actually look open, and unlocked actually looks closed! Verify you have properly locked the cable in by pressing the locking clip down, and that the white line on the cable is level with the top of the connector! Improper installation may lead to permanent damage resulting in no sound or power. I've even done this once myself and lost both the amp and logic board's sound, and have yet to figure out how to repair it.<br><br></p>
 <p>
@@ -1290,7 +1295,7 @@ DMG1029SVQ-7. See <a href="https://www.mouser.com/datasheet/2/115/DIODS20272_1-2
 <div id="nopowermicboard"></div>
 <br>
 <div class="issue">
-<button class="collapsible"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Boot Loops or Blinking / Flickering Volume Buttons - Damaged Mic Board</h4>
+<button type="button" class="collapsible" aria-expanded="false"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">Boot Loops or Blinking / Flickering Volume Buttons - Damaged Mic Board</h4>
 </button>
 <div class="content">
 <p><b>Symptoms:</b> Various symptoms like flickering volume buttons, power cycling, not turning on etc...<br><br><b>Diagnosis:</b> Thoroughly inspect the mic board for any damage, especially around the chip pictured below. <br><br><b>Repair:</b> Replace mic board. Unsure what part # the chip pictured below is...<br><br><b>Root Cause:</b> Discord user "nighthawk_94191" has identified the likely cause of this coming from people over-tightening / rotating the black plastic ring (that sits just above the mic board) too far.</p>
@@ -1314,7 +1319,7 @@ DMG1029SVQ-7. See <a href="https://www.mouser.com/datasheet/2/115/DIODS20272_1-2
 	<div id="haveyouseenthispart"></div>
 	<br>
 	<div class="issue">
-			<button class="collapsible"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">I did my own repairs and lost ___ or found this broken part! What is it?</h4></button>
+			<button type="button" class="collapsible" aria-expanded="false"><h4 class="transition-2 typography-callout large-10 large-centered medium-11 small-12">I did my own repairs and lost ___ or found this broken part! What is it?</h4></button>
 			<div class="content">
 <p>If you are attempting your own repairs and need help identifying a particular part that is damaged / lost, feel free to ask!</p>
 <p>The most commonly lost part is pictured below. If you are having issues replacing it, you can try the pictured workaround with trace wires and a physically larger capacitor. You NEED it for the HomePod to power on! It is a 0.1uF Size 0402 Capacitor. Anything rated 10v or better will work..</p>
@@ -1339,7 +1344,7 @@ DMG1029SVQ-7. See <a href="https://www.mouser.com/datasheet/2/115/DIODS20272_1-2
 <div class="column icon-container large-centered large-8 medium-10 small-12">
 <div class="image-wrapper">
 	<p>
-		<audio controls>
+		<audio controls preload="none">
 	<source src="media/fart.mp3" type="audio/mpeg">
 	Your browser does not support the audio element.
 	</audio></p>
@@ -1347,7 +1352,7 @@ DMG1029SVQ-7. See <a href="https://www.mouser.com/datasheet/2/115/DIODS20272_1-2
 </div>
 <div class="image-wrapper">
 	<p>
-		<audio controls>
+		<audio controls preload="none">
 	<source src="media/dirtybass.mp3" type="audio/mpeg">
 	Your browser does not support the audio element.
 	</audio></p>
@@ -1355,7 +1360,7 @@ DMG1029SVQ-7. See <a href="https://www.mouser.com/datasheet/2/115/DIODS20272_1-2
 </div>
 <div class="image-wrapper">
 	<p>
-		<audio controls>
+		<audio controls preload="none">
 	<source src="media/badpop.mp3" type="audio/mpeg">
 	Your browser does not support the audio element.
 	</audio></p>
@@ -1363,7 +1368,7 @@ DMG1029SVQ-7. See <a href="https://www.mouser.com/datasheet/2/115/DIODS20272_1-2
 </div>
 <div class="image-wrapper">
 	<p>
-		<audio controls>
+		<audio controls preload="none">
 	<source src="media/goodpop.mp3" type="audio/mpeg">
 	Your browser does not support the audio element.
 	</audio></p>
@@ -1475,7 +1480,7 @@ DMG1029SVQ-7. See <a href="https://www.mouser.com/datasheet/2/115/DIODS20272_1-2
 <div class="column icon-container large-centered large-8 medium-10 small-12">
 	<div class="image-wrapper">
 		<p>
-			<audio controls>
+			<audio controls preload="none">
 		<source src="media/fart.mp3" type="audio/mpeg">
 		Your browser does not support the audio element.
 		</audio></p>
@@ -1483,7 +1488,7 @@ DMG1029SVQ-7. See <a href="https://www.mouser.com/datasheet/2/115/DIODS20272_1-2
 	</div>
 	<div class="image-wrapper">
 		<p>
-			<audio controls>
+			<audio controls preload="none">
 		<source src="media/dirtybass.mp3" type="audio/mpeg">
 		Your browser does not support the audio element.
 		</audio></p>
@@ -1491,7 +1496,7 @@ DMG1029SVQ-7. See <a href="https://www.mouser.com/datasheet/2/115/DIODS20272_1-2
 	</div>
 	<div class="image-wrapper">
 		<p>
-			<audio controls>
+			<audio controls preload="none">
 		<source src="media/badpop.mp3" type="audio/mpeg">
 		Your browser does not support the audio element.
 		</audio></p>
@@ -1499,7 +1504,7 @@ DMG1029SVQ-7. See <a href="https://www.mouser.com/datasheet/2/115/DIODS20272_1-2
 	</div>
 	<div class="image-wrapper">
 		<p>
-			<audio controls>
+			<audio controls preload="none">
 		<source src="media/goodpop.mp3" type="audio/mpeg">
 		Your browser does not support the audio element.
 		</audio></p>
@@ -1558,7 +1563,7 @@ DMG1029SVQ-7. See <a href="https://www.mouser.com/datasheet/2/115/DIODS20272_1-2
 								<p class="typography-intro-elevated transition-2">If you're having issues displaying the form, you can open it in a new tab <a href="https://forms.gle/TpHVF9MJq2zXpoPv9" target="_blank">here</a></p>
 								<br><br>
 								<div class="issue">
-								<button class="collapsible">Click to Expand Repair Request Form</button>
+								<button type="button" class="collapsible" aria-expanded="false">Click to Expand Repair Request Form</button>
 								<div class="content">
 									<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScK_TGzsEDUlUq2gHWIFN0a6dpm3YOXRPo8XZUSJujPC5rPwg/viewform?embedded=true" width="720" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 								</div>
@@ -1696,7 +1701,7 @@ DMG1029SVQ-7. See <a href="https://www.mouser.com/datasheet/2/115/DIODS20272_1-2
 					<br>
 					<div class="column large-centered large-12" data-component-list="CopyEngagement CopyParallax">
 						<div class="issue">
-						<button class="collapsible">Click to Read My Story</button>
+						<button type="button" class="collapsible" aria-expanded="false">Click to Read My Story</button>
 						<div class="content">
 
 					I'm just a one man, work from home operation! Inspired by YouTube channels like Louis Rossman, Northridge Fix, Tronics Fix etc... I always wanted to run an electronics / repair shop. I've been a tinkerer and fixer for friends and family, but not much outside of that in any professional or formal manner. I did not want to fix the same stuff as everyone else though, <b> I wanted to find something to fix that no one has fixed before,</b> letalone knew how to fix.
@@ -1774,7 +1779,7 @@ title:'PayPal - The safer, easier way to pay online!',
 </script>
 </div>
 <br><br>
-<div id="counter">More than <b>5000</b> HomePods fixed, and counting!</div>
+<div id="counter">More than <b>5,000</b> HomePods fixed, and counting!</div>
 
 
 
@@ -1783,6 +1788,8 @@ title:'PayPal - The safer, easier way to pay online!',
 Congrats! You Are Visitor #
 <script type="text/javascript" src="//counter.websiteout.com/js/2/0/500000/0"></script>
 <!--Initial count crudely calculated and added Nov 1, 2024-->
+			</div>
+		</div>
 	</section>
 	</main>
 
@@ -1797,7 +1804,7 @@ Congrats! You Are Visitor #
 				<ol>
 					<li id="footnote-1">"12 Month Warranty" covers U.S. shipping, and my parts and labor. <b>WARRANTY DOES NOT COVER: International shipping, software issues, abuse, or intentional or physical damage.</b></li>
 					<li id="footnote-2">Accepted forms of payment: PayPal, Zelle, CashApp, ApplePay (when it works), trades for Apple / PC hardware (any condition), and cash if you're local. </li>
-					<li id="footnote-3">We (I) do not claim to be Apple, Apple Authorized, or in any way sanctioned or approved by Apple... I am an independant third party providing information and repair options. We are not liable for any damage or injury caused by attempting your own repairs!</li>
+					<li id="footnote-3">We (I) do not claim to be Apple, Apple Authorized, or in any way sanctioned or approved by Apple... I am an independent third party providing information and repair options. We are not liable for any damage or injury caused by attempting your own repairs!</li>
 					<li id="footnote-4">HomePod no power. HomePod dead. HomePod keeps rebooting. HomePod power supply issue. HomePod glowing light but no sound. SEO stuff.</li>
 				</ol>
 			</section>
@@ -1810,7 +1817,7 @@ Congrats! You Are Visitor #
 		"@type": "Organization",
 		"name": "Track 44",
 		"url": "https://nicsfix.com/",
-		"logo": "https://nicsfix.com",
+		"logo": "https://nicsfix.com/og.jpg",
 		"subOrganization": {
 			"@type": "Organization",
 			"name": "Track 44 Support",
