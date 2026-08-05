@@ -110,7 +110,8 @@
 	.guide-nav ul { list-style: none; margin: 0; padding: 0;
 		display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
 	.guide-nav li a { display: block; padding: 18px 20px; border-radius: 14px;
-		background: #f5f5f7; color: #1d1d1f; text-decoration: none; line-height: 1.35; }
+		background: #f5f5f7; color: #1d1d1f; text-decoration: none; line-height: 1.35;
+		text-align: left; /* .section-room sets text-align:center on the homepage */ }
 	.guide-nav li a:hover { background: #e8e8ed; }
 	.guide-nav li a b { display: block; font-size: 19px; margin-bottom: 4px; }
 	.guide-nav li a span { font-size: 15px; color: #6e6e73; }
@@ -127,7 +128,30 @@
 	h1.page-title { max-width: 980px; margin: 0 auto .4em; padding: 0 22px;
 		font-size: clamp(34px, 5vw, 56px); line-height: 1.08; letter-spacing: -.01em; }
 	</style>
-
+	<script>
+	/* If the overview animation bundle throws, its scroll-reveal never runs and
+	   the page silently renders blank. Fall back to showing everything. */
+	window.addEventListener('error', function (e) {
+		if (e && e.filename && e.filename.indexOf('main.built.js') !== -1) {
+			document.documentElement.classList.add('force-reveal');
+		}
+	}, true);
+	</script>
+	<style>
+	html.force-reveal [data-component-list~='CopyEngagement'] .transition-0,
+	html.force-reveal [data-component-list~='CopyEngagement'] .transition-1,
+	html.force-reveal [data-component-list~='CopyEngagement'] .transition-2,
+	html.force-reveal [data-component-list~='CopyEngagement'] .transition-3,
+	html.force-reveal [data-component-list~='CopyEngagement'] .transition-4,
+	html.force-reveal [data-component-list~='CopyEngagement'] .transition-5,
+	html.force-reveal [data-component-list~='CopyParallax'] .transition-1,
+	html.force-reveal [data-component-list~='CopyParallax'] .transition-2,
+	html.force-reveal [data-component-list~='CopyEngagement'] .transition-img {
+		opacity: 1 !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+	}
+	</style>
 
 	<script>
 	document.addEventListener('DOMContentLoaded', function () {
