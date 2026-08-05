@@ -131,6 +131,30 @@
 	h1.page-title { max-width: 980px; margin: 0 auto .4em; padding: 0 22px;
 		font-size: clamp(34px, 5vw, 56px); line-height: 1.08; letter-spacing: -.01em; }
 	</style>
+	<style>
+	/* This page ships without the overview animation bundle, so nothing
+	   ever adds .did-engage.
+	   Show the scroll-reveal content immediately instead of leaving it at
+	   opacity:0 forever. */
+	html.copy-engagement .page-overview [data-component-list~='CopyEngagement'] .transition-0,
+	html.copy-engagement .page-overview [data-component-list~='CopyEngagement'] .transition-1,
+	html.copy-engagement .page-overview [data-component-list~='CopyEngagement'] .transition-2,
+	html.copy-engagement .page-overview [data-component-list~='CopyEngagement'] .transition-3,
+	html.copy-engagement .page-overview [data-component-list~='CopyEngagement'] .transition-4,
+	html.copy-engagement .page-overview [data-component-list~='CopyEngagement'] .transition-5,
+	html.copy-engagement .page-overview [data-component-list~='CopyParallax'] .transition-0,
+	html.copy-engagement .page-overview [data-component-list~='CopyParallax'] .transition-1,
+	html.copy-engagement .page-overview [data-component-list~='CopyParallax'] .transition-2,
+	html.copy-engagement .page-overview [data-component-list~='CopyParallax'] .transition-3 {
+		opacity: 1 !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+	}
+	html.copy-engagement .page-overview [data-component-list~='CopyEngagement'] .transition-img {
+		-webkit-transform: none !important;
+		transform: none !important;
+	}
+	</style>
 
 	<script>
 	document.addEventListener('DOMContentLoaded', function () {
@@ -243,10 +267,6 @@
 <div id="ac-gn-curtain" class="ac-gn-curtain"></div>
 <div id="ac-gn-placeholder" class="ac-nav-placeholder"></div>
 <script src="ac-globalnav.built.js"></script><div id="ac-gn-viewport-emitter"> </div>
-<div class="ac-gn-blur"></div>
-<div id="ac-gn-curtain" class="ac-gn-curtain"></div>
-<div id="ac-gn-placeholder" class="ac-nav-placeholder"></div>
-<script src="ac-globalnav.built.js"></script><div id="ac-gn-viewport-emitter"> </div>
 	<input type="checkbox" id="ac-ln-menustate" class="ac-ln-menustate">
 	<div id="ac-ln-sticky-placeholder" class="css-sticky ac-ln-sticking"></div>	<nav id="ac-localnav" class="no-js css-sticky" lang="en-US" dir="ltr" data-sticky data-analytics-region="local nav" aria-label="Local">
 		<div class="ac-ln-wrapper">
@@ -291,7 +311,7 @@
 	<main id="main" class="main" data-page-type="overview">
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; About</nav>
 <h1 class="page-title">About Nic's Fix</h1>
-<div class="page-lede">Just a dad from home, repairing what everyone said was unfixable. Over 5,000 HomePods since 2021, with no employees, no investors, and no venture capital.</div>
+<div class="page-lede">One person, working from home, repairing what everyone said was unfixable. Over 5,000 HomePods since 2021, with no employees, no investors, and no venture capital.</div>
 <section class="section section-music" data-analytics-section-engagement="name:guide">
 <div class="section-content">
 				<br><br>
@@ -392,8 +412,8 @@ title:'PayPal - The safer, easier way to pay online!',
 Congrats! You Are Visitor #
 <script type="text/javascript" src="//counter.websiteout.com/js/2/0/500000/0"></script>
 
-
-
+			
+		
 </div>
 </section>
 	</main>

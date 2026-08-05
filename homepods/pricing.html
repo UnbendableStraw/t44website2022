@@ -176,6 +176,30 @@
 	h1.page-title { max-width: 980px; margin: 0 auto .4em; padding: 0 22px;
 		font-size: clamp(34px, 5vw, 56px); line-height: 1.08; letter-spacing: -.01em; }
 	</style>
+	<style>
+	/* This page ships without the overview animation bundle, so nothing
+	   ever adds .did-engage.
+	   Show the scroll-reveal content immediately instead of leaving it at
+	   opacity:0 forever. */
+	html.copy-engagement .page-overview [data-component-list~='CopyEngagement'] .transition-0,
+	html.copy-engagement .page-overview [data-component-list~='CopyEngagement'] .transition-1,
+	html.copy-engagement .page-overview [data-component-list~='CopyEngagement'] .transition-2,
+	html.copy-engagement .page-overview [data-component-list~='CopyEngagement'] .transition-3,
+	html.copy-engagement .page-overview [data-component-list~='CopyEngagement'] .transition-4,
+	html.copy-engagement .page-overview [data-component-list~='CopyEngagement'] .transition-5,
+	html.copy-engagement .page-overview [data-component-list~='CopyParallax'] .transition-0,
+	html.copy-engagement .page-overview [data-component-list~='CopyParallax'] .transition-1,
+	html.copy-engagement .page-overview [data-component-list~='CopyParallax'] .transition-2,
+	html.copy-engagement .page-overview [data-component-list~='CopyParallax'] .transition-3 {
+		opacity: 1 !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+	}
+	html.copy-engagement .page-overview [data-component-list~='CopyEngagement'] .transition-img {
+		-webkit-transform: none !important;
+		transform: none !important;
+	}
+	</style>
 
 	<script>
 	document.addEventListener('DOMContentLoaded', function () {
@@ -288,10 +312,6 @@
 <div id="ac-gn-curtain" class="ac-gn-curtain"></div>
 <div id="ac-gn-placeholder" class="ac-nav-placeholder"></div>
 <script src="ac-globalnav.built.js"></script><div id="ac-gn-viewport-emitter"> </div>
-<div class="ac-gn-blur"></div>
-<div id="ac-gn-curtain" class="ac-gn-curtain"></div>
-<div id="ac-gn-placeholder" class="ac-nav-placeholder"></div>
-<script src="ac-globalnav.built.js"></script><div id="ac-gn-viewport-emitter"> </div>
 	<input type="checkbox" id="ac-ln-menustate" class="ac-ln-menustate">
 	<div id="ac-ln-sticky-placeholder" class="css-sticky ac-ln-sticking"></div>	<nav id="ac-localnav" class="no-js css-sticky" lang="en-US" dir="ltr" data-sticky data-analytics-region="local nav" aria-label="Local">
 		<div class="ac-ln-wrapper">
@@ -354,7 +374,7 @@
 								</blockquote>
 								<p class="typography-intro-elevated transition-2">Estimates include USA shipping both ways. Take $10 off any repair if you want to drop it off or handle your own shipping each way, up to $20 both ways.
 									<br><br>For $15, you can get a kit to ship your HomePod including a box, packing material, tape, and a return label.
-								<br><br>If you're outside the USA, check the list of <a href="repair-service.html">worldwide repairers</a> under my address first! If you can pay for the shipping, I'll take repairs from anyone, anywhere!
+								<br><br>If you're outside the USA, check the list of <a href="worldwide.html">worldwide repairers</a> first! If you can pay for the shipping, I'll take repairs from anyone, anywhere!
 								<br><br>HomePods that were previously repaired by me, but are outside of the 1 year warranty, get discounts on future repairs!</p>
 							</div>
 							<div class="column large-centered large-12" data-component-list="CopyEngagement CopyParallax">
