@@ -119,6 +119,11 @@
 	.crumbs { max-width: 980px; margin: 1.5em auto 1em; padding: 0 22px;
 		font-size: 14px; color: #6e6e73; }
 	.crumbs a { color: #06c; text-decoration: none; }
+	/* Mirrors what Apple's html.no-js rule does, so the gradient headings can
+	   never end up absolutely positioned or transparent without the JS. */
+	.page-overview .hey-siri .hey-siri-phrases {
+		position: relative; z-index: 1; top: auto; left: auto; opacity: 1;
+	}
 	h1.page-title { max-width: 980px; margin: 0 auto .4em; padding: 0 22px;
 		font-size: clamp(34px, 5vw, 56px); line-height: 1.08; letter-spacing: -.01em; }
 	</style>
@@ -305,6 +310,7 @@
 <div class="page-lede">Every HomePod I repair gets a power dusting and a wipe down as standard. Beyond that, deep mesh cleaning and replacement cosmetics start at <b>$10 with any repair</b>, and custom colors are available. Some finished examples below.</div>
 <section class="section section-music" data-analytics-section-engagement="name:guide">
 <div class="section-content">
+<div class="hey-siri">
 	<div class="section-content hey-siri-phrases">
 	<div class="column large-centered large-12" data-component-list="CopyEngagement CopyParallax">
 		<blockquote class="transition-1">
@@ -369,6 +375,7 @@
 	<figure class="image-icons transition-1"><img src="media/redblueburnt2.png" height="270" alt="red blue burnt orange" loading="lazy"></figure>
 	<p>Some Fine Photography by Mike</p>
 	</div></div></div>
+</div>
 </div>
 </section>
 	</main>
