@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="stylesheet" type="text/css" href="ac-localnav.built.css">
 	<link rel="stylesheet" type="text/css" href="ac-globalfooter.built.css">
-	<title>Apple HomePod Repair Service | Mail-In or Drop-Off, Repair & Customization</title>
+	<title>Apple HomePod Repair Service | Mail-In & Warranted</title>
 <meta name="description" content="Independent Apple HomePod repair service. No power, death farts, boot loops, no bass and custom colors. Mail-in from $70 with a 12-month warranty.">
 	<meta property="og:image" content="https://nicsfix.com/og.jpg">
-	<meta property="og:title" content="Apple HomePod Repair Service | Mail-In or Drop-Off, Repair & Customization">
+	<meta property="og:title" content="Apple HomePod Repair Service | Mail-In & Warranted">
 	<meta property="og:description" content="Independent Apple HomePod repair service. No power, death farts, boot loops, no bass and custom colors. Mail-in from $70 with a 12-month warranty.">
 	<meta property="og:url" content="https://nicsfix.com/">
 	<meta property="og:locale" content="en_US">
@@ -16,7 +16,7 @@
 	<meta property="og:type" content="website">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@repairjak">
-	<meta name="twitter:title" content="Apple HomePod Repair Service | Mail-In or Drop-Off, Repair & Customization">
+	<meta name="twitter:title" content="Apple HomePod Repair Service | Mail-In & Warranted">
 	<meta name="twitter:description" content="Independent Apple HomePod repair service. No power, death farts, boot loops, no bass and custom colors. Mail-in from $70 with a 12-month warranty.">
 	<meta name="twitter:image" content="https://nicsfix.com/og.jpg">
 	<script type="application/ld+json">
@@ -233,6 +233,30 @@
 	})();
 	</script>
 	<script>
+	/* Pick a random HomePod colourway per page load. Runs in <head> so the
+	   matching still image is already selected before first paint. */
+	(function () {
+		var colors = ["us", "red", "orange", "green", "blue"];
+		var pick = colors[Math.floor(Math.random() * colors.length)];
+		window.__podColor = pick;
+		document.documentElement.className += ' pod-' + pick;
+	})();
+	</script>
+	<style>
+	html.pod-red .page-overview .section-hero .hero-hardware-startframe{background-image:url(media/color/red/hero_hardware_startframe__3psekf2aqki2_large.jpg)}html.pod-red .page-overview .section-hero .hero-hardware-fallback,html.pod-red .page-overview .section-hero .hero-hardware.fallback-alt .hero-hardware-fallback{background-image:url(media/color/red/hero_fallback__24kqehg8gea2_large.jpg)}
+	@media only screen and (max-width:1068px){html.pod-red .page-overview .section-hero .hero-hardware-startframe{background-image:url(media/color/red/hero_hardware_startframe__3psekf2aqki2_medium.jpg)}html.pod-red .page-overview .section-hero .hero-hardware-fallback,html.pod-red .page-overview .section-hero .hero-hardware.fallback-alt .hero-hardware-fallback{background-image:url(media/color/red/hero_fallback__24kqehg8gea2_medium.jpg)}}
+	@media only screen and (max-width:735px){html.pod-red .page-overview .section-hero .hero-hardware-startframe{background-image:url(media/color/red/hero_hardware_startframe__3psekf2aqki2_small.jpg)}html.pod-red .page-overview .section-hero .hero-hardware-fallback,html.pod-red .page-overview .section-hero .hero-hardware.fallback-alt .hero-hardware-fallback{background-image:url(media/color/red/hero_fallback__24kqehg8gea2_small.jpg)}}
+	html.pod-orange .page-overview .section-hero .hero-hardware-startframe{background-image:url(media/color/orange/hero_hardware_startframe__3psekf2aqki2_large.jpg)}html.pod-orange .page-overview .section-hero .hero-hardware-fallback,html.pod-orange .page-overview .section-hero .hero-hardware.fallback-alt .hero-hardware-fallback{background-image:url(media/color/orange/hero_fallback__24kqehg8gea2_large.jpg)}
+	@media only screen and (max-width:1068px){html.pod-orange .page-overview .section-hero .hero-hardware-startframe{background-image:url(media/color/orange/hero_hardware_startframe__3psekf2aqki2_medium.jpg)}html.pod-orange .page-overview .section-hero .hero-hardware-fallback,html.pod-orange .page-overview .section-hero .hero-hardware.fallback-alt .hero-hardware-fallback{background-image:url(media/color/orange/hero_fallback__24kqehg8gea2_medium.jpg)}}
+	@media only screen and (max-width:735px){html.pod-orange .page-overview .section-hero .hero-hardware-startframe{background-image:url(media/color/orange/hero_hardware_startframe__3psekf2aqki2_small.jpg)}html.pod-orange .page-overview .section-hero .hero-hardware-fallback,html.pod-orange .page-overview .section-hero .hero-hardware.fallback-alt .hero-hardware-fallback{background-image:url(media/color/orange/hero_fallback__24kqehg8gea2_small.jpg)}}
+	html.pod-green .page-overview .section-hero .hero-hardware-startframe{background-image:url(media/color/green/hero_hardware_startframe__3psekf2aqki2_large.jpg)}html.pod-green .page-overview .section-hero .hero-hardware-fallback,html.pod-green .page-overview .section-hero .hero-hardware.fallback-alt .hero-hardware-fallback{background-image:url(media/color/green/hero_fallback__24kqehg8gea2_large.jpg)}
+	@media only screen and (max-width:1068px){html.pod-green .page-overview .section-hero .hero-hardware-startframe{background-image:url(media/color/green/hero_hardware_startframe__3psekf2aqki2_medium.jpg)}html.pod-green .page-overview .section-hero .hero-hardware-fallback,html.pod-green .page-overview .section-hero .hero-hardware.fallback-alt .hero-hardware-fallback{background-image:url(media/color/green/hero_fallback__24kqehg8gea2_medium.jpg)}}
+	@media only screen and (max-width:735px){html.pod-green .page-overview .section-hero .hero-hardware-startframe{background-image:url(media/color/green/hero_hardware_startframe__3psekf2aqki2_small.jpg)}html.pod-green .page-overview .section-hero .hero-hardware-fallback,html.pod-green .page-overview .section-hero .hero-hardware.fallback-alt .hero-hardware-fallback{background-image:url(media/color/green/hero_fallback__24kqehg8gea2_small.jpg)}}
+	html.pod-blue .page-overview .section-hero .hero-hardware-startframe{background-image:url(media/color/blue/hero_hardware_startframe__3psekf2aqki2_large.jpg)}html.pod-blue .page-overview .section-hero .hero-hardware-fallback,html.pod-blue .page-overview .section-hero .hero-hardware.fallback-alt .hero-hardware-fallback{background-image:url(media/color/blue/hero_fallback__24kqehg8gea2_large.jpg)}
+	@media only screen and (max-width:1068px){html.pod-blue .page-overview .section-hero .hero-hardware-startframe{background-image:url(media/color/blue/hero_hardware_startframe__3psekf2aqki2_medium.jpg)}html.pod-blue .page-overview .section-hero .hero-hardware-fallback,html.pod-blue .page-overview .section-hero .hero-hardware.fallback-alt .hero-hardware-fallback{background-image:url(media/color/blue/hero_fallback__24kqehg8gea2_medium.jpg)}}
+	@media only screen and (max-width:735px){html.pod-blue .page-overview .section-hero .hero-hardware-startframe{background-image:url(media/color/blue/hero_hardware_startframe__3psekf2aqki2_small.jpg)}html.pod-blue .page-overview .section-hero .hero-hardware-fallback,html.pod-blue .page-overview .section-hero .hero-hardware.fallback-alt .hero-hardware-fallback{background-image:url(media/color/blue/hero_fallback__24kqehg8gea2_small.jpg)}}
+	</style>
+	<script>
 	document.addEventListener('DOMContentLoaded', function () {
     var coll = document.getElementsByClassName("collapsible");
     for (var i = 0; i < coll.length; i++) {
@@ -332,6 +356,12 @@
 				</div>
 			</div>
 		</section>
+<script>
+(function () {
+	var el = document.querySelector('.hero-hardware-video');
+	if (el && window.__podColor) { el.setAttribute('data-video-locale', window.__podColor); }
+})();
+</script>
 		<section class="section section-design" data-analytics-section-engagement="name:design" data-component-list="ProgressiveImage StickySpeaker">
 			<div class="section-content">
 				<div class="section-heading" data-component-list="CopyEngagement CopyParallax">
