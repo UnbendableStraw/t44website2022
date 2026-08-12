@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# working files, not part of the site
+Disallow: /REWORDING-AUDIT.md
+Disallow: /index.original-backup.html
+
 Sitemap: https://nicsfix.com/sitemap.xml
