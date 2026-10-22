@@ -6,10 +6,10 @@
 	<link rel="stylesheet" type="text/css" href="ac-localnav.built.css">
 	<link rel="stylesheet" type="text/css" href="ac-globalfooter.built.css">
 	<title>HomePod Won't Turn On? No Power Causes & Fixes | Nic's Fix</title>
-<meta name="description" content="HomePod dead with no lights or response? Usually a shorted S.B. diode from the bad 1746k-1748k batch. Also blown fuses, logic board shorts and TPS faults.">
+<meta name="description" content="HomePod with no power, no lights, and no response? Causes and fixes for a shorted S.B. diode, blown power supply fuse, logic board short, and blown TPS.">
 	<meta property="og:image" content="https://nicsfix.com/og.jpg">
 	<meta property="og:title" content="HomePod Won't Turn On? No Power Causes & Fixes | Nic's Fix">
-	<meta property="og:description" content="HomePod dead with no lights or response? Usually a shorted S.B. diode from the bad 1746k-1748k batch. Also blown fuses, logic board shorts and TPS faults.">
+	<meta property="og:description" content="HomePod with no power, no lights, and no response? Causes and fixes for a shorted S.B. diode, blown power supply fuse, logic board short, and blown TPS.">
 	<meta property="og:url" content="https://nicsfix.com/homepod-wont-turn-on.html">
 	<meta property="og:locale" content="en_US">
 	<meta property="og:site_name" content="Nic's Fix HomePod Repair Service and Parts">
@@ -48,57 +48,10 @@
 	<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "HomePod Won't Turn On: No Power Causes and Fixes",
-  "description": "HomePod dead with no lights or response? Usually a shorted S.B. diode from the bad 1746k-1748k batch. Also blown fuses, logic board shorts and TPS faults.",
-  "url": "https://nicsfix.com/homepod-wont-turn-on.html",
-  "totalTime": "PT2H",
-  "estimatedCost": {
-    "@type": "MonetaryAmount",
-    "currency": "USD",
-    "value": "70"
-  },
-  "step": [
-    {
-      "@type": "HowToStep",
-      "position": 1,
-      "name": "Open the HomePod non-destructively and remove the amplifier board."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 2,
-      "name": "Check the S.B. diode for a short and read its date code."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 3,
-      "name": "Replace any diode dated 1746k-1748k with a higher-rated part."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 4,
-      "name": "If the diode is good, check the power supply fuse for continuity."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 5,
-      "name": "Check the logic board for a shorted capacitor."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 6,
-      "name": "Check the TPS regulator and surrounding components for shorts."
-    }
-  ]
-}
-	</script>
-	<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": "https://nicsfix.com/#business",
   "name": "Nic's Fix",
-  "description": "Independent mail-in Apple HomePod repair service. Live-streamed repairs, 12-month warranty, free US shipping both ways.",
+  "description": "Independent mail-in Apple HomePod repair service. Live-streamed repairs, 12-month warranty, US shipping and drop off options.",
   "url": "https://nicsfix.com",
   "logo": "https://pbs.twimg.com/profile_images/1144375140068651008/KOLxDQlh_400x400.png",
   "image": "https://nicsfix.com/og.jpg",
@@ -271,7 +224,9 @@
 	<main id="main" class="main" data-page-type="overview">
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <a href="guides.html">Repair Guides</a> &rsaquo; HomePod Won't Turn On: No Power Causes and Fixes</nav>
 <h1 class="page-title">HomePod Won't Turn On: No Power Causes and Fixes</h1>
+<!-- PAGE INTRO (commented out, rewrite later)
 <div class="page-lede">A first-gen HomePod that is completely dead, with no light, no chime, and no response to touch, almost always has a shorted S.B. diode on the amplifier board. Apple used a bad batch with date codes <b>1746k-1748k</b>, and replacing that diode with a higher-rated part is a permanent fix. Below are every no-power cause I've found across 5,000+ repairs, with the exact parts needed. <a href="pricing.html">No-power repairs are $70</a> including shipping both ways.</div>
+-->
 <section class="section section-music" data-analytics-section-engagement="name:guide">
 <div class="section-content">
 					<div id="nopower"></div>
@@ -279,7 +234,7 @@
 					<div class="issue">
 							<h2 class="typography-headline transition-2 large-10 large-centered medium-11 small-12">No Power - Shorted S.B. Diode</h2>
 							<div class="content guide-content">
-					<p><b>Symptoms:</b> No power, no lights, and no response. Power draw at the outlet will typically be around 2-10 Watts. If left plugged in for some time, the side of the HomePod may feel slightly warmer.<br><br><b>Diagnosis:</b> Diode is located on the amplifier board. Use a multimeter in continuity test mode to test if diode is shorted by placing one probe onto the larger pin of the diode, and the other probe on one of the two smaller pins of the diode. If meter shows it's shorted, move probe from first small pin to other small pin. If you still see a short, remove the diode and test with the diode off the board. If just the diode shows shorted and not the board, replace the diode.<br><br>If your diode tests OK, check for <a href="guides.html">less-common</a> no power issues.<br><br><b>Repair:</b> Replace shorted diode or any diode with date code 1746k-1748k with a newer date and part number PDS560-13, PDS560-13Q, PDS760-13, or any other 60v 5a schottky barrier diode of similar specs to permanently repair Video guide available on <a href="https://www.youtube.com/watch?v=FfGiuh_QH3M" target="_blank">YouTube.</a><br><br><b>Root Cause:</b> Diodes manufactured between week 46 and week 48 of 2017 (date code 1746k-1748k) have apparent QA issues with incredibly high failure rates. No other date codes have been found to fail, despite a wider date range used. Apple used a large date range of diodes during manufacturing and there is no correlation to a diode's date code and a HomePod's serial number, so there is no way of telling what diode your homepod has without disassembly.<br><br>All first-generation HomePods, whether factory-new, factory "refurbished", or out of warranty replacements, will have the same chance of having this diode. Second generation HomePods have a bigger, newer diode and won't have this same failure.
+					<p><b>Symptoms:</b> No power, no lights, and no response. Power draw at the outlet will typically be around 2-10 Watts. If left plugged in for some time, the side of the HomePod may feel slightly warmer.<br><br><b>Diagnosis:</b> Diode is located on the amplifier board. Use a multimeter in continuity test mode to test if diode is shorted by placing one probe onto the larger pin of the diode, and the other probe on one of the two smaller pins of the diode. If meter shows it's shorted, move probe from first small pin to other small pin. If you still see a short, remove the diode and test with the diode off the board. If just the diode shows shorted and not the board, replace the diode.<br><br>If your diode tests OK, check for <a href="#nopowerfuse">less-common</a> no power issues.<br><br><b>Repair:</b> Replace shorted diode or any diode with date code 1746k-1748k with a newer date and part number PDS560-13, PDS560-13Q, PDS760-13, or any other 60v 5a schottky barrier diode of similar specs to permanently repair Video guide available on <a href="https://www.youtube.com/watch?v=FfGiuh_QH3M" target="_blank">YouTube.</a><br><br><b>Root Cause:</b> Diodes manufactured between week 46 and week 48 of 2017 (date code 1746k-1748k) have apparent QA issues with incredibly high failure rates. No other date codes have been found to fail, despite a wider date range used. Apple used a large date range of diodes during manufacturing and there is no correlation to a diode's date code and a HomePod's serial number, so there is no way of telling what diode your homepod has without disassembly.<br><br>All first-generation HomePods, whether factory-new, factory "refurbished", or out of warranty replacements, will have the same chance of having this diode. Second generation HomePods have a bigger, newer diode and won't have this same failure.
 					</p><p>
 					</p><div class="column icon-container large-centered large-8 medium-10 small-12">
 						<div class="image-wrapper">
@@ -355,7 +310,7 @@
 </div>
 </section><section class="section section-music" data-analytics-section-engagement="name:guide">
 <div class="section-content">
-<h2 class="typography-headline">Other HomePod Repair Guides</h2><nav class="guide-nav"><ul><li><a href="homepod-death-farts.html"><b>HomePod Death Farts, Popping and Ticking: DC Offset</b><span>HomePod making a loud buzzing fart noise then restarting? That's DC offset from failing 10uF…</span></a></li><li><a href="homepod-boot-loop.html"><b>HomePod Boot Loops and Blinking Volume Buttons</b><span>HomePod stuck in a boot loop, or volume lights flashing and flickering? Causes include a…</span></a></li><li><a href="homepod-no-bass.html"><b>HomePod No Bass or Fast Clicking</b><span>HomePod lost its bass or making a fast clicking sound? Causes include a damaged subwoofer,…</span></a></li><li><a href="homepod-no-sound.html"><b>HomePod No Sound: Dead STM32L Controller</b><span>HomePod powers on and lights up but plays no audio at all. Usually a dead STM32L controller…</span></a></li><li><a href="homepod-physical-damage.html"><b>HomePod Rattling, Dirty Bass and Physical Damage</b><span>Rattling, distorted or dirty bass, unresponsive touch, and display faults caused by drops and…</span></a></li><li><a href="common-mistakes.html"><b>Common HomePod Repair Mistakes</b><span>The mistakes I see most on HomePods that arrive after a DIY attempt: improper ribbon install,…</span></a></li><li><a href="identify-part.html"><b>What Is This HomePod Part?</b><span>Mid-repair and can't identify a HomePod part you lost or broke? Photos of the most commonly…</span></a></li><li><a href="homepod-sound-test.html"><b>HomePod Sound Test: What's That Sound?</b><span>Sample recordings of HomePod faults including death farts, popping and ticking, so you can…</span></a></li></ul></nav><p class="page-lede">Don't want to attempt it yourself? <a href="repair-service.html">Mail it in</a>. Repairs average $70 including shipping both ways, with a 12-month warranty.</p>
+<h2 class="typography-headline">Other HomePod Repair Guides</h2><nav class="guide-nav"><ul><li><a href="homepod-death-farts.html"><b>HomePod Death Farts, Popping and Ticking: DC Offset</b><span>DC offset from failing DC filter capacitors, and loud pop &amp; restart from a blown / missing resistor.</span></a></li><li><a href="homepod-boot-loop.html"><b>HomePod Boot Loops and Blinking Volume Buttons</b><span>Flashing / blinking volume lights and boot loops: multiple causes, the free USB software restore, and damaged displays.</span></a></li><li><a href="homepod-no-bass.html"><b>HomePod No Bass or Fast Clicking</b><span>Damaged or dead subwoofer speaker, shorts near the amp IC, and a dead amplifier IC.</span></a></li><li><a href="homepod-no-sound.html"><b>HomePod No Sound: Dead STM32L Controller</b><span>Powers on, but there's no sound from any of the speakers. Dead STM32L controller IC.</span></a></li><li><a href="homepod-physical-damage.html"><b>HomePod Rattling, Dirty Bass and Physical Damage</b><span>Rattling / dirty bass, touch / display issues, and more from physical damage.</span></a></li><li><a href="common-mistakes.html"><b>Common HomePod Repair Mistakes</b><span>Stuff to look for if you are having issues after attempting your own repairs.</span></a></li><li><a href="identify-part.html"><b>What Is This HomePod Part?</b><span>I did my own repairs and lost ___ or found this broken part! What is it?</span></a></li><li><a href="homepod-sound-test.html"><b>HomePod Sound Test: What's That Sound?</b><span>Examples of different issues / sounds HomePods make. Play them ON the HomePod to accurately compare!</span></a></li></ul></nav><p class="page-lede">Want me to fix your HomePod instead? <a href="repair-service.html">Send it in!</a> Repairs for common issues including shipping both ways cost $70, and only go up to $90 for rarer, more involved repairs.</p>
 </div>
 </section>
 	</main>
@@ -365,9 +320,9 @@
 			<section class="ac-gf-sosumi" aria-label="Footnotes">
 				<ol>
 					<li id="footnote-1">"12 Month Warranty" covers U.S. shipping, and my parts and labor. <b>WARRANTY DOES NOT COVER: International shipping, software issues, abuse, or intentional or physical damage.</b></li>
-					<li id="footnote-2">Accepted forms of payment: PayPal, Zelle, CashApp, Apple Pay, trades for Apple / PC hardware (any condition), and cash if you're local. </li>
+					<li id="footnote-2">Accepted forms of payment: PayPal, Zelle, CashApp, ApplePay (when it works), trades for Apple / PC hardware (any condition), and cash if you're local. </li>
 					<li id="footnote-3">We (I) do not claim to be Apple, Apple Authorized, or in any way sanctioned or approved by Apple... I am an independent third party providing information and repair options. We are not liable for any damage or injury caused by attempting your own repairs!</li>
-					<li id="footnote-4">Nic's Fix repairs Apple HomePods with no power, death farts, boot loops, blinking volume lights, no bass, and no sound, by mail from anywhere in the US.</li>
+					<li id="footnote-4">HomePod no power. HomePod dead. HomePod keeps rebooting. HomePod power supply issue. HomePod glowing light but no sound. SEO stuff.</li>
 				</ol>
 			</section>
 </div>

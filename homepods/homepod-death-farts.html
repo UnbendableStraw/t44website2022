@@ -6,10 +6,10 @@
 	<link rel="stylesheet" type="text/css" href="ac-localnav.built.css">
 	<link rel="stylesheet" type="text/css" href="ac-globalfooter.built.css">
 	<title>HomePod Death Farts & Loud Popping: DC Offset Fix | Nic's Fix</title>
-<meta name="description" content="HomePod making a loud buzzing fart noise then restarting? That's DC offset from failing 10uF DC-filter capacitors. How to diagnose and repair it.">
+<meta name="description" content="Loud buzzing sound followed by a restart, AKA Death Farts? It&#x27;s DC offset from failing DC filter capacitors. How to measure it and what to replace them with.">
 	<meta property="og:image" content="https://nicsfix.com/og.jpg">
 	<meta property="og:title" content="HomePod Death Farts & Loud Popping: DC Offset Fix | Nic's Fix">
-	<meta property="og:description" content="HomePod making a loud buzzing fart noise then restarting? That's DC offset from failing 10uF DC-filter capacitors. How to diagnose and repair it.">
+	<meta property="og:description" content="Loud buzzing sound followed by a restart, AKA Death Farts? It&#x27;s DC offset from failing DC filter capacitors. How to measure it and what to replace them with.">
 	<meta property="og:url" content="https://nicsfix.com/homepod-death-farts.html">
 	<meta property="og:locale" content="en_US">
 	<meta property="og:site_name" content="Nic's Fix HomePod Repair Service and Parts">
@@ -48,52 +48,10 @@
 	<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "HomePod Death Farts, Popping and Ticking: DC Offset",
-  "description": "HomePod making a loud buzzing fart noise then restarting? That's DC offset from failing 10uF DC-filter capacitors. How to diagnose and repair it.",
-  "url": "https://nicsfix.com/homepod-death-farts.html",
-  "totalTime": "PT2H",
-  "estimatedCost": {
-    "@type": "MonetaryAmount",
-    "currency": "USD",
-    "value": "70"
-  },
-  "step": [
-    {
-      "@type": "HowToStep",
-      "position": 1,
-      "name": "Confirm the symptom against reference recordings before opening."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 2,
-      "name": "Remove the amplifier board and locate the four 10uF DC filters."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 3,
-      "name": "Replace all four DC-filter capacitors with 35V-rated parts."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 4,
-      "name": "Test the subwoofer for damage caused by the DC offset."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 5,
-      "name": "Reassemble and run a sustained bass test at moderate volume."
-    }
-  ]
-}
-	</script>
-	<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": "https://nicsfix.com/#business",
   "name": "Nic's Fix",
-  "description": "Independent mail-in Apple HomePod repair service. Live-streamed repairs, 12-month warranty, free US shipping both ways.",
+  "description": "Independent mail-in Apple HomePod repair service. Live-streamed repairs, 12-month warranty, US shipping and drop off options.",
   "url": "https://nicsfix.com",
   "logo": "https://pbs.twimg.com/profile_images/1144375140068651008/KOLxDQlh_400x400.png",
   "image": "https://nicsfix.com/og.jpg",
@@ -266,7 +224,9 @@
 	<main id="main" class="main" data-page-type="overview">
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <a href="guides.html">Repair Guides</a> &rsaquo; HomePod Death Farts, Popping and Ticking: DC Offset</nav>
 <h1 class="page-title">HomePod Death Farts, Popping and Ticking: DC Offset</h1>
+<!-- PAGE INTRO (commented out, rewrite later)
 <div class="page-lede">A loud buzzing blast followed by a restart, the so-called &ldquo;death fart&rdquo;, is caused by <b>DC offset</b> from failing DC-filter capacitors between the DAC and amp chips. The fix is replacing the four 10uF filters with quality parts rated 35V or better. Left alone, DC offset will also kill the subwoofer, which turns a $70 repair into a <a href="pricing.html">$90 one</a>. Not sure if your noise is normal? <a href="homepod-sound-test.html">Compare it against sample recordings</a>.</div>
+-->
 <section class="section section-music" data-analytics-section-engagement="name:guide">
 <div class="section-content">
 					<div id="popping"></div>
@@ -274,14 +234,14 @@
 				<div class="issue">
 						<h2 class="typography-headline transition-2 large-10 large-centered medium-11 small-12">Death Farts - DC Offset (Failing DC Filter Capacitors)</h2>
 						<div class="content guide-content">
-<p><b>Symptoms:</b> Very loud popping, lack of bass, and / or a loud buzzing sound followed by a restart, AKA "Death Farts". See below for sound samples to compare. Not to be confused with software / wifi issues where music crackles and becomes delayed.
+<p><b>Symptoms:</b> Very loud popping, lack of bass, and / or a loud buzzing sound followed by a restart, AKA "Death Farts". See the <a href="homepod-sound-test.html">sound test</a> for sound samples to compare. Not to be confused with software / wifi issues where music crackles and becomes delayed.
 <br><br><b>Diagnosis:</b> 1: Remove the subwoofer and place it to the side, carefully reconnect everything and power on the HomePod.
 <br><br>2: With the HomePod powered on, not in standby but not playing anything, and subwoofer connected, measure the DC voltage with a multimeter from the subwoofer speaker terminals. You can probe with the pads under where the subwoofer cable goes into the subwoofer, see Figure 1 below.
 <br><br>TIP: Polarity does not matter when measuring DC offset, you are simply looking for how far from 0mV you are. The warmer these capacitors get when they have failed, the worse they filter DC voltage, so be sure to measure for at least a few seconds and watch for any significant growth in DC offset beyond tolerance.
 <br><br>The amp IC's <i>input</i> is rated for up to <a href="https://www.mouser.com/datasheet/2/196/ir4302-1227997.pdf" target="_blank">+/-18mV DC,</a> which means up to +/-200mV DC can be seen at the subwoofer. More than this is what triggers the amp to "Death Fart", can cause damage to components, and should warrant replacing the DC filters, so we recommend a more aggressive 50mV maximum tolerance seen at the subwoofer.
 <br><br><b>Repair:</b> There are four capacitors that filter this DC in the audio signal before it's amplified and sent to the speaker. They are located on the amplifier board, between the DAC and AMP chips. If you measured a significant amount of DC, you need to replace them with new capacitors of 10uF, size 1206, X7R, 5-10%, rated for 35v or better. I have been using CL31B106KBHNNNE rated for 50v. Only use quality replacement capacitors from reputable brands / resellers. I have a repair video replacing these capacitors on <a href="https://www.youtube.com/watch?v=-YZUv5ErDFw" target="_blank">YouTube.</a>
 <br><br>There is a big black resistor on the amp next to the subwoofer connector you should also inspect...on occasion I have found these to be damaged when there are Death Farts. It is a 10Ohm, 1Watt, 1% Tolerance, 200V rated, 1218 size resistor, and can be replaced with part number RCL121810R0FKEK. It's resistance can be measured while still installed on the board to confirm.
-<br><br>You will also want to inspect your <a href="homepod-no-bass.html">subwoofer speaker for damage</a> to the voice coil from too much DC, see the next Common Issue below for more detail on that.
+<br><br>You will also want to inspect your <a href="homepod-no-bass.html">subwoofer speaker for damage</a> to the voice coil from too much DC, see the <a href="homepod-no-bass.html">No Bass</a> guide for more detail on that.
 <br><br><b>Root Cause:</b> MLCC capacitors naturally decay over time and lose their effectiveness at filtering DC voltage, and this is exacerbated the warmer they are. High quality capacitors used properly should last many years, but eventually all will still need reconditioned or replaced again. I can only speculate the ones used in HomePods have QA issues and / or the amp doesn't have a great design to account for primary filter failure.
 <br><br>The amplifier inside the HomePod turns itself off after ~10 minutes of inactivity. <i>Any</i> activity or percieved "Hey Siri" trigger will turn the amp back on. During the change in power, there may be a popping sound. This popping sound comes from DC voltage changes being heard in the speaker. It's fine and normal for a small temporary DC spike when the amp turns on or off, resulting in a pop. It's also hard to tell the difference between that and a pop that comes from a dangerous constant DC offset that is growing over time. It's usually OK to ignore any popping issues if that's all it does. Typically HomePods will Death Fart to indicate it's enough of a problem, at which point you can and should pursue repairs.
 <br><br><b>How Did I Figure This Out?</b> At first, it was believed that death farts were caused by a failing amplifier IC that powers the subwoofer's audio signal. It was also believed that this amp IC was propietary and irreplacable. Eventually, I found the family of ICs it was based on, along with suitable replacements and even OEM replacements. This didn't fix the issue! Researching DC Offset more, I learned that most class D audio amplifiers have DC Offset and it must be filtered somehow, usually with ceramic capacitors. The more progressed their failure, the worse they are at filtering DC Offset the hotter they are too! This was my lucky break. All I had to do was pointmy heat gun at various areas of the amp until I saw a sudden spike in my DC Offset readings, and voila, filters found! With the first-half of the battle won, the next is figuring out what to replace them with. Since these are filtering DC voltage down to less than a couple mV, it's critical to pick the right replacements and not just match the capacitance. I once again got very lucky, when researching any products that used the same family of amp IC for schematics, the manufacturer themselves have an evaluation amp board with schematics published! Boom. 10uF, rated X7R, 10% tolerance, but only 16 volts?? That seemed wrong. For the voltage, I see at least 20-22v across these caps while installed and operating on the amp, so perhaps this may be contributing to premature failure. This is why I decided to use 50v replacements.
@@ -336,7 +296,7 @@
 </div>
 </section><section class="section section-music" data-analytics-section-engagement="name:guide">
 <div class="section-content">
-<h2 class="typography-headline">Other HomePod Repair Guides</h2><nav class="guide-nav"><ul><li><a href="homepod-wont-turn-on.html"><b>HomePod Won't Turn On: No Power Causes and Fixes</b><span>HomePod dead with no lights or response? Usually a shorted S.B. diode from the bad 1746k-1748k…</span></a></li><li><a href="homepod-boot-loop.html"><b>HomePod Boot Loops and Blinking Volume Buttons</b><span>HomePod stuck in a boot loop, or volume lights flashing and flickering? Causes include a…</span></a></li><li><a href="homepod-no-bass.html"><b>HomePod No Bass or Fast Clicking</b><span>HomePod lost its bass or making a fast clicking sound? Causes include a damaged subwoofer,…</span></a></li><li><a href="homepod-no-sound.html"><b>HomePod No Sound: Dead STM32L Controller</b><span>HomePod powers on and lights up but plays no audio at all. Usually a dead STM32L controller…</span></a></li><li><a href="homepod-physical-damage.html"><b>HomePod Rattling, Dirty Bass and Physical Damage</b><span>Rattling, distorted or dirty bass, unresponsive touch, and display faults caused by drops and…</span></a></li><li><a href="common-mistakes.html"><b>Common HomePod Repair Mistakes</b><span>The mistakes I see most on HomePods that arrive after a DIY attempt: improper ribbon install,…</span></a></li><li><a href="identify-part.html"><b>What Is This HomePod Part?</b><span>Mid-repair and can't identify a HomePod part you lost or broke? Photos of the most commonly…</span></a></li><li><a href="homepod-sound-test.html"><b>HomePod Sound Test: What's That Sound?</b><span>Sample recordings of HomePod faults including death farts, popping and ticking, so you can…</span></a></li></ul></nav><p class="page-lede">Don't want to attempt it yourself? <a href="repair-service.html">Mail it in</a>. Repairs average $70 including shipping both ways, with a 12-month warranty.</p>
+<h2 class="typography-headline">Other HomePod Repair Guides</h2><nav class="guide-nav"><ul><li><a href="homepod-wont-turn-on.html"><b>HomePod Won't Turn On: No Power Causes and Fixes</b><span>Shorted S.B. diode, blown power supply fuse, short on logic board, and blown TPS and shorted component.</span></a></li><li><a href="homepod-boot-loop.html"><b>HomePod Boot Loops and Blinking Volume Buttons</b><span>Flashing / blinking volume lights and boot loops: multiple causes, the free USB software restore, and damaged displays.</span></a></li><li><a href="homepod-no-bass.html"><b>HomePod No Bass or Fast Clicking</b><span>Damaged or dead subwoofer speaker, shorts near the amp IC, and a dead amplifier IC.</span></a></li><li><a href="homepod-no-sound.html"><b>HomePod No Sound: Dead STM32L Controller</b><span>Powers on, but there's no sound from any of the speakers. Dead STM32L controller IC.</span></a></li><li><a href="homepod-physical-damage.html"><b>HomePod Rattling, Dirty Bass and Physical Damage</b><span>Rattling / dirty bass, touch / display issues, and more from physical damage.</span></a></li><li><a href="common-mistakes.html"><b>Common HomePod Repair Mistakes</b><span>Stuff to look for if you are having issues after attempting your own repairs.</span></a></li><li><a href="identify-part.html"><b>What Is This HomePod Part?</b><span>I did my own repairs and lost ___ or found this broken part! What is it?</span></a></li><li><a href="homepod-sound-test.html"><b>HomePod Sound Test: What's That Sound?</b><span>Examples of different issues / sounds HomePods make. Play them ON the HomePod to accurately compare!</span></a></li></ul></nav><p class="page-lede">Want me to fix your HomePod instead? <a href="repair-service.html">Send it in!</a> Repairs for common issues including shipping both ways cost $70, and only go up to $90 for rarer, more involved repairs.</p>
 </div>
 </section>
 	</main>
@@ -346,9 +306,9 @@
 			<section class="ac-gf-sosumi" aria-label="Footnotes">
 				<ol>
 					<li id="footnote-1">"12 Month Warranty" covers U.S. shipping, and my parts and labor. <b>WARRANTY DOES NOT COVER: International shipping, software issues, abuse, or intentional or physical damage.</b></li>
-					<li id="footnote-2">Accepted forms of payment: PayPal, Zelle, CashApp, Apple Pay, trades for Apple / PC hardware (any condition), and cash if you're local. </li>
+					<li id="footnote-2">Accepted forms of payment: PayPal, Zelle, CashApp, ApplePay (when it works), trades for Apple / PC hardware (any condition), and cash if you're local. </li>
 					<li id="footnote-3">We (I) do not claim to be Apple, Apple Authorized, or in any way sanctioned or approved by Apple... I am an independent third party providing information and repair options. We are not liable for any damage or injury caused by attempting your own repairs!</li>
-					<li id="footnote-4">Nic's Fix repairs Apple HomePods with no power, death farts, boot loops, blinking volume lights, no bass, and no sound, by mail from anywhere in the US.</li>
+					<li id="footnote-4">HomePod no power. HomePod dead. HomePod keeps rebooting. HomePod power supply issue. HomePod glowing light but no sound. SEO stuff.</li>
 				</ol>
 			</section>
 </div>
